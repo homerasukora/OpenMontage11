@@ -1,0 +1,161 @@
+{
+  "id": "ep01-the-drawer",
+  "series": "VIRUS2027 // TRANSMISSION",
+  "episode": 1,
+  "title_en": "THE DRAWER",
+  "title_ru": "ЯЩИК",
+  "format": "9:16 / 1080x1920 / 30fps",
+  "target_duration_s": 58,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "thesis": "Not 'COVID came from a lab' (unproven). But: the Pentagon's own analysts wrote a suspect down in March 2020, the public answer stayed 'unknown', and it took a court order to surface the pages. Institutions know things before you do — which is the whole premise of a prediction market.",
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "en": "Sixteen days after the world shut down, the Pentagon already had a suspect.",
+      "ru": "Мир закрылся шестнадцать дней назад. У Пентагона уже есть подозреваемый.",
+      "vo_direction": "Flat, low, no theatrics. State it like a fact you're bored of knowing.",
+      "gap_after": 0.32
+    },
+    {
+      "id": "L02",
+      "beat": "SETUP",
+      "en": "March twenty-seventh, twenty twenty.",
+      "ru": "Двадцать седьмое марта двадцатого.",
+      "vo_direction": "Slower. Date-stamp cadence.",
+      "gap_after": 0.18
+    },
+    {
+      "id": "L03",
+      "beat": "SETUP",
+      "en": "The Defense Intelligence Agency circulates an Authoritative Assessment.",
+      "ru": "Разведуправление Пентагона рассылает «авторитетную оценку».",
+      "vo_direction": "Neutral, procedural.",
+      "gap_after": 0.12
+    },
+    {
+      "id": "L04",
+      "beat": "SETUP",
+      "en": "Not to the public. To its own analysts.",
+      "ru": "Не публике. Своим аналитикам.",
+      "vo_direction": "Two beats. Hard stop between sentences.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L05",
+      "beat": "EVIDENCE",
+      "en": "The subject: one lab in Wuhan. One researcher. Three quiet facts.",
+      "ru": "Объект: одна лаборатория в Ухане. Один учёный. Три тихих факта.",
+      "vo_direction": "Listing cadence, tightening.",
+      "gap_after": 0.22
+    },
+    {
+      "id": "L06",
+      "beat": "EVIDENCE",
+      "en": "The lab kept a bank of bat coronaviruses.",
+      "ru": "В лаборатории — банк коронавирусов летучих мышей.",
+      "vo_direction": "Clipped.",
+      "gap_after": 0.1
+    },
+    {
+      "id": "L07",
+      "beat": "EVIDENCE",
+      "en": "Its scientists could build infectious clones.",
+      "ru": "Её учёные умели собирать инфекционные клоны.",
+      "vo_direction": "Clipped, same rhythm.",
+      "gap_after": 0.1
+    },
+    {
+      "id": "L08",
+      "beat": "EVIDENCE",
+      "en": "And they had already engineered chimeric spike genes.",
+      "ru": "И они уже собирали химерные гены спайк-белка.",
+      "vo_direction": "Land 'already'. Then stop.",
+      "gap_after": 0.36
+    },
+    {
+      "id": "L09",
+      "beat": "TURN",
+      "en": "June twenty twenty. Pentagon medical intelligence runs the genome.",
+      "ru": "Июнь двадцатого. Медицинская разведка Пентагона читает геном.",
+      "vo_direction": "Pick the pace back up.",
+      "gap_after": 0.14
+    },
+    {
+      "id": "L10",
+      "beat": "TURN",
+      "en": "Three scientists reach a conclusion. Manipulated.",
+      "ru": "Три учёных приходят к выводу: изменён искусственно.",
+      "vo_direction": "'Manipulated' — drop pitch, isolate it.",
+      "gap_after": 0.34
+    },
+    {
+      "id": "L11",
+      "beat": "TURN",
+      "en": "August twenty twenty-one. The President is briefed on COVID's origin.",
+      "ru": "Август двадцать первого. Президенту докладывают про ковид.",
+      "vo_direction": "Procedural again. Set the trap.",
+      "gap_after": 0.16
+    },
+    {
+      "id": "L12",
+      "beat": "TURN",
+      "en": "That conclusion, reportedly, never enters the room.",
+      "ru": "Этот вывод, по данным прессы, до него не доходит.",
+      "vo_direction": "Quietest line in the video. Almost throwaway.",
+      "gap_after": 0.55
+    },
+    {
+      "id": "L13",
+      "beat": "HONESTY",
+      "en": "Now the honest part. These assessments carry low confidence. Most scientists still say nature.",
+      "ru": "Теперь честно. На всех оценках пометка: низкая уверенность. Учёные по-прежнему говорят — природа.",
+      "vo_direction": "Faster, lighter, almost dismissive. This is the self-irony beat.",
+      "gap_after": 0.2
+    },
+    {
+      "id": "L14",
+      "beat": "HONESTY",
+      "en": "Fine. Because the strange part was never the virus.",
+      "ru": "И ладно. Странное здесь — не вирус.",
+      "vo_direction": "Shrug on 'Fine.' Then re-tighten.",
+      "gap_after": 0.24
+    },
+    {
+      "id": "L15",
+      "beat": "PAYOFF",
+      "en": "The answer sat in a drawer for six years. It took a court order to open it.",
+      "ru": "Ответ пролежал в ящике шесть лет. Достать его смог только суд.",
+      "vo_direction": "Build. Land hard on 'court order'.",
+      "gap_after": 0.5
+    },
+    {
+      "id": "L16",
+      "beat": "PAYOFF",
+      "en": "The question was never what happened.",
+      "ru": "Вопрос был не в том, что случилось.",
+      "vo_direction": "Slow.",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L17",
+      "beat": "PAYOFF",
+      "en": "It's who already knew.",
+      "ru": "Вопрос — кто уже знал.",
+      "vo_direction": "Full stop before this line. Deliver clean, no push.",
+      "gap_after": 0.7
+    },
+    {
+      "id": "L18",
+      "beat": "BRAND",
+      "en": "Twenty twenty-seven.",
+      "ru": "Две тысячи двадцать седьмой.",
+      "vo_direction": "Almost whispered. Let the room take it.",
+      "gap_after": 1.6
+    }
+  ]
+}
