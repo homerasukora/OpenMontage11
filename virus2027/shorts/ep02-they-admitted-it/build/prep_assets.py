@@ -27,9 +27,15 @@ OUT = ASSETS / "broll"
 # per-image colour retention: 0 = full warm monochrome, 1 = untouched
 KEEP_COLOUR = {
     "virus": 0.62,     # the render is already brand orange — let it stay hot
+    "bat": 0.14,       # keep the wing membranes warm, let the sky go grey
     "medics": 0.10,
+    "lab": 0.06,       # clinical blue is off-palette
     "us": 0.08,
+    "wuhan": 0.05,     # the dusk is purple, which the guide bans outright
 }
+
+# a few sources sit far off the ensemble's exposure and need pulling down
+BRIGHTNESS = {"bat": 0.62, "lab": 0.78}
 
 
 def grade(img, keep=0.10, contrast=1.22, brightness=0.86):
@@ -104,15 +110,36 @@ def feathered_crop(img, box, feather=148):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
 
-    # 4:5 is the card aspect the composition frames b-roll in
+    # Photographs are shown as full-width bands at their native aspect, not
+    # cropped to 9:16. Every source here is between 650 and 3450 px wide, so
+    # a 9:16 cover crop would mean a 2.5-4x upscale; a 1080-wide band means
+    # 1.66x at worst, and the letterboxed ground reads as an archive plate
+    # rather than a stretched stock photo.
     for p in sorted(SRC.glob("*")):
         if p.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
             continue
         keep = KEEP_COLOUR.get(p.stem, 0.10)
-        img = grade(Image.open(p), keep=keep)
-        img = vignette(add_grain(fit(img, 1000, 1250)))
+        img = grade(Image.open(p), keep=keep,
+                    brightness=BRIGHTNESS.get(p.stem, 0.86))
+        h = max(1, round(1080 * img.height / img.width))
+        img = vignette(add_grain(img.resize((1080, h), Image.LANCZOS)), strength=0.30)
         img.save(OUT / f"{p.stem}.jpg", quality=93)
-        print(f"broll/{p.stem}.jpg   keep_colour={keep}")
+
+        # A heavily blurred, darkened cover crop of the same frame fills the
+        # 9:16 ground behind the sharp band. Without it the band floats in
+        # 60% empty black; with it the frame is full and the sharp plate
+        # still owns the eye. Pre-rendered because a 1080x1920 CSS blur per
+        # frame is far too slow at render time.
+        bg = fit(img, 1080, 1920).filter(ImageFilter.GaussianBlur(46))
+        bg = ImageEnhance.Brightness(bg).enhance(0.58)
+        vignette(bg, strength=0.50).save(OUT / f"{p.stem}_bg.jpg", quality=88)
+        print(f"broll/{p.stem}.jpg   1080x{h}  keep_colour={keep}  (+bg)")
+
+    # Wuhan is the one source with the resolution for a full-bleed hero.
+    hero = grade(Image.open(SRC / "wuhan.jpg"), keep=KEEP_COLOUR["wuhan"])
+    vignette(add_grain(fit(hero, 1080, 1920)), strength=0.30).save(
+        OUT / "wuhan_hero.jpg", quality=93)
+    print("broll/wuhan_hero.jpg 1080x1920  (full bleed)")
 
     key = Image.open(ASSETS / "keyart-2027.png").convert("RGB")
     band = key.crop((0, 0, key.width, 372)).resize((1080, 320), Image.LANCZOS)
@@ -124,8 +151,13 @@ def main():
 
     seat = Image.open(ASSETS / "eleventh-seat.png").convert("RGB")
     seat = seat.crop((0, 0, seat.width, 772))
-    fit(seat, 1000, 1250).save(OUT / "seat.jpg", quality=93)
-    print("broll/seat.jpg")
+    h = round(1080 * seat.height / seat.width)
+    seat_band = seat.resize((1080, h), Image.LANCZOS)
+    seat_band.save(OUT / "seat.jpg", quality=93)
+    sbg = ImageEnhance.Brightness(
+        fit(seat_band, 1080, 1920).filter(ImageFilter.GaussianBlur(46))).enhance(0.58)
+    vignette(sbg, strength=0.50).save(OUT / "seat_bg.jpg", quality=88)
+    print(f"broll/seat.jpg      1080x{h}  (+bg)")
 
     mascot = Image.open(ASSETS / "mascot.png").convert("RGB")
     feathered_crop(mascot, (232, 168, 1030, 1120)).save(ASSETS / "mascot-plate.png")

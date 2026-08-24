@@ -133,11 +133,13 @@ def write_wav(path, x):
 
 def main():
     timing = json.loads((ROOT / "build" / "timing_en.json").read_text())
-    beats = json.loads((ROOT / "beats.json").read_text())["beats"]
+    track = json.loads((ROOT / "beats.json").read_text())
+    beats = track["beats"]
+    shots = track.get("shots", [])
     start = {l["id"]: l["start"] for l in timing["lines"]}
 
     vo = read_wav(ROOT / "audio" / "en" / "vo_full.wav")
-    total = len(vo) + int(2.6 * SR)
+    total = len(vo) + int(2.0 * SR)
     rng = np.random.default_rng(2027)
 
     bed = drone(total, rng)
@@ -167,13 +169,24 @@ def main():
         elif kind == "tag":
             place(fx, tick(rng, 0.07), t, 0.3)
 
-    # riser into the payoff, and the brand punctuation
-    place(fx, riser(rng, 1.9), start["L19"] - 1.9, 0.5)
-    place(fx, impact(rng, 1.1, 46), start["L21"], 0.6)
-    place(fx, tick(rng), start["L21"] + 1.15, 0.5)
+    # every picture cut gets a short transient so the edit is felt, not just seen
+    for i, sh in enumerate(shots):
+        if i == 0 or sh["at"] not in start:
+            continue
+        t = start[sh["at"]] + sh["lead"]
+        place(fx, whoosh(rng, 0.34), t - 0.14, 0.30)
+        place(fx, impact(rng, 0.34, 66), t, 0.26)
+
+    # riser into the payoff, and the brand punctuation. Line ids come from
+    # the script, so a re-cut moves these with everything else.
+    ids = [l["id"] for l in timing["lines"]]
+    payoff, last_line, brand = ids[-3], ids[-2], ids[-1]
+    place(fx, riser(rng, 1.7), start[payoff] - 1.7, 0.5)
+    place(fx, impact(rng, 1.1, 46), start[brand], 0.6)
+    place(fx, tick(rng), start[brand] + 0.85, 0.5)
 
     # the hard mute: 0.36 s of nothing before the last spoken line
-    gap_end = start["L20"] - 0.04
+    gap_end = start[last_line] - 0.04
     gap_start = gap_end - 0.36
     duck = np.ones(total, np.float32)
     a, b_ = int(gap_start * SR), int(gap_end * SR)

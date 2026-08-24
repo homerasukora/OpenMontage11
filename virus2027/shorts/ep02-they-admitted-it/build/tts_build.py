@@ -28,7 +28,7 @@ VOICES = Path("/tmp/claude-0/-home-user-OpenMontage11/"
 PY = "/home/user/OpenMontage11/.venv/bin/python"
 
 VOICE = {
-    "en": {"model": VOICES / "en-us-ryan-high.onnx", "length_scale": 0.94,
+    "en": {"model": VOICES / "en-us-ryan-high.onnx", "length_scale": 0.92,
            "gap_scale": 1.0},
     "ru": {"model": VOICES / "ru-irinia-medium.onnx", "length_scale": 0.80,
            "gap_scale": 0.78},

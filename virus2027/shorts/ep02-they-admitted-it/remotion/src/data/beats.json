@@ -1,39 +1,51 @@
 {
-  "note": "Element track. `at` is a script line id, `lead` an offset in seconds from that line's start, `dur` the element's life in seconds. Every mark therefore re-derives if the read changes. Add or retime entries here — no frame numbers anywhere.",
+  "note": "Two tracks, both anchored to script line ids plus a seconds offset — never to frame numbers. `shots` is the picture bed and tiles continuously (each shot runs until the next begins, so there is never a black gap). `beats` are the overlays on top.",
+
+  "shots": [
+    { "at": "L01", "lead": 0.00, "type": "band", "src": "broll/virus.jpg" },
+    { "at": "L02", "lead": 0.00, "type": "band", "src": "broll/us.jpg" },
+    { "at": "L03", "lead": 0.00, "type": "void" },
+    { "at": "L04", "lead": 0.00, "type": "band", "src": "broll/medics.jpg" },
+    { "at": "L05", "lead": 0.00, "type": "void" },
+    { "at": "L06", "lead": 0.00, "type": "hero", "src": "broll/wuhan_hero.jpg" },
+    { "at": "L07", "lead": 0.00, "type": "band", "src": "broll/bat.jpg" },
+    { "at": "L07", "lead": 1.55, "type": "band", "src": "broll/lab.jpg" },
+    { "at": "L09", "lead": 0.00, "type": "void" },
+    { "at": "L10", "lead": 0.00, "type": "band", "src": "broll/seat.jpg" },
+    { "at": "L12", "lead": 0.00, "type": "void" }
+  ],
+
   "beats": [
-    { "at": "L01", "lead": 0.10, "dur": 3.30, "type": "tag", "text": "OFFICIAL POSITION · UNITED STATES", "pos": "top" },
-    { "at": "L01", "lead": 0.30, "dur": 3.10, "type": "card", "src": "broll/us.jpg", "pos": "right", "label": "WHITEHOUSE.GOV / LAB-LEAK" },
+    { "at": "L01", "lead": 0.15, "dur": 1.50, "type": "tag", "text": "SARS-CoV-2" },
 
-    { "at": "L02", "lead": 0.80, "dur": 2.90, "type": "card", "src": "broll/virus.jpg", "pos": "left", "label": "SARS-CoV-2" },
-    { "at": "L02", "lead": 2.05, "dur": 1.55, "type": "stamp", "text": "ORIGIN: LABORATORY" },
+    { "at": "L02", "lead": 0.12, "dur": 1.55, "type": "tag", "text": "OFFICIAL POSITION · UNITED STATES" },
+    { "at": "L02", "lead": 0.70, "dur": 1.10, "type": "stamp", "text": "ORIGIN: LABORATORY" },
 
-    { "at": "L04", "lead": 0.10, "dur": 2.20, "type": "tag", "text": "11 MAR 2020 — PANDEMIC DECLARED", "pos": "top" },
-    { "at": "L04", "lead": 0.25, "dur": 2.05, "type": "card", "src": "broll/medics.jpg", "pos": "right", "label": "MAR 2020" },
+    { "at": "L04", "lead": 0.10, "dur": 2.30, "type": "tag", "text": "11 MAR 2020 — PANDEMIC DECLARED" },
 
-    { "at": "L05", "lead": 0.55, "dur": 4.05, "type": "dossier", "agency": "U.S. DEFENSE INTELLIGENCE AGENCY", "title": "AUTHORITATIVE ASSESSMENT", "date": "27 MAR 2020" },
+    { "at": "L05", "lead": 0.15, "dur": 2.95, "type": "dossier", "agency": "U.S. DEFENSE INTELLIGENCE AGENCY", "title": "AUTHORITATIVE ASSESSMENT", "date": "27 MAR 2020" },
 
-    { "at": "L06", "lead": 0.15, "dur": 2.60, "type": "reticle", "coords": "30.5428° N / 114.3428° E", "redact": "RESEARCHER" },
+    { "at": "L06", "lead": 0.10, "dur": 1.70, "type": "reticle", "coords": "30.5428° N / 114.3428° E", "redact": "RESEARCHER" },
 
-    { "at": "L07", "lead": 0.05, "dur": 9.60, "type": "tag", "text": "WHAT THE ASSESSMENT LISTED", "pos": "top" },
-    { "at": "L08", "lead": 0.05, "dur": 7.60, "type": "row", "index": 1, "text": "Bat coronavirus bank" },
-    { "at": "L09", "lead": 0.05, "dur": 5.40, "type": "row", "index": 2, "text": "Infectious clones" },
-    { "at": "L10", "lead": 0.05, "dur": 3.05, "type": "row", "index": 3, "text": "Chimeric spike genes" },
+    { "at": "L07", "lead": 0.10, "dur": 1.35, "type": "tag", "text": "01 · BAT CORONAVIRUS BANK" },
+    { "at": "L07", "lead": 1.65, "dur": 1.30, "type": "tag", "text": "02 · INFECTIOUS CLONES" },
+    { "at": "L08", "lead": 0.10, "dur": 2.20, "type": "tag", "text": "03 · CHIMERIC SPIKE GENES" },
 
-    { "at": "L11", "lead": 0.35, "dur": 3.30, "type": "genome", "label": "NCMI · GENOMIC ASSESSMENT · JUN 2020" },
-    { "at": "L12", "lead": 0.95, "dur": 2.70, "type": "bigtext", "text": "Manipulated", "accent": true },
+    { "at": "L09", "lead": 0.15, "dur": 2.05, "type": "genome", "label": "NCMI · GENOMIC ASSESSMENT · JUN 2020" },
+    { "at": "L09", "lead": 2.35, "dur": 1.75, "type": "bigtext", "text": "Manipulated", "accent": true },
 
-    { "at": "L13", "lead": 0.25, "dur": 5.70, "type": "card", "src": "broll/seat.jpg", "pos": "right", "label": "AUG 2021 · THE BRIEFING" },
-    { "at": "L14", "lead": 0.35, "dur": 2.45, "type": "redact", "label": "REPORTED · THE WALL STREET JOURNAL" },
+    { "at": "L10", "lead": 0.15, "dur": 2.60, "type": "tag", "text": "AUG 2021 · THE BRIEFING" },
+    { "at": "L11", "lead": 0.30, "dur": 2.20, "type": "redact", "label": "REPORTED · THE WALL STREET JOURNAL" },
 
-    { "at": "L15", "lead": 1.15, "dur": 2.30, "type": "bigtext", "text": "Unknown", "strike": true },
+    { "at": "L12", "lead": 0.95, "dur": 2.20, "type": "bigtext", "text": "Unknown", "strike": true },
 
-    { "at": "L16", "lead": 0.55, "dur": 3.10, "type": "stamp", "text": "RELEASED 2026" },
-    { "at": "L16", "lead": 0.75, "dur": 2.90, "type": "tag", "text": "FOIA LITIGATION · COURT-ORDERED PRODUCTION", "pos": "top" },
+    { "at": "L13", "lead": 0.35, "dur": 1.95, "type": "stamp", "text": "RELEASED 2026" },
+    { "at": "L13", "lead": 0.50, "dur": 1.80, "type": "tag", "text": "FOIA · COURT-ORDERED PRODUCTION" },
 
-    { "at": "L17", "lead": 0.35, "dur": 3.00, "type": "tag", "text": "EVERY LAB ASSESSMENT ON RECORD: LOW CONFIDENCE", "pos": "top", "muted": true },
+    { "at": "L14", "lead": 0.20, "dur": 2.70, "type": "dossier", "agency": "WRITTEN", "title": "27 MAR 2020", "date": "MONTH ONE", "compact": true },
 
-    { "at": "L18", "lead": 0.20, "dur": 2.60, "type": "dossier", "agency": "WRITTEN", "title": "27 MAR 2020", "date": "MONTH ONE", "compact": true },
+    { "at": "L15", "lead": 0.10, "dur": 1.65, "type": "tag", "text": "ALL LAB ASSESSMENTS: LOW CONFIDENCE", "muted": true },
 
-    { "at": "L20", "lead": 0.10, "dur": 2.10, "type": "bigtext", "text": "Who already knew?", "accent": true }
+    { "at": "L16", "lead": 0.05, "dur": 1.60, "type": "bigtext", "text": "Who already knew?", "accent": true }
   ]
 }

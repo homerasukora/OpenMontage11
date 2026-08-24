@@ -17,7 +17,10 @@ export const useLife = (dur: number, inF = 8, outF = 7) => {
   return {f, p: Math.min(enter, exit), enter};
 };
 
-const TOP = 268;                 // top graphics zone starts here
+const TAG_Y = 300;      // above a photographic band
+const STAMP_Y = 372;
+const REDACT_Y = 782;   // across the band
+const TOP = 470;        // graphics zone on a void shot
 const mono = (size: number): React.CSSProperties => ({
   fontFamily: F.mono, fontSize: size, letterSpacing: '0.2em',
   textTransform: 'uppercase',
@@ -36,7 +39,7 @@ export const TagLine: React.FC<{text: string; dur: number; muted?: boolean}> = (
   return (
     <div
       style={{
-        position: 'absolute', left: SAFE.left, top: TOP,
+        position: 'absolute', left: SAFE.left, top: TAG_Y,
         ...mono(23),
         color: muted ? C.textSoft : C.signal,
         opacity: p,
@@ -53,72 +56,13 @@ export const TagLine: React.FC<{text: string; dur: number; muted?: boolean}> = (
   );
 };
 
-/* --------------------------------------------------------------- card */
-
-export const Card: React.FC<{
-  src: string; label: string; pos: 'left' | 'right'; dur: number;
-}> = ({src, label, pos, dur}) => {
-  const {f, p, enter} = useLife(dur, 10, 8);
-  const cw = 400, ch = 500;
-  const x = pos === 'right' ? W - cw - 52 : 52;
-  const drift = interpolate(f, [0, dur], [0, pos === 'right' ? -10 : 10], {
-    extrapolateRight: 'clamp',
-  });
-  const zoom = interpolate(f, [0, dur], [1.06, 1.15], {extrapolateRight: 'clamp'});
-
-  return (
-    <div
-      style={{
-        position: 'absolute', left: x, top: 742, width: cw,
-        opacity: p,
-        transform: `translate(${(1 - enter) * (pos === 'right' ? 46 : -46) + drift}px, ${(1 - enter) * 18}px)`,
-      }}
-    >
-      <div style={{
-        position: 'relative', width: cw, height: ch, overflow: 'hidden',
-        border: `1px solid ${C.lineStrong}`, background: C.bgElevated,
-        boxShadow: '0 30px 90px rgba(0,0,0,0.75)',
-      }}>
-        <Img src={staticFile(src)} style={{
-          width: '100%', height: '100%', objectFit: 'cover',
-          transform: `scale(${zoom})`,
-        }} />
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'linear-gradient(to top, rgba(9,8,6,0.75) 0%, rgba(9,8,6,0) 42%)',
-        }} />
-        {/* scan wipe on entry */}
-        {enter < 1 ? (
-          <div style={{
-            position: 'absolute', left: 0, top: `${enter * 100}%`, width: '100%',
-            height: 4, background: C.signal, boxShadow: `0 0 30px ${C.signal}`,
-          }} />
-        ) : null}
-      </div>
-
-      {[['left', 'top'], ['right', 'bottom']].map(([hx, vy]) => (
-        <div key={hx} style={{
-          position: 'absolute', [hx]: -8, [vy]: -8, width: 20, height: 20,
-          [`border${hx === 'left' ? 'Left' : 'Right'}`]: `2px solid ${C.signal}`,
-          [`border${vy === 'top' ? 'Top' : 'Bottom'}`]: `2px solid ${C.signal}`,
-          opacity: enter,
-        } as React.CSSProperties} />
-      ))}
-
-      <div style={{...mono(17), color: C.textSoft, marginTop: 14, opacity: enter}}>
-        {label}
-      </div>
-    </div>
-  );
-};
-
 /* ------------------------------------------------------------- stamp */
 
 export const Stamp: React.FC<{text: string; dur: number}> = ({text, dur}) => {
   const {p, enter} = useLife(dur, 6, 6);
   return (
     <div style={{
-      position: 'absolute', left: SAFE.left, top: 560,
+      position: 'absolute', left: SAFE.left, top: STAMP_Y,
       opacity: p,
       transform: `rotate(-4deg) scale(${0.82 + enter * 0.18})`,
     }}>
@@ -146,7 +90,7 @@ export const BigText: React.FC<{
 
   return (
     <div style={{
-      position: 'absolute', left: SAFE.left, top: TOP + 46,
+      position: 'absolute', left: SAFE.left, top: TOP + 40,
       width: SAFE.right - SAFE.left, opacity: p,
     }}>
       <div style={{overflow: 'hidden'}}>
@@ -213,25 +157,25 @@ export const Reticle: React.FC<{coords: string; redact: string; dur: number}> = 
   coords, redact, dur,
 }) => {
   const {f, p, enter} = useLife(dur, 10, 7);
-  const cx = 812, cy = 560;
+  const cx = W / 2, cy = 800;
   const pulse = 0.5 + 0.5 * Math.sin(f / 4.5);
   return (
     <AbsoluteFill style={{opacity: p}}>
       <svg width={W} height={1920}>
         <circle cx={cx} cy={cy} r={150 * enter} fill="none"
-                stroke={C.signalLine} strokeWidth={1.5} strokeDasharray="6 12" />
-        <circle cx={cx} cy={cy} r={62 * enter} fill="none" stroke={C.signalLine} />
-        <line x1={cx - 210} y1={cy} x2={cx - 84} y2={cy} stroke={C.signalLine} />
-        <line x1={cx + 84} y1={cy} x2={cx + 210} y2={cy} stroke={C.signalLine} />
-        <line x1={cx} y1={cy - 210} x2={cx} y2={cy - 84} stroke={C.signalLine} />
-        <line x1={cx} y1={cy + 84} x2={cx} y2={cy + 210} stroke={C.signalLine} />
-        <circle cx={cx} cy={cy} r={9} fill={C.signal} opacity={pulse} />
+                stroke={C.signal} strokeWidth={2} strokeDasharray="7 13" opacity={0.8} />
+        <circle cx={cx} cy={cy} r={62 * enter} fill="none" stroke={C.signal} strokeWidth={2} opacity={0.9} />
+        <line x1={cx - 210} y1={cy} x2={cx - 84} y2={cy} stroke={C.signal} strokeWidth={2} opacity={0.85} />
+        <line x1={cx + 84} y1={cy} x2={cx + 210} y2={cy} stroke={C.signal} strokeWidth={2} opacity={0.85} />
+        <line x1={cx} y1={cy - 210} x2={cx} y2={cy - 84} stroke={C.signal} strokeWidth={2} opacity={0.85} />
+        <line x1={cx} y1={cy + 84} x2={cx} y2={cy + 210} stroke={C.signal} strokeWidth={2} opacity={0.85} />
+        <circle cx={cx} cy={cy} r={12} fill={C.signal} opacity={pulse} />
       </svg>
-      <div style={{position: 'absolute', left: SAFE.left, top: TOP, ...mono(21), color: C.textSoft}}>
+      <div style={{position: 'absolute', left: SAFE.left, top: TAG_Y, ...mono(21), color: C.textSoft}}>
         {coords}
       </div>
       <div style={{
-        position: 'absolute', left: SAFE.left, top: TOP + 46,
+        position: 'absolute', left: SAFE.left, top: TAG_Y + 46,
         display: 'flex', alignItems: 'center', gap: 14,
       }}>
         <span style={{...mono(21), color: C.textMuted}}>{redact}:</span>
@@ -338,7 +282,7 @@ export const Genome: React.FC<{label: string; dur: number}> = ({label, dur}) => 
 export const RedactBar: React.FC<{label: string; dur: number}> = ({label, dur}) => {
   const {p, enter} = useLife(dur, 12, 7);
   return (
-    <div style={{position: 'absolute', left: SAFE.left, top: 700, opacity: p}}>
+    <div style={{position: 'absolute', left: SAFE.left, top: REDACT_Y, opacity: p}}>
       <div style={{position: 'relative', width: SAFE.right - SAFE.left, height: 46}}>
         <div style={{
           width: (SAFE.right - SAFE.left) * enter, height: 46, background: '#000',

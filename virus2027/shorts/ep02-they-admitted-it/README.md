@@ -1,105 +1,126 @@
 # TRANSMISSION 02 · "THEY ADMITTED IT"
 
-Presenter-led 9:16 short. The face is animated from a single still, brand
-graphics land around and over him, real photographs cut in, and the whole
-thing carries a synthesised score.
+Photo-led 9:16 short. Graded archive plates, large kinetic captions, brand
+overlays, voiceover and a synthesised score. No presenter.
 
-> **The United States just admitted it. COVID did not come from an animal.
-> It came out of a lab.** — and that is not even the disturbing part.
+> **COVID did not come from an animal. The United States just admitted it.**
+> — and that is not the disturbing part.
 
 | | |
 |---|---|
 | **Master** | `out/VIRUS2027_T02_they-admitted-it_EN_1080x1920.mp4` |
+| **Upload copy** | `out/VIRUS2027_T02_they-admitted-it_EN_upload.mp4` |
 | **Subtitles** | burned in, plus `out/subs_en.srt` |
 | **Audio** | `audio/en/mix_master.wav` — voice + drone bed + hits, −14 LUFS |
-| **Format** | 1080×1920 · 30 fps · H.264 CRF 17 · AAC 48 kHz |
-| **Runtime** | 63.3 s |
+| **Format** | 1080×1920 · 30 fps · H.264 · AAC 48 kHz |
+| **Runtime** | 45.5 s |
 
 ---
 
-## About that hook
+## The hook
 
-You asked for maximum trigger and said you did not care how well trodden it
-was. The hook is front-loaded and blunt — but it is phrased against what is
-actually on the record, so it cannot be dismantled in the comments:
+You asked for maximum trigger. It is the first thing said, with the denial
+before the admission:
 
-- **What the video says:** *"The United States just admitted it. COVID did not come from an animal. It came out of a lab."*
-- **What that rests on:** the White House published *Lab Leak: The True Origins of Covid-19* stating a lab-related incident as the origin, and the CIA moved to "lab origin more likely" in January 2025.
-- **What the video never says:** that it was engineered as a weapon, or that anyone released it deliberately. "Came out of a lab" is the government's own framing; "created artificially" is not, and would be the one line a reply-guy could kill the video with.
+> *"COVID did not come from an animal. The United States just admitted it."*
 
-Same punch, no exposed flank. The on-screen tag at 0:48 —
-`EVERY LAB ASSESSMENT ON RECORD: LOW CONFIDENCE` — is the honesty beat,
-kept visual so it never slows the read. Sources go in the pinned comment
-(see [`../ep01-the-drawer/RESEARCH.md`](../ep01-the-drawer/RESEARCH.md), the
-claim ledger is the same file trail).
+That rests on what is actually published — the White House's *Lab Leak: The
+True Origins of Covid-19* page and the CIA's January 2025 shift to "lab origin
+more likely". The video says **came out of a lab**, never *created
+artificially* or *engineered as a weapon*: those are the two phrasings a reply
+could kill the video with, and they are not what the government said. Same
+punch, no exposed flank.
+
+The honesty beat is on screen at 0:38 as a muted tag —
+`ALL LAB ASSESSMENTS: LOW CONFIDENCE`. Sources go in the pinned comment
+(`PUBLISHING.md`).
 
 ---
 
-## How the presenter is animated
+## Why there is no presenter any more
 
-No lip-sync service is reachable from this environment — every hosted one
-needs an API key, and the local checkpoints live on hosts the proxy blocks.
-So `build/face_rig.py` animates the still as a 2D puppet instead:
+The previous cut animated a photograph of a person as a 2D puppet
+(`build/face_rig.py` — MediaPipe landmarks, Delaunay mesh, amplitude-driven
+jaw). It worked technically and looked wrong: without a real lip-sync model
+the mouth cannot hit phonemes, and a near-real face that moves almost right is
+worse than no face at all.
 
-1. **MediaPipe FaceMesh** finds 478 landmarks on the photo.
-2. Landmarks plus a fixed border ring are **Delaunay-triangulated** (989 triangles).
-3. Poses are landmark displacements in the face's **own axes** — so his tilted head opens its jaw straight down its own face, not down the screen.
-4. Each frame warps the triangles and composites a **soft dark oral cavity** inside the inner-lip contour, so an open mouth reads as an opening instead of stretched teeth.
-5. **Jaw** is driven by a speech-band amplitude envelope of the voiceover with fast attack and slow release; **blinks** fire every 2.4–4.6 s with occasional doubles; **brows** lift on loud syllables; a slow **sway and nod** weighted toward the crown keeps the neck still.
-
-It is amplitude-driven, not phoneme-accurate. Behind burned-in captions at
-30 fps it reads as speech. If you later get an ElevenLabs or HeyGen key, swap
-the clip for a real lip-sync render — everything downstream keys off the same
-timing file and needs no other change.
-
-```bash
-python build/face_rig.py --image assets/presenter.png --out /tmp/poses.png --test
-```
-
-renders a pose contact sheet (neutral / part-open / open / wide / blink) so you
-can judge the rig before committing to a full render.
+The rig is left in the repo rather than deleted, because it becomes viable the
+moment a real lip-sync render is available — but nothing in the current cut
+uses it.
 
 ---
 
 ## Structure
 
-| t | Beat | On screen |
-|---|---|---|
-| 0:00 | **HOOK** | Tag `OFFICIAL POSITION · UNITED STATES`; Liberty + flag card slides in right |
-| 0:01.8 | | Coronavirus card left; stamp `ORIGIN: LABORATORY` |
-| 0:05.3 | | Everything clears — just his face. The retention line lands bare |
-| 0:07.6 | **SETUP** | Medics card; tag `11 MAR 2020 — PANDEMIC DECLARED` |
-| 0:10.7 | | Dossier plate: `U.S. DEFENSE INTELLIGENCE AGENCY` / `27 MAR 2020` |
-| 0:15.1 | | Coordinate reticle over the frame; `RESEARCHER: ███` |
-| 0:19.6 | **EVIDENCE** | Three indexed rows land one per spoken line |
-| 0:27.5 | **TURN** | Genome readout with an orange scan bar |
-| 0:31.9 | | `MANIPULATED` slams in |
-| 0:34.5 | | The empty-seat card; then a censor bar wipes across it |
-| 0:42.4 | **PAYOFF** | `UNKNOWN` with an orange strike drawing through |
-| 0:45.0 | | Stamp `RELEASED 2026`; FOIA tag |
-| 0:48.5 | | The low-confidence note |
-| 0:56.5 | | `WHO ALREADY KNEW?` |
-| 0:58.2 | **BRAND** | Presenter dims; `2027`, mascot on the zero, `@VIRUS2027` |
+Seventeen lines, eleven picture shots, 45 seconds.
 
-The whole element track lives in **`beats.json`** — every entry is anchored to
-a script line id plus an offset in seconds, never to a frame. Retime the read
-and the graphics follow.
+| t | Line | Picture | Overlay |
+|---|---|---|---|
+| 0:00 | *COVID did not come from an animal.* | coronavirus plate | tag `SARS-CoV-2` |
+| 0:02 | *The United States just admitted it.* | Liberty + flag | tag `OFFICIAL POSITION · UNITED STATES`, stamp `ORIGIN: LABORATORY` |
+| 0:04 | *That is not the disturbing part.* | **void** | — the frame empties on the retention line |
+| 0:05.7 | *Sixteen days after the world shut down,* | medics | tag `11 MAR 2020 — PANDEMIC DECLARED` |
+| 0:08 | *…the Pentagon's own intelligence agency writes a document.* | void | dossier: `U.S. DEFENSE INTELLIGENCE AGENCY` / `27 MAR 2020` |
+| 0:11.5 | *Subject: one lab in Wuhan.* | **Wuhan, full bleed** | coordinate reticle, `RESEARCHER: ███` |
+| 0:13.5 | *Bat coronaviruses. Infectious clones.* | bat → lab | tags `01 ·` and `02 ·` |
+| 0:16.2 | *Chimeric spike genes, already engineered.* | lab | tag `03 · CHIMERIC SPIKE GENES` |
+| 0:19 | *June. They run the genome… manipulated.* | void | genome readout, then `MANIPULATED` |
+| 0:23.3 | *August 2021. The President is briefed.* | the empty seat | tag `AUG 2021 · THE BRIEFING` |
+| 0:26 | *That conclusion, reportedly, never enters the room.* | the empty seat | censor bar wipes across, `REPORTED · WSJ` |
+| 0:29 | *For six years the answer stayed one word. Unknown.* | void | `UNKNOWN` with an orange strike |
+| 0:32.2 | *It took a court order to get those pages out.* | void | stamp `RELEASED 2026`, FOIA tag |
+| 0:34.5 | *They didn't discover anything. They caught up to their own file.* | void | compact dossier `27 MAR 2020 / MONTH ONE` |
+| 0:37.9 | *The question was never what happened.* | void | the low-confidence note |
+| 0:39.8 | *It's who already knew.* | void | `WHO ALREADY KNEW?` |
+| 0:41.4 | *2027.* | brand | `2027`, mascot on the zero, `@VIRUS2027` |
+
+---
+
+## How the pictures are treated
+
+Every source is 650–3450 px wide. A 9:16 cover crop would have meant a 2.5–4×
+upscale and visible mush, so photographs are shown as **full-width bands at
+their native aspect** — 1.66× upscale at worst — with a heavily blurred,
+darkened copy of the same frame filling the 9:16 ground behind them. The band
+stays sharp and owns the eye; the frame is never empty. Only Wuhan has the
+resolution for a full-bleed hero, so only Wuhan gets one.
+
+The grade keeps a little of each photo's own colour so it still reads as a
+photograph — 62% on the coronavirus render, which is already brand orange, and
+5–14% on everything else, because clinical blue and a purple dusk are both off
+palette. Then warm monochrome, contrast, grain and a vignette pull them into
+one world.
+
+Void shots are not flat black: a drifting, blurred archive wall sits under
+them at 22%.
+
+---
+
+## Captions
+
+Captions are the hero typography, not a subtitle track: condensed 800 weight,
+uppercase, up to 108px, one to three words at a time, analytically fitted so a
+line can never run off the safe edge. The live word turns signal orange and
+lifts three pixels — readable even when a chunk is only on screen for 300 ms.
+
+Baseline sits at y 1382, clear of the TikTok caption block and the right-hand
+rail. Also shipped as `out/subs_en.srt`.
 
 ---
 
 ## Sound
 
-`build/sound_design.py` synthesises the whole score from noise and sine —
-there is no sample library here either:
+Synthesised from noise and sine in `build/sound_design.py` — no sample library
+is reachable here:
 
-- **Sub drone** 46 / 69.5 / 92 Hz with a slow swell, 24 dB under the voice
-- **Impact** on every headline and card, pitch-swept 58 → 32 Hz
-- **Shutter tick** on stamps, tags and list rows
-- **Whoosh** on card and plate entrances, band sweeping upward
-- **Riser** 1.9 s into the payoff
-- **A hard 0.36 s mute** before *"It's who already knew"* — everything drops to digital silence
+- Sub drone 46 / 69.5 / 92 Hz, 24 dB under the voice
+- An impact and a whoosh on **every picture cut**, so the edit is felt as well as seen
+- Ticks on tags and stamps, a pitch-swept impact on each headline
+- A 1.7 s riser into the payoff
+- **A hard 0.36 s mute** before *"It's who already knew"*
 
-Cue times come from the same timing and beat files as the picture.
+Cue times read from the same timing and beat files as the picture.
 
 ---
 
@@ -107,38 +128,31 @@ Cue times come from the same timing and beat files as the picture.
 
 ```bash
 python build/tts_build.py en        # voiceover, timings, SRT
-python build/face_rig.py --image assets/presenter.png \
-       --audio audio/en/vo_full.wav --out assets/presenter_talk.mp4 --seconds 63.4
-python build/prep_assets.py         # grade b-roll, build plates
+python build/prep_assets.py         # grade plates + blurred backdrops
 python build/sound_design.py        # score + master mix
 cd remotion && npm install
 cp ../build/timing_en.json ../beats.json src/data/
-cp ../assets/presenter_talk.mp4 ../assets/{grain,mascot-plate,wall-officials}.png public/
+cp ../assets/{grain,mascot-plate,wall-officials}.png public/
 cp ../assets/broll/*.jpg public/broll/
 cp ../audio/en/mix_master.wav public/mix_en.wav
 npm run render:en
 ```
 
----
-
 ## Adding more b-roll
 
-External image hosts are all blocked by this environment's egress proxy — I
-could not fetch Pentagon, Wuhan or archive photography, so the video uses the
-three photographs you supplied plus brand plates and drawn graphics.
-
-To add more: drop files into **`assets/broll_src/`**, run
-`python build/prep_assets.py` (they get the same archive grade), then add a
-line to `beats.json`:
+External image hosts are blocked by this environment's egress proxy, so the
+video uses only the photographs you supplied plus brand plates. To add more:
+drop files into `assets/broll_src/`, run `python build/prep_assets.py` (same
+grade, backdrop generated automatically), then add a shot:
 
 ```json
-{ "at": "L05", "lead": 0.6, "dur": 2.4, "type": "card",
-  "src": "broll/pentagon.jpg", "pos": "left", "label": "THE PENTAGON" }
+{ "at": "L05", "lead": 0.0, "type": "band", "src": "broll/pentagon.jpg" }
 ```
 
-Good candidates for this script: the Pentagon exterior, the Wuhan Institute of
-Virology, an empty locked-down street, a White House podium, a stack of
-declassified files.
+Shots tile automatically — each runs until the next begins, so there is never
+a black gap and you never set a duration. Still wanted for this script: the
+Pentagon exterior, the Wuhan Institute of Virology building, an empty
+locked-down street, a White House podium, a stack of declassified files.
 
 ---
 
@@ -146,7 +160,6 @@ declassified files.
 
 | Gap | Why | Fix |
 |---|---|---|
-| Voice is Piper, not a real read | No TTS key reachable | Re-run `tts_build.py` against ElevenLabs stems; all timings re-derive |
-| Mouth is amplitude-driven, not phonemes | No lip-sync model reachable | Swap `assets/presenter_talk.mp4` for a real lip-sync render |
-| Only three photographs | Every image host is blocked here | Drop files in `assets/broll_src/` as above |
-| Russian version not built | You asked for EN first | `script.json` already carries the structure; add `ru` strings and re-run |
+| Voice is Piper, not a real read | No TTS key reachable here | Re-run `tts_build.py` against ElevenLabs stems; every timing re-derives |
+| Seven photographs only | Every image host is blocked | Drop files in `assets/broll_src/` as above |
+| Russian version not built | You asked for EN first | Add `ru` strings to `script.json` and the element text, then re-run |

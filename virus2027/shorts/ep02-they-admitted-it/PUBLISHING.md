@@ -2,7 +2,7 @@
 
 ## Caption (TikTok / Reels)
 
-> They admitted it. Then they hoped you'd stop reading.
+> COVID did not come from an animal. They admitted it — then hoped you'd stop reading.
 >
 > The Pentagon wrote the suspect down in March 2020. It took a court order to
 > get the page out — six years later.
@@ -13,7 +13,7 @@
 
 ## Caption (YouTube Shorts)
 
-> **The US admitted COVID came out of a lab. That's not the disturbing part.**
+> **COVID did not come from an animal. The US admitted it. That's not the disturbing part.**
 >
 > A Defense Intelligence Agency assessment dated 27 March 2020 — sixteen days after the pandemic was declared. A June 2020 genomic study by the Pentagon's medical intelligence unit. An August 2021 presidential briefing that reportedly never heard it. Pages that took a FOIA lawsuit and a court order to surface.
 >
@@ -39,7 +39,7 @@ Same edit, swap the first 4 seconds and the first caption chunk.
 
 | # | Hook line | Why it might win |
 |---|---|---|
-| **A** | *"The United States just admitted it. COVID did not come from an animal. It came out of a lab."* | Shipped default. Authority + reversal in seven seconds. |
+| **A** | *"COVID did not come from an animal. The United States just admitted it."* | Shipped default. Denial first, authority second — the reversal lands in four seconds. |
 | B | *"Your government already told you where COVID came from. You just didn't notice."* | Accusatory second person — usually the strongest opener on TikTok. |
 | C | *"There is a Pentagon document from March 2020. It took a court order to read it."* | The forbidden object. Slower burn, better watch-through. |
 | D | *"Everyone argues about where COVID came from. Nobody asks who already knew."* | Reframe up front. Most on-brand, least clickbait. |
@@ -64,5 +64,5 @@ Run **A vs B** first. A is authority, B is accusation — that is the real test.
 ## Publishing
 
 - One master, three platforms. No re-encode, no platform watermark.
-- Cover frame: **0:31.9** (`MANIPULATED`) or **0:56.6** (`WHO ALREADY KNEW?`).
+- Cover frame: **0:21.4** (`MANIPULATED`) or **0:39.8** (`WHO ALREADY KNEW?`).
 - No token, no ticker, no contract, no "link in bio" in the read. The only ask is `FOLLOW THE SIGNAL`.

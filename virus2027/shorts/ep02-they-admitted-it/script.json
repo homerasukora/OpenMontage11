@@ -4,157 +4,132 @@
   "episode": 2,
   "title_en": "THEY ADMITTED IT",
   "format": "9:16 / 1080x1920 / 30fps",
-  "target_duration_s": 60,
-  "platforms": ["TikTok", "Instagram Reels", "YouTube Shorts"],
-  "presenter": "assets/presenter.png",
-  "hook_note": "Front-loaded trigger. The US government's published position is a lab origin (whitehouse.gov/lab-leak, CIA Jan 2025) — so 'they admitted it' is defensible. The video says 'came out of a lab', never 'engineered as a weapon'.",
+  "target_duration_s": 43,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "hook_note": "Denial first, admission second — 'COVID did not come from an animal, the US just admitted it.' Rests on the published US position (whitehouse.gov/lab-leak, CIA Jan 2025), which says lab origin. The video never says engineered or weapon.",
   "lines": [
     {
       "id": "L01",
       "beat": "HOOK",
-      "en": "The United States just admitted it.",
-      "vo_direction": "Straight to camera. No warm-up. Slightly too fast, like you're getting it out before you're stopped.",
-      "gap_after": 0.16
+      "en": "COVID did not come from an animal.",
+      "vo_direction": "Cold, flat, absolutely certain. No warm-up.",
+      "gap_after": 0.14
     },
     {
       "id": "L02",
       "beat": "HOOK",
-      "en": "COVID did not come from an animal. It came out of a lab.",
-      "vo_direction": "Flat and certain. Land 'lab'.",
+      "en": "The United States just admitted it.",
+      "vo_direction": "Land 'admitted'. Then stop.",
       "gap_after": 0.34
     },
     {
       "id": "L03",
       "beat": "HOOK",
-      "en": "And that is not even the disturbing part.",
-      "vo_direction": "Drop the volume. This is the retention hook.",
-      "gap_after": 0.42
+      "en": "That is not the disturbing part.",
+      "vo_direction": "Drop the volume. This is the retention line.",
+      "gap_after": 0.34
     },
     {
       "id": "L04",
       "beat": "SETUP",
-      "en": "March twenty twenty. The world shuts down.",
-      "vo_direction": "Reset. Story voice now.",
-      "gap_after": 0.2
+      "en": "Sixteen days after the world shut down,",
+      "vo_direction": "Story voice. Keep it moving, no full stop at the end.",
+      "gap_after": 0.12
     },
     {
       "id": "L05",
       "beat": "SETUP",
-      "en": "Sixteen days later, the Pentagon's own intelligence agency writes a document.",
-      "vo_direction": "Pick up pace through the line.",
-      "gap_after": 0.24
+      "en": "the Pentagon's own intelligence agency writes a document.",
+      "vo_direction": "Land 'document'.",
+      "gap_after": 0.28
     },
     {
       "id": "L06",
       "beat": "SETUP",
-      "en": "Subject: one lab in Wuhan. One researcher.",
-      "vo_direction": "Two clipped beats.",
+      "en": "Subject: one lab in Wuhan.",
+      "vo_direction": "Clipped. Two beats.",
       "gap_after": 0.26
     },
     {
       "id": "L07",
       "beat": "EVIDENCE",
-      "en": "It lists three things.",
-      "vo_direction": "Set the list up. Small pause after.",
-      "gap_after": 0.3
+      "en": "Bat coronaviruses. Infectious clones.",
+      "vo_direction": "List cadence, accelerating.",
+      "gap_after": 0.1
     },
     {
       "id": "L08",
       "beat": "EVIDENCE",
-      "en": "A bank of bat coronaviruses.",
-      "vo_direction": "Clipped.",
-      "gap_after": 0.12
+      "en": "Chimeric spike genes, already engineered.",
+      "vo_direction": "Land 'already'. Hard stop.",
+      "gap_after": 0.3
     },
     {
       "id": "L09",
-      "beat": "EVIDENCE",
-      "en": "The ability to build infectious clones.",
-      "vo_direction": "Same rhythm, tighter.",
-      "gap_after": 0.12
+      "beat": "TURN",
+      "en": "June. They run the genome. Three scientists conclude: manipulated.",
+      "vo_direction": "Pace back up, then isolate the last word and drop pitch.",
+      "gap_after": 0.32
     },
     {
       "id": "L10",
-      "beat": "EVIDENCE",
-      "en": "And chimeric spike genes they had already engineered.",
-      "vo_direction": "Land 'already'. Stop dead.",
-      "gap_after": 0.4
+      "beat": "TURN",
+      "en": "August twenty twenty-one. The President is briefed.",
+      "vo_direction": "Procedural. Setting the trap.",
+      "gap_after": 0.14
     },
     {
       "id": "L11",
       "beat": "TURN",
-      "en": "June twenty twenty. Pentagon medical intelligence runs the genome.",
-      "vo_direction": "Back up to speed.",
-      "gap_after": 0.16
+      "en": "That conclusion, reportedly, never enters the room.",
+      "vo_direction": "Quietest line in the video. Throw it away.",
+      "gap_after": 0.4
     },
     {
       "id": "L12",
-      "beat": "TURN",
-      "en": "Three scientists reach a conclusion. Manipulated.",
-      "vo_direction": "Isolate the last word. Drop pitch.",
-      "gap_after": 0.38
+      "beat": "PAYOFF",
+      "en": "For six years the answer stayed one word. Unknown.",
+      "vo_direction": "Cold.",
+      "gap_after": 0.26
     },
     {
       "id": "L13",
-      "beat": "TURN",
-      "en": "August twenty twenty-one. The President gets briefed on COVID's origin.",
-      "vo_direction": "Procedural. Setting the trap.",
-      "gap_after": 0.16
+      "beat": "PAYOFF",
+      "en": "It took a court order to get those pages out.",
+      "vo_direction": "Build. Land on 'court order'.",
+      "gap_after": 0.32
     },
     {
       "id": "L14",
-      "beat": "TURN",
-      "en": "That conclusion, reportedly, never makes it into the room.",
-      "vo_direction": "Quietest line in the video. Almost throw it away.",
+      "beat": "PAYOFF",
+      "en": "They didn't discover anything. They caught up to their own file.",
+      "vo_direction": "Lean in. Land hard on 'their own file'.",
       "gap_after": 0.5
     },
     {
       "id": "L15",
       "beat": "PAYOFF",
-      "en": "For six years the public answer was one word. Unknown.",
-      "vo_direction": "Cold.",
+      "en": "The question was never what happened.",
+      "vo_direction": "Slow right down.",
       "gap_after": 0.28
     },
     {
       "id": "L16",
       "beat": "PAYOFF",
-      "en": "It took a court order to get those pages out. They landed this year.",
-      "vo_direction": "Build.",
-      "gap_after": 0.42
-    },
-    {
-      "id": "L17",
-      "beat": "PAYOFF",
-      "en": "So when they finally admitted it, they were not discovering anything.",
-      "vo_direction": "Lean in.",
-      "gap_after": 0.16
-    },
-    {
-      "id": "L18",
-      "beat": "PAYOFF",
-      "en": "They were catching up to a file they wrote in the first month.",
-      "vo_direction": "Land hard on 'first month'.",
+      "en": "It's who already knew.",
+      "vo_direction": "Full stop before this. Clean, no push.",
       "gap_after": 0.55
     },
     {
-      "id": "L19",
-      "beat": "PAYOFF",
-      "en": "The question was never what happened.",
-      "vo_direction": "Slow right down.",
-      "gap_after": 0.3
-    },
-    {
-      "id": "L20",
-      "beat": "PAYOFF",
-      "en": "It's who already knew.",
-      "vo_direction": "Full stop before this. Clean, no push.",
-      "gap_after": 0.7
-    },
-    {
-      "id": "L21",
+      "id": "L17",
       "beat": "BRAND",
       "en": "Twenty twenty-seven.",
       "vo_direction": "Almost under the breath.",
-      "gap_after": 1.5
+      "gap_after": 1.1
     }
   ]
 }
