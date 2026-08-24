@@ -49,6 +49,39 @@ Hard constraints:
 
 ---
 
+## Two formats
+
+Both share the script → timing → picture pipeline. Pick per episode.
+
+| | **A · Dossier** (`ep01`) | **B · Presenter** (`ep02`) |
+|---|---|---|
+| Frame | Graphics only, no face | Animated presenter fills the frame |
+| Reads as | A file you found | A person who found the file |
+| Best for | Cold, archival, unsettling episodes | Hooks that need a human to sell them |
+| Extra build step | — | `face_rig.py` animates the still from the voiceover |
+| Cost of a new episode | rewrite `script.json` + scenes | rewrite `script.json` + `beats.json` |
+
+Format B is the higher-retention one — a face in the first frame beats a title
+card on every platform — and it is cheaper to iterate, because the graphics
+are a JSON element track rather than hand-built scenes. Format A stays the
+right call for an episode where the absence of a person is the point.
+
+### Format B's element track
+
+`beats.json` maps script line ids to overlays:
+
+```json
+{ "at": "L12", "lead": 0.95, "dur": 2.70, "type": "bigtext",
+  "text": "Manipulated", "accent": true }
+```
+
+Types available: `tag` · `card` (framed photo) · `stamp` · `bigtext` ·
+`row` (indexed list) · `reticle` · `dossier` · `genome` · `redact`. Anchors are
+line ids plus a seconds offset — never frame numbers — so retiming the read
+retimes every graphic and every sound cue with it.
+
+---
+
 ## Reusable machinery
 
 `ep01-the-drawer/` is the working template. To make episode 02, copy the folder
@@ -99,15 +132,16 @@ Ordered by how well the paper trail holds up, which is the only ordering that ma
 
 | # | Working title | The documented spine | Concession |
 |---|---|---|---|
-| 01 | **The Drawer** ✅ | DIA assessment 27 Mar 2020; NCMI genomic study; the Aug 2021 briefing; FOIA release 2026 | Low confidence; consensus is still natural spillover |
-| 02 | **The Eleventh Seat** | Which forecasting and risk bodies actually met before a given crisis, and what the minutes say | Committees meet constantly; most meetings mean nothing |
-| 03 | **The Cancelled Exercise** | Pandemic-preparedness simulations run months before real events — dates and participants only | Simulations are routine and that is *why* they keep landing near the event |
-| 04 | **Manufactured Evidence** | The Pentagon contractor report on Wuhan that was taken apart line by line (see `RESEARCH.md`) | The debunk is the episode — this is the self-ironic one |
-| 05 | **The Retraction** | A major scientific letter, who organised it, and what the released emails showed | Scientists correcting themselves is the system working |
-| 06 | **Low Confidence** | What intelligence confidence ratings actually mean, using real assessments | Explainer disguised as lore; the most re-shareable of the set |
-| 07 | **Declassified On Schedule** | Documents released on statutory timers and what surfaced on the day | Nothing hidden — just nobody reading on time |
+| 01 | **The Drawer** ✅ (format A) | DIA assessment 27 Mar 2020; NCMI genomic study; the Aug 2021 briefing; FOIA release 2026 | Low confidence; consensus is still natural spillover |
+| 02 | **They Admitted It** ✅ (format B) | The published US lab-origin position, then the March 2020 DIA file underneath it | Low confidence, stated on screen |
+| 03 | **The Eleventh Seat** | Which forecasting and risk bodies actually met before a given crisis, and what the minutes say | Committees meet constantly; most meetings mean nothing |
+| 04 | **The Cancelled Exercise** | Pandemic-preparedness simulations run months before real events — dates and participants only | Simulations are routine and that is *why* they keep landing near the event |
+| 05 | **Manufactured Evidence** | The Pentagon contractor report on Wuhan that was taken apart line by line (see `RESEARCH.md`) | The debunk is the episode — this is the self-ironic one |
+| 06 | **The Retraction** | A major scientific letter, who organised it, and what the released emails showed | Scientists correcting themselves is the system working |
+| 07 | **Low Confidence** | What intelligence confidence ratings actually mean, using real assessments | Explainer disguised as lore; the most re-shareable of the set |
+| 08 | **Declassified On Schedule** | Documents released on statutory timers and what surfaced on the day | Nothing hidden — just nobody reading on time |
 
-Episode 04 is the pressure valve for the whole series. Running it early buys
+Episode 05 is the pressure valve for the whole series. Running it early buys
 credibility for everything after it.
 
 ### Live thread

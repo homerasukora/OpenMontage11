@@ -1,0 +1,1082 @@
+{
+  "lang": "en",
+  "total_duration": 60.712,
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "text": "The United States just admitted it.",
+      "start": 0.0,
+      "end": 1.615,
+      "dur": 1.615,
+      "gap_after": 0.16,
+      "words": [
+        {
+          "word": "The",
+          "start": 0.0,
+          "end": 0.136
+        },
+        {
+          "word": "United",
+          "start": 0.136,
+          "end": 0.543
+        },
+        {
+          "word": "States",
+          "start": 0.543,
+          "end": 0.814
+        },
+        {
+          "word": "just",
+          "start": 0.814,
+          "end": 0.95
+        },
+        {
+          "word": "admitted",
+          "start": 0.95,
+          "end": 1.357
+        },
+        {
+          "word": "it.",
+          "start": 1.357,
+          "end": 1.615
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "beat": "HOOK",
+      "text": "COVID did not come from an animal. It came out of a lab.",
+      "start": 1.775,
+      "end": 4.931,
+      "dur": 3.156,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "COVID",
+          "start": 1.775,
+          "end": 2.129
+        },
+        {
+          "word": "did",
+          "start": 2.129,
+          "end": 2.306
+        },
+        {
+          "word": "not",
+          "start": 2.306,
+          "end": 2.484
+        },
+        {
+          "word": "come",
+          "start": 2.484,
+          "end": 2.661
+        },
+        {
+          "word": "from",
+          "start": 2.661,
+          "end": 2.838
+        },
+        {
+          "word": "an",
+          "start": 2.838,
+          "end": 3.016
+        },
+        {
+          "word": "animal.",
+          "start": 3.016,
+          "end": 3.707
+        },
+        {
+          "word": "It",
+          "start": 3.707,
+          "end": 3.885
+        },
+        {
+          "word": "came",
+          "start": 3.885,
+          "end": 4.062
+        },
+        {
+          "word": "out",
+          "start": 4.062,
+          "end": 4.239
+        },
+        {
+          "word": "of",
+          "start": 4.239,
+          "end": 4.417
+        },
+        {
+          "word": "a",
+          "start": 4.417,
+          "end": 4.594
+        },
+        {
+          "word": "lab.",
+          "start": 4.594,
+          "end": 4.931
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "beat": "HOOK",
+      "text": "And that is not even the disturbing part.",
+      "start": 5.271,
+      "end": 7.187,
+      "dur": 1.916,
+      "gap_after": 0.42,
+      "words": [
+        {
+          "word": "And",
+          "start": 5.271,
+          "end": 5.432
+        },
+        {
+          "word": "that",
+          "start": 5.432,
+          "end": 5.593
+        },
+        {
+          "word": "is",
+          "start": 5.593,
+          "end": 5.754
+        },
+        {
+          "word": "not",
+          "start": 5.754,
+          "end": 5.915
+        },
+        {
+          "word": "even",
+          "start": 5.915,
+          "end": 6.237
+        },
+        {
+          "word": "the",
+          "start": 6.237,
+          "end": 6.398
+        },
+        {
+          "word": "disturbing",
+          "start": 6.398,
+          "end": 6.881
+        },
+        {
+          "word": "part.",
+          "start": 6.881,
+          "end": 7.187
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "beat": "SETUP",
+      "text": "March twenty twenty. The world shuts down.",
+      "start": 7.607,
+      "end": 9.904,
+      "dur": 2.297,
+      "gap_after": 0.2,
+      "words": [
+        {
+          "word": "March",
+          "start": 7.607,
+          "end": 7.82
+        },
+        {
+          "word": "twenty",
+          "start": 7.82,
+          "end": 8.245
+        },
+        {
+          "word": "twenty.",
+          "start": 8.245,
+          "end": 8.862
+        },
+        {
+          "word": "The",
+          "start": 8.862,
+          "end": 9.075
+        },
+        {
+          "word": "world",
+          "start": 9.075,
+          "end": 9.287
+        },
+        {
+          "word": "shuts",
+          "start": 9.287,
+          "end": 9.5
+        },
+        {
+          "word": "down.",
+          "start": 9.5,
+          "end": 9.904
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "beat": "SETUP",
+      "text": "Sixteen days later, the Pentagon's own intelligence agency writes a document.",
+      "start": 10.104,
+      "end": 14.656,
+      "dur": 4.552,
+      "gap_after": 0.24,
+      "words": [
+        {
+          "word": "Sixteen",
+          "start": 10.104,
+          "end": 10.477
+        },
+        {
+          "word": "days",
+          "start": 10.477,
+          "end": 10.664
+        },
+        {
+          "word": "later,",
+          "start": 10.664,
+          "end": 11.13
+        },
+        {
+          "word": "the",
+          "start": 11.13,
+          "end": 11.317
+        },
+        {
+          "word": "Pentagon's",
+          "start": 11.317,
+          "end": 11.876
+        },
+        {
+          "word": "own",
+          "start": 11.876,
+          "end": 12.063
+        },
+        {
+          "word": "intelligence",
+          "start": 12.063,
+          "end": 12.809
+        },
+        {
+          "word": "agency",
+          "start": 12.809,
+          "end": 13.369
+        },
+        {
+          "word": "writes",
+          "start": 13.369,
+          "end": 13.742
+        },
+        {
+          "word": "a",
+          "start": 13.742,
+          "end": 13.928
+        },
+        {
+          "word": "document.",
+          "start": 13.928,
+          "end": 14.656
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "beat": "SETUP",
+      "text": "Subject: one lab in Wuhan. One researcher.",
+      "start": 14.896,
+      "end": 17.646,
+      "dur": 2.75,
+      "gap_after": 0.26,
+      "words": [
+        {
+          "word": "Subject:",
+          "start": 14.896,
+          "end": 15.478
+        },
+        {
+          "word": "one",
+          "start": 15.478,
+          "end": 15.679
+        },
+        {
+          "word": "lab",
+          "start": 15.679,
+          "end": 15.88
+        },
+        {
+          "word": "in",
+          "start": 15.88,
+          "end": 16.08
+        },
+        {
+          "word": "Wuhan.",
+          "start": 16.08,
+          "end": 16.662
+        },
+        {
+          "word": "One",
+          "start": 16.662,
+          "end": 16.863
+        },
+        {
+          "word": "researcher.",
+          "start": 16.863,
+          "end": 17.646
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "beat": "EVIDENCE",
+      "text": "It lists three things.",
+      "start": 17.906,
+      "end": 19.207,
+      "dur": 1.301,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "It",
+          "start": 17.906,
+          "end": 18.171
+        },
+        {
+          "word": "lists",
+          "start": 18.171,
+          "end": 18.437
+        },
+        {
+          "word": "three",
+          "start": 18.437,
+          "end": 18.702
+        },
+        {
+          "word": "things.",
+          "start": 18.702,
+          "end": 19.207
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "beat": "EVIDENCE",
+      "text": "A bank of bat coronaviruses.",
+      "start": 19.507,
+      "end": 21.632,
+      "dur": 2.125,
+      "gap_after": 0.12,
+      "words": [
+        {
+          "word": "A",
+          "start": 19.507,
+          "end": 19.702
+        },
+        {
+          "word": "bank",
+          "start": 19.702,
+          "end": 19.897
+        },
+        {
+          "word": "of",
+          "start": 19.897,
+          "end": 20.092
+        },
+        {
+          "word": "bat",
+          "start": 20.092,
+          "end": 20.287
+        },
+        {
+          "word": "coronaviruses.",
+          "start": 20.287,
+          "end": 21.632
+        }
+      ]
+    },
+    {
+      "id": "L09",
+      "beat": "EVIDENCE",
+      "text": "The ability to build infectious clones.",
+      "start": 21.752,
+      "end": 23.994,
+      "dur": 2.241,
+      "gap_after": 0.12,
+      "words": [
+        {
+          "word": "The",
+          "start": 21.752,
+          "end": 21.926
+        },
+        {
+          "word": "ability",
+          "start": 21.926,
+          "end": 22.621
+        },
+        {
+          "word": "to",
+          "start": 22.621,
+          "end": 22.795
+        },
+        {
+          "word": "build",
+          "start": 22.795,
+          "end": 22.969
+        },
+        {
+          "word": "infectious",
+          "start": 22.969,
+          "end": 23.49
+        },
+        {
+          "word": "clones.",
+          "start": 23.49,
+          "end": 23.994
+        }
+      ]
+    },
+    {
+      "id": "L10",
+      "beat": "EVIDENCE",
+      "text": "And chimeric spike genes they had already engineered.",
+      "start": 24.114,
+      "end": 26.773,
+      "dur": 2.659,
+      "gap_after": 0.4,
+      "words": [
+        {
+          "word": "And",
+          "start": 24.114,
+          "end": 24.271
+        },
+        {
+          "word": "chimeric",
+          "start": 24.271,
+          "end": 24.743
+        },
+        {
+          "word": "spike",
+          "start": 24.743,
+          "end": 24.901
+        },
+        {
+          "word": "genes",
+          "start": 24.901,
+          "end": 25.215
+        },
+        {
+          "word": "they",
+          "start": 25.215,
+          "end": 25.373
+        },
+        {
+          "word": "had",
+          "start": 25.373,
+          "end": 25.53
+        },
+        {
+          "word": "already",
+          "start": 25.53,
+          "end": 26.002
+        },
+        {
+          "word": "engineered.",
+          "start": 26.002,
+          "end": 26.773
+        }
+      ]
+    },
+    {
+      "id": "L11",
+      "beat": "TURN",
+      "text": "June twenty twenty. Pentagon medical intelligence runs the genome.",
+      "start": 27.173,
+      "end": 30.805,
+      "dur": 3.632,
+      "gap_after": 0.16,
+      "words": [
+        {
+          "word": "June",
+          "start": 27.173,
+          "end": 27.348
+        },
+        {
+          "word": "twenty",
+          "start": 27.348,
+          "end": 27.697
+        },
+        {
+          "word": "twenty.",
+          "start": 27.697,
+          "end": 28.204
+        },
+        {
+          "word": "Pentagon",
+          "start": 28.204,
+          "end": 28.727
+        },
+        {
+          "word": "medical",
+          "start": 28.727,
+          "end": 29.251
+        },
+        {
+          "word": "intelligence",
+          "start": 29.251,
+          "end": 29.95
+        },
+        {
+          "word": "runs",
+          "start": 29.95,
+          "end": 30.124
+        },
+        {
+          "word": "the",
+          "start": 30.124,
+          "end": 30.299
+        },
+        {
+          "word": "genome.",
+          "start": 30.299,
+          "end": 30.805
+        }
+      ]
+    },
+    {
+      "id": "L12",
+      "beat": "TURN",
+      "text": "Three scientists reach a conclusion. Manipulated.",
+      "start": 30.965,
+      "end": 33.843,
+      "dur": 2.878,
+      "gap_after": 0.38,
+      "words": [
+        {
+          "word": "Three",
+          "start": 30.965,
+          "end": 31.16
+        },
+        {
+          "word": "scientists",
+          "start": 31.16,
+          "end": 31.549
+        },
+        {
+          "word": "reach",
+          "start": 31.549,
+          "end": 31.743
+        },
+        {
+          "word": "a",
+          "start": 31.743,
+          "end": 31.938
+        },
+        {
+          "word": "conclusion.",
+          "start": 31.938,
+          "end": 32.696
+        },
+        {
+          "word": "Manipulated.",
+          "start": 32.696,
+          "end": 33.843
+        }
+      ]
+    },
+    {
+      "id": "L13",
+      "beat": "TURN",
+      "text": "August twenty twenty-one. The President gets briefed on COVID's origin.",
+      "start": 34.223,
+      "end": 37.774,
+      "dur": 3.551,
+      "gap_after": 0.16,
+      "words": [
+        {
+          "word": "August",
+          "start": 34.223,
+          "end": 34.564
+        },
+        {
+          "word": "twenty",
+          "start": 34.564,
+          "end": 34.906
+        },
+        {
+          "word": "twenty-one.",
+          "start": 34.906,
+          "end": 35.401
+        },
+        {
+          "word": "The",
+          "start": 35.401,
+          "end": 35.572
+        },
+        {
+          "word": "President",
+          "start": 35.572,
+          "end": 36.084
+        },
+        {
+          "word": "gets",
+          "start": 36.084,
+          "end": 36.254
+        },
+        {
+          "word": "briefed",
+          "start": 36.254,
+          "end": 36.596
+        },
+        {
+          "word": "on",
+          "start": 36.596,
+          "end": 36.767
+        },
+        {
+          "word": "COVID's",
+          "start": 36.767,
+          "end": 37.108
+        },
+        {
+          "word": "origin.",
+          "start": 37.108,
+          "end": 37.774
+        }
+      ]
+    },
+    {
+      "id": "L14",
+      "beat": "TURN",
+      "text": "That conclusion, reportedly, never makes it into the room.",
+      "start": 37.934,
+      "end": 40.733,
+      "dur": 2.799,
+      "gap_after": 0.5,
+      "words": [
+        {
+          "word": "That",
+          "start": 37.934,
+          "end": 38.082
+        },
+        {
+          "word": "conclusion,",
+          "start": 38.082,
+          "end": 38.6
+        },
+        {
+          "word": "reportedly,",
+          "start": 38.6,
+          "end": 39.267
+        },
+        {
+          "word": "never",
+          "start": 39.267,
+          "end": 39.563
+        },
+        {
+          "word": "makes",
+          "start": 39.563,
+          "end": 39.859
+        },
+        {
+          "word": "it",
+          "start": 39.859,
+          "end": 40.007
+        },
+        {
+          "word": "into",
+          "start": 40.007,
+          "end": 40.303
+        },
+        {
+          "word": "the",
+          "start": 40.303,
+          "end": 40.451
+        },
+        {
+          "word": "room.",
+          "start": 40.451,
+          "end": 40.733
+        }
+      ]
+    },
+    {
+      "id": "L15",
+      "beat": "PAYOFF",
+      "text": "For six years the public answer was one word. Unknown.",
+      "start": 41.233,
+      "end": 44.168,
+      "dur": 2.936,
+      "gap_after": 0.28,
+      "words": [
+        {
+          "word": "For",
+          "start": 41.233,
+          "end": 41.431
+        },
+        {
+          "word": "six",
+          "start": 41.431,
+          "end": 41.629
+        },
+        {
+          "word": "years",
+          "start": 41.629,
+          "end": 41.828
+        },
+        {
+          "word": "the",
+          "start": 41.828,
+          "end": 42.026
+        },
+        {
+          "word": "public",
+          "start": 42.026,
+          "end": 42.423
+        },
+        {
+          "word": "answer",
+          "start": 42.423,
+          "end": 42.819
+        },
+        {
+          "word": "was",
+          "start": 42.819,
+          "end": 43.018
+        },
+        {
+          "word": "one",
+          "start": 43.018,
+          "end": 43.216
+        },
+        {
+          "word": "word.",
+          "start": 43.216,
+          "end": 43.593
+        },
+        {
+          "word": "Unknown.",
+          "start": 43.593,
+          "end": 44.168
+        }
+      ]
+    },
+    {
+      "id": "L16",
+      "beat": "PAYOFF",
+      "text": "It took a court order to get those pages out. They landed this year.",
+      "start": 44.448,
+      "end": 47.686,
+      "dur": 3.237,
+      "gap_after": 0.42,
+      "words": [
+        {
+          "word": "It",
+          "start": 44.448,
+          "end": 44.62
+        },
+        {
+          "word": "took",
+          "start": 44.62,
+          "end": 44.793
+        },
+        {
+          "word": "a",
+          "start": 44.793,
+          "end": 44.965
+        },
+        {
+          "word": "court",
+          "start": 44.965,
+          "end": 45.137
+        },
+        {
+          "word": "order",
+          "start": 45.137,
+          "end": 45.481
+        },
+        {
+          "word": "to",
+          "start": 45.481,
+          "end": 45.654
+        },
+        {
+          "word": "get",
+          "start": 45.654,
+          "end": 45.826
+        },
+        {
+          "word": "those",
+          "start": 45.826,
+          "end": 45.998
+        },
+        {
+          "word": "pages",
+          "start": 45.998,
+          "end": 46.342
+        },
+        {
+          "word": "out.",
+          "start": 46.342,
+          "end": 46.67
+        },
+        {
+          "word": "They",
+          "start": 46.67,
+          "end": 46.842
+        },
+        {
+          "word": "landed",
+          "start": 46.842,
+          "end": 47.186
+        },
+        {
+          "word": "this",
+          "start": 47.186,
+          "end": 47.358
+        },
+        {
+          "word": "year.",
+          "start": 47.358,
+          "end": 47.686
+        }
+      ]
+    },
+    {
+      "id": "L17",
+      "beat": "PAYOFF",
+      "text": "So when they finally admitted it, they were not discovering anything.",
+      "start": 48.106,
+      "end": 51.311,
+      "dur": 3.205,
+      "gap_after": 0.16,
+      "words": [
+        {
+          "word": "So",
+          "start": 48.106,
+          "end": 48.255
+        },
+        {
+          "word": "when",
+          "start": 48.255,
+          "end": 48.405
+        },
+        {
+          "word": "they",
+          "start": 48.405,
+          "end": 48.555
+        },
+        {
+          "word": "finally",
+          "start": 48.555,
+          "end": 49.004
+        },
+        {
+          "word": "admitted",
+          "start": 49.004,
+          "end": 49.454
+        },
+        {
+          "word": "it,",
+          "start": 49.454,
+          "end": 49.678
+        },
+        {
+          "word": "they",
+          "start": 49.678,
+          "end": 49.828
+        },
+        {
+          "word": "were",
+          "start": 49.828,
+          "end": 49.978
+        },
+        {
+          "word": "not",
+          "start": 49.978,
+          "end": 50.128
+        },
+        {
+          "word": "discovering",
+          "start": 50.128,
+          "end": 50.727
+        },
+        {
+          "word": "anything.",
+          "start": 50.727,
+          "end": 51.311
+        }
+      ]
+    },
+    {
+      "id": "L18",
+      "beat": "PAYOFF",
+      "text": "They were catching up to a file they wrote in the first month.",
+      "start": 51.471,
+      "end": 53.979,
+      "dur": 2.509,
+      "gap_after": 0.55,
+      "words": [
+        {
+          "word": "They",
+          "start": 51.471,
+          "end": 51.639
+        },
+        {
+          "word": "were",
+          "start": 51.639,
+          "end": 51.807
+        },
+        {
+          "word": "catching",
+          "start": 51.807,
+          "end": 52.144
+        },
+        {
+          "word": "up",
+          "start": 52.144,
+          "end": 52.313
+        },
+        {
+          "word": "to",
+          "start": 52.313,
+          "end": 52.481
+        },
+        {
+          "word": "a",
+          "start": 52.481,
+          "end": 52.649
+        },
+        {
+          "word": "file",
+          "start": 52.649,
+          "end": 52.818
+        },
+        {
+          "word": "they",
+          "start": 52.818,
+          "end": 52.986
+        },
+        {
+          "word": "wrote",
+          "start": 52.986,
+          "end": 53.154
+        },
+        {
+          "word": "in",
+          "start": 53.154,
+          "end": 53.323
+        },
+        {
+          "word": "the",
+          "start": 53.323,
+          "end": 53.491
+        },
+        {
+          "word": "first",
+          "start": 53.491,
+          "end": 53.659
+        },
+        {
+          "word": "month.",
+          "start": 53.659,
+          "end": 53.979
+        }
+      ]
+    },
+    {
+      "id": "L19",
+      "beat": "PAYOFF",
+      "text": "The question was never what happened.",
+      "start": 54.529,
+      "end": 56.144,
+      "dur": 1.615,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "The",
+          "start": 54.529,
+          "end": 54.677
+        },
+        {
+          "word": "question",
+          "start": 54.677,
+          "end": 54.974
+        },
+        {
+          "word": "was",
+          "start": 54.974,
+          "end": 55.122
+        },
+        {
+          "word": "never",
+          "start": 55.122,
+          "end": 55.418
+        },
+        {
+          "word": "what",
+          "start": 55.418,
+          "end": 55.566
+        },
+        {
+          "word": "happened.",
+          "start": 55.566,
+          "end": 56.144
+        }
+      ]
+    },
+    {
+      "id": "L20",
+      "beat": "PAYOFF",
+      "text": "It's who already knew.",
+      "start": 56.444,
+      "end": 57.524,
+      "dur": 1.081,
+      "gap_after": 0.7,
+      "words": [
+        {
+          "word": "It's",
+          "start": 56.444,
+          "end": 56.6
+        },
+        {
+          "word": "who",
+          "start": 56.6,
+          "end": 56.757
+        },
+        {
+          "word": "already",
+          "start": 56.757,
+          "end": 57.227
+        },
+        {
+          "word": "knew.",
+          "start": 57.227,
+          "end": 57.524
+        }
+      ]
+    },
+    {
+      "id": "L21",
+      "beat": "BRAND",
+      "text": "Twenty twenty-seven.",
+      "start": 58.224,
+      "end": 59.212,
+      "dur": 0.988,
+      "gap_after": 1.5,
+      "words": [
+        {
+          "word": "Twenty",
+          "start": 58.224,
+          "end": 58.511
+        },
+        {
+          "word": "twenty-seven.",
+          "start": 58.511,
+          "end": 59.212
+        }
+      ]
+    }
+  ]
+}
