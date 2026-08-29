@@ -1,5 +1,5 @@
 {
-  "note": "Camera and overlays. Shots tile continuously — each runs until the next begins. Pano moves are a normalised point of the gallery panorama (x) parked at frame centre plus its rendered width in frame pixels (bw), which doubles as zoom. Anchors: Vira 0.165, the 2027 frame 0.495, Mona Lisa 0.845. Shots are cut so the spoken line agrees with the label burned into the artwork underneath it. The only overlay text in the film is the three token facts.",
+  "note": "Camera, drawn visuals and the three token facts. Shots tile continuously — each runs until the next begins. Pano moves are a normalised point of the gallery panorama (x) parked at frame centre plus its rendered width in frame pixels (bw), which doubles as zoom. Anchors: Vira 0.165, the 2027 frame 0.495, Mona Lisa 0.845. Both arrivals — at Vira and at the token wall — are travels that land on the word, not cuts. Square plates sit low so the drawn graphics have a band of their own to live in rather than covering the artwork.",
 
   "brand_at": { "at": "L09", "lead": 2.15 },
 
@@ -7,7 +7,7 @@
     { "at": "L01", "lead": 0.00, "type": "pano", "x0": 0.495, "x1": 0.495, "bw0": 3150, "bw1": 3480 },
     { "at": "L02", "lead": 0.00, "type": "pano", "x0": 0.495, "x1": 0.502, "bw0": 3480, "bw1": 3880 },
 
-    { "at": "L03", "lead": 0.00, "type": "band", "src": "broll/theories.jpg" },
+    { "at": "L03", "lead": 0.00, "type": "band", "src": "broll/theories.jpg", "centre": 960 },
 
     { "at": "L04", "lead": 0.00, "type": "pano", "x0": 0.500, "x1": 0.500, "bw0": 1080, "bw1": 1170 },
     { "at": "L04", "lead": 2.90, "type": "pano", "x0": 0.520, "x1": 0.470, "bw0": 1170, "bw1": 1340 },
@@ -16,15 +16,33 @@
     { "at": "L06", "lead": 0.00, "type": "pano", "x0": 0.500, "x1": 0.165, "bw0": 1470, "bw1": 2450 },
     { "at": "L06", "lead": 2.35, "type": "band", "src": "broll/vira.jpg", "centre": 1010 },
 
-    { "at": "L07", "lead": 0.00, "type": "band", "src": "broll/burn.jpg" },
+    { "at": "L07", "lead": 0.00, "type": "band", "src": "broll/burn.jpg", "centre": 960 },
 
-    { "at": "L08", "lead": 0.00, "type": "pano", "x0": 0.845, "x1": 0.856, "bw0": 1820, "bw1": 1980, "centre": 1080 },
-    { "at": "L09", "lead": 0.00, "type": "pano", "x0": 0.856, "x1": 0.620, "bw0": 1980, "bw1": 1240 }
+    { "at": "L08", "lead": 0.00, "type": "pano", "x0": 0.350, "x1": 0.845, "bw0": 1300, "bw1": 1980, "centre0": 900, "centre1": 1080 },
+    { "at": "L09", "lead": 0.00, "type": "pano", "x0": 0.845, "x1": 0.620, "bw0": 1980, "bw1": 1240, "centre0": 1080, "centre1": 880 }
   ],
 
   "beats": [
-    { "at": "L08", "lead": 0.55, "dur": 5.05, "type": "row", "index": 1, "y": 372, "text": "1,000,000,000 fixed" },
-    { "at": "L08", "lead": 1.05, "dur": 4.55, "type": "row", "index": 2, "y": 470, "text": "No mint function" },
-    { "at": "L08", "lead": 1.55, "dur": 4.05, "type": "row", "index": 3, "y": 568, "text": "80% to the community" }
+    { "at": "L01", "lead": 0.30, "dur": 4.35, "type": "viz", "kind": "rings", "cy": 810, "period": 66, "max": 620 },
+    { "at": "L02", "lead": 0.00, "dur": 1.45, "type": "viz", "kind": "rings", "cy": 790, "period": 34, "max": 400 },
+
+    { "at": "L03", "lead": 0.20, "dur": 4.35, "type": "viz", "kind": "brackets", "top": 420, "bottom": 1500 },
+    { "at": "L03", "lead": 0.55, "dur": 3.95, "type": "viz", "kind": "traces", "ty": 322, "count": 5, "draw": 30 },
+
+    { "at": "L04", "lead": 0.45, "dur": 5.00, "type": "viz", "kind": "nodes", "count": 30 },
+    { "at": "L04", "lead": 1.60, "dur": 3.80, "type": "viz", "kind": "traces", "ty": 832, "count": 4, "draw": 34 },
+    { "at": "L05", "lead": 0.20, "dur": 2.45, "type": "viz", "kind": "rings", "cy": 830, "period": 44, "max": 560 },
+
+    { "at": "L06", "lead": 2.40, "dur": 1.60, "type": "viz", "kind": "brackets", "top": 470, "bottom": 1550 },
+    { "at": "L06", "lead": 2.50, "dur": 1.50, "type": "viz", "kind": "rings", "cy": 1010, "period": 34, "max": 460 },
+
+    { "at": "L07", "lead": 0.20, "dur": 4.10, "type": "viz", "kind": "brackets", "top": 420, "bottom": 1500 },
+    { "at": "L07", "lead": 0.75, "dur": 3.50, "type": "viz", "kind": "supply", "y": 330 },
+
+    { "at": "L08", "lead": 2.40, "dur": 3.20, "type": "row", "index": 1, "y": 372, "text": "1,000,000,000 fixed" },
+    { "at": "L08", "lead": 2.80, "dur": 2.80, "type": "row", "index": 2, "y": 470, "text": "No mint function" },
+    { "at": "L08", "lead": 3.20, "dur": 2.40, "type": "row", "index": 3, "y": 568, "text": "80% to the community" },
+
+    { "at": "L09", "lead": 0.25, "dur": 1.90, "type": "viz", "kind": "traces", "ty": 880, "count": 6, "draw": 24 }
   ]
 }

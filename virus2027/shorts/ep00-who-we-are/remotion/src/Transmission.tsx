@@ -11,6 +11,9 @@ import {Line, Subtitles, buildChunks} from './Subtitles';
 import {Band, CutFlash, Hero, Shot, Void} from './Shots';
 import {Pano, PanoMove} from './Pano';
 import {BrandEnd, Row} from './elements';
+import {
+  Brackets, CropMarks, NodeField, PlaybackBar, PulseRings, SignalTraces, SupplyBar,
+} from './Viz';
 
 loadBarlow('normal', {weights: ['600', '700', '800'], subsets: ['latin']});
 loadMono('normal', {weights: ['400', '500'], subsets: ['latin']});
@@ -19,6 +22,9 @@ export type Timing = {lang: string; total_duration: number; lines: Line[]};
 export type Beat = {
   at: string; lead: number; dur: number; type: string;
   text?: string; index?: number; y?: number;
+  kind?: string; cx?: number; cy?: number; count?: number;
+  draw?: number; period?: number; max?: number; ty?: number;
+  top?: number; bottom?: number;
 };
 
 export const TAIL_SECONDS = 2.0;
@@ -28,15 +34,37 @@ export const totalFrames = (t: Timing) =>
   Math.ceil((t.total_duration + TAIL_SECONDS) * FPS);
 
 /**
- * The welcome film carries no chrome, no file numbers and no captions of its
- * own — only the spoken subtitles and, once, the three token facts. Nothing
- * darkens the edges either: the artwork already falls off into black at its
- * own borders, and a vignette on top of that was closing the frame in.
+ * The welcome film carries no chrome and no captions of its own. The only
+ * words are the spoken subtitles and, once, the three token facts; everything
+ * else added to the frame is geometry and light. Nothing darkens the edges
+ * either — the artwork already falls off into black at its own borders.
  */
-const renderBeat = (b: Beat, dur: number, key: string) =>
-  b.type === 'row'
-    ? <Row key={key} index={b.index!} text={b.text!} dur={dur} y={b.y} />
-    : null;
+const renderBeat = (b: Beat, dur: number, key: string) => {
+  if (b.type === 'row') {
+    return <Row key={key} index={b.index!} text={b.text!} dur={dur} y={b.y} />;
+  }
+  if (b.type !== 'viz') return null;
+  switch (b.kind) {
+    case 'nodes':
+      return <NodeField key={key} dur={dur} count={b.count} />;
+    case 'traces':
+      return (
+        <SignalTraces key={key} dur={dur} tx={b.cx} ty={b.ty}
+                      count={b.count} draw={b.draw} />
+      );
+    case 'rings':
+      return (
+        <PulseRings key={key} dur={dur} cx={b.cx} cy={b.cy}
+                    period={b.period} max={b.max} />
+      );
+    case 'supply':
+      return <SupplyBar key={key} dur={dur} y={b.y} />;
+    case 'brackets':
+      return <Brackets key={key} dur={dur} top={b.top} bottom={b.bottom} />;
+    default:
+      return null;
+  }
+};
 
 export const Transmission: React.FC<{
   timing: Timing;
@@ -91,7 +119,8 @@ export const Transmission: React.FC<{
           {x.s.type === 'pano' ? (
             <Pano
               x0={x.s.x0!} x1={x.s.x1!} bw0={x.s.bw0!} bw1={x.s.bw1!}
-              centre={x.s.centre} dur={x.dur}
+              centre={x.s.centre} centre0={x.s.centre0} centre1={x.s.centre1}
+              dur={x.dur}
             />
           ) : x.s.type === 'hero' ? (
             <Hero src={x.s.src!} dur={x.dur} />
@@ -112,7 +141,9 @@ export const Transmission: React.FC<{
       <CutFlash at={shots.slice(1).map((x) => x.from)} />
 
       <AbsoluteFill style={{opacity: 1 - brandIn}}>
+        <CropMarks />
         <Subtitles chunks={buildChunks(timing.lines)} baseline={CAPTION_BASELINE} />
+        <PlaybackBar total={total} />
       </AbsoluteFill>
 
       <Sequence from={brandFrom} durationInFrames={total - brandFrom}>

@@ -21,11 +21,12 @@ export const PANO_ASPECT = 1942 / 809;
  * magnify.
  */
 export type PanoMove = {
-  x0: number; x1: number; bw0: number; bw1: number; centre?: number;
+  x0: number; x1: number; bw0: number; bw1: number;
+  centre?: number; centre0?: number; centre1?: number;
 };
 
 export const Pano: React.FC<PanoMove & {dur: number}> = ({
-  x0, x1, bw0, bw1, dur, centre = BAND_CENTRE,
+  x0, x1, bw0, bw1, dur, centre, centre0, centre1,
 }) => {
   const f = useCurrentFrame();
 
@@ -44,7 +45,9 @@ export const Pano: React.FC<PanoMove & {dur: number}> = ({
   const bh = bw / PANO_ASPECT;
 
   const left = W / 2 - x * bw;
-  const top = centre - bh / 2;
+  const c0 = centre0 ?? centre ?? BAND_CENTRE;
+  const c1 = centre1 ?? centre ?? c0;
+  const top = (c0 + (c1 - c0) * t) - bh / 2;
   const framed = bh < 1830;   // small enough to read as a plate on the ground
 
   return (
