@@ -36,7 +36,6 @@ CROP = {
     "hospital":  (0, 28, 343, 295),
     "instagram": (0, 0, 402, 344),      # drop the "add a comment" bar
     "news":      (0, 126, 340, 414),    # headline plus the foot of the photo
-    "mole":      (40, 0, 536, 470),
 }
 
 # Plates derived from another source rather than supplied: the tight look at
@@ -44,8 +43,10 @@ CROP = {
 DERIVE = {"email_quote": ("email.png", (232, 96, 508, 178))}
 
 # Somebody else's handle, as fractions of the cropped image. The hospital
-# and Instagram plates lose theirs to the crop already; only the news card
-# carries one into frame.
+# and Instagram plates lose theirs to the crop already, and so does the
+# beauty-mark frame — its window had to move down to bring the mark itself
+# into shot, and trimming the right edge took the handle with it. Only the
+# news card carries one into frame.
 WATERMARK = {
     "news":      (0.876, 0.548, 1.00, 0.722),
     "instagram": (0.745, 0.890, 1.00, 0.968),

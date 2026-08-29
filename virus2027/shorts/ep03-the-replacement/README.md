@@ -11,7 +11,7 @@ theory.
 | **Subtitles** | burned in, plus `out/subs_en.srt` |
 | **Audio** | `audio/en/mix_master.wav` — voice + bed + hits, −14 LUFS |
 | **Format** | 1080×1920 · 30 fps · H.264 · AAC 48 kHz |
-| **Runtime** | 44.9 s |
+| **Runtime** | 44.9 s · no end card |
 
 ---
 
@@ -35,7 +35,7 @@ second half is anything but documented.
 
 | The theory says | The record says |
 |---|---|
-| An email dated July 2017 reads *"he has decided on Selena Gomez"* | The screenshot has never been verified — the press coverage the theory generated says so in its own headline, and the image misspells *decided* |
+| An email people say is Epstein's, dated July 2017, reads *"he has decided on Selena Gomez"* | The screenshot has never been verified — the press coverage the theory generated says so in its own headline, and the image misspells *decided* |
 | She vanished for months in 2017 | She was in hospital; in September her friend Francia Raisa donated a kidney |
 | She came back with a different face | She has lupus, diagnosed 2015; the corticosteroid that controls it swells the face |
 | The hospital photo proves something was hidden | She published that photo herself, with a caption explaining the transplant |
@@ -47,9 +47,9 @@ second half is anything but documented.
 | t | Line | On screen |
 |---|---|---|
 | 0:00 | *The internet has decided that Selena Gomez died in 2017…* | the before/after comparison — the theory in one frame |
-| 0:06.4 | *It starts with a screenshot of an email…* | the email screenshot |
-| 0:09.8 | | tight on the quote line |
-| 0:12.6 | *…came back with a face that didn't match.* | her, now, full bleed |
+| 0:06.3 | *It starts with a screenshot people say is an Epstein email…* | the email screenshot |
+| 0:09.7 | | tight on the quote line |
+| 0:13.8 | *…came back with a face that didn't match.* | her own TikTok, moving |
 | 0:16.4 | *People pulled up photos from 2010…* | the beauty-mark post, red circle and all |
 | 0:21.0 | **Here's what gets left out.** | void |
 | 0:22.8 | *…her friend Francia Raisa gave her a kidney.* | the hospital photograph |
@@ -57,17 +57,27 @@ second half is anything but documented.
 | 0:31.5 | *…is one she posted herself.* | her Instagram post, caption legible |
 | 0:34.8 | *…has never been verified…* | the press headline |
 | 0:37.2 | *…it even spells decided wrong.* | back to the quote line |
-| 0:39.1 | *…and she's still posting.* | her own TikTok, moving |
-| 0:42.0 | | 2027, mascot, handle |
+| 0:39.9 | *…and she's still posting.* | her own TikTok again, and the film ends there |
 
 **The before/after plate plays twice on purpose.** At `L01` it is the theory's
 proof that two different women are in the picture. At `L07` it is the same
 image explaining itself. That rhyme is the whole film in one cut, and it costs
 nothing but a repeat.
 
-**The last shot is the only moving one.** After forty seconds of stills being
-argued over, the only real answer to *is she still here* is footage of her
-being here, so `Clip` was added to the shot vocabulary for it.
+**Two shots are live footage, and they bracket the argument.** `L03` is the
+theory's claim about her face; `L10` is the answer. Both are her own posts,
+cut from the same thirty seconds of it, so the film opens and closes its case
+on the same source. `Clip` was added to the shot vocabulary for them.
+
+**The source's own end card is cut out.** Her clip runs a TikTok
+follow-screen from 10.25 s; both cuts stop before it, so no other platform's
+furniture appears in our frame.
+
+**This episode has no brand card.** Every other film in the series ends on
+`2027 / Not just a date`; this one ends on her, mid-sentence in her own video.
+A logo laid over this particular argument would read as using her, which is
+the thing the cut exists to avoid. `brand_at` is now optional in
+`beats.json` — leave it out and the last shot simply runs to the end.
 
 ---
 

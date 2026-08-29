@@ -27,7 +27,7 @@ export type Beat = {
   top?: number; bottom?: number;
 };
 
-export const TAIL_SECONDS = 2.0;
+export const TAIL_SECONDS = 1.00;
 export const CAPTION_BASELINE = 1382;
 
 export const totalFrames = (t: Timing) =>
@@ -74,11 +74,10 @@ export const Transmission: React.FC<{
   const fr = (s: number) => Math.round(s * FPS);
   const total = totalFrames(timing);
 
+  // An episode may end without a brand card. When it does, the last shot
+  // simply runs to the end of the film and nothing is laid over it.
   const ba = beats.brand_at;
-  const lastId = timing.lines[timing.lines.length - 1].id;
-  const brandFrom = ba && byId[ba.at]
-    ? fr(byId[ba.at].start + ba.lead)
-    : fr(byId[lastId].start);
+  const brandFrom = ba && byId[ba.at] ? fr(byId[ba.at].start + ba.lead) : total;
 
   // Shots tile: each runs until the next begins, so there is never a gap.
   const shotStarts = beats.shots
@@ -144,9 +143,11 @@ export const Transmission: React.FC<{
         <PlaybackBar total={total} />
       </AbsoluteFill>
 
-      <Sequence from={brandFrom} durationInFrames={total - brandFrom}>
-        <BrandEnd dur={total - brandFrom} />
-      </Sequence>
+      {brandFrom < total ? (
+        <Sequence from={brandFrom} durationInFrames={total - brandFrom}>
+          <BrandEnd dur={total - brandFrom} />
+        </Sequence>
+      ) : null}
 
       <Audio src={staticFile(audio)} />
     </AbsoluteFill>
