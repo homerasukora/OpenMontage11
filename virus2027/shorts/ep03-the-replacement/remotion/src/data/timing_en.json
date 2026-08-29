@@ -1,0 +1,791 @@
+{
+  "lang": "en",
+  "total_duration": 42.882,
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "text": "The internet has decided that Selena Gomez died in 2017, and that whoever you've watched since is a replacement.",
+      "start": 0.0,
+      "end": 6.142,
+      "dur": 6.142,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "The",
+          "start": 0.0,
+          "end": 0.19
+        },
+        {
+          "word": "internet",
+          "start": 0.19,
+          "end": 0.758
+        },
+        {
+          "word": "has",
+          "start": 0.758,
+          "end": 0.948
+        },
+        {
+          "word": "decided",
+          "start": 0.948,
+          "end": 1.517
+        },
+        {
+          "word": "that",
+          "start": 1.517,
+          "end": 1.706
+        },
+        {
+          "word": "Selena",
+          "start": 1.706,
+          "end": 2.275
+        },
+        {
+          "word": "Gomez",
+          "start": 2.275,
+          "end": 2.654
+        },
+        {
+          "word": "died",
+          "start": 2.654,
+          "end": 2.844
+        },
+        {
+          "word": "in",
+          "start": 2.844,
+          "end": 3.033
+        },
+        {
+          "word": "2017,",
+          "start": 3.033,
+          "end": 3.318
+        },
+        {
+          "word": "and",
+          "start": 3.318,
+          "end": 3.507
+        },
+        {
+          "word": "that",
+          "start": 3.507,
+          "end": 3.697
+        },
+        {
+          "word": "whoever",
+          "start": 3.697,
+          "end": 4.076
+        },
+        {
+          "word": "you've",
+          "start": 4.076,
+          "end": 4.266
+        },
+        {
+          "word": "watched",
+          "start": 4.266,
+          "end": 4.645
+        },
+        {
+          "word": "since",
+          "start": 4.645,
+          "end": 4.834
+        },
+        {
+          "word": "is",
+          "start": 4.834,
+          "end": 5.024
+        },
+        {
+          "word": "a",
+          "start": 5.024,
+          "end": 5.214
+        },
+        {
+          "word": "replacement.",
+          "start": 5.214,
+          "end": 6.142
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "beat": "THEORY",
+      "text": "It starts with a screenshot of an email dated July 2017: he has decided on Selena Gomez.",
+      "start": 6.442,
+      "end": 12.329,
+      "dur": 5.887,
+      "gap_after": 0.28,
+      "words": [
+        {
+          "word": "It",
+          "start": 6.442,
+          "end": 6.654
+        },
+        {
+          "word": "starts",
+          "start": 6.654,
+          "end": 6.866
+        },
+        {
+          "word": "with",
+          "start": 6.866,
+          "end": 7.078
+        },
+        {
+          "word": "a",
+          "start": 7.078,
+          "end": 7.29
+        },
+        {
+          "word": "screenshot",
+          "start": 7.29,
+          "end": 7.713
+        },
+        {
+          "word": "of",
+          "start": 7.713,
+          "end": 7.925
+        },
+        {
+          "word": "an",
+          "start": 7.925,
+          "end": 8.137
+        },
+        {
+          "word": "email",
+          "start": 8.137,
+          "end": 8.56
+        },
+        {
+          "word": "dated",
+          "start": 8.56,
+          "end": 8.984
+        },
+        {
+          "word": "July",
+          "start": 8.984,
+          "end": 9.407
+        },
+        {
+          "word": "2017:",
+          "start": 9.407,
+          "end": 9.81
+        },
+        {
+          "word": "he",
+          "start": 9.81,
+          "end": 10.021
+        },
+        {
+          "word": "has",
+          "start": 10.021,
+          "end": 10.233
+        },
+        {
+          "word": "decided",
+          "start": 10.233,
+          "end": 10.868
+        },
+        {
+          "word": "on",
+          "start": 10.868,
+          "end": 11.08
+        },
+        {
+          "word": "Selena",
+          "start": 11.08,
+          "end": 11.715
+        },
+        {
+          "word": "Gomez.",
+          "start": 11.715,
+          "end": 12.329
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "beat": "THEORY",
+      "text": "Weeks later she disappeared, and came back with a face that didn't match.",
+      "start": 12.61,
+      "end": 16.186,
+      "dur": 3.577,
+      "gap_after": 0.26,
+      "words": [
+        {
+          "word": "Weeks",
+          "start": 12.61,
+          "end": 12.804
+        },
+        {
+          "word": "later",
+          "start": 12.804,
+          "end": 13.193
+        },
+        {
+          "word": "she",
+          "start": 13.193,
+          "end": 13.387
+        },
+        {
+          "word": "disappeared,",
+          "start": 13.387,
+          "end": 14.262
+        },
+        {
+          "word": "and",
+          "start": 14.262,
+          "end": 14.456
+        },
+        {
+          "word": "came",
+          "start": 14.456,
+          "end": 14.651
+        },
+        {
+          "word": "back",
+          "start": 14.651,
+          "end": 14.845
+        },
+        {
+          "word": "with",
+          "start": 14.845,
+          "end": 15.039
+        },
+        {
+          "word": "a",
+          "start": 15.039,
+          "end": 15.234
+        },
+        {
+          "word": "face",
+          "start": 15.234,
+          "end": 15.428
+        },
+        {
+          "word": "that",
+          "start": 15.428,
+          "end": 15.622
+        },
+        {
+          "word": "didn't",
+          "start": 15.622,
+          "end": 15.817
+        },
+        {
+          "word": "match.",
+          "start": 15.817,
+          "end": 16.186
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "beat": "THEORY",
+      "text": "People pulled up photos from 2010 and started measuring her beauty mark.",
+      "start": 16.446,
+      "end": 20.522,
+      "dur": 4.076,
+      "gap_after": 0.52,
+      "words": [
+        {
+          "word": "People",
+          "start": 16.446,
+          "end": 16.662
+        },
+        {
+          "word": "pulled",
+          "start": 16.662,
+          "end": 17.093
+        },
+        {
+          "word": "up",
+          "start": 17.093,
+          "end": 17.309
+        },
+        {
+          "word": "photos",
+          "start": 17.309,
+          "end": 17.74
+        },
+        {
+          "word": "from",
+          "start": 17.74,
+          "end": 17.956
+        },
+        {
+          "word": "2010",
+          "start": 17.956,
+          "end": 18.171
+        },
+        {
+          "word": "and",
+          "start": 18.171,
+          "end": 18.387
+        },
+        {
+          "word": "started",
+          "start": 18.387,
+          "end": 18.818
+        },
+        {
+          "word": "measuring",
+          "start": 18.818,
+          "end": 19.465
+        },
+        {
+          "word": "her",
+          "start": 19.465,
+          "end": 19.681
+        },
+        {
+          "word": "beauty",
+          "start": 19.681,
+          "end": 20.112
+        },
+        {
+          "word": "mark.",
+          "start": 20.112,
+          "end": 20.522
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "beat": "TURN",
+      "text": "Here's what gets left out.",
+      "start": 21.042,
+      "end": 22.424,
+      "dur": 1.382,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "Here's",
+          "start": 21.042,
+          "end": 21.443
+        },
+        {
+          "word": "what",
+          "start": 21.443,
+          "end": 21.643
+        },
+        {
+          "word": "gets",
+          "start": 21.643,
+          "end": 21.843
+        },
+        {
+          "word": "left",
+          "start": 21.843,
+          "end": 22.044
+        },
+        {
+          "word": "out.",
+          "start": 22.044,
+          "end": 22.424
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "beat": "RECORD",
+      "text": "That July she was already in hospital, and in September her friend Francia Raisa gave her a kidney.",
+      "start": 22.764,
+      "end": 27.595,
+      "dur": 4.831,
+      "gap_after": 0.26,
+      "words": [
+        {
+          "word": "That",
+          "start": 22.764,
+          "end": 22.929
+        },
+        {
+          "word": "July",
+          "start": 22.929,
+          "end": 23.257
+        },
+        {
+          "word": "she",
+          "start": 23.257,
+          "end": 23.422
+        },
+        {
+          "word": "was",
+          "start": 23.422,
+          "end": 23.586
+        },
+        {
+          "word": "already",
+          "start": 23.586,
+          "end": 24.079
+        },
+        {
+          "word": "in",
+          "start": 24.079,
+          "end": 24.243
+        },
+        {
+          "word": "hospital,",
+          "start": 24.243,
+          "end": 24.818
+        },
+        {
+          "word": "and",
+          "start": 24.818,
+          "end": 24.982
+        },
+        {
+          "word": "in",
+          "start": 24.982,
+          "end": 25.147
+        },
+        {
+          "word": "September",
+          "start": 25.147,
+          "end": 25.64
+        },
+        {
+          "word": "her",
+          "start": 25.64,
+          "end": 25.804
+        },
+        {
+          "word": "friend",
+          "start": 25.804,
+          "end": 25.968
+        },
+        {
+          "word": "Francia",
+          "start": 25.968,
+          "end": 26.297
+        },
+        {
+          "word": "Raisa",
+          "start": 26.297,
+          "end": 26.626
+        },
+        {
+          "word": "gave",
+          "start": 26.626,
+          "end": 26.79
+        },
+        {
+          "word": "her",
+          "start": 26.79,
+          "end": 26.954
+        },
+        {
+          "word": "a",
+          "start": 26.954,
+          "end": 27.118
+        },
+        {
+          "word": "kidney.",
+          "start": 27.118,
+          "end": 27.595
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "beat": "RECORD",
+      "text": "She has lupus, and the steroid that keeps it quiet swells your face.",
+      "start": 27.855,
+      "end": 31.234,
+      "dur": 3.379,
+      "gap_after": 0.26,
+      "words": [
+        {
+          "word": "She",
+          "start": 27.855,
+          "end": 28.061
+        },
+        {
+          "word": "has",
+          "start": 28.061,
+          "end": 28.267
+        },
+        {
+          "word": "lupus,",
+          "start": 28.267,
+          "end": 28.782
+        },
+        {
+          "word": "and",
+          "start": 28.782,
+          "end": 28.988
+        },
+        {
+          "word": "the",
+          "start": 28.988,
+          "end": 29.194
+        },
+        {
+          "word": "steroid",
+          "start": 29.194,
+          "end": 29.606
+        },
+        {
+          "word": "that",
+          "start": 29.606,
+          "end": 29.812
+        },
+        {
+          "word": "keeps",
+          "start": 29.812,
+          "end": 30.018
+        },
+        {
+          "word": "it",
+          "start": 30.018,
+          "end": 30.225
+        },
+        {
+          "word": "quiet",
+          "start": 30.225,
+          "end": 30.431
+        },
+        {
+          "word": "swells",
+          "start": 30.431,
+          "end": 30.637
+        },
+        {
+          "word": "your",
+          "start": 30.637,
+          "end": 30.843
+        },
+        {
+          "word": "face.",
+          "start": 30.843,
+          "end": 31.234
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "beat": "RECORD",
+      "text": "The hospital photo used as proof is one she posted herself.",
+      "start": 31.494,
+      "end": 34.548,
+      "dur": 3.054,
+      "gap_after": 0.26,
+      "words": [
+        {
+          "word": "The",
+          "start": 31.494,
+          "end": 31.665
+        },
+        {
+          "word": "hospital",
+          "start": 31.665,
+          "end": 32.177
+        },
+        {
+          "word": "photo",
+          "start": 32.177,
+          "end": 32.518
+        },
+        {
+          "word": "used",
+          "start": 32.518,
+          "end": 32.859
+        },
+        {
+          "word": "as",
+          "start": 32.859,
+          "end": 33.03
+        },
+        {
+          "word": "proof",
+          "start": 33.03,
+          "end": 33.2
+        },
+        {
+          "word": "is",
+          "start": 33.2,
+          "end": 33.371
+        },
+        {
+          "word": "one",
+          "start": 33.371,
+          "end": 33.542
+        },
+        {
+          "word": "she",
+          "start": 33.542,
+          "end": 33.712
+        },
+        {
+          "word": "posted",
+          "start": 33.712,
+          "end": 34.054
+        },
+        {
+          "word": "herself.",
+          "start": 34.054,
+          "end": 34.548
+        }
+      ]
+    },
+    {
+      "id": "L09",
+      "beat": "RECORD",
+      "text": "And the screenshot has never been verified — it even spells decided wrong.",
+      "start": 34.808,
+      "end": 38.733,
+      "dur": 3.925,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "And",
+          "start": 34.808,
+          "end": 34.988
+        },
+        {
+          "word": "the",
+          "start": 34.988,
+          "end": 35.168
+        },
+        {
+          "word": "screenshot",
+          "start": 35.168,
+          "end": 35.529
+        },
+        {
+          "word": "has",
+          "start": 35.529,
+          "end": 35.709
+        },
+        {
+          "word": "never",
+          "start": 35.709,
+          "end": 36.069
+        },
+        {
+          "word": "been",
+          "start": 36.069,
+          "end": 36.249
+        },
+        {
+          "word": "verified",
+          "start": 36.249,
+          "end": 36.789
+        },
+        {
+          "word": "—",
+          "start": 36.789,
+          "end": 37.131
+        },
+        {
+          "word": "it",
+          "start": 37.131,
+          "end": 37.311
+        },
+        {
+          "word": "even",
+          "start": 37.311,
+          "end": 37.671
+        },
+        {
+          "word": "spells",
+          "start": 37.671,
+          "end": 37.851
+        },
+        {
+          "word": "decided",
+          "start": 37.851,
+          "end": 38.391
+        },
+        {
+          "word": "wrong.",
+          "start": 38.391,
+          "end": 38.733
+        }
+      ]
+    },
+    {
+      "id": "L10",
+      "beat": "CLOSE",
+      "text": "She wasn't replaced, she was ill and then she wasn't, and she's still posting.",
+      "start": 39.073,
+      "end": 42.882,
+      "dur": 3.809,
+      "gap_after": 0.0,
+      "words": [
+        {
+          "word": "She",
+          "start": 39.073,
+          "end": 39.275
+        },
+        {
+          "word": "wasn't",
+          "start": 39.275,
+          "end": 39.476
+        },
+        {
+          "word": "replaced,",
+          "start": 39.476,
+          "end": 40.182
+        },
+        {
+          "word": "she",
+          "start": 40.182,
+          "end": 40.383
+        },
+        {
+          "word": "was",
+          "start": 40.383,
+          "end": 40.585
+        },
+        {
+          "word": "ill",
+          "start": 40.585,
+          "end": 40.786
+        },
+        {
+          "word": "and",
+          "start": 40.786,
+          "end": 40.988
+        },
+        {
+          "word": "then",
+          "start": 40.988,
+          "end": 41.189
+        },
+        {
+          "word": "she",
+          "start": 41.189,
+          "end": 41.391
+        },
+        {
+          "word": "wasn't,",
+          "start": 41.391,
+          "end": 41.693
+        },
+        {
+          "word": "and",
+          "start": 41.693,
+          "end": 41.895
+        },
+        {
+          "word": "she's",
+          "start": 41.895,
+          "end": 42.096
+        },
+        {
+          "word": "still",
+          "start": 42.096,
+          "end": 42.298
+        },
+        {
+          "word": "posting.",
+          "start": 42.298,
+          "end": 42.882
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "note": "Format C — the reversal. Shots tile continuously; each runs until the next begins. The first half shows the theory's own exhibits in the order the theory presents them; the second half answers each one with the record. The before/after plate is deliberately used twice — once at L01 as the theory's proof of a replacement, once at L07 as the medical explanation for the same two faces. Nothing on screen is text of ours: every word in frame is either a spoken subtitle or type that was already in the evidence.",
+
+  "brand_at": { "at": "L10", "lead": 2.90 },
+
+  "shots": [
+    { "at": "L01", "lead": 0.00, "type": "band", "src": "broll/theory.jpg", "centre": 800, "push": 0.120 },
+
+    { "at": "L02", "lead": 0.00, "type": "band", "src": "broll/email.jpg", "centre": 820, "push": 0.060 },
+    { "at": "L02", "lead": 3.40, "type": "band", "src": "broll/email_quote.jpg", "centre": 800, "push": 0.075 },
+
+    { "at": "L03", "lead": 0.00, "type": "hero", "src": "broll/now.jpg" },
+
+    { "at": "L04", "lead": 0.00, "type": "band", "src": "broll/mole.jpg", "centre": 780, "width": 0.88, "push": 0.085 },
+
+    { "at": "L05", "lead": 0.00, "type": "void" },
+
+    { "at": "L06", "lead": 0.00, "type": "band", "src": "broll/hospital.jpg", "centre": 790, "width": 0.94, "push": 0.100 },
+
+    { "at": "L07", "lead": 0.00, "type": "band", "src": "broll/theory.jpg", "centre": 800, "push": 0.085 },
+
+    { "at": "L08", "lead": 0.00, "type": "band", "src": "broll/instagram.jpg", "centre": 780, "width": 0.94, "push": 0.070 },
+
+    { "at": "L09", "lead": 0.00, "type": "band", "src": "broll/news.jpg", "centre": 785, "width": 0.94, "push": 0.065 },
+    { "at": "L09", "lead": 2.35, "type": "band", "src": "broll/email_quote.jpg", "centre": 800, "push": 0.090 },
+
+    { "at": "L10", "lead": 0.00, "type": "clip", "src": "she_posts.mp4" }
+  ],
+
+  "beats": [
+    { "at": "L01", "lead": 0.50, "dur": 5.60, "type": "viz", "kind": "brackets", "top": 336, "bottom": 1264 },
+    { "at": "L01", "lead": 1.10, "dur": 4.60, "type": "viz", "kind": "rings", "cy": 800, "period": 62, "max": 600 },
+
+    { "at": "L02", "lead": 0.35, "dur": 2.80, "type": "viz", "kind": "brackets", "top": 610, "bottom": 1030 },
+    { "at": "L02", "lead": 3.65, "dur": 2.30, "type": "viz", "kind": "brackets", "top": 620, "bottom": 980 },
+
+    { "at": "L03", "lead": 0.30, "dur": 3.20, "type": "viz", "kind": "nodes", "count": 26 },
+
+    { "at": "L04", "lead": 0.30, "dur": 4.10, "type": "viz", "kind": "brackets", "top": 260, "bottom": 1300 },
+    { "at": "L04", "lead": 1.20, "dur": 3.10, "type": "viz", "kind": "rings", "cx": 640, "cy": 980, "period": 34, "max": 360 },
+
+    { "at": "L05", "lead": 0.10, "dur": 1.55, "type": "viz", "kind": "rings", "cy": 860, "period": 40, "max": 700 },
+
+    { "at": "L06", "lead": 0.35, "dur": 4.60, "type": "viz", "kind": "brackets", "top": 355, "bottom": 1225 },
+    { "at": "L07", "lead": 0.30, "dur": 3.10, "type": "viz", "kind": "brackets", "top": 336, "bottom": 1264 },
+    { "at": "L08", "lead": 0.30, "dur": 2.80, "type": "viz", "kind": "brackets", "top": 366, "bottom": 1194 },
+
+    { "at": "L09", "lead": 0.30, "dur": 1.90, "type": "viz", "kind": "brackets", "top": 355, "bottom": 1215 },
+    { "at": "L09", "lead": 2.60, "dur": 1.55, "type": "viz", "kind": "rings", "cx": 700, "cy": 800, "period": 30, "max": 340 },
+
+    { "at": "L10", "lead": 0.30, "dur": 2.40, "type": "viz", "kind": "nodes", "count": 30 }
+  ]
+}

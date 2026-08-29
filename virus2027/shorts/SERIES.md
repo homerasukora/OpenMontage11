@@ -49,16 +49,16 @@ Hard constraints:
 
 ---
 
-## Three formats
+## Four formats
 
 All share the script → timing → picture pipeline. Pick per episode.
 
-| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) |
-|---|---|---|---|
-| Frame | Drawn graphics only | Graded photographs + overlays | One camera move across brand artwork |
-| Reads as | A file you found | A cut of found material | A walk through the project's own world |
-| Best for | Cold, unsettling episodes | News beats and hooks | Evergreen: who we are, what a thing means |
-| Cost of a new episode | rewrite `script.json` + scenes | rewrite `script.json` + `beats.json` | same, plus panorama coordinates |
+| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`) |
+|---|---|---|---|---|
+| Frame | Drawn graphics only | Graded photographs + overlays | One camera move across brand artwork | Screenshots and documents, played small |
+| Reads as | A file you found | A cut of found material | A walk through the project's own world | An argument answered |
+| Best for | Cold, unsettling episodes | News beats and hooks | Evergreen: who we are, what a thing means | A theory we will not endorse |
+| Cost of a new episode | rewrite `script.json` + scenes | rewrite `script.json` + `beats.json` | same, plus panorama coordinates | same, plus sourcing the record |
 
 **B is the workhorse.** It is the cheapest to iterate and the easiest to feed
 — drop photographs in a folder and add a line of JSON.
@@ -67,6 +67,20 @@ All share the script → timing → picture pipeline. Pick per episode.
 for a scroll; it is explaining. A continuous camera move through one piece of
 artwork carries an explanation better than a cut every two seconds, and it
 makes the brand world feel like a place rather than a mood board.
+
+**D is the release valve.** Some theories are too good a hook to skip and too
+damaging to repeat — the ones that name a living person and treat their
+illness, their face or their absence as evidence. D takes the hook and turns
+it over: the theory gets the first twenty seconds told straight, in its own
+order and with its own exhibits, then the film answers every exhibit with
+something on the record. Same retention curve, opposite payload. The rule that
+makes the series work — *never argue the conspiracy, argue the paper trail* —
+is just louder here. `ep03` is the reference cut.
+
+Two constraints are structural in D, not stylistic. Every claim before the
+turn is attributed out loud (*"the internet has decided"*, *"people pulled
+up"*), and every claim after it is documented. If the second half cannot be
+sourced, the episode does not get made.
 
 An earlier version of B animated a presenter's photograph as a 2D face puppet
 (`ep02/build/face_rig.py`). It was dropped: without a real lip-sync model the
