@@ -118,12 +118,6 @@ export const Ground: React.FC<{scanEvery?: number; grainOnly?: boolean}> = ({
         }}
       />
 
-      <AbsoluteFill
-        style={{
-          background:
-            'radial-gradient(105% 62% at 50% 46%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.62) 100%)',
-        }}
-      />
     </AbsoluteFill>
   );
 };

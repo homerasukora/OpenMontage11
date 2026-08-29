@@ -126,11 +126,11 @@ export const BigText: React.FC<{
 
 /* --------------------------------------------------------------- row */
 
-export const Row: React.FC<{index: number; text: string; dur: number}> = ({
-  index, text, dur,
-}) => {
+export const Row: React.FC<{
+  index: number; text: string; dur: number; y?: number;
+}> = ({index, text, dur, y: yOverride}) => {
   const {p, enter} = useLife(dur, 9, 6);
-  const y = TOP + 58 + (index - 1) * 118;
+  const y = yOverride ?? TOP + 58 + (index - 1) * 118;
   return (
     <div style={{
       position: 'absolute', left: SAFE.left, top: y,
@@ -342,17 +342,8 @@ export const BrandEnd: React.FC<{dur: number}> = ({dur}) => {
         <span style={{...mono(20), letterSpacing: '0.24em', color: C.textMuted}}>
           FOLLOW THE SIGNAL
         </span>
-        <div style={{height: 1, width: 300, background: C.line, margin: '10px 0 4px'}} />
-        <span style={{...mono(17), letterSpacing: '0.16em', color: C.textMuted}}>
-          VIRUS-TOKEN.XYZ
-        </span>
-        <span style={{
-          fontFamily: F.mono, fontSize: 15, letterSpacing: '0.03em',
-          color: C.textMuted, opacity: 0.85, maxWidth: 760, textAlign: 'center',
-          wordBreak: 'break-all', lineHeight: 1.4,
-        }}>
-          0xcf25d38c0ADCA458aEa8BD57687A2b33A2d84444
-        </span>
+        {/* Site and contract live in the pinned comment, not burned into a
+            video that has to stay true for months. */}
       </div>
     </AbsoluteFill>
   );

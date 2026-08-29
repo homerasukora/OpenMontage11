@@ -78,12 +78,6 @@ export const Band: React.FC<{
                 transform: `scale(${zoom}) translateX(${slide}px)`,
               }}
             />
-            <AbsoluteFill
-              style={{
-                background:
-                  'linear-gradient(to bottom, rgba(9,8,6,0.34) 0%, rgba(9,8,6,0) 22%, rgba(9,8,6,0) 74%, rgba(9,8,6,0.44) 100%)',
-              }}
-            />
             {/* one scan pass on entry */}
             {settle < 1 ? (
               <div
@@ -133,12 +127,6 @@ export const Hero: React.FC<{src: string; dur: number}> = ({src, dur}) => {
           transform: `scale(${zoom})`,
         }}
       />
-      <AbsoluteFill
-        style={{
-          background:
-            'linear-gradient(to bottom, rgba(7,6,5,0.78) 0%, rgba(7,6,5,0.10) 24%, rgba(7,6,5,0.14) 56%, rgba(7,6,5,0.90) 90%)',
-        }}
-      />
     </AbsoluteFill>
   );
 };
@@ -160,10 +148,6 @@ export const Void: React.FC<{dur: number}> = ({dur}) => {
           filter: 'grayscale(1) sepia(0.12) brightness(0.5) contrast(1.05) blur(5px)',
         }}
       />
-      <AbsoluteFill style={{
-        background:
-          'radial-gradient(88% 52% at 50% 44%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.78) 100%)',
-      }} />
     </AbsoluteFill>
   );
 };

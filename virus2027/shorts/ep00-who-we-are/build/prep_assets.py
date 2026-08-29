@@ -49,7 +49,15 @@ def add_grain(img, amount=6.5, seed=2027):
         (a + rng.normal(0, amount, a.shape[:2])[..., None]).clip(0, 255).astype(np.uint8))
 
 
-def vignette(img, strength=0.30):
+def vignette(img, strength=0.0):
+    """
+    Kept as a no-op so the pipeline reads the same as the other episodes.
+    Edge darkening is deliberately off in this film: the artwork already
+    falls off into black at its own edges, and a second vignette on top was
+    closing the frame in.
+    """
+    if strength <= 0:
+        return img
     w, h = img.size
     yy, xx = np.mgrid[0:h, 0:w]
     r = np.sqrt(((xx - w / 2) / (w / 2)) ** 2 + ((yy - h / 2) / (h / 2)) ** 2)
@@ -66,9 +74,9 @@ def fit(img, w, h):
     return img.crop(((sw - w) // 2, (sh - h) // 2, (sw - w) // 2 + w, (sh - h) // 2 + h))
 
 
-def backdrop(img, blur=46, brightness=0.52):
+def backdrop(img, blur=46, brightness=0.62):
     bg = fit(img, 1080, 1920).filter(ImageFilter.GaussianBlur(blur))
-    return vignette(ImageEnhance.Brightness(bg).enhance(brightness), strength=0.52)
+    return ImageEnhance.Brightness(bg).enhance(brightness)
 
 
 def grain_tile(size=320, seed=2027):
@@ -113,16 +121,15 @@ def main():
     # The mascot render is centred and square, so it survives a 9:16 crop and
     # earns a full-bleed beat of its own.
     vira = grade(Image.open(SRC / "vira.png"))
-    vignette(add_grain(fit(vira, 1080, 1920)), strength=0.42).save(
+    add_grain(fit(vira, 1080, 1920)).save(
         OUT / "vira_hero.jpg", quality=94)
     print("broll/vira_hero.jpg 1080x1920  (full bleed)")
 
     # The gallery panorama stays at native width; the composition pans a
     # 1080-wide window across it, so upscaling here would only add weight.
-    pano = vignette(add_grain(grade(Image.open(ASSETS / "panorama.png")), amount=5.0),
-                    strength=0.22)
+    pano = add_grain(grade(Image.open(ASSETS / "panorama.png")), amount=5.0)
     pano.save(ASSETS / "panorama.jpg", quality=95)
-    backdrop(pano, blur=54, brightness=0.44).save(ASSETS / "panorama_bg.jpg", quality=88)
+    backdrop(pano, blur=54, brightness=0.58).save(ASSETS / "panorama_bg.jpg", quality=88)
     print(f"panorama.jpg     {pano.size}  (+bg)")
 
     mascot = Image.open(ASSETS / "mascot.png").convert("RGB")

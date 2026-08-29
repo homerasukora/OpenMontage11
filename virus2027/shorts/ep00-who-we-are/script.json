@@ -6,8 +6,12 @@
   "role": "Pinned welcome video — the first thing a new visitor watches on TikTok, Reels and Shorts.",
   "format": "9:16 / 1080x1920 / 30fps",
   "target_duration_s": 40,
-  "platforms": ["TikTok", "Instagram Reels", "YouTube Shorts"],
-  "voice_note": "Written to be spoken, not recited. Full sentences that run on, hedges left in, no chains of one-word fragments. The register is a person telling you something slightly odd they noticed — confident, dry, never selling.",
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "voice_note": "Written to be spoken, not recited. Full sentences that run on, hedges left in, no chains of one-word fragments. Lines are also written so the words agree with the label burned into whatever artwork is on screen at that moment — the supply line lands on THE SUPPLY ONLY SHRINKS, the token line on TOKENOMIC, Vira's name on WHO IS VIRA?",
   "lines": [
     {
       "id": "L01",
@@ -33,9 +37,9 @@
     {
       "id": "L04",
       "beat": "WHO",
-      "en": "We're not going to tell you what happens, because nobody knows, and we'd rather ask the question than pretend we have the answer.",
+      "en": "We're not going to tell you what happens, because nobody knows — we'd rather ask than pretend we have the answer.",
       "vo_direction": "The most human line in the piece. Slight shrug on 'nobody knows'.",
-      "gap_after": 0.30
+      "gap_after": 0.3
     },
     {
       "id": "L05",
@@ -49,20 +53,20 @@
       "beat": "VIRA",
       "en": "And this is Vira, who notices the pattern in the noise before the rest of us.",
       "vo_direction": "Warmer. A half-smile in the voice on 'before the rest of us'.",
-      "gap_after": 0.40
+      "gap_after": 0.4
     },
     {
       "id": "L07",
       "beat": "PROOF",
-      "en": "Underneath the mystery, the mechanics are deliberately boring, and all of it is on the chain.",
+      "en": "Underneath the mystery the mechanics are deliberately boring, and the supply only shrinks.",
       "vo_direction": "Drop the theatre entirely. This is the honest part and it should sound like it.",
       "gap_after": 0.28
     },
     {
       "id": "L08",
       "beat": "PROOF",
-      "en": "It runs on Pulse prediction markets, so what you think about the future has somewhere to go.",
-      "vo_direction": "Keep it matter-of-fact. Land 'somewhere to go'.",
+      "en": "It's a BNB Chain token running on Pulse prediction markets, so what you think about the future has somewhere to go.",
+      "vo_direction": "Matter-of-fact. Land 'somewhere to go'.",
       "gap_after": 0.46
     },
     {
@@ -70,7 +74,7 @@
       "beat": "CTA",
       "en": "Follow the signal, and remember the date.",
       "vo_direction": "Quiet. An invitation, not a call to action.",
-      "gap_after": 1.30
+      "gap_after": 1.3
     }
   ]
 }

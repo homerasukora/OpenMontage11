@@ -19,17 +19,12 @@ gallery, and a plain answer to *what is this and who is the orange thing*.
 You asked for no AI cadence — no chains of one-word fragments. So the script
 is built out of sentences that actually run on, with the hedges left in:
 
-> *"We're not going to tell you what happens, because nobody knows, and we'd
-> rather ask the question than pretend we have the answer."*
+> *"We're not going to tell you what happens, because nobody knows — we'd
+> rather ask than pretend we have the answer."*
 
 That line is the centre of the film. It's the only honest position the brand
 can take, it's the one the lore manual asks for (*coincidence, prediction or
 warning?*), and it's what stops a welcome video from sounding like a pitch.
-
-The staccato is not gone entirely — it moved to the **screen**, where the
-brand's own lines live: `EVERY PREDICTION LEADS TO 2027`, `YOU DON'T FIND
-VIRA. VIRA FINDS YOU.` Those are quotations from the manual, set as type. The
-voice stays conversational throughout.
 
 Nothing in the read promises a price, a listing or an outcome. The only
 claims are the ones the manual marks as fixed.
@@ -45,52 +40,76 @@ frame pixels (`bw`, which doubles as zoom), and it eases between two of them.
 
 Anchors in the artwork: **Vira 0.165 · the 2027 frame 0.495 · Mona Lisa 0.845.**
 
-| t | Line | Camera |
-|---|---|---|
-| 0:00 | *…it keeps landing on the same year.* | tight on the 2027 painting, slow push (bw 3150→3480) |
-| 0:05 | *Twenty twenty-seven.* | the push tightens (bw 3480→3880) |
-| 0:06.5 | *AI timelines, disclosure files, geopolitics…* | cut to the three-emblem plate; `01 ·` `02 ·` `03 ·` stack up |
-| 0:11.6 | *We're not going to tell you what happens…* | **pull all the way back — the whole gallery** (bw 1080) |
-| 0:14.9 | | wide, drifting left (x .52→.46) |
-| 0:18.1 | *That's what VIRUS2027 is built on.* | **travel left to Vira** (x .46→.165, bw 1400→2450) |
-| 0:21.3 | *And this is Vira…* | settle on him in the gallery |
-| 0:23.4 | | cut to the mascot plate |
-| 0:25.3 | *Underneath the mystery, the mechanics are boring…* | cut to the burn plate |
-| 0:27.6 | | the fact rows land on the ground |
-| 0:30.1 | *It runs on Pulse prediction markets…* | cut to Mona Lisa, slow push (bw 2380→2680) |
-| 0:35 | *Follow the signal, and remember the date.* | **pull back out into the room** (bw 2680→1320) |
-| 0:37.1 | | 2027, mascot, handle, site, contract |
+Every cut is placed so the spoken line agrees with the label already burned
+into the artwork underneath it.
+
+| t | Line | Camera | Label on screen |
+|---|---|---|---|
+| 0:00 | *…it keeps landing on the same year.* | tight on the centre painting, slow push (bw 3150→3480) | `WHY 2027?` |
+| 0:05 | *Twenty twenty-seven.* | the push tightens (bw 3480→3880) | `WHY 2027?` |
+| 0:06.5 | *AI timelines, disclosure files, geopolitics…* | cut to the three-emblem plate | — |
+| 0:11.7 | *We're not going to tell you what happens…* | **pull all the way back — the whole gallery** (bw 1080) | the room |
+| 0:14.6 | | wide, drifting left | |
+| 0:17.4 | *That's what VIRUS2027 is built on.* | still in the room | |
+| 0:20.5 | *And this is Vira…* | **travel left, arriving as he is named** (x .50→.165) | `WHO IS VIRA?` |
+| 0:22.9 | | cut to the mascot plate | |
+| 0:24.5 | *…the mechanics are boring, and the supply only shrinks.* | cut to the burn plate | `THE SUPPLY ONLY SHRINKS` |
+| 0:28.9 | *It's a BNB Chain token running on Pulse…* | cut to Mona Lisa (bw 1820→1980) | `TOKENOMIC` |
+| 0:29.5 | | the three token facts land above the plate | |
+| 0:34.5 | *Follow the signal, and remember the date.* | **pull back out into the room** (bw 1980→1240) | |
+| 0:36.7 | | 2027, mascot, handle | |
 
 The order is the one you asked for: why 2027 first, then the mascot, then the
-token.
+token. Two script lines were rewritten to make the last two land on their
+labels — the supply line now says *"the supply only shrinks"* over the plate
+that says exactly that, and the token line says *"a BNB Chain token"* over
+`TOKENOMIC`.
 
 ---
+
+## No edge darkening, and no captions of my own
+
+Two things were stripped out of this cut:
+
+**Every vignette and gradient is gone** — the prep-stage vignette, the blurred
+backdrop's vignette, the top and bottom gradients over each plate, the void's
+radial falloff and the ground vignette. The artwork already falls off into
+black at its own borders; a second darkening on top was closing the frame in.
+`vignette()` survives in `prep_assets.py` as a no-op so the pipeline still
+reads the same as the other episodes.
+
+**The only text I add is the three token facts.** No file numbers, no
+timecode, no `ACCESS: PARTIAL`, no shot index, no section tags, no pull
+quotes. Everything else on screen is either a spoken subtitle or type that
+was already painted into the artwork. The brand end card keeps `2027`, the
+slogan and the handle; the site and contract moved to the pinned comment,
+where they can be corrected without re-rendering.
 
 ## Two brand rules the build had to respect
 
 **Vira's silhouette is fixed.** A 9:16 crop of the mascot render clipped his
-outer spikes, which the manual forbids. He plays as a full plate instead,
-pushed down the frame so the quote has somewhere to sit above him.
+outer spikes, which the manual forbids. He plays as a full plate instead, with
+the whole character in frame.
 
 **The artwork is already in the palette.** These are brand renders, not stock,
 so the grade is almost a no-op — 92% of their own colour kept, a little
-contrast, matching grain and a vignette. Desaturating them would have removed
+contrast and matching grain, no vignette. Desaturating them would have removed
 the one thing they already had right.
 
 ---
 
 ## What's on screen vs what's spoken
 
-The verifiable facts are typography, not voiceover. It keeps the read human
-and it puts the numbers somewhere a viewer can pause on them:
+Three numbers are typography rather than voiceover — it keeps the read human
+and puts them somewhere a viewer can pause on:
 
-- `1,000,000,000 fixed` · `No mint function` · `80% to the community`
-- `POWERED BY PULSE · PREDICTION MARKETS`
-- `BEP-20 · BNB SMART CHAIN · PANCAKESWAP V2`
-- the contract address, on the end card
+`1,000,000,000 fixed` · `No mint function` · `80% to the community`
 
-Wording follows the manual exactly — *traded on* PancakeSwap V2, *powered by*
-Pulse, never *partnered with* or *backed by*.
+They land on the `TOKENOMIC` plate, which is the one moment in the film where
+words, artwork label and numbers all say the same thing. The chain, the DEX
+and the contract are spoken or left to the pinned comment; wording follows the
+manual exactly — *traded on* PancakeSwap V2, *powered by* Pulse, never
+*partnered with* or *backed by*.
 
 ---
 

@@ -20,10 +20,12 @@ export const PANO_ASPECT = 1942 / 809;
  * that the upscale starts to show, and the film would rather move than
  * magnify.
  */
-export type PanoMove = {x0: number; x1: number; bw0: number; bw1: number};
+export type PanoMove = {
+  x0: number; x1: number; bw0: number; bw1: number; centre?: number;
+};
 
 export const Pano: React.FC<PanoMove & {dur: number}> = ({
-  x0, x1, bw0, bw1, dur,
+  x0, x1, bw0, bw1, dur, centre = BAND_CENTRE,
 }) => {
   const f = useCurrentFrame();
 
@@ -42,7 +44,7 @@ export const Pano: React.FC<PanoMove & {dur: number}> = ({
   const bh = bw / PANO_ASPECT;
 
   const left = W / 2 - x * bw;
-  const top = BAND_CENTRE - bh / 2;
+  const top = centre - bh / 2;
   const framed = bh < 1830;   // small enough to read as a plate on the ground
 
   return (
@@ -62,12 +64,6 @@ export const Pano: React.FC<PanoMove & {dur: number}> = ({
           <Img
             src={staticFile('panorama.jpg')}
             style={{width: '100%', height: '100%', display: 'block'}}
-          />
-          <AbsoluteFill
-            style={{
-              background:
-                'linear-gradient(to bottom, rgba(9,8,6,0.30) 0%, rgba(9,8,6,0) 20%, rgba(9,8,6,0) 76%, rgba(9,8,6,0.40) 100%)',
-            }}
           />
         </div>
 
