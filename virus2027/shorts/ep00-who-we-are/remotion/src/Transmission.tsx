@@ -120,7 +120,7 @@ export const Transmission: React.FC<{
           ) : x.s.type === 'hero' ? (
             <Hero src={x.s.src!} dur={x.dur} />
           ) : x.s.type === 'band' ? (
-            <Band src={x.s.src!} dur={x.dur} seed={i} centre={x.s.centre} />
+            <Band src={x.s.src!} dur={x.dur} seed={i} centre={x.s.centre} push={x.s.push} />
           ) : (
             <Void dur={x.dur} />
           )}

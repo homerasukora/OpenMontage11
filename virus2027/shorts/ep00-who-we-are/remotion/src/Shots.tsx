@@ -11,6 +11,8 @@ export type Shot = {
   type: 'band' | 'hero' | 'void' | 'pano';
   src?: string;
   centre?: number;
+  /** How far a band pushes in over its own length. Longer holds need more. */
+  push?: number;
 };
 
 /**
@@ -20,14 +22,14 @@ export type Shot = {
  * archive plate rather than a stretched stock photo.
  */
 export const Band: React.FC<{
-  src: string; dur: number; seed?: number; centre?: number;
-}> = ({src, dur, seed = 0, centre = BAND_CENTRE}) => {
+  src: string; dur: number; seed?: number; centre?: number; push?: number;
+}> = ({src, dur, seed = 0, centre = BAND_CENTRE, push = 0.055}) => {
   const f = useCurrentFrame();
   const settle = interpolate(f, [0, 9], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
     easing: Easing.bezier(...EASE_SIGNAL),
   });
-  const zoom = interpolate(f, [0, dur], [1.0, 1.055], {extrapolateRight: 'clamp'});
+  const zoom = interpolate(f, [0, dur], [1.0, 1 + push], {extrapolateRight: 'clamp'});
   const slide = interpolate(f, [0, dur], [0, seed % 2 ? -10 : 10], {
     extrapolateRight: 'clamp',
   });

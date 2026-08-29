@@ -1,5 +1,5 @@
 {
-  "note": "Camera, drawn visuals and the three token facts. Shots tile continuously — each runs until the next begins. Pano moves are a normalised point of the gallery panorama (x) parked at frame centre plus its rendered width in frame pixels (bw), which doubles as zoom. Anchors: Vira 0.165, the 2027 frame 0.495, Mona Lisa 0.845. The film opens on the collage, cuts to the painted WHY 2027 on the spoken date, drops the AI plate under the words 'AI timelines', and both later arrivals — at Vira and at the token wall — are travels that land on the word rather than cuts. Square plates sit low so the drawn graphics have a band of their own to live in.",
+  "note": "Camera, drawn visuals and the three token facts. Shots tile continuously — each runs until the next begins. Pano moves are a normalised point of the gallery panorama (x) parked at frame centre plus its rendered width in frame pixels (bw), which doubles as zoom. Anchors: Vira 0.165, the 2027 frame 0.495, Mona Lisa 0.845. The film opens on the collage, cuts to the painted WHY 2027 on the spoken date, drops the AI plate under the words 'AI timelines', puts the press wall on 'different conversations sharing a date' and the empty eleventh seat on 'nobody knows', and both later arrivals — at Vira and at the token wall — are travels that land on the word rather than cuts. Square plates sit low so the drawn graphics have a band of their own to live in.",
 
   "brand_at": { "at": "L09", "lead": 2.15 },
 
@@ -9,10 +9,9 @@
     { "at": "L02", "lead": 0.00, "type": "pano", "x0": 0.495, "x1": 0.502, "bw0": 3300, "bw1": 3820 },
 
     { "at": "L03", "lead": 0.00, "type": "band", "src": "broll/ai_silence.jpg", "centre": 900 },
-    { "at": "L03", "lead": 1.82, "type": "band", "src": "broll/theories.jpg", "centre": 960 },
+    { "at": "L03", "lead": 1.82, "type": "band", "src": "broll/headlines.jpg", "centre": 790, "push": 0.075 },
 
-    { "at": "L04", "lead": 0.00, "type": "pano", "x0": 0.500, "x1": 0.500, "bw0": 1080, "bw1": 1170 },
-    { "at": "L04", "lead": 2.90, "type": "pano", "x0": 0.520, "x1": 0.470, "bw0": 1170, "bw1": 1340 },
+    { "at": "L04", "lead": 0.00, "type": "band", "src": "broll/eleventh_seat.jpg", "centre": 900, "push": 0.135 },
     { "at": "L05", "lead": 0.00, "type": "pano", "x0": 0.470, "x1": 0.500, "bw0": 1340, "bw1": 1470 },
 
     { "at": "L06", "lead": 0.00, "type": "pano", "x0": 0.500, "x1": 0.165, "bw0": 1470, "bw1": 2450 },
@@ -29,9 +28,11 @@
     { "at": "L02", "lead": 0.00, "dur": 1.45, "type": "viz", "kind": "rings", "cy": 790, "period": 34, "max": 400 },
 
     { "at": "L03", "lead": 0.15, "dur": 1.60, "type": "viz", "kind": "brackets", "top": 555, "bottom": 1245 },
-    { "at": "L03", "lead": 2.00, "dur": 2.60, "type": "viz", "kind": "brackets", "top": 420, "bottom": 1500 },
+    { "at": "L03", "lead": 2.00, "dur": 2.60, "type": "viz", "kind": "brackets", "top": 325, "bottom": 1255 },
 
-    { "at": "L04", "lead": 0.45, "dur": 5.00, "type": "viz", "kind": "nodes", "count": 34 },
+    { "at": "L04", "lead": 0.30, "dur": 5.20, "type": "viz", "kind": "nodes", "count": 34 },
+    { "at": "L04", "lead": 0.25, "dur": 5.30, "type": "viz", "kind": "brackets", "top": 580, "bottom": 1220 },
+    { "at": "L04", "lead": 3.10, "dur": 2.30, "type": "viz", "kind": "rings", "cy": 1035, "period": 58, "max": 520 },
     { "at": "L05", "lead": 0.20, "dur": 2.45, "type": "viz", "kind": "rings", "cy": 830, "period": 44, "max": 560 },
 
     { "at": "L06", "lead": 2.40, "dur": 1.60, "type": "viz", "kind": "brackets", "top": 470, "bottom": 1550 },

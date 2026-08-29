@@ -38,7 +38,22 @@ GRADE = {
     "vira":       {"brightness": 1.00},
     "collage":    {"brightness": 1.00, "contrast": 1.08},
     "ai_silence": {"brightness": 0.72, "contrast": 1.20, "keep": 0.04, "warm": 3.2},
+    # already dark and already in the palette; it only needs lifting
+    "eleventh_seat": {"brightness": 1.10, "contrast": 1.05},
+    # press screenshots have to keep reading as screenshots, so this is the
+    # lightest touch in the film: enough to stop the white blowing a hole in
+    # a dark frame, not enough to lose the TIME red or the Axios blue.
+    "headlines":  {"brightness": 0.90, "contrast": 1.00, "keep": 0.90},
 }
+
+# Dead margin trimmed before the band is built, so the plate is content and
+# not padding. Boxes are in source pixels.
+CROP = {
+    "headlines": (75, 120, 1525, 1325),
+}
+
+# How dark a source's own blurred backdrop is allowed to sit behind it.
+BACKDROP = {"ai_silence": 0.30, "headlines": 0.15}
 
 
 def grade(img, keep=KEEP_COLOUR, contrast=1.06, brightness=1.0, warm=1.0):
@@ -122,12 +137,15 @@ def main():
     for p in sorted(SRC.glob("*")):
         if p.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
             continue
-        img = grade(Image.open(p), **GRADE.get(p.stem, {}))
+        src_img = Image.open(p)
+        if p.stem in CROP:
+            src_img = src_img.crop(CROP[p.stem])
+        img = grade(src_img, **GRADE.get(p.stem, {}))
         h = max(1, round(1080 * img.height / img.width))
         band = vignette(add_grain(img.resize((1080, h), Image.LANCZOS)))
         band.save(OUT / f"{p.stem}.jpg", quality=94)
-        dim = 0.30 if p.stem == "ai_silence" else 0.62
-        backdrop(img, brightness=dim).save(OUT / f"{p.stem}_bg.jpg", quality=88)
+        backdrop(img, brightness=BACKDROP.get(p.stem, 0.62)).save(
+            OUT / f"{p.stem}_bg.jpg", quality=88)
         print(f"broll/{p.stem}.jpg   1080x{h}  (+bg)")
 
     # The mascot render is centred and square, so it survives a 9:16 crop and

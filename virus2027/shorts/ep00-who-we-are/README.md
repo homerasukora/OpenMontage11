@@ -48,10 +48,9 @@ into the artwork underneath it.
 | 0:00 | *…it keeps landing on the same year.* | the shattered-glass collage, slow push | — |
 | 0:05 | *Twenty twenty-seven.* | **cut to the painted date** (bw 3300→3820) | `WHY 2027?` |
 | 0:06.5 | *AI timelines, disclosure files…* | cut to the AI plate | — |
-| 0:08.4 | *…geopolitics — different conversations…* | cut to the three-emblem plate | — |
-| 0:11.7 | *We're not going to tell you what happens…* | **pull all the way back — the whole gallery** (bw 1080) | the room |
-| 0:14.6 | | wide, drifting left | |
-| 0:17.4 | *That's what VIRUS2027 is built on.* | still in the room | |
+| 0:08.4 | *…geopolitics — different conversations sharing a date.* | cut to the press wall | Forbes · TIME · Axios |
+| 0:11.7 | *We're not going to tell you what happens, because nobody knows…* | the empty eleventh seat, slow push | `THE ELEVENTH SEAT` |
+| 0:17.4 | *That's what VIRUS2027 is built on.* | **cut back out to the room** (bw 1340→1470) | |
 | 0:20.5 | *And this is Vira…* | **travel left, arriving as he is named** (x .50→.165) | `WHO IS VIRA?` |
 | 0:22.9 | | cut to the mascot plate | |
 | 0:24.5 | *…the mechanics are boring, and the supply only shrinks.* | cut to the burn plate | `THE SUPPLY ONLY SHRINKS` |
@@ -132,9 +131,9 @@ was already painted into the artwork. The brand end card keeps `2027`, the
 slogan and the handle; the site and contract moved to the pinned comment,
 where they can be corrected without re-rendering.
 
-## The two photographs
+## The photographs cut in from outside
 
-Everything else in the film is brand artwork; these two are cut in from
+Everything else in the film is brand artwork; these four are cut in from
 outside, and each is placed on the line that earns it.
 
 **The collage opens.** Five seconds of shattered glass — Capitol, Trump, Musk,
@@ -143,6 +142,25 @@ future."* It arrived already in the palette, so it's graded like the brand
 renders: 92% of its own colour, nothing else. Cutting from it to the painted
 `WHY 2027?` on the spoken date is the hardest cut in the film and the one that
 sets up everything after it.
+
+**The press wall is the evidence.** Forbes, TIME and Axios stacked together,
+under *"different conversations sharing a date."* It is the only literal
+moment in the film — three unrelated outlets, one year — and it earns the
+lightest grade of anything here, because a screenshot that has been graded
+stops reading as a screenshot: 90% of its own colour, brightness 0.90, no
+contrast push, so the TIME red and the Axios blue survive. Its dead margin is
+trimmed in `prep_assets.CROP` so the plate is content rather than padding, and
+its blurred backdrop is dimmed to 0.15 — blurring that much white otherwise
+puts a grey haze across the top of the frame.
+
+**The eleventh seat is the question.** Eleven chairs, ten occupied and
+blindfolded, `2 + 0 + 2 + 7 = ?` overhead and the front one empty — held for
+the whole of *"nobody knows — we'd rather ask than pretend we have the
+answer."* That's the longest single shot in the film at 5.7 s, so it gets a
+`push` of 0.135 rather than the 0.055 a band normally takes, plus the node
+field and a ring that opens around the empty chair. It replaced the wide
+pull-back into the gallery; the room comes back one line later instead, on
+*"that's what VIRUS2027 is built on."*
 
 **The AI plate lands on the word.** An android with a finger to its lips, held
 for *"AI timelines, disclosure files,"* then cut away on *"geopolitics."* This
