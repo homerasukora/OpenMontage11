@@ -49,24 +49,32 @@ Hard constraints:
 
 ---
 
-## Two formats
+## Three formats
 
-Both share the script → timing → picture pipeline. Pick per episode.
+All share the script → timing → picture pipeline. Pick per episode.
 
-| | **A · Dossier** (`ep01`) | **B · Presenter** (`ep02`) |
-|---|---|---|
-| Frame | Graphics only, no face | Animated presenter fills the frame |
-| Reads as | A file you found | A person who found the file |
-| Best for | Cold, archival, unsettling episodes | Hooks that need a human to sell them |
-| Extra build step | — | `face_rig.py` animates the still from the voiceover |
-| Cost of a new episode | rewrite `script.json` + scenes | rewrite `script.json` + `beats.json` |
+| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) |
+|---|---|---|---|
+| Frame | Drawn graphics only | Graded photographs + overlays | One camera move across brand artwork |
+| Reads as | A file you found | A cut of found material | A walk through the project's own world |
+| Best for | Cold, unsettling episodes | News beats and hooks | Evergreen: who we are, what a thing means |
+| Cost of a new episode | rewrite `script.json` + scenes | rewrite `script.json` + `beats.json` | same, plus panorama coordinates |
 
-Format B is the higher-retention one — a face in the first frame beats a title
-card on every platform — and it is cheaper to iterate, because the graphics
-are a JSON element track rather than hand-built scenes. Format A stays the
-right call for an episode where the absence of a person is the point.
+**B is the workhorse.** It is the cheapest to iterate and the easiest to feed
+— drop photographs in a folder and add a line of JSON.
 
-### Format B's element track
+**C exists because a pinned video has a different job.** It is not competing
+for a scroll; it is explaining. A continuous camera move through one piece of
+artwork carries an explanation better than a cut every two seconds, and it
+makes the brand world feel like a place rather than a mood board.
+
+An earlier version of B animated a presenter's photograph as a 2D face puppet
+(`ep02/build/face_rig.py`). It was dropped: without a real lip-sync model the
+mouth cannot hit phonemes, and a near-real face that moves almost right is
+worse than no face. The rig is kept for the day a real lip-sync render is
+available.
+
+### The element track (formats B and C)
 
 `beats.json` maps script line ids to overlays:
 
@@ -75,10 +83,18 @@ right call for an episode where the absence of a person is the point.
   "text": "Manipulated", "accent": true }
 ```
 
-Types available: `tag` · `card` (framed photo) · `stamp` · `bigtext` ·
-`row` (indexed list) · `reticle` · `dossier` · `genome` · `redact`. Anchors are
-line ids plus a seconds offset — never frame numbers — so retiming the read
-retimes every graphic and every sound cue with it.
+Overlay types: `tag` (stackable in slots) · `stamp` · `bigtext` · `quote`
+(two lines of display type) · `row` (indexed list) · `reticle` · `dossier` ·
+`genome` · `redact` · `contract`.
+
+Picture types in `shots`: `band` (photo at native aspect, full width, blurred
+fill behind) · `hero` (full bleed) · `void` (textured ground) · `pano` (a pan
+and zoom across a panorama, given as a normalised x and a rendered width).
+
+Shots tile — each runs until the next begins — so no shot carries a duration
+and a retimed read can never open a black gap. Every anchor is a line id plus
+a seconds offset, never a frame number, so retiming the read retimes every
+graphic and every sound cue with it.
 
 ---
 
@@ -132,6 +148,7 @@ Ordered by how well the paper trail holds up, which is the only ordering that ma
 
 | # | Working title | The documented spine | Concession |
 |---|---|---|---|
+| 00 | **Who We Are** ✅ (format C) | The pinned welcome film — why 2027, who Vira is, what the token actually is | Says outright that nobody knows what happens |
 | 01 | **The Drawer** ✅ (format A) | DIA assessment 27 Mar 2020; NCMI genomic study; the Aug 2021 briefing; FOIA release 2026 | Low confidence; consensus is still natural spillover |
 | 02 | **They Admitted It** ✅ (format B) | The published US lab-origin position, then the March 2020 DIA file underneath it | Low confidence, stated on screen |
 | 03 | **The Eleventh Seat** | Which forecasting and risk bodies actually met before a given crisis, and what the minutes say | Committees meet constantly; most meetings mean nothing |

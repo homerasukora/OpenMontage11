@@ -1,0 +1,680 @@
+{
+  "lang": "en",
+  "total_duration": 38.329,
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "text": "Every few months somebody predicts something about the future, and it keeps landing on the same year.",
+      "start": 0.0,
+      "end": 4.819,
+      "dur": 4.819,
+      "gap_after": 0.24,
+      "words": [
+        {
+          "word": "Every",
+          "start": 0.0,
+          "end": 0.492
+        },
+        {
+          "word": "few",
+          "start": 0.492,
+          "end": 0.656
+        },
+        {
+          "word": "months",
+          "start": 0.656,
+          "end": 0.82
+        },
+        {
+          "word": "somebody",
+          "start": 0.82,
+          "end": 1.475
+        },
+        {
+          "word": "predicts",
+          "start": 1.475,
+          "end": 1.803
+        },
+        {
+          "word": "something",
+          "start": 1.803,
+          "end": 2.295
+        },
+        {
+          "word": "about",
+          "start": 2.295,
+          "end": 2.623
+        },
+        {
+          "word": "the",
+          "start": 2.623,
+          "end": 2.786
+        },
+        {
+          "word": "future,",
+          "start": 2.786,
+          "end": 3.196
+        },
+        {
+          "word": "and",
+          "start": 3.196,
+          "end": 3.36
+        },
+        {
+          "word": "it",
+          "start": 3.36,
+          "end": 3.524
+        },
+        {
+          "word": "keeps",
+          "start": 3.524,
+          "end": 3.688
+        },
+        {
+          "word": "landing",
+          "start": 3.688,
+          "end": 4.016
+        },
+        {
+          "word": "on",
+          "start": 4.016,
+          "end": 4.18
+        },
+        {
+          "word": "the",
+          "start": 4.18,
+          "end": 4.344
+        },
+        {
+          "word": "same",
+          "start": 4.344,
+          "end": 4.507
+        },
+        {
+          "word": "year.",
+          "start": 4.507,
+          "end": 4.819
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "beat": "HOOK",
+      "text": "Twenty twenty-seven.",
+      "start": 5.059,
+      "end": 6.093,
+      "dur": 1.034,
+      "gap_after": 0.46,
+      "words": [
+        {
+          "word": "Twenty",
+          "start": 5.059,
+          "end": 5.359
+        },
+        {
+          "word": "twenty-seven.",
+          "start": 5.359,
+          "end": 6.093
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "beat": "SIGNAL",
+      "text": "AI timelines, disclosure files, geopolitics — different conversations sharing a date.",
+      "start": 6.553,
+      "end": 11.314,
+      "dur": 4.761,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "AI",
+          "start": 6.553,
+          "end": 6.718
+        },
+        {
+          "word": "timelines,",
+          "start": 6.718,
+          "end": 7.462
+        },
+        {
+          "word": "disclosure",
+          "start": 7.462,
+          "end": 7.958
+        },
+        {
+          "word": "files,",
+          "start": 7.958,
+          "end": 8.371
+        },
+        {
+          "word": "geopolitics",
+          "start": 8.371,
+          "end": 9.033
+        },
+        {
+          "word": "—",
+          "start": 9.033,
+          "end": 9.347
+        },
+        {
+          "word": "different",
+          "start": 9.347,
+          "end": 9.843
+        },
+        {
+          "word": "conversations",
+          "start": 9.843,
+          "end": 10.504
+        },
+        {
+          "word": "sharing",
+          "start": 10.504,
+          "end": 10.834
+        },
+        {
+          "word": "a",
+          "start": 10.834,
+          "end": 11.0
+        },
+        {
+          "word": "date.",
+          "start": 11.0,
+          "end": 11.314
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "beat": "WHO",
+      "text": "We're not going to tell you what happens, because nobody knows, and we'd rather ask the question than pretend we have the answer.",
+      "start": 11.654,
+      "end": 17.796,
+      "dur": 6.142,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "We're",
+          "start": 11.654,
+          "end": 11.841
+        },
+        {
+          "word": "not",
+          "start": 11.841,
+          "end": 12.027
+        },
+        {
+          "word": "going",
+          "start": 12.027,
+          "end": 12.214
+        },
+        {
+          "word": "to",
+          "start": 12.214,
+          "end": 12.401
+        },
+        {
+          "word": "tell",
+          "start": 12.401,
+          "end": 12.587
+        },
+        {
+          "word": "you",
+          "start": 12.587,
+          "end": 12.774
+        },
+        {
+          "word": "what",
+          "start": 12.774,
+          "end": 12.961
+        },
+        {
+          "word": "happens,",
+          "start": 12.961,
+          "end": 13.428
+        },
+        {
+          "word": "because",
+          "start": 13.428,
+          "end": 13.801
+        },
+        {
+          "word": "nobody",
+          "start": 13.801,
+          "end": 14.361
+        },
+        {
+          "word": "knows,",
+          "start": 14.361,
+          "end": 14.641
+        },
+        {
+          "word": "and",
+          "start": 14.641,
+          "end": 14.828
+        },
+        {
+          "word": "we'd",
+          "start": 14.828,
+          "end": 15.014
+        },
+        {
+          "word": "rather",
+          "start": 15.014,
+          "end": 15.388
+        },
+        {
+          "word": "ask",
+          "start": 15.388,
+          "end": 15.575
+        },
+        {
+          "word": "the",
+          "start": 15.575,
+          "end": 15.761
+        },
+        {
+          "word": "question",
+          "start": 15.761,
+          "end": 16.135
+        },
+        {
+          "word": "than",
+          "start": 16.135,
+          "end": 16.321
+        },
+        {
+          "word": "pretend",
+          "start": 16.321,
+          "end": 16.695
+        },
+        {
+          "word": "we",
+          "start": 16.695,
+          "end": 16.881
+        },
+        {
+          "word": "have",
+          "start": 16.881,
+          "end": 17.068
+        },
+        {
+          "word": "the",
+          "start": 17.068,
+          "end": 17.255
+        },
+        {
+          "word": "answer.",
+          "start": 17.255,
+          "end": 17.796
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "beat": "WHO",
+      "text": "That's what VIRUS2027 is built on.",
+      "start": 18.096,
+      "end": 20.849,
+      "dur": 2.752,
+      "gap_after": 0.42,
+      "words": [
+        {
+          "word": "That's",
+          "start": 18.096,
+          "end": 18.445
+        },
+        {
+          "word": "what",
+          "start": 18.445,
+          "end": 18.793
+        },
+        {
+          "word": "VIRUS2027",
+          "start": 18.793,
+          "end": 19.49
+        },
+        {
+          "word": "is",
+          "start": 19.49,
+          "end": 19.838
+        },
+        {
+          "word": "built",
+          "start": 19.838,
+          "end": 20.187
+        },
+        {
+          "word": "on.",
+          "start": 20.187,
+          "end": 20.849
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "beat": "VIRA",
+      "text": "And this is Vira, who notices the pattern in the noise before the rest of us.",
+      "start": 21.269,
+      "end": 24.869,
+      "dur": 3.6,
+      "gap_after": 0.4,
+      "words": [
+        {
+          "word": "And",
+          "start": 21.269,
+          "end": 21.429
+        },
+        {
+          "word": "this",
+          "start": 21.429,
+          "end": 21.59
+        },
+        {
+          "word": "is",
+          "start": 21.59,
+          "end": 21.751
+        },
+        {
+          "word": "Vira,",
+          "start": 21.751,
+          "end": 22.153
+        },
+        {
+          "word": "who",
+          "start": 22.153,
+          "end": 22.313
+        },
+        {
+          "word": "notices",
+          "start": 22.313,
+          "end": 22.795
+        },
+        {
+          "word": "the",
+          "start": 22.795,
+          "end": 22.956
+        },
+        {
+          "word": "pattern",
+          "start": 22.956,
+          "end": 23.278
+        },
+        {
+          "word": "in",
+          "start": 23.278,
+          "end": 23.438
+        },
+        {
+          "word": "the",
+          "start": 23.438,
+          "end": 23.599
+        },
+        {
+          "word": "noise",
+          "start": 23.599,
+          "end": 23.76
+        },
+        {
+          "word": "before",
+          "start": 23.76,
+          "end": 24.081
+        },
+        {
+          "word": "the",
+          "start": 24.081,
+          "end": 24.242
+        },
+        {
+          "word": "rest",
+          "start": 24.242,
+          "end": 24.402
+        },
+        {
+          "word": "of",
+          "start": 24.402,
+          "end": 24.563
+        },
+        {
+          "word": "us.",
+          "start": 24.563,
+          "end": 24.869
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "beat": "PROOF",
+      "text": "Underneath the mystery, the mechanics are deliberately boring, and all of it is on the chain.",
+      "start": 25.269,
+      "end": 29.855,
+      "dur": 4.587,
+      "gap_after": 0.28,
+      "words": [
+        {
+          "word": "Underneath",
+          "start": 25.269,
+          "end": 25.729
+        },
+        {
+          "word": "the",
+          "start": 25.729,
+          "end": 25.882
+        },
+        {
+          "word": "mystery,",
+          "start": 25.882,
+          "end": 26.419
+        },
+        {
+          "word": "the",
+          "start": 26.419,
+          "end": 26.572
+        },
+        {
+          "word": "mechanics",
+          "start": 26.572,
+          "end": 27.033
+        },
+        {
+          "word": "are",
+          "start": 27.033,
+          "end": 27.186
+        },
+        {
+          "word": "deliberately",
+          "start": 27.186,
+          "end": 28.106
+        },
+        {
+          "word": "boring,",
+          "start": 28.106,
+          "end": 28.49
+        },
+        {
+          "word": "and",
+          "start": 28.49,
+          "end": 28.643
+        },
+        {
+          "word": "all",
+          "start": 28.643,
+          "end": 28.797
+        },
+        {
+          "word": "of",
+          "start": 28.797,
+          "end": 28.95
+        },
+        {
+          "word": "it",
+          "start": 28.95,
+          "end": 29.104
+        },
+        {
+          "word": "is",
+          "start": 29.104,
+          "end": 29.257
+        },
+        {
+          "word": "on",
+          "start": 29.257,
+          "end": 29.41
+        },
+        {
+          "word": "the",
+          "start": 29.41,
+          "end": 29.564
+        },
+        {
+          "word": "chain.",
+          "start": 29.564,
+          "end": 29.855
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "beat": "PROOF",
+      "text": "It runs on Pulse prediction markets, so what you think about the future has somewhere to go.",
+      "start": 30.135,
+      "end": 34.525,
+      "dur": 4.389,
+      "gap_after": 0.46,
+      "words": [
+        {
+          "word": "It",
+          "start": 30.135,
+          "end": 30.308
+        },
+        {
+          "word": "runs",
+          "start": 30.308,
+          "end": 30.481
+        },
+        {
+          "word": "on",
+          "start": 30.481,
+          "end": 30.654
+        },
+        {
+          "word": "Pulse",
+          "start": 30.654,
+          "end": 30.826
+        },
+        {
+          "word": "prediction",
+          "start": 30.826,
+          "end": 31.345
+        },
+        {
+          "word": "markets,",
+          "start": 31.345,
+          "end": 31.777
+        },
+        {
+          "word": "so",
+          "start": 31.777,
+          "end": 31.95
+        },
+        {
+          "word": "what",
+          "start": 31.95,
+          "end": 32.123
+        },
+        {
+          "word": "you",
+          "start": 32.123,
+          "end": 32.295
+        },
+        {
+          "word": "think",
+          "start": 32.295,
+          "end": 32.468
+        },
+        {
+          "word": "about",
+          "start": 32.468,
+          "end": 32.814
+        },
+        {
+          "word": "the",
+          "start": 32.814,
+          "end": 32.987
+        },
+        {
+          "word": "future",
+          "start": 32.987,
+          "end": 33.332
+        },
+        {
+          "word": "has",
+          "start": 33.332,
+          "end": 33.505
+        },
+        {
+          "word": "somewhere",
+          "start": 33.505,
+          "end": 34.023
+        },
+        {
+          "word": "to",
+          "start": 34.023,
+          "end": 34.196
+        },
+        {
+          "word": "go.",
+          "start": 34.196,
+          "end": 34.525
+        }
+      ]
+    },
+    {
+      "id": "L09",
+      "beat": "CTA",
+      "text": "Follow the signal, and remember the date.",
+      "start": 34.985,
+      "end": 37.029,
+      "dur": 2.044,
+      "gap_after": 1.3,
+      "words": [
+        {
+          "word": "Follow",
+          "start": 34.985,
+          "end": 35.314
+        },
+        {
+          "word": "the",
+          "start": 35.314,
+          "end": 35.479
+        },
+        {
+          "word": "signal,",
+          "start": 35.479,
+          "end": 35.891
+        },
+        {
+          "word": "and",
+          "start": 35.891,
+          "end": 36.056
+        },
+        {
+          "word": "remember",
+          "start": 36.056,
+          "end": 36.551
+        },
+        {
+          "word": "the",
+          "start": 36.551,
+          "end": 36.715
+        },
+        {
+          "word": "date.",
+          "start": 36.715,
+          "end": 37.029
+        }
+      ]
+    }
+  ]
+}
