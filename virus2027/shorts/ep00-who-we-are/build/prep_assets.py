@@ -25,19 +25,30 @@ ASSETS = ROOT / "assets"
 SRC = ASSETS / "broll_src"
 OUT = ASSETS / "broll"
 
-# These are brand renders, not stock: keep almost all of their own colour.
+# Most sources here are brand renders, not stock, so the grade is almost a
+# no-op: keep almost all of their own colour. The exceptions are the two
+# photographic cut-ins. The political collage arrived already in the palette
+# and is left alone; the AI plate arrived on a teal studio background, which
+# is the one colour in the film that has to go, so it is pulled almost all the
+# way down to the warm monochrome and darkened until the ground matches.
 KEEP_COLOUR = 0.92
-BRIGHTNESS = {"burn": 0.96, "theories": 1.04, "vira": 1.0}
+GRADE = {
+    "burn":       {"brightness": 0.96},
+    "theories":   {"brightness": 1.04},
+    "vira":       {"brightness": 1.00},
+    "collage":    {"brightness": 1.00, "contrast": 1.08},
+    "ai_silence": {"brightness": 0.72, "contrast": 1.20, "keep": 0.04, "warm": 3.2},
+}
 
 
-def grade(img, keep=KEEP_COLOUR, contrast=1.06, brightness=1.0):
+def grade(img, keep=KEEP_COLOUR, contrast=1.06, brightness=1.0, warm=1.0):
     rgb = img.convert("RGB")
     a = np.asarray(rgb.convert("L").convert("RGB"), np.float32)
-    a[..., 0] *= 1.045
-    a[..., 1] *= 0.995
-    a[..., 2] *= 0.925
-    warm = Image.fromarray(a.clip(0, 255).astype(np.uint8))
-    out = Image.blend(warm, rgb, keep)
+    a[..., 0] *= 1 + 0.045 * warm
+    a[..., 1] *= 1 - 0.005 * warm
+    a[..., 2] *= 1 - 0.075 * warm
+    warm_img = Image.fromarray(a.clip(0, 255).astype(np.uint8))
+    out = Image.blend(warm_img, rgb, keep)
     out = ImageEnhance.Contrast(out).enhance(contrast)
     return ImageEnhance.Brightness(out).enhance(brightness)
 
@@ -111,11 +122,12 @@ def main():
     for p in sorted(SRC.glob("*")):
         if p.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
             continue
-        img = grade(Image.open(p), brightness=BRIGHTNESS.get(p.stem, 1.0))
+        img = grade(Image.open(p), **GRADE.get(p.stem, {}))
         h = max(1, round(1080 * img.height / img.width))
         band = vignette(add_grain(img.resize((1080, h), Image.LANCZOS)))
         band.save(OUT / f"{p.stem}.jpg", quality=94)
-        backdrop(img).save(OUT / f"{p.stem}_bg.jpg", quality=88)
+        dim = 0.30 if p.stem == "ai_silence" else 0.62
+        backdrop(img, brightness=dim).save(OUT / f"{p.stem}_bg.jpg", quality=88)
         print(f"broll/{p.stem}.jpg   1080x{h}  (+bg)")
 
     # The mascot render is centred and square, so it survives a 9:16 crop and

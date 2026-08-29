@@ -45,9 +45,10 @@ into the artwork underneath it.
 
 | t | Line | Camera | Label on screen |
 |---|---|---|---|
-| 0:00 | *…it keeps landing on the same year.* | tight on the centre painting, slow push (bw 3150→3480) | `WHY 2027?` |
-| 0:05 | *Twenty twenty-seven.* | the push tightens (bw 3480→3880) | `WHY 2027?` |
-| 0:06.5 | *AI timelines, disclosure files, geopolitics…* | cut to the three-emblem plate | — |
+| 0:00 | *…it keeps landing on the same year.* | the shattered-glass collage, slow push | — |
+| 0:05 | *Twenty twenty-seven.* | **cut to the painted date** (bw 3300→3820) | `WHY 2027?` |
+| 0:06.5 | *AI timelines, disclosure files…* | cut to the AI plate | — |
+| 0:08.4 | *…geopolitics — different conversations…* | cut to the three-emblem plate | — |
 | 0:11.7 | *We're not going to tell you what happens…* | **pull all the way back — the whole gallery** (bw 1080) | the room |
 | 0:14.6 | | wide, drifting left | |
 | 0:17.4 | *That's what VIRUS2027 is built on.* | still in the room | |
@@ -78,14 +79,19 @@ voice competing with the read:
 |---|---|---|
 | `PlaybackBar` | every frame | the progress line at the bottom, 940 px wide, filling with the film |
 | `CropMarks` | every frame | corner registration ticks — the frame reading as a document |
-| `PulseRings` | L01, L02, L05, L06 | concentric rings breathing out of a point, on the lines about the date |
-| `SignalTraces` | L03, L04, L09 | bezier traces drawn in from the frame edges, converging on one point |
+| `PulseRings` | L02, L05, L06, L09 | concentric rings breathing out of a point, on the lines about the date |
 | `NodeField` | L04 | a drifting constellation, links struck between nodes under 240 px apart |
 | `SupplyBar` | L07 | a bar contracting in steps — the supply line, drawn instead of said |
-| `Brackets` | L03, L06, L07 | framing brackets that grow around a plate as it lands |
+| `Brackets` | L01, L03, L06, L07 | framing brackets that grow around a plate as it lands |
 
 None of them is keyed to a frame number either: each is a beat in `beats.json`
 attached to a spoken line, so a rewrite re-times the graphics with the picture.
+
+There used to be an eighth, `SignalTraces` — curved lines drawn in from the
+frame edges all landing on one point. It was the neatest idea in the set and
+the worst thing on screen: over artwork that already runs its own orange
+signal line, a second bundle of converging lines just read as clutter. It's
+gone, and the beats it held are now rings and brackets.
 
 To keep them legible the square plates were dropped to `centre: 960`–`1010`,
 which frees a band above the artwork for the graphics to live in rather than
@@ -125,6 +131,28 @@ quotes. Everything else on screen is either a spoken subtitle or type that
 was already painted into the artwork. The brand end card keeps `2027`, the
 slogan and the handle; the site and contract moved to the pinned comment,
 where they can be corrected without re-rendering.
+
+## The two photographs
+
+Everything else in the film is brand artwork; these two are cut in from
+outside, and each is placed on the line that earns it.
+
+**The collage opens.** Five seconds of shattered glass — Capitol, Trump, Musk,
+riot line, VOTE placards — under *"somebody predicts something about the
+future."* It arrived already in the palette, so it's graded like the brand
+renders: 92% of its own colour, nothing else. Cutting from it to the painted
+`WHY 2027?` on the spoken date is the hardest cut in the film and the one that
+sets up everything after it.
+
+**The AI plate lands on the word.** An android with a finger to its lips, held
+for *"AI timelines, disclosure files,"* then cut away on *"geopolitics."* This
+one arrived on a teal studio background — the one colour in the film that had
+to go — so it's the only source that gets a real grade rather than a polish:
+4% of its own colour kept, the warm tint pushed 3.2×, brightness down to 0.72,
+and its blurred backdrop dimmed to 0.30 so no teal can leak back in around the
+band.
+
+---
 
 ## Two brand rules the build had to respect
 

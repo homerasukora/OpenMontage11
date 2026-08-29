@@ -12,7 +12,7 @@ import {Band, CutFlash, Hero, Shot, Void} from './Shots';
 import {Pano, PanoMove} from './Pano';
 import {BrandEnd, Row} from './elements';
 import {
-  Brackets, CropMarks, NodeField, PlaybackBar, PulseRings, SignalTraces, SupplyBar,
+  Brackets, CropMarks, NodeField, PlaybackBar, PulseRings, SupplyBar,
 } from './Viz';
 
 loadBarlow('normal', {weights: ['600', '700', '800'], subsets: ['latin']});
@@ -23,7 +23,7 @@ export type Beat = {
   at: string; lead: number; dur: number; type: string;
   text?: string; index?: number; y?: number;
   kind?: string; cx?: number; cy?: number; count?: number;
-  draw?: number; period?: number; max?: number; ty?: number;
+  period?: number; max?: number;
   top?: number; bottom?: number;
 };
 
@@ -47,11 +47,6 @@ const renderBeat = (b: Beat, dur: number, key: string) => {
   switch (b.kind) {
     case 'nodes':
       return <NodeField key={key} dur={dur} count={b.count} />;
-    case 'traces':
-      return (
-        <SignalTraces key={key} dur={dur} tx={b.cx} ty={b.ty}
-                      count={b.count} draw={b.draw} />
-      );
     case 'rings':
       return (
         <PulseRings key={key} dur={dur} cx={b.cx} cy={b.cy}

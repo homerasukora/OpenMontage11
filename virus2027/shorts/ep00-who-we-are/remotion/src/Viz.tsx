@@ -4,7 +4,7 @@ import {C, EASE_SIGNAL, H, W, rnd} from './theme';
 
 /**
  * Drawn visual elements — the film's only additions to the artwork besides
- * the spoken subtitles. Every one of these is geometry and light: traces,
+ * the spoken subtitles. Every one of these is geometry and light:
  * rings, nodes, brackets, a contracting bar. None of them carry a word.
  *
  * The vocabulary is taken from the brand artwork itself, which already runs
@@ -97,69 +97,6 @@ export const NodeField: React.FC<{dur: number; count?: number}> = ({
             fill={n.hot ? orange(0.75) : paper(0.3)}
           />
         ))}
-      </svg>
-    </AbsoluteFill>
-  );
-};
-
-/* -------------------------------------------------------- signal traces */
-
-/**
- * Curved traces drawn in from the frame edges, all landing on one point.
- * This is the film's argument in a graphic: separate conversations, one date.
- */
-export const SignalTraces: React.FC<{
-  dur: number; tx?: number; ty?: number; count?: number; draw?: number;
-}> = ({dur, tx = W / 2, ty = 700, count = 5, draw = 34}) => {
-  const {f, p} = useLife(dur, 10, 12);
-
-  const traces = Array.from({length: count}).map((_, i) => {
-    const side = i % 2 === 0 ? -1 : 1;
-    const sx = side < 0 ? -140 : W + 140;
-    const sy = 220 + rnd(i * 17 + 3) * (H - 700);
-    const c1x = sx + side * -260;
-    const c1y = sy + (rnd(i * 5 + 9) - 0.5) * 320;
-    const c2x = tx + side * (220 + rnd(i * 11 + 2) * 180);
-    const c2y = ty + (rnd(i * 23 + 7) - 0.5) * 300;
-    const delay = i * 5;
-    const prog = interpolate(f, [delay, delay + draw], [0, 1], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-      easing: Easing.bezier(...EASE_SIGNAL),
-    });
-    return {d: `M ${sx} ${sy} C ${c1x} ${c1y}, ${c2x} ${c2y}, ${tx} ${ty}`, prog, i};
-  });
-
-  const land = interpolate(f, [draw, draw + 14], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-
-  return (
-    <AbsoluteFill style={{opacity: p, pointerEvents: 'none'}}>
-      <svg width={W} height={H}>
-        <defs>
-          <filter id="tglow" x="-40%" y="-40%" width="180%" height="180%">
-            <feGaussianBlur stdDeviation="6" result="b" />
-            <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
-          </filter>
-        </defs>
-        {traces.map((t) => (
-          <path
-            key={t.i}
-            d={t.d}
-            fill="none"
-            stroke={orange(0.66)}
-            strokeWidth={2.4}
-            pathLength={1}
-            strokeDasharray={1}
-            strokeDashoffset={1 - t.prog}
-            filter="url(#tglow)"
-          />
-        ))}
-        <circle cx={tx} cy={ty} r={5 + land * 4} fill={orange(0.9 * land)} filter="url(#tglow)" />
-        <circle
-          cx={tx} cy={ty} r={26 + land * 60}
-          fill="none" stroke={orange(0.5 * (1 - land * 0.5))} strokeWidth={2}
-        />
       </svg>
     </AbsoluteFill>
   );
