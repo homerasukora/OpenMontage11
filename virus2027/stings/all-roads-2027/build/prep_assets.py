@@ -9,6 +9,10 @@ redrawn, recoloured or reproportioned — this stage only removes background.
   logo_v.png   ivory V, already alpha -> source alpha used as-is, trimmed
   mascot.png   Vira on near-black -> feathered crop, background left as is
                                      because it already matches our ground
+  prediction.jpg  a live Pulse market -> graded barely at all; it arrived
+                                     already dark with an orange curve, and a
+                                     screenshot that looks colour-graded stops
+                                     reading as a screenshot
   coin.png     token on black velvet -> luma key; the coin is an order of
                                      magnitude brighter than its backdrop, and
                                      a rectangular feather would show its own
@@ -20,7 +24,7 @@ Also emits the tiling grain plate the composition scrolls over everything.
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageFilter
+from PIL import Image, ImageEnhance, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "assets" / "src"
@@ -104,6 +108,17 @@ def main():
     mascot = trim_to_glyph(feathered(SRC / "mascot.png", (250, 190, 1010, 1105)), pad=0)
     mascot.save(OUT / "mascot-plate.png")
     print(f"mascot-plate.png {mascot.size}  feathered, silhouette intact")
+
+    # The market screenshot is evidence, not artwork: the lightest possible
+    # touch, just enough to sit on the ground without glowing off it.
+    pred = Image.open(SRC / "prediction.jpg").convert("RGB")
+    pred = ImageEnhance.Brightness(pred).enhance(0.94)
+    w = 1040
+    h = max(1, round(w * pred.height / pred.width))
+    # no per-plate grain: the composition scrolls a grain layer over the
+    # whole frame, and a second pass here would only double it
+    pred.resize((w, h), Image.LANCZOS).save(OUT / "prediction.jpg", quality=94)
+    print(f"prediction.jpg  {w}x{h}  light grade, kept as a screenshot")
 
     coin = trim_to_glyph(luma_key(SRC / "coin.png"), pad=6, min_run=6)
     coin.save(OUT / "coin.png")

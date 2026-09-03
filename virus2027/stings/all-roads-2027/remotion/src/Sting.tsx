@@ -1,5 +1,7 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {
+  AbsoluteFill, Audio, Easing, Img, interpolate, staticFile, useCurrentFrame,
+} from 'remotion';
 import {loadFont as loadBarlow} from '@remotion/google-fonts/BarlowCondensed';
 import {loadFont as loadMono} from '@remotion/google-fonts/IBMPlexMono';
 
@@ -230,6 +232,10 @@ export const Sting: React.FC = () => {
 
   const n1 = PATH[NODES[0]];
   const n4 = PATH[NODES[3]];
+  const predIn = fadeBand(f, sec(6.45), sec(8.9), 8);
+  const predScan = interpolate(f, [sec(6.7), sec(8.1)], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
   const scan = interpolate(f, [sec(3.7), sec(5.3)], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
   });
@@ -310,6 +316,31 @@ export const Sting: React.FC = () => {
         <Head text="Predictions go on-chain" size={82} o={s3} y={584} dy={0} />
         <Sub o={s3} y={716} colour={C.signal}>Pulse // multiple markets</Sub>
 
+        {/* A live market, on the line that says predictions go on-chain.
+            It lands a beat after the headline so the words arrive first, and
+            it takes the empty band above them rather than displacing
+            anything. A hairline rule frames it as a placed document; the
+            screenshot itself is barely graded, because one that looks
+            colour-graded stops reading as a screenshot. */}
+        <div style={{
+          position: 'absolute', left: (W - 536) / 2, top: 88,
+          width: 536, opacity: predIn,
+          transform: `translateY(${(1 - predIn) * 16}px)`,
+        }}>
+          <Img
+            src={staticFile('prediction.jpg')}
+            style={{
+              width: '100%', display: 'block', borderRadius: 14,
+              border: `1px solid rgba(232,227,219,0.16)`,
+            }}
+          />
+          <div style={{
+            position: 'absolute', left: 0, right: 0, top: 484 * predScan,
+            height: 2, background: C.signal, boxShadow: `0 0 22px ${C.signal}`,
+            opacity: predScan > 0.02 && predScan < 0.98 ? 0.55 : 0,
+          }} />
+        </div>
+
         {/* possibilities, not predictions — they stay faint and never resolve */}
         {['AI?', 'Markets?', 'Disclosure?', '2027?'].map((t, i) => {
           const a = interpolate(
@@ -318,8 +349,9 @@ export const Sting: React.FC = () => {
             [0, 1, 1, 0],
             {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'},
           );
-          const xs = [128, 612, 96, 596];
-          const ys = [268, 372, 858, 902];
+          // in the margins either side of the copy, clear of the market plate
+          const xs = [58, 742, 48, 762];
+          const ys = [826, 872, 944, 1000];
           return (
             <div key={t} style={{
               position: 'absolute', left: xs[i], top: ys[i],

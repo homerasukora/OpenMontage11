@@ -49,7 +49,7 @@ stroke shoot out of the top of the frame instead of the frame chasing it.
 |---|---|---|
 | 0:00–0:03 | 1 | `08.2026 // SIGNAL ORIGIN` · the token floating at the first node |
 | 0:03–0:06 | 2 | `ON-CHAIN TRACE` · fixed supply / no mint / burn active · the V being scanned |
-| 0:06–0:09 | 3 | `PREDICTIONS GO ON-CHAIN` · `PULSE // multiple markets` · four faint fragments |
+| 0:06–0:09 | 3 | `PREDICTIONS GO ON-CHAIN` · `PULSE // multiple markets` · a live market above the copy, four faint fragments in the margins |
 | 0:09–0:12 | 4 | `DIFFERENT SIGNALS.` → `SAME DATE.` · faint lines leaning in · Vira watching |
 | 0:12–0:13.4 | 5 | `ALL ROADS LEAD TO 2027`, everything else stepped back |
 | 0:13.4–0:13.6 | — | the line turns vertical and leaves the frame, analogue tear |
@@ -84,6 +84,17 @@ follows the actual silhouette including the milled edge. It floats rather
 than rests — a coin sitting on the timeline reads as a prop, and this one is
 the subject of the line being spoken over it. A gleam sweeps across it,
 masked to its own alpha so the light never spills past the rim.
+
+**The market screenshot** takes the empty band above the section-three copy
+rather than displacing anything, and lands a beat after the headline so the
+words arrive first. The four possibility fragments moved out to the margins
+to clear it. A hairline rule frames it as a placed document and the same scan
+bar the logo gets passes over it once. It is barely graded — brightness down
+to 0.94 and nothing else, with no per-plate grain because the composition
+already scrolls grain over the whole frame. A screenshot that looks
+colour-graded stops reading as a screenshot, and the market it shows is doing
+the section's work on its own: a real book on whether Trump is out before
+2027, resolving on the first of January.
 
 **Vira** is a feathered crop of the original render rather than a matte. His
 plate background is near-black and the film's ground is `#090806`, so the
