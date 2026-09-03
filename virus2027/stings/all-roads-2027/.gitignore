@@ -1,0 +1,15 @@
+# The repo root ignores build/ (an OpenMontage artefact dir). Here it holds
+# the pipeline source, so re-include it and ignore only the scratch inside.
+!build/
+build/stills/
+build/*.png
+
+# generated copies — recreated by the rebuild steps in README.md
+remotion/node_modules/
+remotion/public/*.png
+remotion/public/*.wav
+audio/score.wav
+
+# the root ignores logo_*.png (an OpenMontage sample-asset rule); the brand
+# mark is a real source here and prep_assets.py needs it to rebuild
+!assets/src/logo_*.png
