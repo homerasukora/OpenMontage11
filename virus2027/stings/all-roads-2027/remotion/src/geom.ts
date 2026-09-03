@@ -12,24 +12,31 @@
  * would read as a chart axis, and the brief rules that out.
  */
 
+import {H} from './theme';
+
 export type Pt = {x: number; y: number};
 
+/**
+ * Where the line sits in the frame, and how far each point strays from it.
+ *
+ * The path is stored as offsets from one baseline rather than as absolute y
+ * values, so retargeting the film to another aspect is a single number. In
+ * 9:16 the line rides at 60% of frame height and the empty lower third is
+ * part of the look; a square frame has no third to spare, so it sits at 72%
+ * and the copy stack tightens above it.
+ */
+export const BASE_Y = H >= 1600 ? 1150 : Math.round(H * 0.724);
+
+const OFF = [0, 0, -18, 12, -42, 0, -30, 42, -4, 26, -32, 2, -10, 0];
+
+const XS = [120, 760, 1180, 1620, 2100, 2560, 3000, 3440, 3900, 4340, 4780,
+            5240, 5640, 6000];
+//                1 · signal origin        4 · on-chain trace
+//                7 · prediction layer    10 · convergence   13 · 2027
+
 export const PATH: Pt[] = [
-  {x: 120, y: 1150},
-  {x: 760, y: 1150},   // 1 · signal origin
-  {x: 1180, y: 1132},
-  {x: 1620, y: 1162},
-  {x: 2100, y: 1108},  // 4 · on-chain trace
-  {x: 2560, y: 1150},
-  {x: 3000, y: 1120},
-  {x: 3440, y: 1192},  // 7 · prediction layer
-  {x: 3900, y: 1146},
-  {x: 4340, y: 1176},
-  {x: 4780, y: 1118},  // 10 · convergence
-  {x: 5240, y: 1152},
-  {x: 5640, y: 1140},
-  {x: 6000, y: 1150},  // 13 · 2027
-  {x: 6000, y: -520},  // 14 · out of frame, straight up
+  ...XS.map((x, i) => ({x, y: BASE_Y + OFF[i]})),
+  {x: 6000, y: BASE_Y - (H + 460)},  // 14 · out of frame, straight up
 ];
 
 /** Indices in PATH that carry a node marker and a section of copy. */

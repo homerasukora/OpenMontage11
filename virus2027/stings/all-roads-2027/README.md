@@ -1,14 +1,14 @@
 # ALL ROADS → 2027 · sting
 
-Fifteen seconds, 9:16, no voice. One orange line runs from the first frame to
+Fifteen seconds, 1:1, no voice. One orange line runs from the first frame to
 the last and everything else hangs off it.
 
 | | |
 |---|---|
-| **Master** | `out/VIRUS2027_STING_all-roads-2027_1080x1920.mp4` |
+| **Master** | `out/VIRUS2027_STING_all-roads-2027_1080x1080.mp4` |
 | **Upload copy** | `out/VIRUS2027_STING_all-roads-2027_upload.mp4` |
 | **Audio** | `audio/mix.wav` — drone, node ticks, riser, hit. −14 LUFS |
-| **Format** | 1080×1920 · 30 fps · H.264 · AAC 48 kHz |
+| **Format** | 1080×1080 · 30 fps · H.264 · AAC 48 kHz |
 | **Runtime** | 15.0 s (450 frames) |
 | **Runtime engine** | Remotion — locked at proposal, both engines were available |
 
@@ -37,6 +37,30 @@ Two details keep it from reading as a price chart, which the brief rules out:
 A ghost of the full path sits underneath at 8.5% opacity. It costs nothing and
 it does two jobs: the frame is composed before the stroke arrives, and you can
 see the line is going somewhere specific.
+
+### One stack, every section
+
+Headline, then its sub, then the image that section is about, then the line.
+Every section is built that way — the coin, the mark, the market screenshot
+and Vira all sit in the same band, between the copy and the timeline.
+
+The market screenshot used to break it. In a 9:16 frame there was a spare
+band above the headline, so that is where it went, and it read as a
+different kind of object from everything else in the film. The square frame
+is what forced the discipline: there is no spare band to put an exception
+in. `L` in `Sting.tsx` holds the stack for both aspects, so no section can
+drift on its own again.
+
+### Aspect
+
+`H` in `theme.ts` is the only switch. The path hangs off `BASE_Y` in
+`geom.ts` rather than absolute y values, and `BASE_Y` follows the frame: 60%
+of height at 9:16, where the empty lower third is part of the look, and 72%
+at 1:1, where there is no third to spare. `L` carries the two copy stacks.
+Widths never change — the frame is 1080 wide either way — so the camera,
+every x position and the whole of `geom.ts` are format-independent.
+
+Set `H = 1920` and the vertical cut rebuilds with no other edit.
 
 ### The camera
 
@@ -85,7 +109,7 @@ than rests — a coin sitting on the timeline reads as a prop, and this one is
 the subject of the line being spoken over it. A gleam sweeps across it,
 masked to its own alpha so the light never spills past the rim.
 
-**The market screenshot** takes the empty band above the section-three copy
+**The market screenshot** sits the empty band above the section-three copy
 rather than displacing anything, and lands a beat after the headline so the
 words arrive first. The four possibility fragments moved out to the margins
 to clear it. A hairline rule frames it as a placed document and the same scan
@@ -166,7 +190,7 @@ python build/sound_design.py    # score + master
 cd remotion && npm install
 cp ../assets/{grain,logo-v,mascot-plate}.png ../audio/mix.wav public/
 npx remotion render src/index.tsx Sting \
-  ../out/VIRUS2027_STING_all-roads-2027_1080x1920.mp4 --codec h264 --crf 17
+  ../out/VIRUS2027_STING_all-roads-2027_1080x1080.mp4 --codec h264 --crf 17
 ```
 
 To retime the tour, move the second column of `KEYS` in `Sting.tsx` and the
@@ -180,5 +204,5 @@ it.
 
 | Gap | Why | Fix |
 |---|---|---|
-| 1:1 version not built | The brief was corrected to 9:16 mid-message | `W`/`H` in `theme.ts` plus new y positions for the copy; the line geometry is width-independent |
+| Only 1:1 is rendered | It is the delivered aspect | Set `H = 1920` in `theme.ts` and re-render; the layout follows |
 | Marks are raster, not vector | Supplied as PNG | Drop in an SVG and `Logo` takes it unchanged |

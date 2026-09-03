@@ -52,7 +52,7 @@ export const SAFE = {
 
 export const FPS = 30;
 export const W = 1080;
-export const H = 1920;
+export const H = 1080;
 
 /** Signal ease from the guide: cubic-bezier(0.22, 1, 0.36, 1). */
 export const EASE_SIGNAL = [0.22, 1, 0.36, 1] as const;

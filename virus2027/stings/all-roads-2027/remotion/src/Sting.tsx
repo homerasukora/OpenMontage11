@@ -21,6 +21,29 @@ export const DURATION = sec(15);
 
 export const CLOSING_LINE = 'All roads lead to 2027';
 
+/**
+ * One stack, used by every section: headline, then its sub, then the image
+ * that section is about, all in the band between the copy and the line.
+ *
+ * The market screenshot used to break this — it sat above the headline
+ * because that was where the empty space happened to be in a 9:16 frame.
+ * It reads as a different kind of object when it does that. Everything the
+ * film shows is now placed the same way, and the square frame is what forced
+ * the discipline: there is no spare band to put an exception in.
+ */
+const SQUARE = H < 1400;
+
+/** Native aspect of assets/prediction.jpg, so the plate fits its band. */
+const PRED_ASPECT = 1320 / 1190;
+
+const L = SQUARE
+  ? {head: 128, headSize: 70, sub: 238, plate: 298, plateH: 420,
+     cardLogo: 218, cardLogoW: 166, card2027: 338, card2027Size: 232,
+     cardRule: 614, cardLine: 658, cardLineSize: 52, cardTicker: 750}
+  : {head: 592, headSize: 88, sub: 716, plate: 800, plateH: 330,
+     cardLogo: 548, cardLogoW: 188, card2027: 786, card2027Size: 292,
+     cardRule: 1128, cardLine: 1180, cardLineSize: 64, cardTicker: 1300};
+
 const display = (size: number, weight = 700) => ({
   fontFamily: FONT_STACKS.en.display,
   fontWeight: weight,
@@ -193,6 +216,8 @@ const Sub: React.FC<{children: React.ReactNode; o: number; y: number; colour?: s
   }}>{children}</div>
 );
 
+const PLATE_W = Math.min(560, Math.round(L.plateH * PRED_ASPECT));
+
 export const Sting: React.FC = () => {
   const f = useCurrentFrame();
   const p = progress(f);
@@ -251,7 +276,7 @@ export const Sting: React.FC = () => {
             about $VIRUS2027 arriving on-chain, so the thing that arrives is
             the coin; Vira gets the convergence beat instead. */}
         <Coin
-          x={n1.x - camX - 342} y={n1.y - 348} width={296}
+          x={n1.x - camX - 342} y={n1.y - 296} width={252}
           opacity={s1 * 0.97}
         />
 
@@ -263,7 +288,7 @@ export const Sting: React.FC = () => {
             the last half-second. Parked just ahead of the head of the line
             instead, it rides along with the scan and stays in shot. */}
         <div style={{
-          position: 'absolute', left: 690, top: 852, width: 232, opacity: s2,
+          position: 'absolute', left: 690, top: L.plate + 96, width: 232, opacity: s2,
         }}>
           <Logo x={26} y={22} width={180} opacity={0.94} />
           <div style={{
@@ -284,7 +309,7 @@ export const Sting: React.FC = () => {
 
         {/* 0:09–0:12 · Vira again, watching it come together */}
         <Mascot
-          x={n4.x - camX + 148} y={n4.y - 226} width={196}
+          x={n4.x - camX + 152} y={n4.y - 214} width={186}
           opacity={(s4a * 0.5 + s4b * 0.5) * 0.9}
         />
       </AbsoluteFill>
@@ -295,12 +320,12 @@ export const Sting: React.FC = () => {
 
       {/* ── copy ───────────────────────────────────────────────── */}
       <AbsoluteFill style={{opacity: worldOut}}>
-        <Head text="08.2026 // Signal Origin" size={78} o={s1} y={640} dy={rise} />
-        <Sub o={s1} y={752}>$VIRUS2027 appears on-chain</Sub>
+        <Head text="08.2026 // Signal Origin" size={L.headSize} o={s1} y={L.head} dy={rise} />
+        <Sub o={s1} y={L.sub}>$VIRUS2027 appears on-chain</Sub>
 
-        <Head text="On-chain trace" o={s2} y={598} dy={0} />
+        <Head text="On-chain trace" size={L.headSize} o={s2} y={L.head} dy={0} />
         <div style={{
-          position: 'absolute', left: 0, right: 0, top: 726, textAlign: 'center',
+          position: 'absolute', left: 0, right: 0, top: L.sub, textAlign: 'center',
           opacity: s2,
         }}>
           {['Fixed supply', 'No mint', 'Burn active'].map((t, i) => (
@@ -313,18 +338,19 @@ export const Sting: React.FC = () => {
           ))}
         </div>
 
-        <Head text="Predictions go on-chain" size={82} o={s3} y={584} dy={0} />
-        <Sub o={s3} y={716} colour={C.signal}>Pulse // multiple markets</Sub>
+        <Head text="Predictions go on-chain" size={L.headSize} o={s3} y={L.head} dy={0} />
+        <Sub o={s3} y={L.sub} colour={C.signal}>Pulse // multiple markets</Sub>
 
         {/* A live market, on the line that says predictions go on-chain.
-            It lands a beat after the headline so the words arrive first, and
-            it takes the empty band above them rather than displacing
-            anything. A hairline rule frames it as a placed document; the
+            Sits in the same band as the coin, the mark and Vira — under its
+            headline, above the timeline — so every image in the film is
+            placed the same way. It lands a beat after the copy so the words
+            arrive first. A hairline rule frames it as a placed document; the
             screenshot itself is barely graded, because one that looks
             colour-graded stops reading as a screenshot. */}
         <div style={{
-          position: 'absolute', left: (W - 536) / 2, top: 88,
-          width: 536, opacity: predIn,
+          position: 'absolute', left: (W - PLATE_W) / 2, top: L.plate,
+          width: PLATE_W, opacity: predIn,
           transform: `translateY(${(1 - predIn) * 16}px)`,
         }}>
           <Img
@@ -335,7 +361,8 @@ export const Sting: React.FC = () => {
             }}
           />
           <div style={{
-            position: 'absolute', left: 0, right: 0, top: 484 * predScan,
+            position: 'absolute', left: 0, right: 0,
+            top: (PLATE_W / PRED_ASPECT) * predScan,
             height: 2, background: C.signal, boxShadow: `0 0 22px ${C.signal}`,
             opacity: predScan > 0.02 && predScan < 0.98 ? 0.55 : 0,
           }} />
@@ -349,49 +376,49 @@ export const Sting: React.FC = () => {
             [0, 1, 1, 0],
             {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'},
           );
-          // in the margins either side of the copy, clear of the market plate
-          const xs = [58, 742, 48, 762];
-          const ys = [826, 872, 944, 1000];
+          // in the margins either side of the plate, never over it
+          const xs = SQUARE ? [34, 812, 16, 826] : [58, 742, 48, 762];
+          const ys = SQUARE ? [322, 392, 470, 540] : [826, 872, 944, 1000];
           return (
             <div key={t} style={{
               position: 'absolute', left: xs[i], top: ys[i],
-              ...display(64), color: C.text,
+              ...display(SQUARE ? 42 : 64), color: C.text,
               opacity: a * 0.16 * s3,
             }}>{t}</div>
           );
         })}
 
-        <Head text="Different signals." size={88} o={s4a} y={612} dy={0} />
-        <Head text="Same date." size={88} o={s4b} y={612} dy={0} />
+        <Head text="Different signals." size={L.headSize} o={s4a} y={L.head} dy={0} />
+        <Head text="Same date." size={L.headSize} o={s4b} y={L.head} dy={0} />
       </AbsoluteFill>
 
       {/* No arrow, and "lead" not "leads" — the subject is plural. Fitted to
           940 px because the line is long enough to reach the safe edge at 92. */}
       <Head
         text={CLOSING_LINE}
-        size={fitSize(CLOSING_LINE, 940, 92, 58)}
-        o={s5} y={606} dy={0}
+        size={fitSize(CLOSING_LINE, 940, L.headSize + 12, 52)}
+        o={s5} y={L.head} dy={0}
       />
 
       {/* ── final card ─────────────────────────────────────────── */}
       <AbsoluteFill style={{opacity: card}}>
-        <Logo centred width={188} y={548} opacity={0.94} />
+        <Logo centred width={L.cardLogoW} y={L.cardLogo} opacity={0.94} />
         <div style={{
-          position: 'absolute', left: 0, right: 0, top: 786, textAlign: 'center',
-          ...display(292), color: C.text, letterSpacing: '-0.03em',
+          position: 'absolute', left: 0, right: 0, top: L.card2027, textAlign: 'center',
+          ...display(L.card2027Size), color: C.text, letterSpacing: '-0.03em',
         }}>2027</div>
         <div style={{
-          position: 'absolute', left: (W - 380) / 2, top: 1128,
+          position: 'absolute', left: (W - 396) / 2, top: L.cardRule,
           width: 396 * card, height: 4, background: C.signal,
           boxShadow: `0 0 26px ${C.signal}`,
         }} />
         <div style={{
-          position: 'absolute', left: 0, right: 0, top: 1180, textAlign: 'center',
-          ...display(64), color: C.text,
+          position: 'absolute', left: 0, right: 0, top: L.cardLine, textAlign: 'center',
+          ...display(L.cardLineSize), color: C.text,
         }}>Something is coming.</div>
         <div style={{
-          position: 'absolute', left: 0, right: 0, top: 1300, textAlign: 'center',
-          ...mono(28), color: C.signal,
+          position: 'absolute', left: 0, right: 0, top: L.cardTicker, textAlign: 'center',
+          ...mono(SQUARE ? 24 : 28), color: C.signal,
         }}>$VIRUS2027</div>
       </AbsoluteFill>
     </AbsoluteFill>
