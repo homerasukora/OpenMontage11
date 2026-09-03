@@ -7,10 +7,20 @@ library, and a fifteen-second sting only needs four sounds anyway. Cues are
 taken from the same node timings the picture uses, so a change to the
 composition's KEYS is a one-line change here too.
 
-  bed      low drone, two detuned sines plus filtered noise, breathing
-  tick     a node lands  — short filtered click with an orange-ish ring
-  riser    the last leg  — noise sweep into the 2027 hit
-  hit      2027          — low thump with a short bright transient
+  bed      low drone, three detuned sines beating against each other
+  tick     a node lands  — soft wooden knock, a damped low sine plus one
+                           quiet upper partial
+  riser    the last leg  — a tonal glide up through a harmonic stack
+  hit      2027          — pitch-dropping thump with a mid-range transient
+
+**Everything here is tonal. There is no broadband noise anywhere in this
+file, deliberately.** The first version built its air, its node clicks, its
+riser and the crack on the hit all out of white noise, and stacked like that
+it read as hiss — fifteen seconds of it, right across the range the ear is
+most sensitive in. Every one of those four is now a tuned partial instead,
+and the master is rolled off above 8 kHz so nothing can creep back in. If a
+future cue needs grit, shape it from a low partial and distortion, not from
+a noise generator.
 
 Master lands at -14 LUFS, which is where the episodes sit.
 """
@@ -55,55 +65,73 @@ def place(buf, sig, at):
 
 
 def bed(dur):
+    """
+    Three sines an octave apart, each detuned a fraction of a hertz so they
+    beat slowly against one another. The beating is what makes it feel alive;
+    the old version used filtered noise for that and paid for it in hiss.
+    """
     n = int(dur * SR)
     x = t(n)
-    rng = np.random.default_rng(2027)
-    # two detuned sines an octave apart, slowly beating against each other
-    s = 0.20 * np.sin(2 * np.pi * 41.0 * x) + 0.13 * np.sin(2 * np.pi * 82.3 * x)
-    s += 0.055 * np.sin(2 * np.pi * 123.5 * x + np.sin(x / 3) * 0.8)
-    # air: noise rolled off hard, wobbling
-    nz = rng.normal(0, 1, n)
-    k = np.hanning(801); k /= k.sum()
-    s += 0.055 * np.convolve(nz, k, "same") * (1 + 0.35 * np.sin(2 * np.pi * 0.14 * x))
-    # the bed swells toward the end
+    s = 0.22 * np.sin(2 * np.pi * 41.0 * x)
+    s += 0.14 * np.sin(2 * np.pi * 82.3 * x + 0.7)
+    s += 0.062 * np.sin(2 * np.pi * 123.1 * x + np.sin(x / 3) * 0.8)
+    # a fifth, very quiet, drifting in and out of phase with the root
+    s += 0.030 * np.sin(2 * np.pi * 61.6 * x) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.09 * x))
     s *= 0.55 + 0.45 * np.clip(x / dur, 0, 1) ** 1.6
     return s
 
 
 def tick(strength=1.0):
+    """
+    A node landing: a wooden knock, not a click. A heavily damped low sine
+    carries it, one quiet partial at 430 Hz gives it a surface, and nothing
+    above 1 kHz is in it at all.
+    """
     n = int(0.34 * SR)
     x = t(n)
-    rng = np.random.default_rng(11)
-    click = rng.normal(0, 1, n) * env(n, 0.001, 0.05, 3.0) * 0.5
-    ring = (np.sin(2 * np.pi * 1180 * x) * 0.16 + np.sin(2 * np.pi * 2360 * x) * 0.07)
-    ring *= env(n, 0.002, 0.30, 3.2)
-    body = np.sin(2 * np.pi * 96 * x) * env(n, 0.002, 0.22, 2.4) * 0.28
-    return (click + ring + body) * strength
+    # the pitch drops a little as it decays, which is what reads as "wood"
+    f = 150 * np.exp(-x * 26) + 88
+    knock = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(n, 0.0015, 0.20, 3.0) * 0.44
+    surface = np.sin(2 * np.pi * 430 * x) * env(n, 0.001, 0.055, 4.0) * 0.10
+    return (knock + surface) * strength
 
 
 def riser(dur=1.7):
+    """
+    A tonal glide rather than a noise sweep. The root climbs about an octave
+    and a half while its harmonics fade up one after another, so the sound
+    gets brighter without ever getting hissy. The top partial stops at 6 kHz.
+    """
     n = int(dur * SR)
     x = t(n)
-    rng = np.random.default_rng(5)
-    nz = rng.normal(0, 1, n)
-    # sweep a one-pole lowpass upward by interpolating between smoothed copies
-    slow = np.convolve(nz, np.hanning(1201) / np.hanning(1201).sum(), "same")
-    fast = np.convolve(nz, np.hanning(121) / np.hanning(121).sum(), "same")
-    m = np.clip(x / dur, 0, 1) ** 2.0
-    s = (slow * (1 - m) + fast * m) * 0.42
-    s += np.sin(2 * np.pi * (70 + 260 * m ** 2) * x) * 0.13
-    return s * (np.clip(x / dur, 0, 1) ** 1.7)
+    m = np.clip(x / dur, 0, 1)
+    root = 74 * (1 + 1.6 * m ** 2.1)
+    phase = 2 * np.pi * np.cumsum(root) / SR
+    s = np.sin(phase) * 0.30
+    for k, amp, onset in ((2, 0.18, 0.10), (3, 0.12, 0.34), (5, 0.075, 0.56),
+                          (8, 0.040, 0.74)):
+        if root.max() * k > 6000:
+            amp *= 0.35
+        fade = np.clip((m - onset) / max(1e-6, 1 - onset), 0, 1) ** 1.4
+        s += np.sin(phase * k) * amp * fade
+    # a slight shudder as it climbs, so it is not a clean synth sweep
+    s *= 1 + 0.10 * np.sin(2 * np.pi * (5 + 26 * m) * x)
+    return s * (m ** 1.7)
 
 
 def hit():
+    """
+    The 2027 landing. Pitch-dropping thump with a short mid transient where
+    the old version had a noise crack — same attack, none of the spit.
+    """
     n = int(2.0 * SR)
     x = t(n)
-    rng = np.random.default_rng(9)
     f = 132 * np.exp(-x * 7.5) + 38
     thump = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(n, 0.001, 1.9, 2.2) * 0.62
-    crack = rng.normal(0, 1, n) * env(n, 0.0005, 0.09, 4.0) * 0.22
+    fm = 620 * np.exp(-x * 42) + 150
+    transient = np.sin(2 * np.pi * np.cumsum(fm) / SR) * env(n, 0.0008, 0.11, 4.0) * 0.20
     tail = np.sin(2 * np.pi * 76 * x) * env(n, 0.01, 1.9, 1.6) * 0.16
-    return thump + crack + tail
+    return thump + transient + tail
 
 
 def main():
@@ -131,7 +159,7 @@ def main():
     # that swells throughout it lands over a loudness unit light every time.
     measure = subprocess.run([
         "ffmpeg", "-nostdin", "-hide_banner", "-i", str(raw),
-        "-af", "highpass=f=26,loudnorm=I=-14:TP=-1.2:LRA=8:print_format=json",
+        "-af", "highpass=f=26,lowpass=f=8200,equalizer=f=3400:t=q:w=1.2:g=-2.0,loudnorm=I=-14:TP=-1.2:LRA=8:print_format=json",
         "-f", "null", "-",
     ], capture_output=True, text=True, check=True).stderr
     stats = json.loads(measure[measure.rindex("{"):measure.rindex("}") + 1])
@@ -140,7 +168,7 @@ def main():
     subprocess.run([
         "ffmpeg", "-nostdin", "-v", "error", "-y", "-i", str(raw),
         "-af",
-        "highpass=f=26,"
+        "highpass=f=26,lowpass=f=8200,equalizer=f=3400:t=q:w=1.2:g=-2.0,"
         f"loudnorm=I=-14:TP=-1.2:LRA=8:measured_I={stats['input_i']}:"
         f"measured_TP={stats['input_tp']}:measured_LRA={stats['input_lra']}:"
         f"measured_thresh={stats['input_thresh']}:offset={stats['target_offset']}:"

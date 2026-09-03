@@ -204,6 +204,44 @@ export const Mascot: React.FC<{
   />
 );
 
+/**
+ * The token. It floats rather than stands — a coin resting on the timeline
+ * would read as a prop, and this one is the thing the first line is about.
+ * A gleam is swept across it, masked to its own silhouette so the light
+ * never spills past the milled edge.
+ */
+export const Coin: React.FC<{
+  x: number; y: number; width: number; opacity: number;
+}> = ({x, y, width, opacity}) => {
+  const f = useCurrentFrame();
+  const bob = Math.sin(f / 17) * 9;
+  const gleam = ((f / 46) % 1);
+  const src = staticFile('coin.png');
+  return (
+    <div style={{
+      position: 'absolute', left: x, top: y + bob, width,
+      opacity, pointerEvents: 'none',
+    }}>
+      <div style={{
+        position: 'absolute', left: -width * 0.22, top: width * 0.04,
+        width: width * 1.44, height: width * 1.36,
+        background: 'radial-gradient(circle, rgba(255,83,31,0.22) 0%, rgba(255,83,31,0) 66%)',
+      }} />
+      <Img src={src} style={{width: '100%', display: 'block'}} />
+      <div style={{
+        position: 'absolute', inset: 0,
+        WebkitMaskImage: `url(${src})`, maskImage: `url(${src})`,
+        WebkitMaskSize: '100% 100%', maskSize: '100% 100%',
+        background:
+          `linear-gradient(108deg, rgba(255,255,255,0) ${gleam * 150 - 34}%, ` +
+          `rgba(255,236,214,0.30) ${gleam * 150 - 16}%, ` +
+          `rgba(255,255,255,0) ${gleam * 150 + 4}%)`,
+        mixBlendMode: 'screen',
+      }} />
+    </div>
+  );
+};
+
 export const Logo: React.FC<{
   x?: number; y?: number; width: number; opacity: number; centred?: boolean;
 }> = ({x = 0, y = 0, width, opacity, centred}) => (

@@ -9,6 +9,10 @@ redrawn, recoloured or reproportioned — this stage only removes background.
   logo_v.png   ivory V, already alpha -> source alpha used as-is, trimmed
   mascot.png   Vira on near-black -> feathered crop, background left as is
                                      because it already matches our ground
+  coin.png     token on black velvet -> luma key; the coin is an order of
+                                     magnitude brighter than its backdrop, and
+                                     a rectangular feather would show its own
+                                     edge against the velvet texture
 
 Also emits the tiling grain plate the composition scrolls over everything.
 """
@@ -55,6 +59,27 @@ def feathered(path, box, feather=90):
     return out
 
 
+def luma_key(path, lo=16, hi=54, feather=1.2):
+    """
+    Alpha from luminance, for a lit object photographed on black.
+
+    The coin sits on dark velvet that is not quite the film's ground, so a
+    feathered rectangle would put a faint square around it. Keying on
+    brightness instead follows the coin's actual silhouette, including the
+    milled edge. `lo`/`hi` straddle the velvet's brightest speck and the
+    coin's darkest shadowed rim; the blur softens the cut without eroding it.
+    Colour is untouched.
+    """
+    im = Image.open(path).convert("RGB")
+    lum = np.asarray(im.convert("L"), np.float32)
+    a = np.clip((lum - lo) / max(1e-6, hi - lo), 0, 1)
+    alpha = Image.fromarray((a * 255).astype(np.uint8), "L")
+    alpha = alpha.filter(ImageFilter.GaussianBlur(feather))
+    out = im.convert("RGBA")
+    out.putalpha(alpha)
+    return out
+
+
 def grain_tile(size=320, seed=2027):
     rng = np.random.default_rng(seed)
     n = rng.normal(128, 34, (size, size)).clip(0, 255).astype(np.uint8)
@@ -79,6 +104,10 @@ def main():
     mascot = trim_to_glyph(feathered(SRC / "mascot.png", (250, 190, 1010, 1105)), pad=0)
     mascot.save(OUT / "mascot-plate.png")
     print(f"mascot-plate.png {mascot.size}  feathered, silhouette intact")
+
+    coin = trim_to_glyph(luma_key(SRC / "coin.png"), pad=6, min_run=6)
+    coin.save(OUT / "coin.png")
+    print(f"coin.png        {coin.size}  luma keyed off the velvet")
 
     grain_tile().save(OUT / "grain.png")
     print("grain.png")

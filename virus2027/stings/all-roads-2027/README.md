@@ -47,11 +47,11 @@ stroke shoot out of the top of the frame instead of the frame chasing it.
 
 | t | Node | On screen |
 |---|---|---|
-| 0:00–0:03 | 1 | `08.2026 // SIGNAL ORIGIN` · Vira standing on the line at the first node |
+| 0:00–0:03 | 1 | `08.2026 // SIGNAL ORIGIN` · the token floating at the first node |
 | 0:03–0:06 | 2 | `ON-CHAIN TRACE` · fixed supply / no mint / burn active · the V being scanned |
 | 0:06–0:09 | 3 | `PREDICTIONS GO ON-CHAIN` · `PULSE // multiple markets` · four faint fragments |
 | 0:09–0:12 | 4 | `DIFFERENT SIGNALS.` → `SAME DATE.` · faint lines leaning in · Vira watching |
-| 0:12–0:13.4 | 5 | `ALL ROADS → 2027`, everything else stepped back |
+| 0:12–0:13.4 | 5 | `ALL ROADS LEAD TO 2027`, everything else stepped back |
 | 0:13.4–0:13.6 | — | the line turns vertical and leaves the frame, analogue tear |
 | 0:13.6–0:15 | — | V mark · `2027` · `SOMETHING IS COMING.` · `$VIRUS2027` |
 
@@ -77,12 +77,23 @@ never trims. Projecting alpha onto each axis and keeping rows and columns with
 a real run of ink finds the glyph and leaves the specks outside the crop.
 841 × 496, ink still rgb(235, 225, 210).
 
+**The coin** is luma-keyed, not feather-cropped. It was photographed on dark
+velvet that is close to but not the same as the film's ground, so a
+rectangular feather put a faint square around it; keying on brightness
+follows the actual silhouette including the milled edge. It floats rather
+than rests — a coin sitting on the timeline reads as a prop, and this one is
+the subject of the line being spoken over it. A gleam sweeps across it,
+masked to its own alpha so the light never spills past the rim.
+
 **Vira** is a feathered crop of the original render rather than a matte. His
 plate background is near-black and the film's ground is `#090806`, so the
 feather disappears into it — and unlike a luma matte it cannot eat his dark
 legs and shoes. The window holds every spike and both feet, which the manual
-fixes as his silhouette. He stands *on* the line at both appearances; his feet
-are placed against the path's own y, not against a guessed baseline.
+fixes as his silhouette. He stands *on* the line at the convergence beat; his feet
+are placed against the path's own y, not against a guessed baseline. He used
+to open the film too, but the first line is about the token arriving
+on-chain, so the token opens it and he keeps the beat where somebody is
+watching something happen.
 
 The scan plate in section two is anchored to the **frame**, not to the node's
 world position. Section two spends its whole length travelling *toward* node
@@ -112,9 +123,19 @@ of frames, which is what keeps the picture feeling carried by something old.
 Four synthesised sounds, no samples and no voice — nothing here reaches a
 sample library and a fifteen-second sting only needs four.
 
-`bed` two detuned sines with filtered air, swelling toward the end ·
-`tick` one per node landing · `riser` 1.7 s into the hit ·
-`hit` pitch-dropping thump with a bright transient.
+`bed` three detuned sines beating against each other, swelling toward the
+end · `tick` a soft wooden knock per node landing · `riser` a tonal glide up
+through a harmonic stack, 1.7 s into the hit · `hit` pitch-dropping thump
+with a mid-range transient.
+
+**There is no broadband noise anywhere in the score, deliberately.** The
+first version built its air, its node clicks, its riser and the crack on the
+hit all out of white noise. Individually each was defensible; stacked, they
+read as fifteen seconds of hiss sitting right where the ear is most
+sensitive. Every one is a tuned partial now and the master rolls off above
+8 kHz, which took energy over 6 kHz from −23 dB to −75 dB. If a future cue
+needs grit, shape it from a low partial and drive, not from a noise
+generator.
 
 The cue list mirrors `KEYS` in `Sting.tsx`. There is a 160 ms duck to 22%
 right before the hit — the silence is what makes it land.

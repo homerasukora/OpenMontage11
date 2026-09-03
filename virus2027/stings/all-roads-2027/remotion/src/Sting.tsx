@@ -3,19 +3,21 @@ import {AbsoluteFill, Audio, Easing, interpolate, staticFile, useCurrentFrame} f
 import {loadFont as loadBarlow} from '@remotion/google-fonts/BarlowCondensed';
 import {loadFont as loadMono} from '@remotion/google-fonts/IBMPlexMono';
 
-import {C, EASE_SIGNAL, FONT_STACKS, H, W, rnd, sec} from './theme';
+import {C, EASE_SIGNAL, FONT_STACKS, H, W, fitSize, rnd, sec} from './theme';
 import {
   NODES, PATH, POLY, TICKS, TOTAL_LEN, cameraX, pointAt, progressAt,
 } from './geom';
 import {
-  CropMarks, Dust, FxDefs, Glitch, Grain, Ground, Logo, Mascot, ScanLines,
-  crtGain, fadeBand,
+  Coin, CropMarks, Dust, FxDefs, Glitch, Grain, Ground, Logo, Mascot,
+  ScanLines, crtGain, fadeBand,
 } from './fx';
 
 loadBarlow('normal', {weights: ['600', '700'], subsets: ['latin']});
 loadMono('normal', {weights: ['400', '500'], subsets: ['latin']});
 
 export const DURATION = sec(15);
+
+export const CLOSING_LINE = 'All roads lead to 2027';
 
 const display = (size: number, weight = 700) => ({
   fontFamily: FONT_STACKS.en.display,
@@ -239,10 +241,12 @@ export const Sting: React.FC = () => {
       <AbsoluteFill style={{opacity: worldOut}}>
         <Convergence camX={camX} amount={s4a * 0.9 + s4b * 0.9} />
 
-        {/* 0:00–0:03 · Vira stands at the first node */}
-        <Mascot
-          x={n1.x - camX - 336} y={n1.y - 346} width={300}
-          opacity={s1 * 0.95}
+        {/* 0:00–0:03 · the token itself at the first node. The line is
+            about $VIRUS2027 arriving on-chain, so the thing that arrives is
+            the coin; Vira gets the convergence beat instead. */}
+        <Coin
+          x={n1.x - camX - 342} y={n1.y - 348} width={296}
+          opacity={s1 * 0.97}
         />
 
         {/* 0:03–0:06 · the mark, being read */}
@@ -329,7 +333,13 @@ export const Sting: React.FC = () => {
         <Head text="Same date." size={88} o={s4b} y={612} dy={0} />
       </AbsoluteFill>
 
-      <Head text="All roads → 2027" size={92} o={s5} y={606} dy={0} />
+      {/* No arrow, and "lead" not "leads" — the subject is plural. Fitted to
+          940 px because the line is long enough to reach the safe edge at 92. */}
+      <Head
+        text={CLOSING_LINE}
+        size={fitSize(CLOSING_LINE, 940, 92, 58)}
+        o={s5} y={606} dy={0}
+      />
 
       {/* ── final card ─────────────────────────────────────────── */}
       <AbsoluteFill style={{opacity: card}}>
