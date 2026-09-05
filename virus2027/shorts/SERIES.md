@@ -53,7 +53,7 @@ Hard constraints:
 
 All share the script → timing → picture pipeline. Pick per episode.
 
-| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`) |
+| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`, `ep05`) |
 |---|---|---|---|---|
 | Frame | Drawn graphics only | Graded photographs + overlays | One camera move across brand artwork | Screenshots and documents, played small |
 | Reads as | A file you found | A cut of found material | A walk through the project's own world | An argument answered |
@@ -75,7 +75,10 @@ it over: the theory gets the first twenty seconds told straight, in its own
 order and with its own exhibits, then the film answers every exhibit with
 something on the record. Same retention curve, opposite payload. The rule that
 makes the series work — *never argue the conspiracy, argue the paper trail* —
-is just louder here. `ep03` is the reference cut.
+is just louder here. `ep03` is the reference cut; `ep05` is the same format run on found footage
+rather than screenshots, and shows what carrying the brand costs when no
+frame is ours — a persistent top mark, two mascot beats, and a real matte for
+Vira so he can sit over daylight instead of only over the ground.
 
 Two constraints are structural in D, not stylistic. Every claim before the
 turn is attributed out loud (*"the internet has decided"*, *"people pulled

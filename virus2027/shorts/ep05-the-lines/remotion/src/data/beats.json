@@ -1,0 +1,44 @@
+{
+  "note": "Format D on found footage. Shots tile continuously — each runs until the next begins. Every shot is a cut from one of three phone clips or one of two photographs; nothing is brand artwork, so the brand has to be carried by the small mark at the top of frame, two beats of Vira, and the end card. The theory gets the first fifteen seconds in its own images; from L06 the same sky is used to explain itself, which is why the second half deliberately reuses the same two clips rather than escalating to new ones.",
+
+  "brand_at": { "at": "L09", "lead": 2.20 },
+
+  "shots": [
+    { "at": "L01", "lead": 0.00, "type": "hero", "src": "broll/sky_pine.jpg" },
+    { "at": "L01", "lead": 2.90, "type": "clip", "src": "clips/c_cross.mp4" },
+
+    { "at": "L02", "lead": 0.00, "type": "band", "src": "broll/sky_city.jpg", "centre": 880 },
+    { "at": "L02", "lead": 2.70, "type": "clip", "src": "clips/c_grid.mp4" },
+
+    { "at": "L03", "lead": 0.00, "type": "clip", "src": "clips/b_trail_sun.mp4" },
+
+    { "at": "L04", "lead": 0.00, "type": "void" },
+
+    { "at": "L05", "lead": 0.00, "type": "clip", "src": "clips/a_wing_out.mp4" },
+    { "at": "L05", "lead": 3.20, "type": "clip", "src": "clips/b_trail_high.mp4" },
+
+    { "at": "L06", "lead": 0.00, "type": "clip", "src": "clips/b_sky_thin.mp4" },
+    { "at": "L07", "lead": 0.00, "type": "clip", "src": "clips/b_trail_long.mp4" },
+    { "at": "L08", "lead": 0.00, "type": "clip", "src": "clips/a_wing_above.mp4" },
+    { "at": "L09", "lead": 0.00, "type": "clip", "src": "clips/c_wide.mp4" }
+  ],
+
+  "beats": [
+    { "at": "L01", "lead": 0.60, "dur": 2.10, "type": "viz", "kind": "brackets", "top": 300, "bottom": 1180 },
+
+    { "at": "L02", "lead": 0.25, "dur": 2.30, "type": "viz", "kind": "brackets", "top": 352, "bottom": 1412 },
+
+    { "at": "L03", "lead": 0.40, "dur": 3.60, "type": "viz", "kind": "nodes", "count": 22 },
+
+    { "at": "L04", "lead": 0.10, "dur": 2.15, "type": "viz", "kind": "rings", "cy": 760, "period": 44, "max": 620 },
+    { "at": "L04", "lead": 0.20, "dur": 2.05, "type": "viz", "kind": "mascot", "x": 372, "y": 848, "width": 336 },
+
+    { "at": "L05", "lead": 3.40, "dur": 2.10, "type": "viz", "kind": "brackets", "top": 300, "bottom": 1180 },
+
+    { "at": "L07", "lead": 0.35, "dur": 3.90, "type": "viz", "kind": "nodes", "count": 26 },
+    { "at": "L08", "lead": 0.35, "dur": 3.60, "type": "viz", "kind": "brackets", "top": 300, "bottom": 1180 },
+
+    { "at": "L09", "lead": 0.25, "dur": 1.90, "type": "viz", "kind": "mascot", "x": 736, "y": 986, "width": 218, "flip": true, "card": true },
+    { "at": "L09", "lead": 0.30, "dur": 1.85, "type": "viz", "kind": "rings", "cx": 400, "cy": 700, "period": 40, "max": 520 }
+  ]
+}
