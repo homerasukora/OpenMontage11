@@ -1,0 +1,216 @@
+{
+  "note": "Format D held open, on found footage and press photographs. Shots tile continuously — each runs until the next begins. No top mark, no end card: the film stops on its question. Three of the stills are used at more than one crop, wide then a push, because a single photograph held for six seconds dies on screen while the same photograph surveyed reads as two shots. The private American silo owns the first fifteen seconds, Finland the middle, Patagonia the last ten, and the closing shot returns to the field the film opened on — the same ordinary ground with something under it.",
+  "shots": [
+    {
+      "at": "L01",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/silo_field.mp4"
+    },
+    {
+      "at": "L02",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/gate.mp4"
+    },
+    {
+      "at": "L02",
+      "lead": 3.4,
+      "type": "clip",
+      "src": "clips/scrubber.mp4"
+    },
+    {
+      "at": "L03",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/pool.mp4"
+    },
+    {
+      "at": "L03",
+      "lead": 2.6,
+      "type": "clip",
+      "src": "clips/climb.mp4"
+    },
+    {
+      "at": "L04",
+      "lead": 0.0,
+      "type": "void"
+    },
+    {
+      "at": "L05",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/fi_entrance.jpg",
+      "centre": 850,
+      "width": 0.96
+    },
+    {
+      "at": "L05",
+      "lead": 2.9,
+      "type": "band",
+      "src": "broll/fi_rock.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L07",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/fi_hall.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L07",
+      "lead": 3.3,
+      "type": "band",
+      "src": "broll/fi_hall_in.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L08",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/ar_domes.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L08",
+      "lead": 2.62,
+      "type": "band",
+      "src": "broll/ar_domes_side.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L09",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/ar_domes_in.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L10",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/silo_field_2.mp4"
+    }
+  ],
+  "beats": [
+    {
+      "at": "L01",
+      "lead": 0.45,
+      "dur": 2.8,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 300,
+      "bottom": 1180
+    },
+    {
+      "at": "L02",
+      "lead": 3.7,
+      "dur": 2.8,
+      "type": "viz",
+      "kind": "nodes",
+      "count": 22
+    },
+    {
+      "at": "L03",
+      "lead": 2.85,
+      "dur": 2.05,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 300,
+      "bottom": 1180
+    },
+    {
+      "at": "L04",
+      "lead": 0.1,
+      "dur": 1.8,
+      "type": "viz",
+      "kind": "rings",
+      "cy": 760,
+      "period": 44,
+      "max": 620
+    },
+    {
+      "at": "L04",
+      "lead": 0.18,
+      "dur": 1.72,
+      "type": "viz",
+      "kind": "mascot",
+      "x": 386,
+      "y": 852,
+      "width": 314
+    },
+    {
+      "at": "L05",
+      "lead": 0.25,
+      "dur": 2.35,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 490,
+      "bottom": 1210
+    },
+    {
+      "at": "L05",
+      "lead": 3.15,
+      "dur": 2.3,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 496,
+      "bottom": 1264
+    },
+    {
+      "at": "L07",
+      "lead": 0.3,
+      "dur": 2.7,
+      "type": "viz",
+      "kind": "nodes",
+      "count": 26
+    },
+    {
+      "at": "L08",
+      "lead": 0.3,
+      "dur": 2.1,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 516,
+      "bottom": 1184
+    },
+    {
+      "at": "L09",
+      "lead": 0.25,
+      "dur": 2.55,
+      "type": "viz",
+      "kind": "rings",
+      "cx": 560,
+      "cy": 850,
+      "period": 40,
+      "max": 520
+    },
+    {
+      "at": "L10",
+      "lead": 0.1,
+      "dur": 1.95,
+      "type": "viz",
+      "kind": "mascot",
+      "x": 754,
+      "y": 1010,
+      "width": 216,
+      "flip": true
+    },
+    {
+      "at": "L07",
+      "lead": 3.55,
+      "dur": 2.55,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 420,
+      "bottom": 1340
+    }
+  ]
+}

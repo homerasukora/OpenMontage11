@@ -1,0 +1,88 @@
+{
+  "id": "ep06-the-doors",
+  "series": "VIRUS2027 // TRANSMISSION",
+  "episode": 6,
+  "title_en": "THE DOORS",
+  "role": "Format D held open. Three real building programmes — private American silos, Finland's public shelter network, and quiet land in Patagonia — laid end to end and left standing there. No resolution, no end card.",
+  "format": "9:16 / 1080x1920 / 30fps",
+  "target_duration_s": 41,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "editorial_note": "Every figure in this film is on the public record and nothing is attributed to a secret. Reid Hoffman's 'apocalypse insurance' is his own phrase, from the 2017 New Yorker piece on doomsday prep among the super-rich. Zuckerberg's Kauai compound and its underground shelter were reported in 2023; Thiel's New Zealand holdings are a matter of public record. The converted missile silo is the Survival Condo in Kansas, and the price is the one quoted in the source footage. Finland's civil defence network really is more than fifty thousand shelters with capacity in the four-to-five million range against a population of five and a half million, and Finnish law really does require them usable within seventy-two hours of an order. Patagonian land purchases by Benetton, Lewis and Turner are documented in hundreds of thousands of hectares. The dome compound is shown WITHOUT an owner attached, because I could not verify whose it is — the film says only that things get built there that nobody puts a name to, which is true of the photograph itself.",
+  "voice_note": "Running sentences, hedges left in, no chains of one-word fragments. Flat and factual all the way through — the material is strange enough that any lean in the read would cheapen it. The last line is a question asked quietly, not an accusation.",
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "en": "Billionaires are building bunkers, and they've stopped pretending otherwise.",
+      "vo_direction": "Level. Stating a fact, not breaking news.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L02",
+      "beat": "BODY",
+      "en": "Underground shelters in Hawaii, land bought up in New Zealand, and one Silicon Valley founder called it apocalypse insurance.",
+      "vo_direction": "Keep it moving. 'Apocalypse insurance' is a quote — say it plainly.",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L03",
+      "beat": "BODY",
+      "en": "A few million dollars gets you a floor of a converted missile silo, with a swimming pool and a climbing wall.",
+      "vo_direction": "Dry on 'climbing wall'.",
+      "gap_after": 0.44
+    },
+    {
+      "id": "L04",
+      "beat": "TURN",
+      "en": "But the biggest one isn't private.",
+      "vo_direction": "Flat. Let it sit.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "en": "Finland has more than fifty thousand civil defence shelters, with room for around four and a half million people.",
+      "vo_direction": "Matter of fact. The numbers do the work.",
+      "gap_after": 0.26
+    },
+    {
+      "id": "L06",
+      "beat": "BODY",
+      "en": "That is almost everyone in the country.",
+      "vo_direction": "Land it and stop.",
+      "gap_after": 0.34
+    },
+    {
+      "id": "L07",
+      "beat": "BODY",
+      "en": "Under Helsinki there are car parks, swimming pools and sports halls that become a shelter in seventy-two hours.",
+      "vo_direction": "Unhurried.",
+      "gap_after": 0.4
+    },
+    {
+      "id": "L08",
+      "beat": "BODY",
+      "en": "Then there's Patagonia, where foreign billionaires have quietly bought land by the hundred thousand hectares.",
+      "vo_direction": "Slower on 'quietly'.",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L09",
+      "beat": "BODY",
+      "en": "And things get built out there that nobody puts a name to.",
+      "vo_direction": "Even. No insinuation in the voice — the picture is doing it.",
+      "gap_after": 0.46
+    },
+    {
+      "id": "L10",
+      "beat": "CLOSE",
+      "en": "What are they preparing for?",
+      "vo_direction": "Quiet. A question, not an accusation.",
+      "gap_after": 0.0
+    }
+  ]
+}

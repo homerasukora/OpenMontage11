@@ -53,7 +53,7 @@ Hard constraints:
 
 All share the script → timing → picture pipeline. Pick per episode.
 
-| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`, `ep05`) |
+| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`, `ep05`, `ep06`) |
 |---|---|---|---|---|
 | Frame | Drawn graphics only | Graded photographs + overlays | One camera move across brand artwork | Screenshots and documents, played small |
 | Reads as | A file you found | A cut of found material | A walk through the project's own world | An argument answered |
@@ -85,7 +85,10 @@ true, and the official explanation is spoken, but the last observation is
 left unresolved and the film closes on *maybe the truth comes out soon*.
 That is a legitimate variant of D and worth naming: the format's guarantee is
 that the film never asserts something false and never hides the record, not
-that every episode must close the loop. The resolution it dropped is kept in
+that every episode must close the loop. `ep06` is the purest run of it —
+three documented building programmes with no conspiracy claim anywhere in the
+script, where the whole effect comes from putting them next to each other and
+asking one question. The resolution it dropped is kept in
 git history so the closed version is a script edit away.
 
 Two constraints are structural in D, not stylistic. Every claim before the
