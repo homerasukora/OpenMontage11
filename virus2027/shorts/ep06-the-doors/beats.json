@@ -1,5 +1,5 @@
 {
-  "note": "Format D held open, on found footage and press photographs. Shots tile continuously. No top mark, no end card. Two layers carry the information the footage cannot: a location tag opens each of the three countries, because a shelter door could be anywhere and the film crosses three in forty seconds; and the Finnish figures are counted up on screen, because fifty thousand and four and a half million are just noises inside a sentence but land as numbers. The tour hosts stay in frame through the middle of the first act — what makes a doomsday condo unsettling is that somebody is showing you round one.",
+  "note": "Format D held open, on found footage and press photographs. Shots tile continuously. No top mark, no end card. Two layers carry the information the footage cannot: a location tag opens each of the three countries, because a shelter door could be anywhere and the film crosses three in forty seconds; a small flag lands on each country as it is named, because Hawaii, New Zealand and Finland go past in under half a second each and a flag is read before it is looked at; and the Finnish figures are counted up on screen, because fifty thousand and four and a half million are just noises inside a sentence but land as numbers. The tour hosts stay in frame through the middle of the first act — what makes a doomsday condo unsettling is that somebody is showing you round one.",
   "shots": [
     {
       "at": "L01",
@@ -100,6 +100,30 @@
     }
   ],
   "beats": [
+    {
+      "at": "L02",
+      "lead": 1.02,
+      "dur": 1.08,
+      "type": "viz",
+      "kind": "flag",
+      "src": "broll/flag_us.png"
+    },
+    {
+      "at": "L02",
+      "lead": 2.15,
+      "dur": 1.32,
+      "type": "viz",
+      "kind": "flag",
+      "src": "broll/flag_nz.png"
+    },
+    {
+      "at": "L05",
+      "lead": 0.0,
+      "dur": 1.7,
+      "type": "viz",
+      "kind": "flag",
+      "src": "broll/flag_fi.png"
+    },
     {
       "at": "L01",
       "lead": 0.7,

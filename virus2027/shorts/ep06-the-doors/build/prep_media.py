@@ -121,6 +121,23 @@ def main():
         backdrop(img).save(OUT / f"{name}_bg.jpg", quality=88)
         print(f"broll/{name}.jpg   1080x{hh}  (+bg)")
 
+    # Flags, small. Trimmed of the rounded corners and stray edge pixels some
+    # of the sources ship with, and darkened a touch so they sit on the brand
+    # ground without shouting — but not desaturated, because a flag that has
+    # been graded stops being readable as that country's flag at 96 px.
+    FLAGS = {"flag_fi": ("flag_fi.webp", 0.010),
+             "flag_us": ("flag_us.webp", 0.006),
+             "flag_nz": ("flag_nz.jpg",  0.030)}
+    for name, (src, trim) in FLAGS.items():
+        im = Image.open(SRC / src).convert("RGB")
+        w, h = im.size
+        tx, ty = round(w * trim), round(h * trim)
+        im = im.crop((tx, ty, w - tx, h - ty))
+        im = ImageEnhance.Brightness(im).enhance(0.94)
+        out_h = max(1, round(224 * im.height / im.width))
+        im.resize((224, out_h), Image.LANCZOS).save(OUT / f"{name}.png")
+        print(f"broll/{name}.png   224x{out_h}")
+
     vira = Image.open(SRC / "vira.png").convert("RGBA")
     box = vira.getchannel("A").point(lambda v: 255 if v > 20 else 0).getbbox()
     vira.crop(box).save(ROOT / "assets" / "mascot-plate.png")

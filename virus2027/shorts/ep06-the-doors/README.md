@@ -49,12 +49,13 @@ the deliverable and explaining would answer it.
 | t | Line | On screen |
 |---|---|---|
 | 0:00 | *Billionaires are building bunkers…* | a silo cap in an ordinary field |
-| 0:03.7 | *Underground shelters in Hawaii, land bought up in New Zealand…* | the surface entrance |
+| 0:03.7 | *Underground shelters in Hawaii…* | the surface entrance · 🇺🇸 |
+| 0:05.9 | *…land bought up in New Zealand…* | 🇳🇿 |
 | 0:07.1 | *…one Silicon Valley founder called it apocalypse insurance.* | a host walking past a painted beach, underground |
 | 0:10.2 | *A few million dollars gets you a floor of a converted missile silo…* | the condo interior · `$5M` |
 | 0:12.8 | *…and they show you round it like a condo.* | the hosts touring the hall |
 | 0:16.2 | **But the biggest one isn't private.** | void · Vira |
-| 0:17.3 | *Finland has more than fifty thousand civil defence shelters…* | a shelter door on a Helsinki street · `50,000` |
+| 0:17.3 | *Finland has more than fifty thousand civil defence shelters…* | a shelter door on a Helsinki street · 🇫🇮 · `50,000` |
 | 0:20.5 | *…room for around four and a half million people. That is almost everyone in the country.* | a shelter cut into rock · `4,500,000` |
 | 0:25.1 | *Under Helsinki there are car parks, swimming pools and sports halls…* | the underground hall, wide |
 | 0:28.6 | *…that become a shelter in seventy-two hours.* | the same hall, pushed in · `72 H` |
@@ -71,6 +72,17 @@ under it. That bookend is the only rhetorical device in the film.
 ## The information layer
 
 Two things the footage cannot say on its own, so they are drawn.
+
+**A small flag lands on each country as it is named.** `Hawaii`, `New
+Zealand` and `Finland` each go past in under half a second, and no shot in
+the film can say which country it is. A flag is the fastest caption there
+is — it is read before it is looked at. The three are timed off the
+word-level data in `timing_en.json`, not eyeballed: 4.74 s, 5.87 s and
+17.32 s. They share one slot at the top right rather than accumulating along
+the edge, because two chips side by side start to look like a scoreboard and
+the point is a quiet label, not a tally. They keep their colour — a flag
+that has been graded into the palette stops being readable as that country's
+flag at 100 px.
 
 **A location tag opens each country.** The film crosses three of them in
 forty seconds and a shelter door could be anywhere — `KANSAS · UNITED

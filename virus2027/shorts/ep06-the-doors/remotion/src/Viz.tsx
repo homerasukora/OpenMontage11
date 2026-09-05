@@ -370,3 +370,41 @@ export const Figure: React.FC<{
     </div>
   );
 };
+
+/**
+ * A small flag, top right.
+ *
+ * The script names three countries inside single sentences — Hawaii, New
+ * Zealand, Finland go past in under half a second each and the footage
+ * cannot say which is which. A flag is the fastest possible caption: it is
+ * read before it is looked at.
+ *
+ * They share one slot rather than accumulating along the top edge. Two
+ * chips side by side start to look like a scoreboard, and the point is a
+ * quiet label, not a tally.
+ */
+export const Flag: React.FC<{
+  dur: number; src: string; x?: number; y?: number; width?: number;
+}> = ({dur, src, x = 918, y = 146, width = 100}) => {
+  const {f, p} = useLife(dur, 9, 8);
+  const pop = interpolate(f, [0, 12], [0.9, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.bezier(...EASE_SIGNAL),
+  });
+  return (
+    <div style={{
+      position: 'absolute', left: x, top: y, width,
+      opacity: p, transform: `scale(${pop})`, transformOrigin: 'top right',
+      pointerEvents: 'none',
+    }}>
+      <Img
+        src={staticFile(src)}
+        style={{
+          width: '100%', display: 'block', borderRadius: 3,
+          border: `1px solid ${C.lineStrong}`,
+          boxShadow: '0 8px 28px rgba(0,0,0,0.55)',
+        }}
+      />
+    </div>
+  );
+};

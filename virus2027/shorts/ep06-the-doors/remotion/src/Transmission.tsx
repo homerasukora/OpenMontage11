@@ -12,7 +12,7 @@ import {Band, Clip, CutFlash, Hero, Shot, Void} from './Shots';
 import {Pano, PanoMove} from './Pano';
 import {BrandEnd, Row} from './elements';
 import {
-  Brackets, CropMarks, Figure, LocationTag, MascotBeat, NodeField,
+  Brackets, CropMarks, Figure, Flag, LocationTag, MascotBeat, NodeField,
   PlaybackBar, PulseRings, SupplyBar,
 } from './Viz';
 
@@ -27,6 +27,7 @@ export type Beat = {
   period?: number; max?: number;
   top?: number; bottom?: number; x?: number; width?: number; flip?: boolean;
   card?: boolean; value?: number; label?: string; prefix?: string; suffix?: string;
+  src?: string;
 };
 
 /**
@@ -63,6 +64,10 @@ const renderBeat = (b: Beat, dur: number, key: string) => {
       return <SupplyBar key={key} dur={dur} y={b.y} />;
     case 'brackets':
       return <Brackets key={key} dur={dur} top={b.top} bottom={b.bottom} />;
+    case 'flag':
+      return (
+        <Flag key={key} dur={dur} src={b.src!} x={b.x} y={b.y} width={b.width} />
+      );
     case 'place':
       return <LocationTag key={key} dur={dur} text={b.text!} y={b.y} />;
     case 'figure':
