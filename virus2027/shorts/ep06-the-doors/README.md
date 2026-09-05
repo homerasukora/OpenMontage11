@@ -11,7 +11,7 @@ and quiet land in Patagonia — closing on the question rather than an answer.
 | **Subtitles** | burned in, plus `out/subs_en.srt` |
 | **Audio** | `audio/en/mix_master.wav` — voice + bed + hits, −14.5 LUFS |
 | **Format** | 1080×1920 · 30 fps · H.264 · AAC 48 kHz |
-| **Runtime** | 42.6 s · no end card |
+| **Runtime** | 41.8 s · no end card |
 
 ---
 
@@ -50,14 +50,14 @@ the deliverable and explaining would answer it.
 |---|---|---|
 | 0:00 | *Billionaires are building bunkers…* | a silo cap in an ordinary field |
 | 0:03.7 | *Underground shelters in Hawaii, land bought up in New Zealand…* | the surface entrance |
-| 0:07.1 | *…one Silicon Valley founder called it apocalypse insurance.* | plant room |
-| 0:10.3 | *A few million dollars gets you a floor of a converted missile silo…* | the pool |
-| 0:12.9 | *…with a swimming pool and a climbing wall.* | the climbing wall |
+| 0:07.1 | *…one Silicon Valley founder called it apocalypse insurance.* | a host walking past a painted beach, underground |
+| 0:10.2 | *A few million dollars gets you a floor of a converted missile silo…* | the condo interior · `$5M` |
+| 0:12.8 | *…and they show you round it like a condo.* | the hosts touring the hall |
 | 0:16.2 | **But the biggest one isn't private.** | void · Vira |
-| 0:18.1 | *Finland has more than fifty thousand civil defence shelters…* | a shelter door on a Helsinki street |
-| 0:21.0 | *…room for around four and a half million people. That is almost everyone in the country.* | a shelter cut into rock |
-| 0:25.9 | *Under Helsinki there are car parks, swimming pools and sports halls…* | the underground hall, wide |
-| 0:29.2 | *…that become a shelter in seventy-two hours.* | the same hall, pushed in |
+| 0:17.3 | *Finland has more than fifty thousand civil defence shelters…* | a shelter door on a Helsinki street · `50,000` |
+| 0:20.5 | *…room for around four and a half million people. That is almost everyone in the country.* | a shelter cut into rock · `4,500,000` |
+| 0:25.1 | *Under Helsinki there are car parks, swimming pools and sports halls…* | the underground hall, wide |
+| 0:28.6 | *…that become a shelter in seventy-two hours.* | the same hall, pushed in · `72 H` |
 | 0:32.3 | *Then there's Patagonia, where foreign billionaires have quietly bought…* | the domes |
 | 0:34.9 | *…land by the hundred thousand hectares.* | the trucks below them |
 | 0:37.6 | *And things get built out there that nobody puts a name to.* | tight on the domes |
@@ -65,6 +65,29 @@ the deliverable and explaining would answer it.
 
 The last shot returns to the first: the same ordinary ground with something
 under it. That bookend is the only rhetorical device in the film.
+
+---
+
+## The information layer
+
+Two things the footage cannot say on its own, so they are drawn.
+
+**A location tag opens each country.** The film crosses three of them in
+forty seconds and a shelter door could be anywhere — `KANSAS · UNITED
+STATES`, `HELSINKI · FINLAND`, `PATAGONIA · ARGENTINA`. Four words, an
+orange tick, a hairline that draws out, then it leaves.
+
+**The figures count up.** Fifty thousand and four and a half million are
+just noises inside a spoken sentence; on screen, running from zero, they are
+the thing the viewer keeps. Four of them — `$5M` per floor, `50,000`
+shelters, `4,500,000` places out of five and a half million, `72 H` from
+order to ready. The count is eased rather than linear so each one settles
+instead of stopping dead, and they sit at the top of frame, clear of both the
+plates and the subtitles.
+
+Neither is decoration: every number on screen is one the voiceover is saying
+at that moment, and the tag is the only thing telling you which country you
+are looking at.
 
 ---
 
@@ -79,10 +102,17 @@ the caption-free region and re-framed to 9:16 from inside it. That costs a
 quarter of the width and a 1.4× scale on a 1080p source, which is the cheaper
 of the two prices.
 
-**Every window is a single full-frame shot.** The tour cuts to its presenter
-constantly and runs a stacked two-shot for long stretches; the first pass of
-cuts caught a face and two split frames. Choosing windows is most of the work
-on material like this.
+**Every window is a single full-frame shot.** The tour runs a stacked
+two-shot for long stretches, which does not survive being re-framed to 9:16;
+several passes of cuts caught those, plus one window that landed on a rack of
+rifles. Choosing windows is most of the work on material like this.
+
+**The hosts stay in frame from 0:07 to 0:15.** An earlier cut filled that
+stretch with a plant room and a climbing wall and it played as stock
+footage. What makes a doomsday condo unsettling is that somebody is showing
+you round one, so the two men touring it carry the middle of the first act,
+and the script line moved to meet them — *they show you round it like a
+condo* is now what the picture is doing.
 
 **Three stills are used twice, wide then pushed in.** A single photograph
 held for six seconds dies on screen; the same photograph surveyed reads as

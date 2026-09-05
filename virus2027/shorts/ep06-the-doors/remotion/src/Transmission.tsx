@@ -12,8 +12,8 @@ import {Band, Clip, CutFlash, Hero, Shot, Void} from './Shots';
 import {Pano, PanoMove} from './Pano';
 import {BrandEnd, Row} from './elements';
 import {
-  Brackets, CropMarks, MascotBeat, NodeField, PlaybackBar, PulseRings,
-  SupplyBar,
+  Brackets, CropMarks, Figure, LocationTag, MascotBeat, NodeField,
+  PlaybackBar, PulseRings, SupplyBar,
 } from './Viz';
 
 loadBarlow('normal', {weights: ['600', '700', '800'], subsets: ['latin']});
@@ -26,7 +26,7 @@ export type Beat = {
   kind?: string; cx?: number; cy?: number; count?: number;
   period?: number; max?: number;
   top?: number; bottom?: number; x?: number; width?: number; flip?: boolean;
-  card?: boolean;
+  card?: boolean; value?: number; label?: string; prefix?: string; suffix?: string;
 };
 
 /**
@@ -63,6 +63,13 @@ const renderBeat = (b: Beat, dur: number, key: string) => {
       return <SupplyBar key={key} dur={dur} y={b.y} />;
     case 'brackets':
       return <Brackets key={key} dur={dur} top={b.top} bottom={b.bottom} />;
+    case 'place':
+      return <LocationTag key={key} dur={dur} text={b.text!} y={b.y} />;
+    case 'figure':
+      return (
+        <Figure key={key} dur={dur} value={b.value!} label={b.label!}
+                prefix={b.prefix} suffix={b.suffix} y={b.y} />
+      );
     case 'mascot':
       return (
         <MascotBeat key={key} dur={dur} x={b.x} y={b.y}

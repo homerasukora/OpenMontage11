@@ -49,9 +49,9 @@ CUTS = [
     ("silo_field",   87.4, 3.90),
     ("silo_field_2", 91.2, 2.70),
     ("gate",         85.2, 3.60),
-    ("scrubber",     62.2, 3.50),
-    ("pool",         11.9, 2.90),
-    ("climb",        43.7, 2.80),
+    ("hosts_beach",   5.4, 3.20),
+    ("condo_living", 38.6, 2.90),
+    ("hosts_hall",   70.4, 3.10),
 ]
 
 # Two of the stills are cut twice: wide, then a push into the detail.

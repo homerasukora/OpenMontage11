@@ -277,3 +277,96 @@ export const MascotBeat: React.FC<{
     </AbsoluteFill>
   );
 };
+
+/* ------------------------------------------------------- information */
+
+/**
+ * Where we are.
+ *
+ * This episode crosses three countries in forty seconds, and the footage
+ * alone does not say which is which — a shelter door could be anywhere.
+ * The tag answers that in four words and then gets out of the way.
+ */
+export const LocationTag: React.FC<{dur: number; text: string; y?: number}> = ({
+  dur, text, y = 150,
+}) => {
+  const {f, p} = useLife(dur, 12, 10);
+  const slide = interpolate(f, [0, 16], [-18, 0], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.bezier(...EASE_SIGNAL),
+  });
+  const rule = interpolate(f, [6, 26], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.bezier(...EASE_SIGNAL),
+  });
+  return (
+    <div style={{
+      position: 'absolute', left: 62, top: y, opacity: p,
+      transform: `translateX(${slide}px)`, pointerEvents: 'none',
+    }}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+        <div style={{width: 3, height: 26, background: C.signal}} />
+        <span style={{
+          fontFamily: '"IBM Plex Mono", monospace', fontSize: 23, fontWeight: 500,
+          letterSpacing: '0.26em', color: C.text, textTransform: 'uppercase',
+          textShadow: '0 2px 18px rgba(0,0,0,0.8)',
+        }}>{text}</span>
+      </div>
+      <div style={{
+        marginTop: 12, height: 1, width: 320 * rule,
+        background: 'rgba(232,227,219,0.34)',
+      }} />
+    </div>
+  );
+};
+
+const group = (n: number) => n.toLocaleString('en-US');
+
+/**
+ * A number, counted up.
+ *
+ * The Finnish figures are the whole argument of the middle section and they
+ * go past too fast to land as speech alone — fifty thousand and four and a
+ * half million are just noises in a sentence. On screen, counting, they are
+ * the thing the viewer remembers. The count is eased rather than linear so
+ * it settles instead of stopping dead.
+ */
+export const Figure: React.FC<{
+  dur: number; value: number; label: string;
+  prefix?: string; suffix?: string; y?: number;
+}> = ({dur, value, label, prefix = '', suffix = '', y = 248}) => {
+  const {f, p} = useLife(dur, 10, 10);
+  const run = interpolate(f, [2, 24], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.bezier(0.16, 1, 0.3, 1),
+  });
+  const rule = interpolate(f, [16, 34], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.bezier(...EASE_SIGNAL),
+  });
+  return (
+    <div style={{
+      position: 'absolute', left: 0, right: 0, top: y,
+      textAlign: 'center', opacity: p, pointerEvents: 'none',
+    }}>
+      <div style={{
+        fontFamily: '"Barlow Condensed", "Arial Narrow", sans-serif',
+        fontWeight: 700, fontSize: 152, lineHeight: 1, color: C.text,
+        letterSpacing: '-0.01em',
+        textShadow: '0 3px 30px rgba(0,0,0,0.78)',
+      }}>
+        {prefix}{group(Math.round(value * run))}{suffix}
+      </div>
+      <div style={{
+        margin: '18px auto 0', height: 3, width: 240 * rule,
+        background: C.signal, boxShadow: `0 0 22px ${C.signal}`,
+      }} />
+      <div style={{
+        marginTop: 18,
+        fontFamily: '"IBM Plex Mono", monospace', fontSize: 22, fontWeight: 400,
+        letterSpacing: '0.24em', color: C.textSoft, textTransform: 'uppercase',
+        textShadow: '0 2px 16px rgba(0,0,0,0.8)',
+      }}>{label}</div>
+    </div>
+  );
+};

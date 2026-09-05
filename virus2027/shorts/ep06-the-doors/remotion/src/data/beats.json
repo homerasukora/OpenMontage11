@@ -1,5 +1,5 @@
 {
-  "note": "Format D held open, on found footage and press photographs. Shots tile continuously — each runs until the next begins. No top mark, no end card: the film stops on its question. Three of the stills are used at more than one crop, wide then a push, because a single photograph held for six seconds dies on screen while the same photograph surveyed reads as two shots. The private American silo owns the first fifteen seconds, Finland the middle, Patagonia the last ten, and the closing shot returns to the field the film opened on — the same ordinary ground with something under it.",
+  "note": "Format D held open, on found footage and press photographs. Shots tile continuously. No top mark, no end card. Two layers carry the information the footage cannot: a location tag opens each of the three countries, because a shelter door could be anywhere and the film crosses three in forty seconds; and the Finnish figures are counted up on screen, because fifty thousand and four and a half million are just noises inside a sentence but land as numbers. The tour hosts stay in frame through the middle of the first act — what makes a doomsday condo unsettling is that somebody is showing you round one.",
   "shots": [
     {
       "at": "L01",
@@ -15,21 +15,21 @@
     },
     {
       "at": "L02",
-      "lead": 3.4,
+      "lead": 3.35,
       "type": "clip",
-      "src": "clips/scrubber.mp4"
+      "src": "clips/hosts_beach.mp4"
     },
     {
       "at": "L03",
       "lead": 0.0,
       "type": "clip",
-      "src": "clips/pool.mp4"
+      "src": "clips/condo_living.mp4"
     },
     {
       "at": "L03",
-      "lead": 2.6,
+      "lead": 2.55,
       "type": "clip",
-      "src": "clips/climb.mp4"
+      "src": "clips/hosts_hall.mp4"
     },
     {
       "at": "L04",
@@ -62,7 +62,7 @@
     },
     {
       "at": "L07",
-      "lead": 3.3,
+      "lead": 3.2,
       "type": "band",
       "src": "broll/fi_hall_in.jpg",
       "centre": 880,
@@ -78,7 +78,7 @@
     },
     {
       "at": "L08",
-      "lead": 2.62,
+      "lead": 2.5,
       "type": "band",
       "src": "broll/ar_domes_side.jpg",
       "centre": 880,
@@ -102,6 +102,14 @@
   "beats": [
     {
       "at": "L01",
+      "lead": 0.7,
+      "dur": 2.6,
+      "type": "viz",
+      "kind": "place",
+      "text": "Kansas · United States"
+    },
+    {
+      "at": "L01",
       "lead": 0.45,
       "dur": 2.8,
       "type": "viz",
@@ -111,16 +119,28 @@
     },
     {
       "at": "L02",
-      "lead": 3.7,
-      "dur": 2.8,
+      "lead": 3.6,
+      "dur": 2.4,
       "type": "viz",
       "kind": "nodes",
-      "count": 22
+      "count": 20
     },
     {
       "at": "L03",
-      "lead": 2.85,
+      "lead": 0.35,
       "dur": 2.05,
+      "type": "viz",
+      "kind": "figure",
+      "value": 5,
+      "prefix": "$",
+      "suffix": "M",
+      "label": "Per floor, top end",
+      "y": 206
+    },
+    {
+      "at": "L03",
+      "lead": 2.8,
+      "dur": 1.95,
       "type": "viz",
       "kind": "brackets",
       "top": 300,
@@ -129,7 +149,7 @@
     {
       "at": "L04",
       "lead": 0.1,
-      "dur": 1.8,
+      "dur": 1.45,
       "type": "viz",
       "kind": "rings",
       "cy": 760,
@@ -138,8 +158,8 @@
     },
     {
       "at": "L04",
-      "lead": 0.18,
-      "dur": 1.72,
+      "lead": 0.16,
+      "dur": 1.39,
       "type": "viz",
       "kind": "mascot",
       "x": 386,
@@ -148,43 +168,90 @@
     },
     {
       "at": "L05",
-      "lead": 0.25,
-      "dur": 2.35,
+      "lead": 0.2,
+      "dur": 2.55,
       "type": "viz",
-      "kind": "brackets",
-      "top": 490,
-      "bottom": 1210
+      "kind": "place",
+      "text": "Helsinki · Finland"
     },
     {
       "at": "L05",
-      "lead": 3.15,
-      "dur": 2.3,
+      "lead": 1.35,
+      "dur": 3.1,
+      "type": "viz",
+      "kind": "figure",
+      "value": 50000,
+      "label": "Civil defence shelters",
+      "y": 206
+    },
+    {
+      "at": "L05",
+      "lead": 3.2,
+      "dur": 2.2,
       "type": "viz",
       "kind": "brackets",
       "top": 496,
       "bottom": 1264
     },
     {
+      "at": "L06",
+      "lead": 0.05,
+      "dur": 2.35,
+      "type": "viz",
+      "kind": "figure",
+      "value": 4500000,
+      "label": "Places, out of 5.5 million",
+      "y": 206
+    },
+    {
       "at": "L07",
       "lead": 0.3,
-      "dur": 2.7,
+      "dur": 2.5,
       "type": "viz",
       "kind": "nodes",
       "count": 26
     },
     {
-      "at": "L08",
-      "lead": 0.3,
-      "dur": 2.1,
+      "at": "L07",
+      "lead": 3.45,
+      "dur": 2.35,
+      "type": "viz",
+      "kind": "figure",
+      "value": 72,
+      "suffix": " H",
+      "label": "From order to ready",
+      "y": 206
+    },
+    {
+      "at": "L07",
+      "lead": 3.5,
+      "dur": 2.3,
       "type": "viz",
       "kind": "brackets",
-      "top": 516,
-      "bottom": 1184
+      "top": 420,
+      "bottom": 1340
+    },
+    {
+      "at": "L08",
+      "lead": 0.25,
+      "dur": 2.2,
+      "type": "viz",
+      "kind": "place",
+      "text": "Patagonia · Argentina"
+    },
+    {
+      "at": "L08",
+      "lead": 2.75,
+      "dur": 1.95,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 496,
+      "bottom": 1264
     },
     {
       "at": "L09",
       "lead": 0.25,
-      "dur": 2.55,
+      "dur": 2.15,
       "type": "viz",
       "kind": "rings",
       "cx": 560,
@@ -195,22 +262,13 @@
     {
       "at": "L10",
       "lead": 0.1,
-      "dur": 1.95,
+      "dur": 1.8,
       "type": "viz",
       "kind": "mascot",
       "x": 754,
       "y": 1010,
       "width": 216,
       "flip": true
-    },
-    {
-      "at": "L07",
-      "lead": 3.55,
-      "dur": 2.55,
-      "type": "viz",
-      "kind": "brackets",
-      "top": 420,
-      "bottom": 1340
     }
   ]
 }

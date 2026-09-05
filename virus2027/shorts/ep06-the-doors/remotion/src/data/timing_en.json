@@ -1,60 +1,60 @@
 {
   "lang": "en",
-  "total_duration": 41.613,
+  "total_duration": 40.765,
   "lines": [
     {
       "id": "L01",
       "beat": "HOOK",
       "text": "Billionaires are building bunkers, and they've stopped pretending otherwise.",
       "start": 0.0,
-      "end": 3.368,
-      "dur": 3.368,
+      "end": 3.402,
+      "dur": 3.402,
       "gap_after": 0.3,
       "words": [
         {
           "word": "Billionaires",
           "start": 0.0,
-          "end": 0.66
+          "end": 0.667
         },
         {
           "word": "are",
-          "start": 0.66,
-          "end": 0.825
+          "start": 0.667,
+          "end": 0.834
         },
         {
           "word": "building",
-          "start": 0.825,
-          "end": 1.156
+          "start": 0.834,
+          "end": 1.168
         },
         {
           "word": "bunkers,",
-          "start": 1.156,
-          "end": 1.568
+          "start": 1.168,
+          "end": 1.584
         },
         {
           "word": "and",
-          "start": 1.568,
-          "end": 1.733
+          "start": 1.584,
+          "end": 1.751
         },
         {
           "word": "they've",
-          "start": 1.733,
-          "end": 1.898
+          "start": 1.751,
+          "end": 1.918
         },
         {
           "word": "stopped",
-          "start": 1.898,
-          "end": 2.229
+          "start": 1.918,
+          "end": 2.252
         },
         {
           "word": "pretending",
-          "start": 2.229,
-          "end": 2.724
+          "start": 2.252,
+          "end": 2.752
         },
         {
           "word": "otherwise.",
-          "start": 2.724,
-          "end": 3.368
+          "start": 2.752,
+          "end": 3.402
         }
       ]
     },
@@ -62,221 +62,226 @@
       "id": "L02",
       "beat": "BODY",
       "text": "Underground shelters in Hawaii, land bought up in New Zealand, and one Silicon Valley founder called it apocalypse insurance.",
-      "start": 3.668,
-      "end": 10.054,
-      "dur": 6.386,
+      "start": 3.702,
+      "end": 9.926,
+      "dur": 6.224,
       "gap_after": 0.28,
       "words": [
         {
           "word": "Underground",
-          "start": 3.668,
-          "end": 4.201
+          "start": 3.702,
+          "end": 4.223
         },
         {
           "word": "shelters",
-          "start": 4.201,
-          "end": 4.557
+          "start": 4.223,
+          "end": 4.569
         },
         {
           "word": "in",
-          "start": 4.557,
-          "end": 4.735
+          "start": 4.569,
+          "end": 4.743
         },
         {
           "word": "Hawaii,",
-          "start": 4.735,
-          "end": 5.18
+          "start": 4.743,
+          "end": 5.176
         },
         {
           "word": "land",
-          "start": 5.18,
-          "end": 5.358
+          "start": 5.176,
+          "end": 5.349
         },
         {
           "word": "bought",
-          "start": 5.358,
-          "end": 5.536
+          "start": 5.349,
+          "end": 5.523
         },
         {
           "word": "up",
-          "start": 5.536,
-          "end": 5.713
+          "start": 5.523,
+          "end": 5.696
         },
         {
           "word": "in",
-          "start": 5.713,
-          "end": 5.891
+          "start": 5.696,
+          "end": 5.87
         },
         {
           "word": "New",
-          "start": 5.891,
-          "end": 6.069
+          "start": 5.87,
+          "end": 6.043
         },
         {
           "word": "Zealand,",
-          "start": 6.069,
-          "end": 6.514
+          "start": 6.043,
+          "end": 6.476
         },
         {
           "word": "and",
-          "start": 6.514,
-          "end": 6.692
+          "start": 6.476,
+          "end": 6.65
         },
         {
           "word": "one",
-          "start": 6.692,
-          "end": 6.87
+          "start": 6.65,
+          "end": 6.823
         },
         {
           "word": "Silicon",
-          "start": 6.87,
-          "end": 7.403
+          "start": 6.823,
+          "end": 7.343
         },
         {
           "word": "Valley",
-          "start": 7.403,
-          "end": 7.759
+          "start": 7.343,
+          "end": 7.69
         },
         {
           "word": "founder",
-          "start": 7.759,
-          "end": 8.115
+          "start": 7.69,
+          "end": 8.037
         },
         {
           "word": "called",
-          "start": 8.115,
-          "end": 8.471
+          "start": 8.037,
+          "end": 8.383
         },
         {
           "word": "it",
-          "start": 8.471,
-          "end": 8.649
+          "start": 8.383,
+          "end": 8.557
         },
         {
           "word": "apocalypse",
-          "start": 8.649,
-          "end": 9.36
+          "start": 8.557,
+          "end": 9.25
         },
         {
           "word": "insurance.",
-          "start": 9.36,
-          "end": 10.054
+          "start": 9.25,
+          "end": 9.926
         }
       ]
     },
     {
       "id": "L03",
       "beat": "BODY",
-      "text": "A few million dollars gets you a floor of a converted missile silo, with a swimming pool and a climbing wall.",
-      "start": 10.334,
-      "end": 15.745,
-      "dur": 5.411,
+      "text": "A few million dollars gets you a floor of a converted missile silo, and they show you round it like a condo.",
+      "start": 10.206,
+      "end": 14.99,
+      "dur": 4.784,
       "gap_after": 0.44,
       "words": [
         {
           "word": "A",
-          "start": 10.334,
-          "end": 10.512
+          "start": 10.206,
+          "end": 10.364
         },
         {
           "word": "few",
-          "start": 10.512,
-          "end": 10.69
+          "start": 10.364,
+          "end": 10.521
         },
         {
           "word": "million",
-          "start": 10.69,
-          "end": 11.046
+          "start": 10.521,
+          "end": 10.836
         },
         {
           "word": "dollars",
-          "start": 11.046,
-          "end": 11.402
+          "start": 10.836,
+          "end": 11.15
         },
         {
           "word": "gets",
-          "start": 11.402,
-          "end": 11.58
+          "start": 11.15,
+          "end": 11.308
         },
         {
           "word": "you",
-          "start": 11.58,
-          "end": 11.758
+          "start": 11.308,
+          "end": 11.465
         },
         {
           "word": "a",
-          "start": 11.758,
-          "end": 11.936
+          "start": 11.465,
+          "end": 11.623
         },
         {
           "word": "floor",
-          "start": 11.936,
-          "end": 12.114
+          "start": 11.623,
+          "end": 11.78
         },
         {
           "word": "of",
-          "start": 12.114,
-          "end": 12.292
+          "start": 11.78,
+          "end": 11.937
         },
         {
           "word": "a",
-          "start": 12.292,
-          "end": 12.47
+          "start": 11.937,
+          "end": 12.095
         },
         {
           "word": "converted",
-          "start": 12.47,
-          "end": 13.004
+          "start": 12.095,
+          "end": 12.567
         },
         {
           "word": "missile",
-          "start": 13.004,
-          "end": 13.36
+          "start": 12.567,
+          "end": 12.882
         },
         {
           "word": "silo,",
-          "start": 13.36,
-          "end": 13.805
-        },
-        {
-          "word": "with",
-          "start": 13.805,
-          "end": 13.983
-        },
-        {
-          "word": "a",
-          "start": 13.983,
-          "end": 14.161
-        },
-        {
-          "word": "swimming",
-          "start": 14.161,
-          "end": 14.517
-        },
-        {
-          "word": "pool",
-          "start": 14.517,
-          "end": 14.695
+          "start": 12.882,
+          "end": 13.275
         },
         {
           "word": "and",
-          "start": 14.695,
-          "end": 14.873
+          "start": 13.275,
+          "end": 13.432
+        },
+        {
+          "word": "they",
+          "start": 13.432,
+          "end": 13.59
+        },
+        {
+          "word": "show",
+          "start": 13.59,
+          "end": 13.747
+        },
+        {
+          "word": "you",
+          "start": 13.747,
+          "end": 13.904
+        },
+        {
+          "word": "round",
+          "start": 13.904,
+          "end": 14.062
+        },
+        {
+          "word": "it",
+          "start": 14.062,
+          "end": 14.219
+        },
+        {
+          "word": "like",
+          "start": 14.219,
+          "end": 14.377
         },
         {
           "word": "a",
-          "start": 14.873,
-          "end": 15.051
+          "start": 14.377,
+          "end": 14.534
         },
         {
-          "word": "climbing",
-          "start": 15.051,
-          "end": 15.407
-        },
-        {
-          "word": "wall.",
-          "start": 15.407,
-          "end": 15.745
+          "word": "condo.",
+          "start": 14.534,
+          "end": 14.99
         }
       ]
     },
@@ -284,40 +289,40 @@
       "id": "L04",
       "beat": "TURN",
       "text": "But the biggest one isn't private.",
-      "start": 16.185,
-      "end": 17.753,
-      "dur": 1.568,
+      "start": 15.43,
+      "end": 17.022,
+      "dur": 1.591,
       "gap_after": 0.3,
       "words": [
         {
           "word": "But",
-          "start": 16.185,
-          "end": 16.361
+          "start": 15.43,
+          "end": 15.609
         },
         {
           "word": "the",
-          "start": 16.361,
-          "end": 16.537
+          "start": 15.609,
+          "end": 15.788
         },
         {
           "word": "biggest",
-          "start": 16.537,
-          "end": 16.89
+          "start": 15.788,
+          "end": 16.146
         },
         {
           "word": "one",
-          "start": 16.89,
-          "end": 17.066
+          "start": 16.146,
+          "end": 16.324
         },
         {
           "word": "isn't",
-          "start": 17.066,
-          "end": 17.242
+          "start": 16.324,
+          "end": 16.503
         },
         {
           "word": "private.",
-          "start": 17.242,
-          "end": 17.753
+          "start": 16.503,
+          "end": 17.022
         }
       ]
     },
@@ -325,105 +330,105 @@
       "id": "L05",
       "beat": "BODY",
       "text": "Finland has more than fifty thousand civil defence shelters, with room for around four and a half million people.",
-      "start": 18.053,
-      "end": 23.557,
-      "dur": 5.504,
+      "start": 17.322,
+      "end": 22.767,
+      "dur": 5.446,
       "gap_after": 0.26,
       "words": [
         {
           "word": "Finland",
-          "start": 18.053,
-          "end": 18.441
+          "start": 17.322,
+          "end": 17.705
         },
         {
           "word": "has",
-          "start": 18.441,
-          "end": 18.634
+          "start": 17.705,
+          "end": 17.897
         },
         {
           "word": "more",
-          "start": 18.634,
-          "end": 18.828
+          "start": 17.897,
+          "end": 18.089
         },
         {
           "word": "than",
-          "start": 18.828,
-          "end": 19.022
+          "start": 18.089,
+          "end": 18.28
         },
         {
           "word": "fifty",
-          "start": 19.022,
-          "end": 19.41
+          "start": 18.28,
+          "end": 18.664
         },
         {
           "word": "thousand",
-          "start": 19.41,
-          "end": 19.797
+          "start": 18.664,
+          "end": 19.047
         },
         {
           "word": "civil",
-          "start": 19.797,
-          "end": 20.185
+          "start": 19.047,
+          "end": 19.431
         },
         {
           "word": "defence",
-          "start": 20.185,
-          "end": 20.572
+          "start": 19.431,
+          "end": 19.814
         },
         {
           "word": "shelters,",
-          "start": 20.572,
-          "end": 21.057
+          "start": 19.814,
+          "end": 20.294
         },
         {
           "word": "with",
-          "start": 21.057,
-          "end": 21.251
+          "start": 20.294,
+          "end": 20.486
         },
         {
           "word": "room",
-          "start": 21.251,
-          "end": 21.445
+          "start": 20.486,
+          "end": 20.677
         },
         {
           "word": "for",
-          "start": 21.445,
-          "end": 21.638
+          "start": 20.677,
+          "end": 20.869
         },
         {
           "word": "around",
-          "start": 21.638,
-          "end": 22.026
+          "start": 20.869,
+          "end": 21.253
         },
         {
           "word": "four",
-          "start": 22.026,
-          "end": 22.22
+          "start": 21.253,
+          "end": 21.444
         },
         {
           "word": "and",
-          "start": 22.22,
-          "end": 22.414
+          "start": 21.444,
+          "end": 21.636
         },
         {
           "word": "a",
-          "start": 22.414,
-          "end": 22.607
+          "start": 21.636,
+          "end": 21.828
         },
         {
           "word": "half",
-          "start": 22.607,
-          "end": 22.801
+          "start": 21.828,
+          "end": 22.02
         },
         {
           "word": "million",
-          "start": 22.801,
-          "end": 23.189
+          "start": 22.02,
+          "end": 22.403
         },
         {
           "word": "people.",
-          "start": 23.189,
-          "end": 23.557
+          "start": 22.403,
+          "end": 22.767
         }
       ]
     },
@@ -431,45 +436,45 @@
       "id": "L06",
       "beat": "BODY",
       "text": "That is almost everyone in the country.",
-      "start": 23.817,
-      "end": 25.571,
-      "dur": 1.754,
+      "start": 23.027,
+      "end": 24.77,
+      "dur": 1.742,
       "gap_after": 0.34,
       "words": [
         {
           "word": "That",
-          "start": 23.817,
-          "end": 23.964
+          "start": 23.027,
+          "end": 23.174
         },
         {
           "word": "is",
-          "start": 23.964,
-          "end": 24.112
+          "start": 23.174,
+          "end": 23.32
         },
         {
           "word": "almost",
-          "start": 24.112,
-          "end": 24.407
+          "start": 23.32,
+          "end": 23.613
         },
         {
           "word": "everyone",
-          "start": 24.407,
-          "end": 24.849
+          "start": 23.613,
+          "end": 24.052
         },
         {
           "word": "in",
-          "start": 24.849,
-          "end": 24.996
+          "start": 24.052,
+          "end": 24.199
         },
         {
           "word": "the",
-          "start": 24.996,
-          "end": 25.143
+          "start": 24.199,
+          "end": 24.345
         },
         {
           "word": "country.",
-          "start": 25.143,
-          "end": 25.571
+          "start": 24.345,
+          "end": 24.77
         }
       ]
     },
@@ -477,100 +482,100 @@
       "id": "L07",
       "beat": "BODY",
       "text": "Under Helsinki there are car parks, swimming pools and sports halls that become a shelter in seventy-two hours.",
-      "start": 25.911,
-      "end": 31.798,
-      "dur": 5.887,
+      "start": 25.11,
+      "end": 31.043,
+      "dur": 5.933,
       "gap_after": 0.4,
       "words": [
         {
           "word": "Under",
-          "start": 25.911,
-          "end": 26.325
+          "start": 25.11,
+          "end": 25.528
         },
         {
           "word": "Helsinki",
-          "start": 26.325,
-          "end": 26.947
+          "start": 25.528,
+          "end": 26.154
         },
         {
           "word": "there",
-          "start": 26.947,
-          "end": 27.155
+          "start": 26.154,
+          "end": 26.363
         },
         {
           "word": "are",
-          "start": 27.155,
-          "end": 27.362
+          "start": 26.363,
+          "end": 26.572
         },
         {
           "word": "car",
-          "start": 27.362,
-          "end": 27.569
+          "start": 26.572,
+          "end": 26.781
         },
         {
           "word": "parks,",
-          "start": 27.569,
-          "end": 27.88
+          "start": 26.781,
+          "end": 27.095
         },
         {
           "word": "swimming",
-          "start": 27.88,
-          "end": 28.295
+          "start": 27.095,
+          "end": 27.512
         },
         {
           "word": "pools",
-          "start": 28.295,
-          "end": 28.502
+          "start": 27.512,
+          "end": 27.721
         },
         {
           "word": "and",
-          "start": 28.502,
-          "end": 28.709
+          "start": 27.721,
+          "end": 27.93
         },
         {
           "word": "sports",
-          "start": 28.709,
-          "end": 28.917
+          "start": 27.93,
+          "end": 28.139
         },
         {
           "word": "halls",
-          "start": 28.917,
-          "end": 29.124
+          "start": 28.139,
+          "end": 28.348
         },
         {
           "word": "that",
-          "start": 29.124,
-          "end": 29.331
+          "start": 28.348,
+          "end": 28.557
         },
         {
           "word": "become",
-          "start": 29.331,
-          "end": 29.746
+          "start": 28.557,
+          "end": 28.975
         },
         {
           "word": "a",
-          "start": 29.746,
-          "end": 29.953
+          "start": 28.975,
+          "end": 29.184
         },
         {
           "word": "shelter",
-          "start": 29.953,
-          "end": 30.368
+          "start": 29.184,
+          "end": 29.602
         },
         {
           "word": "in",
-          "start": 30.368,
-          "end": 30.575
+          "start": 29.602,
+          "end": 29.811
         },
         {
           "word": "seventy-two",
-          "start": 30.575,
-          "end": 31.404
+          "start": 29.811,
+          "end": 30.646
         },
         {
           "word": "hours.",
-          "start": 31.404,
-          "end": 31.798
+          "start": 30.646,
+          "end": 31.043
         }
       ]
     },
@@ -578,85 +583,85 @@
       "id": "L08",
       "beat": "BODY",
       "text": "Then there's Patagonia, where foreign billionaires have quietly bought land by the hundred thousand hectares.",
-      "start": 32.198,
-      "end": 37.052,
-      "dur": 4.854,
+      "start": 31.443,
+      "end": 36.367,
+      "dur": 4.923,
       "gap_after": 0.28,
       "words": [
         {
           "word": "Then",
-          "start": 32.198,
-          "end": 32.363
+          "start": 31.443,
+          "end": 31.611
         },
         {
           "word": "there's",
-          "start": 32.363,
-          "end": 32.693
+          "start": 31.611,
+          "end": 31.946
         },
         {
           "word": "Patagonia,",
-          "start": 32.693,
-          "end": 33.436
+          "start": 31.946,
+          "end": 32.699
         },
         {
           "word": "where",
-          "start": 33.436,
-          "end": 33.601
+          "start": 32.699,
+          "end": 32.867
         },
         {
           "word": "foreign",
-          "start": 33.601,
-          "end": 33.931
+          "start": 32.867,
+          "end": 33.202
         },
         {
           "word": "billionaires",
-          "start": 33.931,
-          "end": 34.592
+          "start": 33.202,
+          "end": 33.871
         },
         {
           "word": "have",
-          "start": 34.592,
-          "end": 34.757
+          "start": 33.871,
+          "end": 34.039
         },
         {
           "word": "quietly",
-          "start": 34.757,
-          "end": 35.087
+          "start": 34.039,
+          "end": 34.374
         },
         {
           "word": "bought",
-          "start": 35.087,
-          "end": 35.252
+          "start": 34.374,
+          "end": 34.541
         },
         {
           "word": "land",
-          "start": 35.252,
-          "end": 35.417
+          "start": 34.541,
+          "end": 34.709
         },
         {
           "word": "by",
-          "start": 35.417,
-          "end": 35.582
+          "start": 34.709,
+          "end": 34.876
         },
         {
           "word": "the",
-          "start": 35.582,
-          "end": 35.747
+          "start": 34.876,
+          "end": 35.044
         },
         {
           "word": "hundred",
-          "start": 35.747,
-          "end": 36.078
+          "start": 35.044,
+          "end": 35.379
         },
         {
           "word": "thousand",
-          "start": 36.078,
-          "end": 36.408
+          "start": 35.379,
+          "end": 35.714
         },
         {
           "word": "hectares.",
-          "start": 36.408,
-          "end": 37.052
+          "start": 35.714,
+          "end": 36.367
         }
       ]
     },
@@ -664,70 +669,70 @@
       "id": "L09",
       "beat": "BODY",
       "text": "And things get built out there that nobody puts a name to.",
-      "start": 37.332,
-      "end": 40.038,
-      "dur": 2.706,
+      "start": 36.647,
+      "end": 39.26,
+      "dur": 2.613,
       "gap_after": 0.46,
       "words": [
         {
           "word": "And",
-          "start": 37.332,
-          "end": 37.513
+          "start": 36.647,
+          "end": 36.822
         },
         {
           "word": "things",
-          "start": 37.513,
-          "end": 37.695
+          "start": 36.822,
+          "end": 36.997
         },
         {
           "word": "get",
-          "start": 37.695,
-          "end": 37.876
+          "start": 36.997,
+          "end": 37.173
         },
         {
           "word": "built",
-          "start": 37.876,
-          "end": 38.058
+          "start": 37.173,
+          "end": 37.348
         },
         {
           "word": "out",
-          "start": 38.058,
-          "end": 38.24
+          "start": 37.348,
+          "end": 37.524
         },
         {
           "word": "there",
-          "start": 38.24,
-          "end": 38.421
+          "start": 37.524,
+          "end": 37.699
         },
         {
           "word": "that",
-          "start": 38.421,
-          "end": 38.603
+          "start": 37.699,
+          "end": 37.874
         },
         {
           "word": "nobody",
-          "start": 38.603,
-          "end": 39.148
+          "start": 37.874,
+          "end": 38.4
         },
         {
           "word": "puts",
-          "start": 39.148,
-          "end": 39.329
+          "start": 38.4,
+          "end": 38.576
         },
         {
           "word": "a",
-          "start": 39.329,
-          "end": 39.511
+          "start": 38.576,
+          "end": 38.751
         },
         {
           "word": "name",
-          "start": 39.511,
-          "end": 39.692
+          "start": 38.751,
+          "end": 38.926
         },
         {
           "word": "to.",
-          "start": 39.692,
-          "end": 40.038
+          "start": 38.926,
+          "end": 39.26
         }
       ]
     },
@@ -735,35 +740,35 @@
       "id": "L10",
       "beat": "CLOSE",
       "text": "What are they preparing for?",
-      "start": 40.498,
-      "end": 41.613,
-      "dur": 1.115,
+      "start": 39.72,
+      "end": 40.765,
+      "dur": 1.046,
       "gap_after": 0.0,
       "words": [
         {
           "word": "What",
-          "start": 40.498,
-          "end": 40.657
+          "start": 39.72,
+          "end": 39.869
         },
         {
           "word": "are",
-          "start": 40.657,
-          "end": 40.816
+          "start": 39.869,
+          "end": 40.018
         },
         {
           "word": "they",
-          "start": 40.816,
-          "end": 40.976
+          "start": 40.018,
+          "end": 40.168
         },
         {
           "word": "preparing",
-          "start": 40.976,
-          "end": 41.454
+          "start": 40.168,
+          "end": 40.616
         },
         {
           "word": "for?",
-          "start": 41.454,
-          "end": 41.613
+          "start": 40.616,
+          "end": 40.765
         }
       ]
     }
