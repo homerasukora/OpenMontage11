@@ -1,105 +1,105 @@
 {
   "lang": "en",
-  "total_duration": 40.528,
+  "total_duration": 28.316,
   "lines": [
     {
       "id": "L01",
       "beat": "HOOK",
       "text": "There's a theory that the lines planes leave behind aren't exhaust, but something sprayed on the cities below.",
       "start": 0.0,
-      "end": 5.051,
-      "dur": 5.051,
+      "end": 5.098,
+      "dur": 5.098,
       "gap_after": 0.3,
       "words": [
         {
           "word": "There's",
           "start": 0.0,
-          "end": 0.332
+          "end": 0.335
         },
         {
           "word": "a",
-          "start": 0.332,
-          "end": 0.498
+          "start": 0.335,
+          "end": 0.503
         },
         {
           "word": "theory",
-          "start": 0.498,
-          "end": 0.831
+          "start": 0.503,
+          "end": 0.838
         },
         {
           "word": "that",
-          "start": 0.831,
-          "end": 0.997
+          "start": 0.838,
+          "end": 1.006
         },
         {
           "word": "the",
-          "start": 0.997,
-          "end": 1.163
+          "start": 1.006,
+          "end": 1.174
         },
         {
           "word": "lines",
-          "start": 1.163,
-          "end": 1.495
+          "start": 1.174,
+          "end": 1.509
         },
         {
           "word": "planes",
-          "start": 1.495,
-          "end": 1.828
+          "start": 1.509,
+          "end": 1.845
         },
         {
           "word": "leave",
-          "start": 1.828,
-          "end": 1.994
+          "start": 1.845,
+          "end": 2.012
         },
         {
           "word": "behind",
-          "start": 1.994,
-          "end": 2.326
+          "start": 2.012,
+          "end": 2.348
         },
         {
           "word": "aren't",
-          "start": 2.326,
-          "end": 2.658
+          "start": 2.348,
+          "end": 2.683
         },
         {
           "word": "exhaust,",
-          "start": 2.658,
-          "end": 3.074
+          "start": 2.683,
+          "end": 3.102
         },
         {
           "word": "but",
-          "start": 3.074,
-          "end": 3.24
+          "start": 3.102,
+          "end": 3.27
         },
         {
           "word": "something",
-          "start": 3.24,
-          "end": 3.738
+          "start": 3.27,
+          "end": 3.773
         },
         {
           "word": "sprayed",
-          "start": 3.738,
-          "end": 3.905
+          "start": 3.773,
+          "end": 3.941
         },
         {
           "word": "on",
-          "start": 3.905,
-          "end": 4.071
+          "start": 3.941,
+          "end": 4.108
         },
         {
           "word": "the",
-          "start": 4.071,
-          "end": 4.237
+          "start": 4.108,
+          "end": 4.276
         },
         {
           "word": "cities",
-          "start": 4.237,
-          "end": 4.569
+          "start": 4.276,
+          "end": 4.611
         },
         {
           "word": "below.",
-          "start": 4.569,
-          "end": 5.051
+          "start": 4.611,
+          "end": 5.098
         }
       ]
     },
@@ -107,75 +107,75 @@
       "id": "L02",
       "beat": "THEORY",
       "text": "They've been photographed for thirty years — grids over airports, crosses over capitals.",
-      "start": 5.351,
-      "end": 9.752,
-      "dur": 4.401,
+      "start": 5.398,
+      "end": 9.81,
+      "dur": 4.413,
       "gap_after": 0.28,
       "words": [
         {
           "word": "They've",
-          "start": 5.351,
-          "end": 5.525
+          "start": 5.398,
+          "end": 5.572
         },
         {
           "word": "been",
-          "start": 5.525,
-          "end": 5.699
+          "start": 5.572,
+          "end": 5.746
         },
         {
           "word": "photographed",
-          "start": 5.699,
-          "end": 6.395
+          "start": 5.746,
+          "end": 6.444
         },
         {
           "word": "for",
-          "start": 6.395,
-          "end": 6.569
+          "start": 6.444,
+          "end": 6.618
         },
         {
           "word": "thirty",
-          "start": 6.569,
-          "end": 6.917
+          "start": 6.618,
+          "end": 6.967
         },
         {
           "word": "years",
-          "start": 6.917,
-          "end": 7.091
+          "start": 6.967,
+          "end": 7.142
         },
         {
           "word": "—",
-          "start": 7.091,
-          "end": 7.421
+          "start": 7.142,
+          "end": 7.473
         },
         {
           "word": "grids",
-          "start": 7.421,
-          "end": 7.595
+          "start": 7.473,
+          "end": 7.647
         },
         {
           "word": "over",
-          "start": 7.595,
-          "end": 7.943
+          "start": 7.647,
+          "end": 7.996
         },
         {
           "word": "airports,",
-          "start": 7.943,
-          "end": 8.378
+          "start": 7.996,
+          "end": 8.432
         },
         {
           "word": "crosses",
-          "start": 8.378,
-          "end": 8.726
+          "start": 8.432,
+          "end": 8.781
         },
         {
           "word": "over",
-          "start": 8.726,
-          "end": 9.074
+          "start": 8.781,
+          "end": 9.13
         },
         {
           "word": "capitals.",
-          "start": 9.074,
-          "end": 9.752
+          "start": 9.13,
+          "end": 9.81
         }
       ]
     },
@@ -183,80 +183,80 @@
       "id": "L03",
       "beat": "RECORD",
       "text": "The official answer is contrails — water vapour from the engines freezing into ice.",
-      "start": 10.032,
-      "end": 14.398,
-      "dur": 4.366,
+      "start": 10.09,
+      "end": 14.212,
+      "dur": 4.122,
       "gap_after": 0.46,
       "words": [
         {
           "word": "The",
-          "start": 10.032,
-          "end": 10.201
+          "start": 10.09,
+          "end": 10.25
         },
         {
           "word": "official",
-          "start": 10.201,
-          "end": 10.709
+          "start": 10.25,
+          "end": 10.729
         },
         {
           "word": "answer",
-          "start": 10.709,
-          "end": 11.047
+          "start": 10.729,
+          "end": 11.049
         },
         {
           "word": "is",
-          "start": 11.047,
-          "end": 11.217
+          "start": 11.049,
+          "end": 11.209
         },
         {
           "word": "contrails",
-          "start": 11.217,
-          "end": 11.555
+          "start": 11.209,
+          "end": 11.528
         },
         {
           "word": "—",
-          "start": 11.555,
-          "end": 11.877
+          "start": 11.528,
+          "end": 11.832
         },
         {
           "word": "water",
-          "start": 11.877,
-          "end": 12.215
+          "start": 11.832,
+          "end": 12.151
         },
         {
           "word": "vapour",
-          "start": 12.215,
-          "end": 12.554
+          "start": 12.151,
+          "end": 12.471
         },
         {
           "word": "from",
-          "start": 12.554,
-          "end": 12.723
+          "start": 12.471,
+          "end": 12.631
         },
         {
           "word": "the",
-          "start": 12.723,
-          "end": 12.892
+          "start": 12.631,
+          "end": 12.79
         },
         {
           "word": "engines",
-          "start": 12.892,
-          "end": 13.4
+          "start": 12.79,
+          "end": 13.27
         },
         {
           "word": "freezing",
-          "start": 13.4,
-          "end": 13.738
+          "start": 13.27,
+          "end": 13.589
         },
         {
           "word": "into",
-          "start": 13.738,
-          "end": 14.077
+          "start": 13.589,
+          "end": 13.909
         },
         {
           "word": "ice.",
-          "start": 14.077,
-          "end": 14.398
+          "start": 13.909,
+          "end": 14.212
         }
       ]
     },
@@ -264,85 +264,85 @@
       "id": "L04",
       "beat": "RECORD",
       "text": "Planes do spray things — cloud seeding is real and gets reported to the government.",
-      "start": 14.858,
-      "end": 19.12,
-      "dur": 4.262,
+      "start": 14.672,
+      "end": 19.108,
+      "dur": 4.436,
       "gap_after": 0.44,
       "words": [
         {
           "word": "Planes",
-          "start": 14.858,
-          "end": 15.232
+          "start": 14.672,
+          "end": 15.062
         },
         {
           "word": "do",
-          "start": 15.232,
-          "end": 15.419
+          "start": 15.062,
+          "end": 15.256
         },
         {
           "word": "spray",
-          "start": 15.419,
-          "end": 15.606
+          "start": 15.256,
+          "end": 15.451
         },
         {
           "word": "things",
-          "start": 15.606,
-          "end": 15.793
+          "start": 15.451,
+          "end": 15.645
         },
         {
           "word": "—",
-          "start": 15.793,
-          "end": 16.148
+          "start": 15.645,
+          "end": 16.015
         },
         {
           "word": "cloud",
-          "start": 16.148,
-          "end": 16.335
+          "start": 16.015,
+          "end": 16.209
         },
         {
           "word": "seeding",
-          "start": 16.335,
-          "end": 16.709
+          "start": 16.209,
+          "end": 16.599
         },
         {
           "word": "is",
-          "start": 16.709,
-          "end": 16.896
+          "start": 16.599,
+          "end": 16.793
         },
         {
           "word": "real",
-          "start": 16.896,
-          "end": 17.082
+          "start": 16.793,
+          "end": 16.988
         },
         {
           "word": "and",
-          "start": 17.082,
-          "end": 17.269
+          "start": 16.988,
+          "end": 17.182
         },
         {
           "word": "gets",
-          "start": 17.269,
-          "end": 17.456
+          "start": 17.182,
+          "end": 17.377
         },
         {
           "word": "reported",
-          "start": 17.456,
-          "end": 18.017
+          "start": 17.377,
+          "end": 17.96
         },
         {
           "word": "to",
-          "start": 18.017,
-          "end": 18.204
+          "start": 17.96,
+          "end": 18.155
         },
         {
           "word": "the",
-          "start": 18.204,
-          "end": 18.391
+          "start": 18.155,
+          "end": 18.349
         },
         {
           "word": "government.",
-          "start": 18.391,
-          "end": 19.12
+          "start": 18.349,
+          "end": 19.108
         }
       ]
     },
@@ -350,45 +350,45 @@
       "id": "L05",
       "beat": "TURN",
       "text": "But here's what keeps the theory alive.",
-      "start": 19.56,
-      "end": 21.546,
-      "dur": 1.986,
+      "start": 19.548,
+      "end": 21.43,
+      "dur": 1.882,
       "gap_after": 0.3,
       "words": [
         {
           "word": "But",
-          "start": 19.56,
-          "end": 19.742
+          "start": 19.548,
+          "end": 19.721
         },
         {
           "word": "here's",
-          "start": 19.742,
-          "end": 20.106
+          "start": 19.721,
+          "end": 20.066
         },
         {
           "word": "what",
-          "start": 20.106,
-          "end": 20.289
+          "start": 20.066,
+          "end": 20.239
         },
         {
           "word": "keeps",
-          "start": 20.289,
-          "end": 20.471
+          "start": 20.239,
+          "end": 20.411
         },
         {
           "word": "the",
-          "start": 20.471,
-          "end": 20.653
+          "start": 20.411,
+          "end": 20.584
         },
         {
           "word": "theory",
-          "start": 20.653,
-          "end": 21.018
+          "start": 20.584,
+          "end": 20.929
         },
         {
           "word": "alive.",
-          "start": 21.018,
-          "end": 21.546
+          "start": 20.929,
+          "end": 21.43
         }
       ]
     },
@@ -396,399 +396,126 @@
       "id": "L06",
       "beat": "TURN",
       "text": "Two planes cross the same sky, one leaves a trail for hours, the other nothing.",
-      "start": 21.846,
-      "end": 26.189,
-      "dur": 4.343,
-      "gap_after": 0.34,
+      "start": 21.73,
+      "end": 26.224,
+      "dur": 4.494,
+      "gap_after": 0.42,
       "words": [
         {
           "word": "Two",
-          "start": 21.846,
-          "end": 22.054
+          "start": 21.73,
+          "end": 21.945
         },
         {
           "word": "planes",
-          "start": 22.054,
-          "end": 22.469
+          "start": 21.945,
+          "end": 22.375
         },
         {
           "word": "cross",
-          "start": 22.469,
-          "end": 22.677
+          "start": 22.375,
+          "end": 22.59
         },
         {
           "word": "the",
-          "start": 22.677,
-          "end": 22.885
+          "start": 22.59,
+          "end": 22.805
         },
         {
           "word": "same",
-          "start": 22.885,
-          "end": 23.093
+          "start": 22.805,
+          "end": 23.02
         },
         {
           "word": "sky,",
-          "start": 23.093,
-          "end": 23.404
+          "start": 23.02,
+          "end": 23.342
         },
         {
           "word": "one",
-          "start": 23.404,
-          "end": 23.612
+          "start": 23.342,
+          "end": 23.557
         },
         {
           "word": "leaves",
-          "start": 23.612,
-          "end": 24.028
+          "start": 23.557,
+          "end": 23.987
         },
         {
           "word": "a",
-          "start": 24.028,
-          "end": 24.236
+          "start": 23.987,
+          "end": 24.202
         },
         {
           "word": "trail",
-          "start": 24.236,
-          "end": 24.443
+          "start": 24.202,
+          "end": 24.418
         },
         {
           "word": "for",
-          "start": 24.443,
-          "end": 24.651
+          "start": 24.418,
+          "end": 24.633
         },
         {
           "word": "hours,",
-          "start": 24.651,
-          "end": 24.963
+          "start": 24.633,
+          "end": 24.955
         },
         {
           "word": "the",
-          "start": 24.963,
-          "end": 25.171
+          "start": 24.955,
+          "end": 25.17
         },
         {
           "word": "other",
-          "start": 25.171,
-          "end": 25.586
+          "start": 25.17,
+          "end": 25.6
         },
         {
           "word": "nothing.",
-          "start": 25.586,
-          "end": 26.189
+          "start": 25.6,
+          "end": 26.224
         }
       ]
     },
     {
       "id": "L07",
-      "beat": "RECORD",
-      "text": "That really happens, and it isn't the plane.",
-      "start": 26.529,
-      "end": 28.55,
-      "dur": 2.021,
-      "gap_after": 0.28,
-      "words": [
-        {
-          "word": "That",
-          "start": 26.529,
-          "end": 26.706
-        },
-        {
-          "word": "really",
-          "start": 26.706,
-          "end": 27.061
-        },
-        {
-          "word": "happens,",
-          "start": 27.061,
-          "end": 27.504
-        },
-        {
-          "word": "and",
-          "start": 27.504,
-          "end": 27.681
-        },
-        {
-          "word": "it",
-          "start": 27.681,
-          "end": 27.858
-        },
-        {
-          "word": "isn't",
-          "start": 27.858,
-          "end": 28.036
-        },
-        {
-          "word": "the",
-          "start": 28.036,
-          "end": 28.213
-        },
-        {
-          "word": "plane.",
-          "start": 28.213,
-          "end": 28.55
-        }
-      ]
-    },
-    {
-      "id": "L08",
-      "beat": "RECORD",
-      "text": "A contrail only forms where the air is already cold and wet enough to hold it.",
-      "start": 28.83,
-      "end": 32.929,
-      "dur": 4.099,
-      "gap_after": 0.26,
-      "words": [
-        {
-          "word": "A",
-          "start": 28.83,
-          "end": 29.017
-        },
-        {
-          "word": "contrail",
-          "start": 29.017,
-          "end": 29.391
-        },
-        {
-          "word": "only",
-          "start": 29.391,
-          "end": 29.766
-        },
-        {
-          "word": "forms",
-          "start": 29.766,
-          "end": 29.953
-        },
-        {
-          "word": "where",
-          "start": 29.953,
-          "end": 30.14
-        },
-        {
-          "word": "the",
-          "start": 30.14,
-          "end": 30.327
-        },
-        {
-          "word": "air",
-          "start": 30.327,
-          "end": 30.514
-        },
-        {
-          "word": "is",
-          "start": 30.514,
-          "end": 30.702
-        },
-        {
-          "word": "already",
-          "start": 30.702,
-          "end": 31.263
-        },
-        {
-          "word": "cold",
-          "start": 31.263,
-          "end": 31.45
-        },
-        {
-          "word": "and",
-          "start": 31.45,
-          "end": 31.637
-        },
-        {
-          "word": "wet",
-          "start": 31.637,
-          "end": 31.825
-        },
-        {
-          "word": "enough",
-          "start": 31.825,
-          "end": 32.199
-        },
-        {
-          "word": "to",
-          "start": 32.199,
-          "end": 32.386
-        },
-        {
-          "word": "hold",
-          "start": 32.386,
-          "end": 32.573
-        },
-        {
-          "word": "it.",
-          "start": 32.573,
-          "end": 32.929
-        }
-      ]
-    },
-    {
-      "id": "L09",
-      "beat": "RECORD",
-      "text": "That layer can be a few hundred metres thick — fly above it, and nothing.",
-      "start": 33.189,
-      "end": 36.847,
-      "dur": 3.658,
-      "gap_after": 0.36,
-      "words": [
-        {
-          "word": "That",
-          "start": 33.189,
-          "end": 33.361
-        },
-        {
-          "word": "layer",
-          "start": 33.361,
-          "end": 33.532
-        },
-        {
-          "word": "can",
-          "start": 33.532,
-          "end": 33.704
-        },
-        {
-          "word": "be",
-          "start": 33.704,
-          "end": 33.876
-        },
-        {
-          "word": "a",
-          "start": 33.876,
-          "end": 34.048
-        },
-        {
-          "word": "few",
-          "start": 34.048,
-          "end": 34.219
-        },
-        {
-          "word": "hundred",
-          "start": 34.219,
-          "end": 34.563
-        },
-        {
-          "word": "metres",
-          "start": 34.563,
-          "end": 34.906
-        },
-        {
-          "word": "thick",
-          "start": 34.906,
-          "end": 35.078
-        },
-        {
-          "word": "—",
-          "start": 35.078,
-          "end": 35.404
-        },
-        {
-          "word": "fly",
-          "start": 35.404,
-          "end": 35.576
-        },
-        {
-          "word": "above",
-          "start": 35.576,
-          "end": 35.919
-        },
-        {
-          "word": "it,",
-          "start": 35.919,
-          "end": 36.177
-        },
-        {
-          "word": "and",
-          "start": 36.177,
-          "end": 36.349
-        },
-        {
-          "word": "nothing.",
-          "start": 36.349,
-          "end": 36.847
-        }
-      ]
-    },
-    {
-      "id": "L10",
       "beat": "CLOSE",
-      "text": "The sky isn't showing you who's spraying — it's showing you where the water is.",
-      "start": 37.207,
-      "end": 40.528,
-      "dur": 3.321,
+      "text": "Maybe the truth comes out soon.",
+      "start": 26.644,
+      "end": 28.316,
+      "dur": 1.673,
       "gap_after": 0.0,
       "words": [
         {
-          "word": "The",
-          "start": 37.207,
-          "end": 37.375
-        },
-        {
-          "word": "sky",
-          "start": 37.375,
-          "end": 37.542
-        },
-        {
-          "word": "isn't",
-          "start": 37.542,
-          "end": 37.71
-        },
-        {
-          "word": "showing",
-          "start": 37.71,
-          "end": 38.045
-        },
-        {
-          "word": "you",
-          "start": 38.045,
-          "end": 38.213
-        },
-        {
-          "word": "who's",
-          "start": 38.213,
-          "end": 38.381
-        },
-        {
-          "word": "spraying",
-          "start": 38.381,
-          "end": 38.549
-        },
-        {
-          "word": "—",
-          "start": 38.549,
-          "end": 38.867
-        },
-        {
-          "word": "it's",
-          "start": 38.867,
-          "end": 39.035
-        },
-        {
-          "word": "showing",
-          "start": 39.035,
-          "end": 39.371
-        },
-        {
-          "word": "you",
-          "start": 39.371,
-          "end": 39.538
-        },
-        {
-          "word": "where",
-          "start": 39.538,
-          "end": 39.706
+          "word": "Maybe",
+          "start": 26.644,
+          "end": 26.855
         },
         {
           "word": "the",
-          "start": 39.706,
-          "end": 39.874
+          "start": 26.855,
+          "end": 27.067
         },
         {
-          "word": "water",
-          "start": 39.874,
-          "end": 40.209
+          "word": "truth",
+          "start": 27.067,
+          "end": 27.279
         },
         {
-          "word": "is.",
-          "start": 40.209,
-          "end": 40.528
+          "word": "comes",
+          "start": 27.279,
+          "end": 27.702
+        },
+        {
+          "word": "out",
+          "start": 27.702,
+          "end": 27.914
+        },
+        {
+          "word": "soon.",
+          "start": 27.914,
+          "end": 28.316
         }
       ]
     }

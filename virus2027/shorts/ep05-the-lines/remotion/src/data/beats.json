@@ -1,46 +1,155 @@
 {
-  "note": "Format D on found footage, with no end card — the film stops on its last line the way the script does. Shots tile continuously; each runs until the next begins. Every frame is somebody else's material, so the brand is carried by two beats of Vira and nothing else: no top mark, no logo bug, no closing plate. The theory gets the first twenty seconds in its own exhibits, including the cabin photograph it is most often argued with; from L07 the same sky is used to explain itself, which is why the back half reuses clips rather than escalating to new ones.",
-
+  "note": "Format D held open. Shots tile continuously; each runs until the next begins. Every frame is somebody else's material, so the brand is carried by two beats of Vira and nothing else: no top mark, no logo bug, no closing plate. The film runs its exhibits, speaks the official answer and the cloud-seeding concession, and then stops on the observation that keeps the argument alive — the last shot is the widest sky in the cut, held under one line.",
   "shots": [
-    { "at": "L01", "lead": 0.00, "type": "hero", "src": "broll/sky_pine.jpg" },
-    { "at": "L01", "lead": 2.60, "type": "band", "src": "broll/sky_city.jpg", "centre": 880 },
-
-    { "at": "L02", "lead": 0.00, "type": "band", "src": "broll/cabin.jpg", "centre": 830, "width": 0.96 },
-    { "at": "L02", "lead": 2.30, "type": "clip", "src": "clips/c_grid.mp4" },
-
-    { "at": "L03", "lead": 0.00, "type": "clip", "src": "clips/b_trail_sun.mp4" },
-
-    { "at": "L04", "lead": 0.00, "type": "band", "src": "broll/seeding.jpg", "centre": 830, "width": 0.96 },
-
-    { "at": "L05", "lead": 0.00, "type": "void" },
-
-    { "at": "L06", "lead": 0.00, "type": "clip", "src": "clips/c_cross.mp4" },
-    { "at": "L06", "lead": 2.60, "type": "clip", "src": "clips/b_trail_high.mp4" },
-
-    { "at": "L07", "lead": 0.00, "type": "clip", "src": "clips/b_sky_thin.mp4" },
-    { "at": "L08", "lead": 0.00, "type": "clip", "src": "clips/b_trail_long.mp4" },
-    { "at": "L09", "lead": 0.00, "type": "clip", "src": "clips/a_wing_above.mp4" },
-    { "at": "L10", "lead": 0.00, "type": "clip", "src": "clips/c_wide.mp4" }
+    {
+      "at": "L01",
+      "lead": 0.0,
+      "type": "hero",
+      "src": "broll/sky_pine.jpg"
+    },
+    {
+      "at": "L01",
+      "lead": 2.6,
+      "type": "band",
+      "src": "broll/sky_city.jpg",
+      "centre": 880
+    },
+    {
+      "at": "L02",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/cabin.jpg",
+      "centre": 830,
+      "width": 0.96
+    },
+    {
+      "at": "L02",
+      "lead": 2.3,
+      "type": "clip",
+      "src": "clips/c_grid.mp4"
+    },
+    {
+      "at": "L03",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/b_trail_sun.mp4"
+    },
+    {
+      "at": "L04",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/seeding.jpg",
+      "centre": 830,
+      "width": 0.96
+    },
+    {
+      "at": "L05",
+      "lead": 0.0,
+      "type": "void"
+    },
+    {
+      "at": "L06",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/c_cross.mp4"
+    },
+    {
+      "at": "L06",
+      "lead": 2.6,
+      "type": "clip",
+      "src": "clips/b_trail_high.mp4"
+    },
+    {
+      "at": "L07",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/c_wide.mp4"
+    }
   ],
-
   "beats": [
-    { "at": "L01", "lead": 0.55, "dur": 1.85, "type": "viz", "kind": "brackets", "top": 300, "bottom": 1180 },
-    { "at": "L01", "lead": 2.85, "dur": 2.00, "type": "viz", "kind": "brackets", "top": 352, "bottom": 1412 },
-
-    { "at": "L02", "lead": 0.25, "dur": 1.90, "type": "viz", "kind": "brackets", "top": 480, "bottom": 1188 },
-
-    { "at": "L03", "lead": 0.40, "dur": 3.30, "type": "viz", "kind": "nodes", "count": 22 },
-
-    { "at": "L04", "lead": 0.25, "dur": 3.70, "type": "viz", "kind": "brackets", "top": 470, "bottom": 1194 },
-
-    { "at": "L05", "lead": 0.10, "dur": 1.80, "type": "viz", "kind": "rings", "cy": 760, "period": 44, "max": 620 },
-    { "at": "L05", "lead": 0.18, "dur": 1.72, "type": "viz", "kind": "mascot", "x": 386, "y": 852, "width": 314 },
-
-    { "at": "L06", "lead": 2.80, "dur": 2.00, "type": "viz", "kind": "brackets", "top": 300, "bottom": 1180 },
-
-    { "at": "L08", "lead": 0.35, "dur": 3.50, "type": "viz", "kind": "nodes", "count": 26 },
-    { "at": "L09", "lead": 0.35, "dur": 3.10, "type": "viz", "kind": "brackets", "top": 300, "bottom": 1180 },
-
-    { "at": "L10", "lead": 0.30, "dur": 2.50, "type": "viz", "kind": "mascot", "x": 754, "y": 1010, "width": 216, "flip": true }
+    {
+      "at": "L01",
+      "lead": 0.55,
+      "dur": 1.85,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 300,
+      "bottom": 1180
+    },
+    {
+      "at": "L01",
+      "lead": 2.85,
+      "dur": 2.0,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 352,
+      "bottom": 1412
+    },
+    {
+      "at": "L02",
+      "lead": 0.25,
+      "dur": 1.9,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 480,
+      "bottom": 1188
+    },
+    {
+      "at": "L03",
+      "lead": 0.4,
+      "dur": 3.3,
+      "type": "viz",
+      "kind": "nodes",
+      "count": 22
+    },
+    {
+      "at": "L04",
+      "lead": 0.25,
+      "dur": 3.7,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 470,
+      "bottom": 1194
+    },
+    {
+      "at": "L05",
+      "lead": 0.1,
+      "dur": 1.8,
+      "type": "viz",
+      "kind": "rings",
+      "cy": 760,
+      "period": 44,
+      "max": 620
+    },
+    {
+      "at": "L05",
+      "lead": 0.18,
+      "dur": 1.72,
+      "type": "viz",
+      "kind": "mascot",
+      "x": 386,
+      "y": 852,
+      "width": 314
+    },
+    {
+      "at": "L06",
+      "lead": 2.8,
+      "dur": 2.0,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 300,
+      "bottom": 1180
+    },
+    {
+      "at": "L07",
+      "lead": 0.05,
+      "dur": 1.95,
+      "type": "viz",
+      "kind": "mascot",
+      "x": 754,
+      "y": 1010,
+      "width": 216,
+      "flip": true
+    }
   ]
 }

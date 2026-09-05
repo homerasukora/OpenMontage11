@@ -57,11 +57,8 @@ DELOGO_C = "delogo=x=8:y=452:w=196:h=112,delogo=x=392:y=696:w=182:h=106"
 # name -> (source, start, duration, extra filters)
 # Clip A is only clean after 3.5 s; everything taken from it starts later.
 CUTS = [
-    ("a_wing_above", "A", 5.60, 4.50, ""),
     ("b_trail_sun",  "B", 2.00, 4.80, ""),
     ("b_trail_high", "B", 9.20, 2.60, ""),
-    ("b_sky_thin",   "B", 20.20, 2.60, ""),
-    ("b_trail_long", "B", 30.00, 4.80, ""),
     ("c_cross",      "C", 11.40, 3.10, DELOGO_C),
     ("c_grid",       "C", 40.60, 2.60, DELOGO_C),
     ("c_wide",       "C", 43.60, 3.60, DELOGO_C),

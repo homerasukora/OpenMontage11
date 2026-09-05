@@ -1,8 +1,9 @@
 # TRANSMISSION 05 · "THE LINES"
 
-Format D on found footage. The chemtrail theory gets its hook and its best
-exhibit, and then the one genuinely strange thing about it turns out to have
-an answer more interesting than the theory.
+Format D held open. The chemtrail theory gets its hook and its exhibits, the
+official explanation and the cloud-seeding concession are both spoken, and
+the film stops on the one observation that keeps the argument going rather
+than resolving it.
 
 | | |
 |---|---|
@@ -11,7 +12,7 @@ an answer more interesting than the theory.
 | **Subtitles** | burned in, plus `out/subs_en.srt` |
 | **Audio** | `audio/en/mix_master.wav` — voice + bed + hits, −14.6 LUFS |
 | **Format** | 1080×1920 · 30 fps · H.264 · AAC 48 kHz |
-| **Runtime** | 41.6 s · no end card |
+| **Runtime** | 29.3 s · no end card |
 
 ---
 
@@ -21,8 +22,7 @@ an answer more interesting than the theory.
 |---|---|
 | The lines aren't exhaust; something is being sprayed on the cities below | They're contrails — water vapour from the engines freezing into ice |
 | Planes are fitted with spray equipment | True, and it is not a secret: cloud seeding is an ordinary licensed industry and US operators report every operation to NOAA |
-| Two planes cross the same sky and only one leaves a trail | True, and it isn't the plane |
-| That difference is the proof | A contrail only persists in air already cold and wet enough to hold it, and that layer is often a few hundred metres thick — a flight level either side of it and you leave nothing |
+| Two planes cross the same sky and only one leaves a trail | True — and this cut stops there, on purpose |
 
 **The official explanation is not CO₂.** CO₂ is an invisible gas and could
 not make a visible line; the trail is water and ice. Getting that wrong in
@@ -35,17 +35,24 @@ make it, and shows the real hardware doing it. A film that only says "no" to
 that loses the argument in the comments; one that says "yes, and here is the
 paperwork" keeps it.
 
-**The "some planes do, some don't" observation is not dismissed.** It is the
-whole reason the theory survives, it is genuinely what people are seeing, and
-it has a specific answer. The film gives it the turn at `L04` and spends the
-back half on it. The closing line is the thesis: the sky is reporting
-humidity, not intent.
+**The ending is deliberately open, and that was an editorial decision, not an
+omission.** Everything in the film is either attributed to the theory or
+true — the official explanation is spoken at `L03` and the concession at
+`L04` — but `L06` is left unresolved and the last line is *maybe the truth
+comes out soon*.
+
+There is an answer to `L06`, and an earlier cut of this episode carried it:
+a contrail only persists in air already cold and wet enough to hold it, in a
+layer often only a few hundred metres thick, so a flight level above or below
+it leaves nothing. Four lines of script, about twelve seconds. It is in git
+history, and putting it back is a `script.json` edit and a re-run — the
+pipeline re-times the picture and the score on its own.
 
 ---
 
 ## The cut
 
-Twelve shots from three phone clips and four photographs. The second half
+Ten shots from three phone clips and four photographs. The second half
 deliberately reuses the same two clips rather than escalating to new footage
 — the point being made is that the same sky explains itself.
 
@@ -60,10 +67,7 @@ deliberately reuses the same two clips rather than escalating to new footage
 | 0:19.2 | **But here's what keeps the theory alive.** | void · Vira |
 | 0:21.5 | *Two planes cross the same sky…* | two trails crossing |
 | 0:24.1 | *…one leaves a trail for hours, the other nothing.* | a single trail high up |
-| 0:26.5 | *That really happens, and it isn't the plane.* | thin, almost-empty sky |
-| 0:28.9 | *A contrail only forms where the air is already cold and wet enough…* | the long trail again |
-| 0:32.9 | *…a few hundred metres thick — fly above it, and nothing.* | the wing, above the cloud layer |
-| 0:37.8 | *The sky isn't showing you who's spraying — it's showing you where the water is.* | trails over open sky · Vira · and it ends there |
+| 0:26.6 | *Maybe the truth comes out soon.* | the widest sky in the cut · Vira · and it ends there |
 
 ---
 

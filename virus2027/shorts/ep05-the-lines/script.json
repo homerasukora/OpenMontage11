@@ -3,15 +3,15 @@
   "series": "VIRUS2027 // TRANSMISSION",
   "episode": 5,
   "title_en": "THE LINES",
-  "role": "Format D — the reversal, on found footage. The chemtrail theory gets its hook and its best exhibit, then the one genuinely strange thing about it turns out to have an answer that is more interesting than the theory.",
+  "role": "Format D held open. The theory gets its hook and its exhibits, the official explanation and the cloud-seeding concession are both spoken, and the film stops on the one observation that keeps the argument going rather than resolving it.",
   "format": "9:16 / 1080x1920 / 30fps",
-  "target_duration_s": 40,
+  "target_duration_s": 29,
   "platforms": [
     "TikTok",
     "Instagram Reels",
     "YouTube Shorts"
   ],
-  "editorial_note": "The official explanation is water vapour freezing into ice, not CO2 — CO2 is an invisible gas and could not make a visible line. L04 concedes the real thing up front: aircraft genuinely do disperse material, cloud seeding is an ordinary licensed industry, and US operators report every operation to NOAA. Conceding that costs nothing and removes the strongest 'but planes DO spray' reply before it is made. The 'some planes leave them and some don't' observation is real and is the whole reason the theory survives; it resolves on ice-supersaturated layers being shallow, typically a few hundred metres, so two aircraft minutes and a flight level apart genuinely behave differently. Nothing here says the theory is stupid; it says the sky is reporting humidity, not intent.",
+  "editorial_note": "Every line is either attributed to the theory or true. The official explanation is still in the film at L03 — water vapour freezing into ice, not CO2, which is an invisible gas and could not make a visible line — and L04 concedes up front that aircraft really do disperse material, that cloud seeding is an ordinary licensed industry and that US operators report every operation. What this cut deliberately does NOT do is resolve L06. Two aircraft in the same sky genuinely do behave differently, and the reason is that a contrail only persists in air already cold and wet enough to hold it, in a layer often only a few hundred metres thick — fly a level above or below it and you leave nothing. That explanation was written, voiced and cut; it is preserved in git history and is four lines of script away if the ending is ever wanted closed.",
   "voice_note": "Running sentences, hedges left in, no chains of one-word fragments. The first half is told the way somebody repeats a thing they keep seeing; L04 is the flat turn.",
   "lines": [
     {
@@ -54,34 +54,13 @@
       "beat": "TURN",
       "en": "Two planes cross the same sky, one leaves a trail for hours, the other nothing.",
       "vo_direction": "Slow on the last three words.",
-      "gap_after": 0.34
+      "gap_after": 0.42
     },
     {
       "id": "L07",
-      "beat": "RECORD",
-      "en": "That really happens, and it isn't the plane.",
-      "vo_direction": "Land on 'plane'.",
-      "gap_after": 0.28
-    },
-    {
-      "id": "L08",
-      "beat": "RECORD",
-      "en": "A contrail only forms where the air is already cold and wet enough to hold it.",
-      "vo_direction": "Unhurried, explanatory.",
-      "gap_after": 0.26
-    },
-    {
-      "id": "L09",
-      "beat": "RECORD",
-      "en": "That layer can be a few hundred metres thick — fly above it, and nothing.",
-      "vo_direction": "Even.",
-      "gap_after": 0.36
-    },
-    {
-      "id": "L10",
       "beat": "CLOSE",
-      "en": "The sky isn't showing you who's spraying — it's showing you where the water is.",
-      "vo_direction": "Easy. No punchline, no triumph.",
+      "en": "Maybe the truth comes out soon.",
+      "vo_direction": "Quiet, unhurried. An open door, not a promise.",
       "gap_after": 0.0
     }
   ]

@@ -75,10 +75,18 @@ it over: the theory gets the first twenty seconds told straight, in its own
 order and with its own exhibits, then the film answers every exhibit with
 something on the record. Same retention curve, opposite payload. The rule that
 makes the series work — *never argue the conspiracy, argue the paper trail* —
-is just louder here. `ep03` is the reference cut; `ep05` is the same format run on found footage
+is just louder here. `ep03` is the reference cut. `ep05` is the same format run on found footage
 rather than screenshots, and shows what carrying the brand costs when no
-frame is ours — a persistent top mark, two mascot beats, and a real matte for
-Vira so he can sit over daylight instead of only over the ground.
+frame is ours: with no top mark and no end card, two mascot beats and the
+type are the entire signature.
+
+`ep05` also ships **held open** — every claim in it is still attributed or
+true, and the official explanation is spoken, but the last observation is
+left unresolved and the film closes on *maybe the truth comes out soon*.
+That is a legitimate variant of D and worth naming: the format's guarantee is
+that the film never asserts something false and never hides the record, not
+that every episode must close the loop. The resolution it dropped is kept in
+git history so the closed version is a script edit away.
 
 Two constraints are structural in D, not stylistic. Every claim before the
 turn is attributed out loud (*"the internet has decided"*, *"people pulled
