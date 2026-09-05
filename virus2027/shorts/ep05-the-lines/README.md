@@ -11,7 +11,7 @@ an answer more interesting than the theory.
 | **Subtitles** | burned in, plus `out/subs_en.srt` |
 | **Audio** | `audio/en/mix_master.wav` — voice + bed + hits, −14.6 LUFS |
 | **Format** | 1080×1920 · 30 fps · H.264 · AAC 48 kHz |
-| **Runtime** | 39.4 s |
+| **Runtime** | 41.6 s · no end card |
 
 ---
 
@@ -20,6 +20,7 @@ an answer more interesting than the theory.
 | The theory says | The record says |
 |---|---|
 | The lines aren't exhaust; something is being sprayed on the cities below | They're contrails — water vapour from the engines freezing into ice |
+| Planes are fitted with spray equipment | True, and it is not a secret: cloud seeding is an ordinary licensed industry and US operators report every operation to NOAA |
 | Two planes cross the same sky and only one leaves a trail | True, and it isn't the plane |
 | That difference is the proof | A contrail only persists in air already cold and wet enough to hold it, and that layer is often a few hundred metres thick — a flight level either side of it and you leave nothing |
 
@@ -27,6 +28,12 @@ an answer more interesting than the theory.
 not make a visible line; the trail is water and ice. Getting that wrong in
 the script would have handed the comments a real error to argue with, which
 is the one thing this format cannot afford.
+
+**The concession comes early, on purpose.** `L04` gives away the strongest
+reply the theory has — *planes really do spray things* — before anyone can
+make it, and shows the real hardware doing it. A film that only says "no" to
+that loses the argument in the comments; one that says "yes, and here is the
+paperwork" keeps it.
 
 **The "some planes do, some don't" observation is not dismissed.** It is the
 whole reason the theory survives, it is genuinely what people are seeing, and
@@ -38,39 +45,39 @@ humidity, not intent.
 
 ## The cut
 
-Nine shots from three phone clips and two photographs. The second half
+Twelve shots from three phone clips and four photographs. The second half
 deliberately reuses the same two clips rather than escalating to new footage
 — the point being made is that the same sky explains itself.
 
 | t | Line | On screen |
 |---|---|---|
 | 0:00 | *There's a theory that the lines planes leave behind aren't exhaust…* | the pine-and-sun photograph, full bleed |
-| 0:02.9 | | crossing trails |
-| 0:05.8 | *People have photographed them for thirty years…* | trails over a skyline |
-| 0:08.5 | *…grids over airports, crosses over capitals.* | a sky full of them |
-| 0:10.9 | *The official answer is contrails…* | one trail against the sun |
-| 0:15.5 | **But here's what keeps the theory alive.** | void · Vira |
-| 0:17.8 | *Two planes cross the same sky…* | from inside the aircraft |
-| 0:21.0 | *…one leaves a trail that spreads for hours, the other leaves nothing.* | a single trail high up |
-| 0:23.3 | *That really happens, and it isn't the plane.* | thin, almost-empty sky |
-| 0:25.7 | *A contrail only forms where the air is already cold enough…* | the long trail again |
-| 0:30.2 | *…a few hundred metres thick, so fly above it and you leave nothing.* | the wing, above the cloud layer |
-| 0:34.4 | *The sky isn't showing you who's spraying — it's showing you where the water is.* | trails over open sky · Vira |
-| 0:36.6 | | 2027, mascot, handle |
+| 0:02.6 | *…but something sprayed on the cities below.* | trails over a skyline |
+| 0:05.1 | *They've been photographed for thirty years…* | **the cabin photograph** — the theory's most-shared exhibit |
+| 0:07.4 | *…grids over airports, crosses over capitals.* | a sky full of them |
+| 0:10.1 | *The official answer is contrails…* | one trail against the sun |
+| 0:14.6 | *Planes do spray things — cloud seeding is real…* | **a seeding rig on the ramp** |
+| 0:19.2 | **But here's what keeps the theory alive.** | void · Vira |
+| 0:21.5 | *Two planes cross the same sky…* | two trails crossing |
+| 0:24.1 | *…one leaves a trail for hours, the other nothing.* | a single trail high up |
+| 0:26.5 | *That really happens, and it isn't the plane.* | thin, almost-empty sky |
+| 0:28.9 | *A contrail only forms where the air is already cold and wet enough…* | the long trail again |
+| 0:32.9 | *…a few hundred metres thick — fly above it, and nothing.* | the wing, above the cloud layer |
+| 0:37.8 | *The sky isn't showing you who's spraying — it's showing you where the water is.* | trails over open sky · Vira · and it ends there |
 
 ---
 
 ## Carrying the brand through somebody else's footage
 
-Every frame of this episode is found material, so three things do the work
-the artwork normally does.
+Every frame of this episode is found material, and this cut deliberately
+strips the two obvious ways of stamping it: **there is no top mark and no end
+card.** The film stops on its last line the way the script does.
 
-**`TopMark`** — the V and the wordmark at the top margin, present the whole
-way through rather than only on the end card. It is the one thing on screen
-that is unambiguously ours.
-
-**Vira, twice.** He is not narrating and not reacting; he stands at the edge
-of frame the way he does in the gallery.
+What is left is **Vira, twice** — once on the turn, once on the close. He is
+not narrating and not reacting; he stands at the edge of frame the way he
+does in the gallery. That, the type, the grain and the crop marks are the
+whole brand signature here, which is a harder test of the style than a logo
+bug would be.
 
 **Two removals.** The wing clip opens with burned-in text for its first three
 and a half seconds, so every cut from it starts later. The third clip carries
@@ -82,27 +89,17 @@ anything with structure. The hook photograph had its own handle burned into
 the right edge; the source is trimmed before the cover-crop, which costs a
 roofline that was never the subject and is cleaner than patching open sky.
 
-### Matting Vira properly
+### Vira
 
-The other episodes use a feathered crop of the mascot render. That works over
-the brand's near-black ground and nowhere else — over a blue sky it is a dark
-rectangle. `prep_media.cut_out()` builds a real matte instead:
+He arrives as a PNG that already carries a correct alpha channel, so nothing
+here is keyed or matted and his colour is untouched — the file is only
+trimmed to his silhouette so the composition can position him by his own
+edges rather than by a square of empty pixels.
 
-1. Flood the background inward from the frame border over pixels within
-   tolerance of the plate colour. **A luma key is wrong here** — his legs and
-   shoes are nearly as dark as the plate and a key eats them; they survive
-   this because they are interior pixels, not reachable from the edge.
-2. Keep only the largest connected component. The render's backdrop carries
-   faint concentric rings that are not near enough to the plate colour to be
-   flooded, and they otherwise survive as little islands.
-3. Ramp opacity by distance from the plate colour. The flood fill decides
-   which pixels are his; this decides how opaque they are, and it dissolves
-   the soft shadow he is rendered in without touching his shoes.
-
-Even matted, he is a character modelled against black: over bright sky his
-shoes and shaded side still read as smudges. So the beat over open sky gives
-him a dark badge card, which is honest about it and matches the document
-language the series already uses. Over the void he needs nothing.
+That replaced a flood-fill matte built from the old render, and it removed
+the problem the matte existed to manage: with a real alpha he sits over open
+sky as cleanly as he sits over the ground, so the beat on the closing shot
+needs no card behind him.
 
 ---
 

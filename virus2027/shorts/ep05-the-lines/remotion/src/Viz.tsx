@@ -277,24 +277,3 @@ export const MascotBeat: React.FC<{
     </AbsoluteFill>
   );
 };
-
-/**
- * The small mark at the top of frame. Every shot in this episode is somebody
- * else's footage, so the film needs one thing in it that is unambiguously
- * ours, present the whole way through rather than only on the end card.
- * It sits at the safe margin, quiet enough to ignore and specific enough to
- * recognise.
- */
-export const TopMark: React.FC<{opacity?: number}> = ({opacity = 1}) => (
-  <div style={{
-    position: 'absolute', left: 62, top: 74,
-    display: 'flex', alignItems: 'center', gap: 16,
-    opacity: 0.72 * opacity, pointerEvents: 'none',
-  }}>
-    <Img src={staticFile('logo-v.png')} style={{width: 46, display: 'block'}} />
-    <span style={{
-      fontFamily: '"IBM Plex Mono", monospace', fontSize: 21, fontWeight: 500,
-      letterSpacing: '0.26em', color: C.text,
-    }}>VIRUS2027</span>
-  </div>
-);

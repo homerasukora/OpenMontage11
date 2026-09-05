@@ -13,7 +13,7 @@ import {Pano, PanoMove} from './Pano';
 import {BrandEnd, Row} from './elements';
 import {
   Brackets, CropMarks, MascotBeat, NodeField, PlaybackBar, PulseRings,
-  SupplyBar, TopMark,
+  SupplyBar,
 } from './Viz';
 
 loadBarlow('normal', {weights: ['600', '700', '800'], subsets: ['latin']});
@@ -29,7 +29,12 @@ export type Beat = {
   card?: boolean;
 };
 
-export const TAIL_SECONDS = 1.60;
+/**
+ * No end card in this episode, so the tail is only long enough to let the
+ * last subtitle clear and the picture settle. `brand_at` is absent from
+ * beats.json, which makes the final shot run to the end of the film.
+ */
+export const TAIL_SECONDS = 0.95;
 export const CAPTION_BASELINE = 1382;
 
 export const totalFrames = (t: Timing) =>
@@ -146,7 +151,6 @@ export const Transmission: React.FC<{
 
       <AbsoluteFill style={{opacity: 1 - brandIn}}>
         <CropMarks />
-        <TopMark />
         <Subtitles chunks={buildChunks(timing.lines)} baseline={CAPTION_BASELINE} />
         <PlaybackBar total={total} />
       </AbsoluteFill>

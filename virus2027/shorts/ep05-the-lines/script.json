@@ -5,46 +5,84 @@
   "title_en": "THE LINES",
   "role": "Format D — the reversal, on found footage. The chemtrail theory gets its hook and its best exhibit, then the one genuinely strange thing about it turns out to have an answer that is more interesting than the theory.",
   "format": "9:16 / 1080x1920 / 30fps",
-  "target_duration_s": 39,
-  "platforms": ["TikTok", "Instagram Reels", "YouTube Shorts"],
-  "editorial_note": "The official explanation is water vapour freezing into ice, not CO2 — CO2 is an invisible gas and could not make a visible line. The 'some planes leave them and some don't' observation is real and is the whole reason the theory survives; it resolves on ice-supersaturated layers being shallow, typically a few hundred metres, so two aircraft minutes and a flight level apart genuinely behave differently. Nothing here says the theory is stupid; it says the sky is reporting humidity, not intent.",
+  "target_duration_s": 40,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "editorial_note": "The official explanation is water vapour freezing into ice, not CO2 — CO2 is an invisible gas and could not make a visible line. L04 concedes the real thing up front: aircraft genuinely do disperse material, cloud seeding is an ordinary licensed industry, and US operators report every operation to NOAA. Conceding that costs nothing and removes the strongest 'but planes DO spray' reply before it is made. The 'some planes leave them and some don't' observation is real and is the whole reason the theory survives; it resolves on ice-supersaturated layers being shallow, typically a few hundred metres, so two aircraft minutes and a flight level apart genuinely behave differently. Nothing here says the theory is stupid; it says the sky is reporting humidity, not intent.",
   "voice_note": "Running sentences, hedges left in, no chains of one-word fragments. The first half is told the way somebody repeats a thing they keep seeing; L04 is the flat turn.",
   "lines": [
-    { "id": "L01", "beat": "HOOK",
-      "en": "There's a theory that the lines planes leave behind aren't exhaust — that something is being sprayed on the cities below.",
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "en": "There's a theory that the lines planes leave behind aren't exhaust, but something sprayed on the cities below.",
       "vo_direction": "Level. Reporting what other people believe, not selling it.",
-      "gap_after": 0.30 },
-    { "id": "L02", "beat": "THEORY",
-      "en": "People have photographed them for thirty years — grids over airports, crosses over capitals.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L02",
+      "beat": "THEORY",
+      "en": "They've been photographed for thirty years — grids over airports, crosses over capitals.",
       "vo_direction": "Keep it moving.",
-      "gap_after": 0.28 },
-    { "id": "L03", "beat": "RECORD",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L03",
+      "beat": "RECORD",
       "en": "The official answer is contrails — water vapour from the engines freezing into ice.",
       "vo_direction": "Matter of fact.",
-      "gap_after": 0.46 },
-    { "id": "L04", "beat": "TURN",
+      "gap_after": 0.46
+    },
+    {
+      "id": "L04",
+      "beat": "RECORD",
+      "en": "Planes do spray things — cloud seeding is real and gets reported to the government.",
+      "vo_direction": "Plain. This is a concession, not a reveal.",
+      "gap_after": 0.44
+    },
+    {
+      "id": "L05",
+      "beat": "TURN",
       "en": "But here's what keeps the theory alive.",
       "vo_direction": "Flat. Let it sit.",
-      "gap_after": 0.30 },
-    { "id": "L05", "beat": "TURN",
-      "en": "Two planes cross the same sky, one leaves a trail that spreads for hours, the other leaves nothing.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L06",
+      "beat": "TURN",
+      "en": "Two planes cross the same sky, one leaves a trail for hours, the other nothing.",
       "vo_direction": "Slow on the last three words.",
-      "gap_after": 0.34 },
-    { "id": "L06", "beat": "RECORD",
+      "gap_after": 0.34
+    },
+    {
+      "id": "L07",
+      "beat": "RECORD",
       "en": "That really happens, and it isn't the plane.",
       "vo_direction": "Land on 'plane'.",
-      "gap_after": 0.28 },
-    { "id": "L07", "beat": "RECORD",
-      "en": "A contrail only forms where the air is already cold enough and wet enough to hold it.",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L08",
+      "beat": "RECORD",
+      "en": "A contrail only forms where the air is already cold and wet enough to hold it.",
       "vo_direction": "Unhurried, explanatory.",
-      "gap_after": 0.26 },
-    { "id": "L08", "beat": "RECORD",
-      "en": "That layer can be a few hundred metres thick, so fly above it and you leave nothing.",
+      "gap_after": 0.26
+    },
+    {
+      "id": "L09",
+      "beat": "RECORD",
+      "en": "That layer can be a few hundred metres thick — fly above it, and nothing.",
       "vo_direction": "Even.",
-      "gap_after": 0.36 },
-    { "id": "L09", "beat": "CLOSE",
+      "gap_after": 0.36
+    },
+    {
+      "id": "L10",
+      "beat": "CLOSE",
       "en": "The sky isn't showing you who's spraying — it's showing you where the water is.",
       "vo_direction": "Easy. No punchline, no triumph.",
-      "gap_after": 0.0 }
+      "gap_after": 0.0
+    }
   ]
 }

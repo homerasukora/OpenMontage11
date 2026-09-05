@@ -18,12 +18,11 @@ which would have thrown away a third of the frame to save a corner.
 **Somebody else's caption.** The wing clip opens with burned-in text for its
 first three and a half seconds, so every cut taken from it starts after that.
 
-Vira gets a real alpha matte here rather than the feathered crop the other
-episodes use. That crop works over the brand's near-black ground and nowhere
-else; over a bright sky it shows as a dark rectangle. The matte is built by
-flood-filling the background inward from the border, which keeps his dark
-legs and shoes — they are interior pixels, not connected to the edge — and
-so avoids the exact failure a luma key would cause.
+Vira arrives here as a PNG that already carries a correct alpha channel, so
+nothing is keyed or matted — the earlier flood-fill matte is gone along with
+the problem it was solving. His colour is untouched; the file is only
+trimmed to his silhouette so the composition can position him by his own
+edges rather than by a square of empty pixels.
 
 The two photographs are graded like documentary rather than artwork: these
 are the sky as it actually looks, and pushing them toward the brand palette
@@ -58,7 +57,6 @@ DELOGO_C = "delogo=x=8:y=452:w=196:h=112,delogo=x=392:y=696:w=182:h=106"
 # name -> (source, start, duration, extra filters)
 # Clip A is only clean after 3.5 s; everything taken from it starts later.
 CUTS = [
-    ("a_wing_out",   "A", 3.70, 3.40, ""),
     ("a_wing_above", "A", 5.60, 4.50, ""),
     ("b_trail_sun",  "B", 2.00, 4.80, ""),
     ("b_trail_high", "B", 9.20, 2.60, ""),
@@ -85,56 +83,6 @@ def cut(name, src, start, dur, extra):
     ], check=True)
     print(f"clips/{name}.mp4   {src} {start:5.2f}s +{dur:.2f}s"
           + ("  (delogo)" if extra else ""))
-
-
-def cut_out(path, tol=26, feather=1.4):
-    """
-    Alpha for a character rendered on a flat near-black backdrop.
-
-    A luma key is wrong here: the mascot's legs and shoes are nearly as dark
-    as the plate, and a key would eat them. Instead the background is found
-    by growing a region inward from the frame border over pixels within
-    `tol` of the corner colour. Anything not reachable from the edge — the
-    body, the legs, the shoes — stays.
-    """
-    from scipy import ndimage
-
-    im = Image.open(path).convert("RGB")
-    a = np.asarray(im, np.float32)
-    bg = np.median(np.concatenate([a[:4].reshape(-1, 3), a[-4:].reshape(-1, 3),
-                                   a[:, :4].reshape(-1, 3), a[:, -4:].reshape(-1, 3)]), 0)
-    near = np.linalg.norm(a - bg, axis=2) < tol
-
-    lab, _ = ndimage.label(near)
-    edge = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]])))
-    edge.discard(0)
-    fg = ~np.isin(lab, list(edge))
-
-    # The render's backdrop carries faint concentric rings and specks. They
-    # are not near enough to the plate colour to be flooded, so they survive
-    # the fill as their own little islands. Keeping only the largest
-    # component drops every one of them and keeps the character whole,
-    # because his legs and shoes are attached to his body.
-    parts, n = ndimage.label(fg)
-    if n > 1:
-        sizes = ndimage.sum(fg, parts, range(1, n + 1))
-        fg = parts == (int(np.argmax(sizes)) + 1)
-    fg = ndimage.binary_fill_holes(fg)
-
-    # The flood fill decides *which* pixels belong to him; how opaque they
-    # are is a separate question. The render sits in its own soft shadow, and
-    # a hard mask brings that shadow along as a dark fringe. Ramping opacity
-    # by distance from the plate colour dissolves the fringe while leaving
-    # his shoes — genuinely dark, but far enough from the plate — solid.
-    dist = np.linalg.norm(a - bg, axis=2)
-    soft = np.clip((dist - 12) / 26.0, 0, 1)
-
-    alpha = Image.fromarray((fg * soft * 255).astype(np.uint8), "L")
-    alpha = alpha.filter(ImageFilter.GaussianBlur(feather))
-    out = im.convert("RGBA")
-    out.putalpha(alpha)
-    box = alpha.point(lambda v: 255 if v > 40 else 0).getbbox()
-    return out.crop(box) if box else out
 
 
 def grade(img, keep=0.90, contrast=1.05, brightness=0.96):
@@ -186,9 +134,20 @@ def main():
     fit(pine, 1080, 1920).save(OUT / "sky_pine.jpg", quality=94)
     print("broll/sky_pine.jpg  1080x1920  full bleed")
 
-    mascot = cut_out(SRC / "mascot.png")
-    mascot.save(ROOT / "assets" / "mascot-plate.png")
-    print(f"mascot-plate.png  {mascot.size}  matted, legs and shoes intact")
+    vira = Image.open(SRC / "vira.png").convert("RGBA")
+    box = vira.getchannel("A").point(lambda v: 255 if v > 20 else 0).getbbox()
+    vira.crop(box).save(ROOT / "assets" / "mascot-plate.png")
+    print(f"mascot-plate.png  {vira.crop(box).size}  supplied alpha, trimmed")
+
+    # Two exhibits the theory runs on. The cabin is the single most-shared
+    # chemtrail photograph; the seeding rig is the real thing planes actually
+    # carry. Both are graded like documents rather than artwork.
+    for name, src in (("cabin", "cabin.webp"), ("seeding", "seeding.jpg")):
+        img = grade(Image.open(SRC / src), keep=0.92, brightness=0.93)
+        h = max(1, round(1080 * img.height / img.width))
+        img.resize((1080, h), Image.LANCZOS).save(OUT / f"{name}.jpg", quality=94)
+        backdrop(img, brightness=0.28).save(OUT / f"{name}_bg.jpg", quality=88)
+        print(f"broll/{name}.jpg   1080x{h}  (+bg)")
 
     city = grade(Image.open(SRC / "sky_city.webp"))
     h = max(1, round(1080 * city.height / city.width))
