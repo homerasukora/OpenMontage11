@@ -1,52 +1,71 @@
-# TRANSMISSION 00 — pin this one
+# TRANSMISSION 06 — "THE DOORS"
 
-This is the video that sits at the top of the profile on all three platforms.
-Everything else in the feed assumes the viewer has seen it.
+A hook episode, not a pinned one. Every claim in it is documented, so the
+caption can afford to be flat: the facts are strange enough that overselling
+them would make the video look less credible, not more.
 
 ---
 
 ## Caption (TikTok / Reels)
 
-> Start here.
+> Finland built enough shelter for almost the entire country.
+> The billionaires are building their own.
 >
-> We're not claiming to know what happens in 2027. We just kept noticing how
-> many predictions land on it, so we built something around the question.
+> Kansas · Helsinki · Patagonia. Three building programmes. None of them
+> secret.
 >
-> This is Vira. He noticed first.
+> What are they preparing for?
 >
-> #virus2027 #2027 #predictionmarket #conspiracy #bnbchain #crypto
+> Sources in the comments.
+>
+> #virus2027 #2027 #bunker #doomsdayprep #finland #patagonia #conspiracy
 
 ## Caption (YouTube Shorts)
 
-> **What VIRUS2027 actually is — and who Vira is**
+> **50,000 bunkers — and none of them are a secret**
 >
-> AI timelines, disclosure files, geopolitics: different conversations that keep sharing one date. We don't claim to know why, and we're not going to pretend otherwise. VIRUS2027 is a narrative-driven BEP-20 token on BNB Smart Chain, traded on PancakeSwap V2 and powered by Pulse prediction-market infrastructure — a mystery on the surface with mechanics you can check on the chain.
+> A few million dollars gets you a floor of a converted missile silo in
+> Kansas, and they will show you round it like a condo. Finland has more than
+> fifty thousand civil defence shelters with room for four to five million
+> people, against a population of five and a half — and by law they have to
+> be usable within seventy-two hours of an order. In Patagonia, foreign
+> billionaires have quietly bought land by the hundred thousand hectares.
 >
-> Fixed supply of 1,000,000,000. No mint function. 80% to the community. Supply designed to contract through buybacks and burns.
+> Nothing here is a leak. Every figure is on the public record, and the
+> sources are in the pinned comment.
 >
-> Details in the pinned comment.
+> What are they preparing for?
 >
-> #shorts #virus2027 #predictionmarkets #bnbchain
+> #shorts #virus2027 #bunker #finland #patagonia #2027
 
 ---
 
 ## Pinned comment
 
-> Everything in the video, verifiable:
-> · BEP-20 on BNB Smart Chain, traded on PancakeSwap V2
-> · Fixed max supply 1,000,000,000 — no mint function
-> · 80% community allocation, team 3% subject to vesting
-> · Supply designed to contract through buybacks and burns
-> · Powered by Pulse prediction-market infrastructure
-> · CA: 0xcf25d38c0ADCA458aEa8BD57687A2b33A2d84444
+> Everything in the video, checkable:
 >
-> Burn totals, holders and liquidity move — check them on-chain rather than
-> trusting a number in a caption, including ours. **Do not trust. Verify.**
+> · "Apocalypse insurance" — Reid Hoffman, in The New Yorker, *Doomsday Prep
+>   for the Super-Rich* (2017)
+> · A large underground space at Mark Zuckerberg's Kauai compound — reported
+>   by Wired, 2023. His team calls it a basement. Judge the planning
+>   documents yourself.
+> · Peter Thiel's New Zealand land and citizenship — public record
+> · The silo: Survival Condo, Kansas — a converted Atlas missile silo, sold
+>   by the floor
+> · Finland: 50,000+ civil defence shelters, capacity cited between 4.4 and
+>   4.8 million against a population of ~5.6 million. Readiness within 72
+>   hours is written into the Rescue Act.
+> · Patagonia: Benetton (~900,000 ha), Joe Lewis, Ted Turner — all documented
+>   purchases
+>
+> We did not put a name on the dome compound, because we could not verify
+> one. If you can source it, post it.
+>
+> **Do not trust. Verify.**
 
-Why the numbers live in a comment and not in the film: the manual is explicit
-that dynamic figures have to be re-checked before every publish. A pinned
-video that quotes a burn total is wrong within a week. A comment can be
-edited.
+Why the sources go in a comment: the film is forty seconds and the moment it
+stops to cite something it stops being a film. The comment is also editable,
+which a burned-in citation is not.
 
 ---
 
@@ -54,15 +73,22 @@ edited.
 
 | | |
 |---|---|
-| **Pin on** | TikTok, Instagram Reels, YouTube Shorts — the same master, no re-encode |
-| **Cover frame** | 0:12 (the full gallery revealed) or 0:24 (Vira, full body) |
-| **Bio link** | the site — the film ends on it, so the trip is short |
-| **Do not** | run this as paid creative; it is an introduction, not a hook. The news episodes are the hooks. |
+| **Post to** | TikTok, Instagram Reels, YouTube Shorts — the same master, no re-encode |
+| **Cover frame** | 0:19 (the Helsinki shelter door with `50,000` counting) — it poses the question without answering it. Second choice 0:33, the domes. |
+| **Do not use as cover** | the opening field. It reads as a landscape photo in a grid and nobody stops. |
+| **Best comment to pin second** | whichever one argues with the Finland number — it is the most checkable fact in the video and the argument does the reach |
+| **Paid** | works as paid creative. Unlike the pinned film this one is a hook, and the first three seconds carry it. |
 
-## What to do after someone watches it
+## If it performs
 
-The film ends on *follow the signal, and remember the date*, which is the
-softest CTA in the set — deliberately. A pinned video's job is to make the
-rest of the feed make sense, not to convert. Every episode after this one can
-assume the viewer already knows what 2027 means here and who the orange thing
-is, which buys back four or five seconds at the top of every future short.
+The obvious follow-ups, in order of how ready the material is:
+
+1. **Finland alone.** The underground swimming pools and sports halls are a
+   better standalone story than they are a middle act — there is enough
+   published photography to carry a whole episode.
+2. **New Zealand.** Named here in one line and never shown; the Thiel
+   planning refusal is a documented paper trail, which is format A material.
+3. **What the shelters are actually for.** Finland's programme is Cold War
+   civil defence written into building law, not a recent panic. This episode
+   deliberately does not say so, because it closes on a question — but that
+   is the honest sequel, and running it second keeps the channel credible.
