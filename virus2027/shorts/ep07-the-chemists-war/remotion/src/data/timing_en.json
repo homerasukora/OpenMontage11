@@ -1,0 +1,670 @@
+{
+  "lang": "en",
+  "total_duration": 40.839,
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "text": "During Prohibition, the American government deliberately poisoned the alcohol people were drinking.",
+      "start": 0.0,
+      "end": 5.051,
+      "dur": 5.051,
+      "gap_after": 0.42,
+      "words": [
+        {
+          "word": "During",
+          "start": 0.0,
+          "end": 0.312
+        },
+        {
+          "word": "Prohibition,",
+          "start": 0.312,
+          "end": 1.013
+        },
+        {
+          "word": "the",
+          "start": 1.013,
+          "end": 1.169
+        },
+        {
+          "word": "American",
+          "start": 1.169,
+          "end": 1.793
+        },
+        {
+          "word": "government",
+          "start": 1.793,
+          "end": 2.261
+        },
+        {
+          "word": "deliberately",
+          "start": 2.261,
+          "end": 3.196
+        },
+        {
+          "word": "poisoned",
+          "start": 3.196,
+          "end": 3.664
+        },
+        {
+          "word": "the",
+          "start": 3.664,
+          "end": 3.82
+        },
+        {
+          "word": "alcohol",
+          "start": 3.82,
+          "end": 4.287
+        },
+        {
+          "word": "people",
+          "start": 4.287,
+          "end": 4.443
+        },
+        {
+          "word": "were",
+          "start": 4.443,
+          "end": 4.599
+        },
+        {
+          "word": "drinking.",
+          "start": 4.599,
+          "end": 5.051
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "beat": "BODY",
+      "text": "Industrial alcohol was already laced to make it undrinkable, and bootleggers paid chemists to strip it out.",
+      "start": 5.471,
+      "end": 11.3,
+      "dur": 5.829,
+      "gap_after": 0.28,
+      "words": [
+        {
+          "word": "Industrial",
+          "start": 5.471,
+          "end": 6.046
+        },
+        {
+          "word": "alcohol",
+          "start": 6.046,
+          "end": 6.622
+        },
+        {
+          "word": "was",
+          "start": 6.622,
+          "end": 6.813
+        },
+        {
+          "word": "already",
+          "start": 6.813,
+          "end": 7.389
+        },
+        {
+          "word": "laced",
+          "start": 7.389,
+          "end": 7.772
+        },
+        {
+          "word": "to",
+          "start": 7.772,
+          "end": 7.964
+        },
+        {
+          "word": "make",
+          "start": 7.964,
+          "end": 8.156
+        },
+        {
+          "word": "it",
+          "start": 8.156,
+          "end": 8.347
+        },
+        {
+          "word": "undrinkable,",
+          "start": 8.347,
+          "end": 9.018
+        },
+        {
+          "word": "and",
+          "start": 9.018,
+          "end": 9.21
+        },
+        {
+          "word": "bootleggers",
+          "start": 9.21,
+          "end": 9.785
+        },
+        {
+          "word": "paid",
+          "start": 9.785,
+          "end": 9.977
+        },
+        {
+          "word": "chemists",
+          "start": 9.977,
+          "end": 10.361
+        },
+        {
+          "word": "to",
+          "start": 10.361,
+          "end": 10.552
+        },
+        {
+          "word": "strip",
+          "start": 10.552,
+          "end": 10.744
+        },
+        {
+          "word": "it",
+          "start": 10.744,
+          "end": 10.936
+        },
+        {
+          "word": "out.",
+          "start": 10.936,
+          "end": 11.3
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "beat": "BODY",
+      "text": "So in 1926 the Treasury ordered the formulas made deadlier.",
+      "start": 11.58,
+      "end": 15.714,
+      "dur": 4.134,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "So",
+          "start": 11.58,
+          "end": 11.811
+        },
+        {
+          "word": "in",
+          "start": 11.811,
+          "end": 12.042
+        },
+        {
+          "word": "1926",
+          "start": 12.042,
+          "end": 12.273
+        },
+        {
+          "word": "the",
+          "start": 12.273,
+          "end": 12.504
+        },
+        {
+          "word": "Treasury",
+          "start": 12.504,
+          "end": 13.197
+        },
+        {
+          "word": "ordered",
+          "start": 13.197,
+          "end": 13.89
+        },
+        {
+          "word": "the",
+          "start": 13.89,
+          "end": 14.121
+        },
+        {
+          "word": "formulas",
+          "start": 14.121,
+          "end": 14.813
+        },
+        {
+          "word": "made",
+          "start": 14.813,
+          "end": 15.044
+        },
+        {
+          "word": "deadlier.",
+          "start": 15.044,
+          "end": 15.714
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "beat": "BODY",
+      "text": "Methanol up to ten percent, plus benzene, kerosene, mercury salts, formaldehyde.",
+      "start": 16.014,
+      "end": 20.868,
+      "dur": 4.854,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "Methanol",
+          "start": 16.014,
+          "end": 16.599
+        },
+        {
+          "word": "up",
+          "start": 16.599,
+          "end": 16.794
+        },
+        {
+          "word": "to",
+          "start": 16.794,
+          "end": 16.989
+        },
+        {
+          "word": "ten",
+          "start": 16.989,
+          "end": 17.184
+        },
+        {
+          "word": "percent,",
+          "start": 17.184,
+          "end": 17.671
+        },
+        {
+          "word": "plus",
+          "start": 17.671,
+          "end": 17.866
+        },
+        {
+          "word": "benzene,",
+          "start": 17.866,
+          "end": 18.353
+        },
+        {
+          "word": "kerosene,",
+          "start": 18.353,
+          "end": 19.035
+        },
+        {
+          "word": "mercury",
+          "start": 19.035,
+          "end": 19.62
+        },
+        {
+          "word": "salts,",
+          "start": 19.62,
+          "end": 19.913
+        },
+        {
+          "word": "formaldehyde.",
+          "start": 19.913,
+          "end": 20.868
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "text": "In New York alone the medical examiner counted around seven hundred deaths in a year.",
+      "start": 21.208,
+      "end": 25.423,
+      "dur": 4.215,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "In",
+          "start": 21.208,
+          "end": 21.371
+        },
+        {
+          "word": "New",
+          "start": 21.371,
+          "end": 21.533
+        },
+        {
+          "word": "York",
+          "start": 21.533,
+          "end": 21.696
+        },
+        {
+          "word": "alone",
+          "start": 21.696,
+          "end": 22.022
+        },
+        {
+          "word": "the",
+          "start": 22.022,
+          "end": 22.184
+        },
+        {
+          "word": "medical",
+          "start": 22.184,
+          "end": 22.673
+        },
+        {
+          "word": "examiner",
+          "start": 22.673,
+          "end": 23.324
+        },
+        {
+          "word": "counted",
+          "start": 23.324,
+          "end": 23.649
+        },
+        {
+          "word": "around",
+          "start": 23.649,
+          "end": 23.975
+        },
+        {
+          "word": "seven",
+          "start": 23.975,
+          "end": 24.3
+        },
+        {
+          "word": "hundred",
+          "start": 24.3,
+          "end": 24.626
+        },
+        {
+          "word": "deaths",
+          "start": 24.626,
+          "end": 24.788
+        },
+        {
+          "word": "in",
+          "start": 24.788,
+          "end": 24.951
+        },
+        {
+          "word": "a",
+          "start": 24.951,
+          "end": 25.114
+        },
+        {
+          "word": "year.",
+          "start": 25.114,
+          "end": 25.423
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "beat": "BODY",
+      "text": "He said it out loud — the government knew, and kept going.",
+      "start": 25.723,
+      "end": 28.719,
+      "dur": 2.996,
+      "gap_after": 0.32,
+      "words": [
+        {
+          "word": "He",
+          "start": 25.723,
+          "end": 25.907
+        },
+        {
+          "word": "said",
+          "start": 25.907,
+          "end": 26.091
+        },
+        {
+          "word": "it",
+          "start": 26.091,
+          "end": 26.274
+        },
+        {
+          "word": "out",
+          "start": 26.274,
+          "end": 26.458
+        },
+        {
+          "word": "loud",
+          "start": 26.458,
+          "end": 26.642
+        },
+        {
+          "word": "—",
+          "start": 26.642,
+          "end": 26.991
+        },
+        {
+          "word": "the",
+          "start": 26.991,
+          "end": 27.175
+        },
+        {
+          "word": "government",
+          "start": 27.175,
+          "end": 27.727
+        },
+        {
+          "word": "knew,",
+          "start": 27.727,
+          "end": 28.002
+        },
+        {
+          "word": "and",
+          "start": 28.002,
+          "end": 28.186
+        },
+        {
+          "word": "kept",
+          "start": 28.186,
+          "end": 28.37
+        },
+        {
+          "word": "going.",
+          "start": 28.37,
+          "end": 28.719
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "beat": "BODY",
+      "text": "The Anti-Saloon League said anyone who drank it was a deliberate suicide.",
+      "start": 29.039,
+      "end": 32.964,
+      "dur": 3.925,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "The",
+          "start": 29.039,
+          "end": 29.227
+        },
+        {
+          "word": "Anti-Saloon",
+          "start": 29.227,
+          "end": 29.978
+        },
+        {
+          "word": "League",
+          "start": 29.978,
+          "end": 30.166
+        },
+        {
+          "word": "said",
+          "start": 30.166,
+          "end": 30.354
+        },
+        {
+          "word": "anyone",
+          "start": 30.354,
+          "end": 30.729
+        },
+        {
+          "word": "who",
+          "start": 30.729,
+          "end": 30.917
+        },
+        {
+          "word": "drank",
+          "start": 30.917,
+          "end": 31.105
+        },
+        {
+          "word": "it",
+          "start": 31.105,
+          "end": 31.293
+        },
+        {
+          "word": "was",
+          "start": 31.293,
+          "end": 31.481
+        },
+        {
+          "word": "a",
+          "start": 31.481,
+          "end": 31.668
+        },
+        {
+          "word": "deliberate",
+          "start": 31.668,
+          "end": 32.419
+        },
+        {
+          "word": "suicide.",
+          "start": 32.419,
+          "end": 32.964
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "beat": "BODY",
+      "text": "It ran until Prohibition ended in 1933, and the estimates run to ten thousand.",
+      "start": 33.264,
+      "end": 38.513,
+      "dur": 5.248,
+      "gap_after": 0.48,
+      "words": [
+        {
+          "word": "It",
+          "start": 33.264,
+          "end": 33.479
+        },
+        {
+          "word": "ran",
+          "start": 33.479,
+          "end": 33.694
+        },
+        {
+          "word": "until",
+          "start": 33.694,
+          "end": 34.125
+        },
+        {
+          "word": "Prohibition",
+          "start": 34.125,
+          "end": 34.985
+        },
+        {
+          "word": "ended",
+          "start": 34.985,
+          "end": 35.415
+        },
+        {
+          "word": "in",
+          "start": 35.415,
+          "end": 35.63
+        },
+        {
+          "word": "1933,",
+          "start": 35.63,
+          "end": 35.953
+        },
+        {
+          "word": "and",
+          "start": 35.953,
+          "end": 36.168
+        },
+        {
+          "word": "the",
+          "start": 36.168,
+          "end": 36.383
+        },
+        {
+          "word": "estimates",
+          "start": 36.383,
+          "end": 37.243
+        },
+        {
+          "word": "run",
+          "start": 37.243,
+          "end": 37.459
+        },
+        {
+          "word": "to",
+          "start": 37.459,
+          "end": 37.674
+        },
+        {
+          "word": "ten",
+          "start": 37.674,
+          "end": 37.889
+        },
+        {
+          "word": "thousand.",
+          "start": 37.889,
+          "end": 38.513
+        }
+      ]
+    },
+    {
+      "id": "L09",
+      "beat": "CLOSE",
+      "text": "So what are we not being told about right now?",
+      "start": 38.993,
+      "end": 40.839,
+      "dur": 1.847,
+      "gap_after": 0.0,
+      "words": [
+        {
+          "word": "So",
+          "start": 38.993,
+          "end": 39.16
+        },
+        {
+          "word": "what",
+          "start": 39.16,
+          "end": 39.328
+        },
+        {
+          "word": "are",
+          "start": 39.328,
+          "end": 39.496
+        },
+        {
+          "word": "we",
+          "start": 39.496,
+          "end": 39.664
+        },
+        {
+          "word": "not",
+          "start": 39.664,
+          "end": 39.832
+        },
+        {
+          "word": "being",
+          "start": 39.832,
+          "end": 40.0
+        },
+        {
+          "word": "told",
+          "start": 40.0,
+          "end": 40.168
+        },
+        {
+          "word": "about",
+          "start": 40.168,
+          "end": 40.504
+        },
+        {
+          "word": "right",
+          "start": 40.504,
+          "end": 40.671
+        },
+        {
+          "word": "now?",
+          "start": 40.671,
+          "end": 40.839
+        }
+      ]
+    }
+  ]
+}

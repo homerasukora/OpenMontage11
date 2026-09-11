@@ -1,0 +1,81 @@
+{
+  "id": "ep07-the-chemists-war",
+  "series": "VIRUS2027 // TRANSMISSION",
+  "episode": 7,
+  "title_en": "THE CHEMISTS' WAR",
+  "role": "Not a theory. A documented federal programme that killed thousands of Americans, told straight, closing on the only question it leaves behind.",
+  "format": "9:16 / 1080x1920 / 30fps",
+  "target_duration_s": 39,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "editorial_note": "Everything here is established history, not conspiracy — which is exactly why it works as a hook. Industrial alcohol had been denatured since the 1906 Denatured Alcohol Act; bootleggers employed chemists to renature it, and an estimated sixty million gallons a year were being diverted. In 1926 the Treasury, which ran the Prohibition Bureau, ordered stronger formulas — methanol to around ten percent, alongside benzene, kerosene, mercury salts, formaldehyde and others — effective from the start of 1927. Charles Norris, chief medical examiner of New York City, publicly accused the government and put the city's 1927 toll at roughly seven hundred. Wayne Wheeler of the Anti-Saloon League answered that anyone who drank industrial alcohol was 'a deliberate suicide'. The programme was never repealed; it ended with Prohibition in December 1933, and the commonly cited national estimate is about ten thousand dead. Deborah Blum's The Poisoner's Handbook and her 2010 Slate piece are the standard popular account. The closing line is a question, not a claim — the film has earned it by being true.",
+  "voice_note": "Flat and factual throughout. This material does not need help; any lean in the read makes it sound invented, which is the one thing it is not. The last line is asked quietly.",
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "en": "During Prohibition, the American government deliberately poisoned the alcohol people were drinking.",
+      "vo_direction": "Level. State it, do not sell it.",
+      "gap_after": 0.42
+    },
+    {
+      "id": "L02",
+      "beat": "BODY",
+      "en": "Industrial alcohol was already laced to make it undrinkable, and bootleggers paid chemists to strip it out.",
+      "vo_direction": "Keep it moving.",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L03",
+      "beat": "BODY",
+      "en": "So in 1926 the Treasury ordered the formulas made deadlier.",
+      "vo_direction": "Land on 'deadlier'.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L04",
+      "beat": "BODY",
+      "en": "Methanol up to ten percent, plus benzene, kerosene, mercury salts, formaldehyde.",
+      "vo_direction": "Read the list evenly, like an inventory.",
+      "gap_after": 0.34
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "en": "In New York alone the medical examiner counted around seven hundred deaths in a year.",
+      "vo_direction": "Matter of fact.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L06",
+      "beat": "BODY",
+      "en": "He said it out loud — the government knew, and kept going.",
+      "vo_direction": "Slower. This is the centre of it.",
+      "gap_after": 0.32
+    },
+    {
+      "id": "L07",
+      "beat": "BODY",
+      "en": "The Anti-Saloon League said anyone who drank it was a deliberate suicide.",
+      "vo_direction": "Quote it flat. No disgust in the voice — the sentence does that itself.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L08",
+      "beat": "BODY",
+      "en": "It ran until Prohibition ended in 1933, and the estimates run to ten thousand.",
+      "vo_direction": "Even.",
+      "gap_after": 0.48
+    },
+    {
+      "id": "L09",
+      "beat": "CLOSE",
+      "en": "So what are we not being told about right now?",
+      "vo_direction": "Quiet. A question, not an accusation.",
+      "gap_after": 0.0
+    }
+  ]
+}

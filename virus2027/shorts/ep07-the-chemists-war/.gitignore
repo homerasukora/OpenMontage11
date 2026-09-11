@@ -1,0 +1,17 @@
+# The repo root ignores build/ (an OpenMontage artefact dir). Here it holds
+# the pipeline source, so re-include it and ignore only the scratch inside.
+!build/
+build/stills/
+
+# generated copies — recreated by the rebuild steps in README.md
+remotion/node_modules/
+remotion/out/
+remotion/public/*.png
+remotion/public/*.jpg
+remotion/public/*.wav
+remotion/public/*.mp4
+remotion/public/broll/
+
+# intermediates: per-line stems and the pre-master mix
+audio/*/lines/
+audio/*/mix.wav
