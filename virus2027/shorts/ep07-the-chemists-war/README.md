@@ -42,21 +42,22 @@ this episode ends on Vira thinking rather than on an answer.
 
 ## The cut
 
-Nine shots from five photographs. There is no footage of any of this — it
-happened between 1920 and 1933 — so each photograph plays wide and then
-pushed in, which reads as two shots and lets a forty-second film breathe on
-five sources.
+Nineteen shots from six photographs and one silent newsreel — a cut every
+2.2 seconds. Each photograph plays wide and then pushed in, which reads as
+two shots and lets a forty-second film breathe on a handful of sources.
 
 | t | Line | On screen |
 |---|---|---|
-| 0:00 | *…the American government deliberately poisoned the alcohol people were drinking.* | agents emptying a barrel into a sewer · `1920–1933 · UNITED STATES` |
-| 0:05.5 | *Industrial alcohol was already laced… bootleggers paid chemists to strip it out.* | a raid, then the crate of bottles |
-| 0:11.6 | *So in 1926 the Treasury ordered the formulas made deadlier.* | the VOTE DRY parade · `1926 · TREASURY ORDER` |
-| 0:16.0 | *Methanol up to ten percent, plus benzene, kerosene, mercury salts, formaldehyde.* | `NO BOOZE SOLD HERE` · `10%` |
+| 0:00 | *…the American government deliberately poisoned the alcohol people were drinking.* | **newsreel: axes into barrels** · `1920–1933 · UNITED STATES` |
+| 0:02.2 | | the sewer pour, wide, then close |
+| 0:05.5 | *Industrial alcohol was already laced… bootleggers paid chemists to strip it out.* | a raid, the crate of bottles, **newsreel** |
+| 0:11.6 | *So in 1926 the Treasury ordered the formulas made deadlier.* | the VOTE DRY parade, then the placard · `1926 · TREASURY ORDER` |
+| 0:16.0 | *Methanol up to ten percent, plus benzene, kerosene, mercury salts, formaldehyde.* | `NO BOOZE SOLD HERE`, close, **newsreel** · `10%` |
 | 0:21.2 | *In New York alone the medical examiner counted around seven hundred deaths in a year.* | **black** · `700` |
-| 0:25.7 | *He said it out loud — the government knew, and kept going.* | back to the pour |
-| 0:29.0 | *The Anti-Saloon League said anyone who drank it was a deliberate suicide.* | the VOTE DRY placard, close |
-| 0:33.3 | *It ran until Prohibition ended in 1933, and the estimates run to ten thousand.* | the repeal celebration · `10,000` |
+| 0:25.7 | *He said it out loud — the government knew, and kept going.* | the pour, then **newsreel** |
+| 0:29.0 | *The Anti-Saloon League said anyone who drank it was a deliberate suicide.* | the VOTE DRY placard, then `BOOZE HOUNDS PLEASE STAY OUT` |
+| 0:33.3 | *It ran until Prohibition ended in 1933…* | **WE WANT BEER** — the march that ended it |
+| 0:35.3 | *…and the estimates run to ten thousand.* | the repeal celebration · `10,000` |
 | 0:39.0 | *So what are we not being told about right now?* | black · Vira · and it ends there |
 
 **The seven hundred land on black, on purpose.** There is no photograph of
@@ -68,6 +69,21 @@ one dishonest frame in the film. An empty frame is the accurate one.
 episode, and it is done with placement rather than words.
 
 ---
+
+## The newsreel
+
+The only motion in the film, and it is spread across four short bursts rather
+than played once. A page of stills, however good, reads as a slideshow after
+fifteen seconds; men swinging axes at barrels resets the eye without changing
+the subject. One burst opens the film, so the first thing a viewer sees is
+moving.
+
+**Its cuts are letterboxed in `prep_media`, not in the composition** — onto a
+blurred copy of themselves, at exactly the geometry the photographic bands
+use: 1.22× frame width, centred at y 880, same warm tone. A viewer cannot
+tell which shots are moving until they move, which is the point. Doing it at
+prep time also means the composition needs no new shot type; the footage is
+just another `clip`.
 
 ## The archive tone
 

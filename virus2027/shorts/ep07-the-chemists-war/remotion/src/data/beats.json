@@ -1,53 +1,273 @@
 {
-  "note": "Nine shots from five archive photographs — each used wide and then pushed in, which reads as two shots and lets a forty-second film breathe on five sources. No end card. The information layer carries the three numbers this story turns on, and a date tag opens the era and the order that changed it. The one dark beat in the middle is deliberate: the seven hundred deaths land on black, because there is no photograph of them and pretending otherwise would be the one dishonest frame in the film.",
-
+  "note": "Nineteen shots from six archive photographs and one silent newsreel. Each photograph plays wide and then pushed in; the newsreel is spread across four short bursts rather than played once, because a page of stills reads as a slideshow after fifteen seconds and men swinging axes at barrels reset the eye without changing the subject. The footage is letterboxed at exactly the geometry the photographic bands use — same width, same centre — so it sits inside the cut instead of interrupting it. No end card. The one dark beat in the middle is deliberate: the seven hundred deaths land on black, because there is no photograph of them and pretending otherwise would be the one dishonest frame in the film.",
   "shots": [
-    { "at": "L01", "lead": 0.00, "type": "band", "src": "broll/pour.jpg", "centre": 880, "width": 1.22 },
-    { "at": "L01", "lead": 2.75, "type": "band", "src": "broll/pour_in.jpg", "centre": 870, "width": 0.96 },
-
-    { "at": "L02", "lead": 0.00, "type": "band", "src": "broll/raid.jpg", "centre": 880, "width": 1.22 },
-    { "at": "L02", "lead": 3.05, "type": "band", "src": "broll/raid_in.jpg", "centre": 875, "width": 1.04 },
-
-    { "at": "L03", "lead": 0.00, "type": "band", "src": "broll/dry.jpg", "centre": 880, "width": 1.22 },
-    { "at": "L03", "lead": 2.25, "type": "band", "src": "broll/dry_in.jpg", "centre": 870, "width": 0.94 },
-
-    { "at": "L04", "lead": 0.00, "type": "band", "src": "broll/nobooze.jpg", "centre": 880, "width": 1.22 },
-    { "at": "L04", "lead": 2.55, "type": "band", "src": "broll/nobooze_in.jpg", "centre": 880, "width": 1.22 },
-
-    { "at": "L05", "lead": 0.00, "type": "void" },
-
-    { "at": "L06", "lead": 0.00, "type": "band", "src": "broll/pour_in.jpg", "centre": 870, "width": 0.96 },
-    { "at": "L07", "lead": 0.00, "type": "band", "src": "broll/dry_in.jpg", "centre": 870, "width": 0.94 },
-    { "at": "L08", "lead": 0.00, "type": "band", "src": "broll/cheers.jpg", "centre": 880, "width": 1.04 },
-
-    { "at": "L09", "lead": 0.00, "type": "void" }
+    {
+      "at": "L01",
+      "lead": 0.0,
+      "type": "clip",
+      "src": "clips/axe1.mp4"
+    },
+    {
+      "at": "L01",
+      "lead": 2.2,
+      "type": "band",
+      "src": "broll/pour.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L01",
+      "lead": 3.8,
+      "type": "band",
+      "src": "broll/pour_in.jpg",
+      "centre": 870,
+      "width": 0.96
+    },
+    {
+      "at": "L02",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/raid.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L02",
+      "lead": 2.1,
+      "type": "band",
+      "src": "broll/raid_in.jpg",
+      "centre": 875,
+      "width": 1.04
+    },
+    {
+      "at": "L02",
+      "lead": 4.1,
+      "type": "clip",
+      "src": "clips/axe2.mp4"
+    },
+    {
+      "at": "L03",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/dry.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L03",
+      "lead": 2.2,
+      "type": "band",
+      "src": "broll/dry_in.jpg",
+      "centre": 870,
+      "width": 0.94
+    },
+    {
+      "at": "L04",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/nobooze.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L04",
+      "lead": 2.0,
+      "type": "band",
+      "src": "broll/nobooze_in.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L04",
+      "lead": 3.6,
+      "type": "clip",
+      "src": "clips/axe3.mp4"
+    },
+    {
+      "at": "L05",
+      "lead": 0.0,
+      "type": "void"
+    },
+    {
+      "at": "L06",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/pour_in.jpg",
+      "centre": 870,
+      "width": 0.96
+    },
+    {
+      "at": "L06",
+      "lead": 1.7,
+      "type": "clip",
+      "src": "clips/axe4.mp4"
+    },
+    {
+      "at": "L07",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/dry_in.jpg",
+      "centre": 870,
+      "width": 0.94
+    },
+    {
+      "at": "L07",
+      "lead": 2.1,
+      "type": "band",
+      "src": "broll/nobooze_in.jpg",
+      "centre": 880,
+      "width": 1.22
+    },
+    {
+      "at": "L08",
+      "lead": 0.0,
+      "type": "band",
+      "src": "broll/beer.jpg",
+      "centre": 880,
+      "width": 1.16
+    },
+    {
+      "at": "L08",
+      "lead": 2.0,
+      "type": "band",
+      "src": "broll/cheers.jpg",
+      "centre": 880,
+      "width": 1.04
+    },
+    {
+      "at": "L09",
+      "lead": 0.0,
+      "type": "void"
+    }
   ],
-
   "beats": [
-    { "at": "L01", "lead": 0.55, "dur": 2.05, "type": "viz", "kind": "place", "text": "1920–1933 · United States" },
-    { "at": "L01", "lead": 0.35, "dur": 2.25, "type": "viz", "kind": "brackets", "top": 496, "bottom": 1264 },
-
-    { "at": "L02", "lead": 3.35, "dur": 2.55, "type": "viz", "kind": "nodes", "count": 22 },
-
-    { "at": "L03", "lead": 0.20, "dur": 1.95, "type": "viz", "kind": "place", "text": "1926 · Treasury order" },
-    { "at": "L03", "lead": 2.50, "dur": 1.75, "type": "viz", "kind": "brackets", "top": 400, "bottom": 1340 },
-
-    { "at": "L04", "lead": 0.30, "dur": 2.10, "type": "viz", "kind": "figure",
-      "value": 10, "suffix": "%", "label": "Methanol, by volume", "y": 206 },
-    { "at": "L04", "lead": 2.85, "dur": 1.90, "type": "viz", "kind": "nodes", "count": 26 },
-
-    { "at": "L05", "lead": 0.15, "dur": 3.85, "type": "viz", "kind": "figure",
-      "value": 700, "label": "Deaths in New York, one year", "y": 700 },
-    { "at": "L05", "lead": 0.10, "dur": 3.95, "type": "viz", "kind": "rings", "cy": 800, "period": 52, "max": 700 },
-
-    { "at": "L06", "lead": 0.25, "dur": 2.45, "type": "viz", "kind": "brackets", "top": 400, "bottom": 1340 },
-
-    { "at": "L07", "lead": 0.30, "dur": 3.20, "type": "viz", "kind": "nodes", "count": 20 },
-
-    { "at": "L08", "lead": 2.05, "dur": 2.95, "type": "viz", "kind": "figure",
-      "value": 10000, "label": "Estimated dead", "y": 206 },
-
-    { "at": "L09", "lead": 0.05, "dur": 2.60, "type": "viz", "kind": "mascot", "x": 386, "y": 852, "width": 314 },
-    { "at": "L09", "lead": 0.10, "dur": 2.55, "type": "viz", "kind": "rings", "cy": 770, "period": 46, "max": 640 }
+    {
+      "at": "L01",
+      "lead": 0.45,
+      "dur": 1.95,
+      "type": "viz",
+      "kind": "place",
+      "text": "1920–1933 · United States"
+    },
+    {
+      "at": "L01",
+      "lead": 2.45,
+      "dur": 1.3,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 400,
+      "bottom": 1360
+    },
+    {
+      "at": "L02",
+      "lead": 4.3,
+      "dur": 1.75,
+      "type": "viz",
+      "kind": "nodes",
+      "count": 22
+    },
+    {
+      "at": "L03",
+      "lead": 0.2,
+      "dur": 1.85,
+      "type": "viz",
+      "kind": "place",
+      "text": "1926 · Treasury order"
+    },
+    {
+      "at": "L03",
+      "lead": 2.45,
+      "dur": 1.85,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 400,
+      "bottom": 1340
+    },
+    {
+      "at": "L04",
+      "lead": 0.3,
+      "dur": 1.6,
+      "type": "viz",
+      "kind": "figure",
+      "value": 10,
+      "suffix": "%",
+      "label": "Methanol, by volume",
+      "y": 206
+    },
+    {
+      "at": "L04",
+      "lead": 3.75,
+      "dur": 1.4,
+      "type": "viz",
+      "kind": "nodes",
+      "count": 26
+    },
+    {
+      "at": "L05",
+      "lead": 0.15,
+      "dur": 3.85,
+      "type": "viz",
+      "kind": "figure",
+      "value": 700,
+      "label": "Deaths in New York, one year",
+      "y": 700
+    },
+    {
+      "at": "L05",
+      "lead": 0.1,
+      "dur": 3.95,
+      "type": "viz",
+      "kind": "rings",
+      "cy": 800,
+      "period": 52,
+      "max": 700
+    },
+    {
+      "at": "L06",
+      "lead": 0.2,
+      "dur": 1.35,
+      "type": "viz",
+      "kind": "brackets",
+      "top": 400,
+      "bottom": 1340
+    },
+    {
+      "at": "L07",
+      "lead": 0.3,
+      "dur": 1.65,
+      "type": "viz",
+      "kind": "nodes",
+      "count": 20
+    },
+    {
+      "at": "L08",
+      "lead": 2.35,
+      "dur": 3.2,
+      "type": "viz",
+      "kind": "figure",
+      "value": 10000,
+      "label": "Estimated dead",
+      "y": 206
+    },
+    {
+      "at": "L09",
+      "lead": 0.05,
+      "dur": 2.6,
+      "type": "viz",
+      "kind": "mascot",
+      "x": 386,
+      "y": 852,
+      "width": 314
+    },
+    {
+      "at": "L09",
+      "lead": 0.1,
+      "dur": 2.55,
+      "type": "viz",
+      "kind": "rings",
+      "cy": 770,
+      "period": 46,
+      "max": 640
+    }
   ]
 }

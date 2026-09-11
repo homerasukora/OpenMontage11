@@ -2,11 +2,18 @@
 """
 Media prep for TRANSMISSION 07 — "THE CHEMISTS' WAR".
 
-Five archive photographs, nine shots. No footage: everything here happened
-between 1920 and 1933 and the only record is stills, so the cut is built the
-way the ep06 middle section was — each photograph used wide and then pushed
-in, which reads as two shots and lets a forty-second film breathe on five
-sources.
+Six archive photographs and one silent newsreel, nineteen shots. Each
+photograph is used wide and then pushed in, which reads as two shots and lets
+a forty-second film breathe on a handful of sources.
+
+The newsreel is the only motion in the film and it is spread across four
+short cuts rather than played once. A page of stills, however good, reads as
+a slideshow after fifteen seconds; four bursts of men swinging axes at
+barrels reset the eye without changing the subject. Its cuts are baked into
+the 9:16 frame here rather than in the composition, letterboxed onto a
+blurred copy of themselves at exactly the geometry the photographic bands
+use — same width, same centre — so a viewer cannot tell which shots are
+moving until they move.
 
 These are the one set in the series that gets a real tone rather than a
 polish. They arrive black and white; leaving them neutral would drop a grey
@@ -16,6 +23,7 @@ a manipulation — nothing in these frames is changed but their colour
 temperature.
 """
 
+import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -24,6 +32,7 @@ from PIL import Image, ImageEnhance, ImageFilter
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "assets" / "src"
 OUT = ROOT / "assets" / "broll"
+CLIPS = ROOT / "assets" / "clips"
 
 # name -> (source, crop box as fractions or None for the full frame)
 STILLS = [
@@ -36,7 +45,24 @@ STILLS = [
     ("nobooze",      "no_booze.jpg", None),
     ("nobooze_in",   "no_booze.jpg", (0.14, 0.32, 0.58, 0.74)),
     ("cheers",       "cheers.jpg",   None),
+    ("beer",         "we_want_beer.jpg", None),
 ]
+
+# Cuts from the newsreel, in seconds. Four of them, spread across the film.
+TOUR = Path("/root/.claude/uploads/685963b1-f9b5-55d9-81cf-61d11216ce4a"
+            "/c26fcb86-snaptik_7234929813167820074_hd.mov")
+CUTS = [("axe1", 0.30, 2.30), ("axe2", 3.20, 2.20),
+        ("axe3", 5.60, 1.80), ("axe4", 7.45, 1.90)]
+
+# The photographic bands render 1.22x frame width, centred at y=880. Matching
+# that exactly is what makes the footage sit in the same cut as the stills
+# instead of interrupting it.
+BAND_W = round(1080 * 1.22)
+BAND_CENTRE = 880
+
+TONE_VF = ("format=gray,"
+           "colorchannelmixer=rr=1.095:gg=0.985:bb=0.845,"
+           "eq=contrast=1.09:brightness=-0.035")
 
 
 def tone(img, keep=0.16, contrast=1.09, brightness=0.94):
@@ -64,8 +90,32 @@ def backdrop(img, blur=48, brightness=0.28):
         fit(img, 1080, 1920).filter(ImageFilter.GaussianBlur(blur))).enhance(brightness)
 
 
+def cut(name, start, dur):
+    """One newsreel cut, letterboxed to match the photographic bands."""
+    out = CLIPS / f"{name}.mp4"
+    fg_h = "-2"
+    vf = (
+        f"[0:v]{TONE_VF},scale={BAND_W}:{fg_h},setsar=1[fg];"
+        f"[0:v]{TONE_VF},scale=1080:1920:force_original_aspect_ratio=increase,"
+        f"crop=1080:1920,gblur=sigma=42,eq=brightness=-0.34[bg];"
+        f"[bg][fg]overlay=x=(W-w)/2:y={BAND_CENTRE}-h/2,fps=30"
+    )
+    subprocess.run([
+        "ffmpeg", "-nostdin", "-v", "error", "-y",
+        "-ss", f"{start}", "-t", f"{dur}", "-i", str(TOUR),
+        "-an", "-filter_complex", vf,
+        "-c:v", "libx264", "-crf", "18", "-preset", "slow",
+        "-pix_fmt", "yuv420p", str(out),
+    ], check=True)
+    print(f"clips/{name}.mp4   {start:4.2f}s +{dur:.2f}s")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    CLIPS.mkdir(parents=True, exist_ok=True)
+
+    for args in CUTS:
+        cut(*args)
 
     for name, src, box in STILLS:
         img = Image.open(SRC / src)

@@ -65,6 +65,6 @@ The strongest hook on the channel, because nothing in it needs defending.
 | | |
 |---|---|
 | **Post to** | TikTok, Instagram Reels, YouTube Shorts — same master, no re-encode |
-| **Cover frame** | 0:23 (`700` alone on black). It is the only frame in the video that is just a number, and it makes people stop. Second choice 0:16, the `NO BOOZE SOLD HERE` sign. |
+| **Cover frame** | 0:23 (`700` alone on black). It is the only frame in the video that is just a number, and it makes people stop. Second choice 0:33, the `WE WANT BEER` march. |
 | **Paid** | yes. The first sentence is the whole hook and it survives being read without sound. |
 | **Expect** | "source?" as the top comment within an hour. That is the point — the pinned comment is written to win that exchange, and the argument is what carries the reach. |
