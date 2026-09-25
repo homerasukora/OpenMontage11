@@ -1,0 +1,740 @@
+{
+  "lang": "en",
+  "total_duration": 38.321,
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "text": "There is a theory that the universe is silent because everyone out there is hiding.",
+      "start": 0.0,
+      "end": 3.611,
+      "dur": 3.611,
+      "gap_after": 0.42,
+      "words": [
+        {
+          "word": "There",
+          "start": 0.0,
+          "end": 0.151
+        },
+        {
+          "word": "is",
+          "start": 0.151,
+          "end": 0.302
+        },
+        {
+          "word": "a",
+          "start": 0.302,
+          "end": 0.453
+        },
+        {
+          "word": "theory",
+          "start": 0.453,
+          "end": 0.756
+        },
+        {
+          "word": "that",
+          "start": 0.756,
+          "end": 0.907
+        },
+        {
+          "word": "the",
+          "start": 0.907,
+          "end": 1.058
+        },
+        {
+          "word": "universe",
+          "start": 1.058,
+          "end": 1.511
+        },
+        {
+          "word": "is",
+          "start": 1.511,
+          "end": 1.662
+        },
+        {
+          "word": "silent",
+          "start": 1.662,
+          "end": 1.964
+        },
+        {
+          "word": "because",
+          "start": 1.964,
+          "end": 2.267
+        },
+        {
+          "word": "everyone",
+          "start": 2.267,
+          "end": 2.72
+        },
+        {
+          "word": "out",
+          "start": 2.72,
+          "end": 2.871
+        },
+        {
+          "word": "there",
+          "start": 2.871,
+          "end": 3.022
+        },
+        {
+          "word": "is",
+          "start": 3.022,
+          "end": 3.173
+        },
+        {
+          "word": "hiding.",
+          "start": 3.173,
+          "end": 3.611
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "beat": "SETUP",
+      "text": "It is called the dark forest, and the moment you reveal yourself, something comes for you.",
+      "start": 4.031,
+      "end": 8.293,
+      "dur": 4.262,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "It",
+          "start": 4.031,
+          "end": 4.196
+        },
+        {
+          "word": "is",
+          "start": 4.196,
+          "end": 4.361
+        },
+        {
+          "word": "called",
+          "start": 4.361,
+          "end": 4.69
+        },
+        {
+          "word": "the",
+          "start": 4.69,
+          "end": 4.854
+        },
+        {
+          "word": "dark",
+          "start": 4.854,
+          "end": 5.019
+        },
+        {
+          "word": "forest,",
+          "start": 5.019,
+          "end": 5.43
+        },
+        {
+          "word": "and",
+          "start": 5.43,
+          "end": 5.595
+        },
+        {
+          "word": "the",
+          "start": 5.595,
+          "end": 5.759
+        },
+        {
+          "word": "moment",
+          "start": 5.759,
+          "end": 6.088
+        },
+        {
+          "word": "you",
+          "start": 6.088,
+          "end": 6.253
+        },
+        {
+          "word": "reveal",
+          "start": 6.253,
+          "end": 6.582
+        },
+        {
+          "word": "yourself,",
+          "start": 6.582,
+          "end": 6.993
+        },
+        {
+          "word": "something",
+          "start": 6.993,
+          "end": 7.487
+        },
+        {
+          "word": "comes",
+          "start": 7.487,
+          "end": 7.816
+        },
+        {
+          "word": "for",
+          "start": 7.816,
+          "end": 7.98
+        },
+        {
+          "word": "you.",
+          "start": 7.98,
+          "end": 8.293
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "beat": "SETUP",
+      "text": "So silence is the strategy, and anything old enough to find us already knows that.",
+      "start": 8.633,
+      "end": 13.092,
+      "dur": 4.459,
+      "gap_after": 0.4,
+      "words": [
+        {
+          "word": "So",
+          "start": 8.633,
+          "end": 8.816
+        },
+        {
+          "word": "silence",
+          "start": 8.816,
+          "end": 9.181
+        },
+        {
+          "word": "is",
+          "start": 9.181,
+          "end": 9.364
+        },
+        {
+          "word": "the",
+          "start": 9.364,
+          "end": 9.547
+        },
+        {
+          "word": "strategy,",
+          "start": 9.547,
+          "end": 10.186
+        },
+        {
+          "word": "and",
+          "start": 10.186,
+          "end": 10.369
+        },
+        {
+          "word": "anything",
+          "start": 10.369,
+          "end": 10.917
+        },
+        {
+          "word": "old",
+          "start": 10.917,
+          "end": 11.1
+        },
+        {
+          "word": "enough",
+          "start": 11.1,
+          "end": 11.466
+        },
+        {
+          "word": "to",
+          "start": 11.466,
+          "end": 11.648
+        },
+        {
+          "word": "find",
+          "start": 11.648,
+          "end": 11.831
+        },
+        {
+          "word": "us",
+          "start": 11.831,
+          "end": 12.014
+        },
+        {
+          "word": "already",
+          "start": 12.014,
+          "end": 12.562
+        },
+        {
+          "word": "knows",
+          "start": 12.562,
+          "end": 12.745
+        },
+        {
+          "word": "that.",
+          "start": 12.745,
+          "end": 13.092
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "beat": "TURN",
+      "text": "We did the opposite. We have been leaking radio into space for about a century.",
+      "start": 13.492,
+      "end": 17.519,
+      "dur": 4.027,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "We",
+          "start": 13.492,
+          "end": 13.654
+        },
+        {
+          "word": "did",
+          "start": 13.654,
+          "end": 13.817
+        },
+        {
+          "word": "the",
+          "start": 13.817,
+          "end": 13.979
+        },
+        {
+          "word": "opposite.",
+          "start": 13.979,
+          "end": 14.613
+        },
+        {
+          "word": "We",
+          "start": 14.613,
+          "end": 14.775
+        },
+        {
+          "word": "have",
+          "start": 14.775,
+          "end": 14.937
+        },
+        {
+          "word": "been",
+          "start": 14.937,
+          "end": 15.1
+        },
+        {
+          "word": "leaking",
+          "start": 15.1,
+          "end": 15.424
+        },
+        {
+          "word": "radio",
+          "start": 15.424,
+          "end": 15.749
+        },
+        {
+          "word": "into",
+          "start": 15.749,
+          "end": 16.074
+        },
+        {
+          "word": "space",
+          "start": 16.074,
+          "end": 16.236
+        },
+        {
+          "word": "for",
+          "start": 16.236,
+          "end": 16.399
+        },
+        {
+          "word": "about",
+          "start": 16.399,
+          "end": 16.723
+        },
+        {
+          "word": "a",
+          "start": 16.723,
+          "end": 16.886
+        },
+        {
+          "word": "century.",
+          "start": 16.886,
+          "end": 17.519
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "text": "In 1977 we bolted a golden record to Voyager and sent it past the planets.",
+      "start": 17.819,
+      "end": 22.917,
+      "dur": 5.098,
+      "gap_after": 0.28,
+      "words": [
+        {
+          "word": "In",
+          "start": 17.819,
+          "end": 18.063
+        },
+        {
+          "word": "1977",
+          "start": 18.063,
+          "end": 18.307
+        },
+        {
+          "word": "we",
+          "start": 18.307,
+          "end": 18.551
+        },
+        {
+          "word": "bolted",
+          "start": 18.551,
+          "end": 19.039
+        },
+        {
+          "word": "a",
+          "start": 19.039,
+          "end": 19.282
+        },
+        {
+          "word": "golden",
+          "start": 19.282,
+          "end": 19.77
+        },
+        {
+          "word": "record",
+          "start": 19.77,
+          "end": 20.258
+        },
+        {
+          "word": "to",
+          "start": 20.258,
+          "end": 20.502
+        },
+        {
+          "word": "Voyager",
+          "start": 20.502,
+          "end": 20.99
+        },
+        {
+          "word": "and",
+          "start": 20.99,
+          "end": 21.234
+        },
+        {
+          "word": "sent",
+          "start": 21.234,
+          "end": 21.478
+        },
+        {
+          "word": "it",
+          "start": 21.478,
+          "end": 21.721
+        },
+        {
+          "word": "past",
+          "start": 21.721,
+          "end": 21.965
+        },
+        {
+          "word": "the",
+          "start": 21.965,
+          "end": 22.209
+        },
+        {
+          "word": "planets.",
+          "start": 22.209,
+          "end": 22.917
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "beat": "BODY",
+      "text": "On the cover is a map of our star, drawn against fourteen pulsars.",
+      "start": 23.197,
+      "end": 26.982,
+      "dur": 3.786,
+      "gap_after": 0.3,
+      "words": [
+        {
+          "word": "On",
+          "start": 23.197,
+          "end": 23.402
+        },
+        {
+          "word": "the",
+          "start": 23.402,
+          "end": 23.608
+        },
+        {
+          "word": "cover",
+          "start": 23.608,
+          "end": 24.02
+        },
+        {
+          "word": "is",
+          "start": 24.02,
+          "end": 24.225
+        },
+        {
+          "word": "a",
+          "start": 24.225,
+          "end": 24.431
+        },
+        {
+          "word": "map",
+          "start": 24.431,
+          "end": 24.637
+        },
+        {
+          "word": "of",
+          "start": 24.637,
+          "end": 24.843
+        },
+        {
+          "word": "our",
+          "start": 24.843,
+          "end": 25.048
+        },
+        {
+          "word": "star,",
+          "start": 25.048,
+          "end": 25.357
+        },
+        {
+          "word": "drawn",
+          "start": 25.357,
+          "end": 25.563
+        },
+        {
+          "word": "against",
+          "start": 25.563,
+          "end": 25.974
+        },
+        {
+          "word": "fourteen",
+          "start": 25.974,
+          "end": 26.386
+        },
+        {
+          "word": "pulsars.",
+          "start": 26.386,
+          "end": 26.982
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "beat": "BODY",
+      "text": "Inside are photographs of us, and diagrams of how a human body is built.",
+      "start": 27.282,
+      "end": 31.567,
+      "dur": 4.285,
+      "gap_after": 0.45,
+      "words": [
+        {
+          "word": "Inside",
+          "start": 27.282,
+          "end": 27.683
+        },
+        {
+          "word": "are",
+          "start": 27.683,
+          "end": 27.883
+        },
+        {
+          "word": "photographs",
+          "start": 27.883,
+          "end": 28.484
+        },
+        {
+          "word": "of",
+          "start": 28.484,
+          "end": 28.684
+        },
+        {
+          "word": "us,",
+          "start": 28.684,
+          "end": 28.984
+        },
+        {
+          "word": "and",
+          "start": 28.984,
+          "end": 29.184
+        },
+        {
+          "word": "diagrams",
+          "start": 29.184,
+          "end": 29.585
+        },
+        {
+          "word": "of",
+          "start": 29.585,
+          "end": 29.785
+        },
+        {
+          "word": "how",
+          "start": 29.785,
+          "end": 29.985
+        },
+        {
+          "word": "a",
+          "start": 29.985,
+          "end": 30.185
+        },
+        {
+          "word": "human",
+          "start": 30.185,
+          "end": 30.586
+        },
+        {
+          "word": "body",
+          "start": 30.586,
+          "end": 30.986
+        },
+        {
+          "word": "is",
+          "start": 30.986,
+          "end": 31.187
+        },
+        {
+          "word": "built.",
+          "start": 31.187,
+          "end": 31.567
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "beat": "BODY",
+      "text": "To us that was reaching out. In the theory, it reads as bait.",
+      "start": 32.017,
+      "end": 35.313,
+      "dur": 3.295,
+      "gap_after": 0.5,
+      "words": [
+        {
+          "word": "To",
+          "start": 32.017,
+          "end": 32.208
+        },
+        {
+          "word": "us",
+          "start": 32.208,
+          "end": 32.398
+        },
+        {
+          "word": "that",
+          "start": 32.398,
+          "end": 32.589
+        },
+        {
+          "word": "was",
+          "start": 32.589,
+          "end": 32.779
+        },
+        {
+          "word": "reaching",
+          "start": 32.779,
+          "end": 33.16
+        },
+        {
+          "word": "out.",
+          "start": 33.16,
+          "end": 33.522
+        },
+        {
+          "word": "In",
+          "start": 33.522,
+          "end": 33.712
+        },
+        {
+          "word": "the",
+          "start": 33.712,
+          "end": 33.903
+        },
+        {
+          "word": "theory,",
+          "start": 33.903,
+          "end": 34.379
+        },
+        {
+          "word": "it",
+          "start": 34.379,
+          "end": 34.57
+        },
+        {
+          "word": "reads",
+          "start": 34.57,
+          "end": 34.76
+        },
+        {
+          "word": "as",
+          "start": 34.76,
+          "end": 34.951
+        },
+        {
+          "word": "bait.",
+          "start": 34.951,
+          "end": 35.313
+        }
+      ]
+    },
+    {
+      "id": "L09",
+      "beat": "CLOSE",
+      "text": "So what if the food chain does not stop at Earth?",
+      "start": 35.813,
+      "end": 38.321,
+      "dur": 2.509,
+      "gap_after": 0.0,
+      "words": [
+        {
+          "word": "So",
+          "start": 35.813,
+          "end": 36.041
+        },
+        {
+          "word": "what",
+          "start": 36.041,
+          "end": 36.269
+        },
+        {
+          "word": "if",
+          "start": 36.269,
+          "end": 36.497
+        },
+        {
+          "word": "the",
+          "start": 36.497,
+          "end": 36.725
+        },
+        {
+          "word": "food",
+          "start": 36.725,
+          "end": 36.953
+        },
+        {
+          "word": "chain",
+          "start": 36.953,
+          "end": 37.181
+        },
+        {
+          "word": "does",
+          "start": 37.181,
+          "end": 37.409
+        },
+        {
+          "word": "not",
+          "start": 37.409,
+          "end": 37.637
+        },
+        {
+          "word": "stop",
+          "start": 37.637,
+          "end": 37.865
+        },
+        {
+          "word": "at",
+          "start": 37.865,
+          "end": 38.093
+        },
+        {
+          "word": "Earth?",
+          "start": 38.093,
+          "end": 38.321
+        }
+      ]
+    }
+  ]
+}

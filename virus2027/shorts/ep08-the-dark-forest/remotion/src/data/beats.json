@@ -1,0 +1,55 @@
+{
+  "_note": "Everything here is addressed to a line id plus a lead in seconds, never to a frame. Rewriting a line and re-running the TTS re-times the whole cut. Shots tile: each runs until the next begins, so no shot carries a duration and a longer read can never open a gap.",
+
+  "_cut": "Sixteen shots across thirty-eight seconds of voice — a change roughly every two and a half seconds, which is the pace the last two episodes landed on. The two void shots are not filler: they are the two moments the film shows you something we actually sent, and the sky goes out so the diagram can be read.",
+
+  "shots": [
+    {"at": "L01", "lead": 0.00, "type": "clip", "src": "neb_warm.mp4"},
+    {"at": "L01", "lead": 2.10, "type": "clip", "src": "neb_blue.mp4"},
+
+    {"at": "L02", "lead": 0.00, "type": "clip", "src": "dust.mp4"},
+    {"at": "L02", "lead": 2.45, "type": "clip", "src": "disk.mp4"},
+
+    {"at": "L03", "lead": 0.00, "type": "clip", "src": "ringworld.mp4"},
+    {"at": "L03", "lead": 2.40, "type": "clip", "src": "neb_pink.mp4"},
+
+    {"at": "L04", "lead": 0.00, "type": "band", "src": "dishes.jpg", "centre": 812, "push": 0.07},
+    {"at": "L04", "lead": 2.20, "type": "band", "src": "beam.jpg", "centre": 812, "push": 0.06},
+
+    {"at": "L05", "lead": 0.00, "type": "hero", "src": "solar.jpg"},
+    {"at": "L05", "lead": 2.55, "type": "clip", "src": "gold.mp4"},
+    {"at": "L05", "lead": 4.05, "type": "clip", "src": "giant.mp4"},
+
+    {"at": "L06", "lead": 0.00, "type": "void"},
+
+    {"at": "L07", "lead": 0.00, "type": "clip", "src": "cities.mp4"},
+    {"at": "L07", "lead": 2.30, "type": "void"},
+
+    {"at": "L08", "lead": 0.00, "type": "band", "src": "earth_far.jpg", "centre": 812, "push": 0.05},
+
+    {"at": "L09", "lead": 0.00, "type": "band", "src": "earthrise.jpg", "centre": 820, "push": 0.05}
+  ],
+
+  "beats": [
+    {"at": "L01", "lead": 0.60, "dur": 2.90, "type": "viz", "kind": "flatline", "y": 596},
+
+    {"at": "L02", "lead": 0.15, "dur": 2.10, "type": "viz", "kind": "place", "text": "hypothesis · liu cixin, 2008", "y": 168},
+    {"at": "L02", "lead": 2.60, "dur": 1.95, "type": "viz", "kind": "brackets", "top": 402, "bottom": 1236},
+
+    {"at": "L03", "lead": 0.25, "dur": 2.10, "type": "viz", "kind": "nodes", "count": 30},
+    {"at": "L03", "lead": 2.70, "dur": 2.05, "type": "viz", "kind": "mascot", "x": 690, "y": 986, "width": 286, "flip": true, "card": true},
+
+    {"at": "L04", "lead": 0.25, "dur": 1.90, "type": "viz", "kind": "rings", "cx": 540, "cy": 906, "period": 46, "max": 470},
+    {"at": "L04", "lead": 2.35, "dur": 1.95, "type": "viz", "kind": "figure", "value": 100, "suffix": " LY", "label": "radio already out there", "y": 268},
+
+    {"at": "L05", "lead": 0.15, "dur": 2.20, "type": "viz", "kind": "place", "text": "voyager · launched 1977", "y": 168},
+
+    {"at": "L06", "lead": 0.02, "dur": 3.98, "type": "viz", "kind": "pulsarmap", "cx": 540, "cy": 760},
+
+    {"at": "L07", "lead": 2.45, "dur": 2.25, "type": "viz", "kind": "helix", "cx": 540, "top": 452, "bottom": 1150, "amp": 146},
+
+    {"at": "L08", "lead": 1.55, "dur": 2.22, "type": "viz", "kind": "reticle", "cx": 473, "cy": 731, "size": 178},
+
+    {"at": "L09", "lead": 0.65, "dur": 2.80, "type": "viz", "kind": "mascot", "x": 96, "y": 980, "width": 300, "card": true}
+  ]
+}

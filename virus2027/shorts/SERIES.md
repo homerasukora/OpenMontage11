@@ -53,7 +53,7 @@ Hard constraints:
 
 All share the script → timing → picture pipeline. Pick per episode.
 
-| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`, `ep05`, `ep06`, `ep07`) |
+| | **A · Dossier** (`ep01`) | **B · Archive cut** (`ep02`) | **C · Gallery tour** (`ep00`) | **D · Reversal** (`ep03`, `ep05`, `ep06`, `ep07`, `ep08`) |
 |---|---|---|---|---|
 | Frame | Drawn graphics only | Graded photographs + overlays | One camera move across brand artwork | Screenshots and documents, played small |
 | Reads as | A file you found | A cut of found material | A walk through the project's own world | An argument answered |
@@ -96,6 +96,28 @@ the strongest position the channel can occupy — the closing question lands
 precisely because the forty seconds before it cannot be argued with. When a
 real documented atrocity is available, run it instead of a theory. The resolution it dropped is kept in
 git history so the closed version is a script edit away.
+
+`ep08` is the inverse case and the one to reach for when the subject is a
+theory that cannot be checked at all. The dark forest comes out of a novel,
+so there is no record to hold it to — and the episode works anyway, because
+it stops arguing about the theory and turns the camera on us instead. It
+frames the theory as a theory in four words, then spends the rest of its
+length on documented transmissions: the radio leakage, the Golden Record, the
+pulsar map, the anatomical diagrams. The viewer is never asked to believe
+anything is out there. They are asked to notice what we already sent.
+
+**When the theory is unfalsifiable, make the receipts ours.** That is the
+move, and it generalises: any "they are watching / they know" premise can be
+run this way by dropping the claim about *them* and evidencing only our own
+behaviour. It is also the honest version, which is why it survives comments.
+
+`ep08` is additionally where the drawn exhibit arrives as a tool. Its evidence
+is not photographable — there is no stock shot of a diagram etched on a disc
+nine billion miles away — so the diagrams are drawn in frame, in brand
+geometry, constructing themselves while the line is spoken. `PulsarMap`,
+`Helix`, `Reticle` and `Flatline` are in `Viz.tsx` and are reusable. Any future
+episode whose evidence is a schematic rather than a photograph should draw it
+rather than hunt for a picture of it.
 
 Two constraints are structural in D, not stylistic. Every claim before the
 turn is attributed out loud (*"the internet has decided"*, *"people pulled
@@ -161,6 +183,12 @@ reticle) · `SceneFacts` (indexed evidence rows) · `SceneGenome` (data readout 
 verdict slam) · `SceneSeat` (archival plate + push-in) · `SceneHonesty`
 (concession + mascot cameo) · `SceneDrawer` (object reveal) · `SceneQuestion`
 (the still frame) · `SceneBrand` (2027 lockup).
+
+From the found-footage episodes (`Viz.tsx`, shared): `CropMarks` · `NodeField`
+· `PulseRings` · `SupplyBar` · `Brackets` · `PlaybackBar` · `MascotBeat` (with
+`card` for bright plates) · `LocationTag` · `Figure` (eased count-up) · `Flag`
+· and from `ep08` the four drawn exhibits — `PulsarMap` · `Helix` · `Reticle`
+· `Flatline`.
 
 Most future episodes are a re-order of these with new copy.
 
