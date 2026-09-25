@@ -25,16 +25,17 @@ Burned subtitles. Sidecar `out/subs_en.srt` for platforms that want an upload.
 
 **Title:** We sent our address into space. There's a theory that says we shouldn't have.
 
-> The dark forest theory is Liu Cixin's answer to the Fermi paradox: the
-> universe is quiet because every civilisation that survives learns to stay
-> quiet, and broadcasting your position is the one unrecoverable mistake.
+> The dark forest theory, named for Liu Cixin's 2008 novel, is one answer to
+> the Fermi paradox: the universe is quiet because every civilisation that
+> survives learns to stay quiet, and broadcasting your position is the one
+> unrecoverable mistake.
 >
-> It's unfalsifiable and it comes from a novel. What isn't fiction is what we
-> sent. Radio has been leaking off Earth since the 1920s. The Voyager Golden
-> Record, launched in 1977, is etched on its cover with a pulsar map that
-> locates the Sun against fourteen pulsars — written in binary against the
-> hydrogen transition so it decodes without knowing anything about us. Inside
-> are 115 images including human anatomy and DNA structure.
+> It's unfalsifiable and it's named after a novel. What isn't fiction is what
+> we sent. Radio has been leaving this planet for about a century. The Voyager
+> Golden Record, launched in 1977, is etched on its cover with a pulsar map
+> that locates the Sun against fourteen pulsars — written in binary against
+> the hydrogen transition so it decodes without knowing anything about us.
+> Inside are 115 images including human anatomy and DNA structure.
 >
 > Sources in the pinned comment.
 >
@@ -44,11 +45,17 @@ Burned subtitles. Sidecar `out/subs_en.srt` for platforms that want an upload.
 
 > Everything in this one is checkable:
 >
-> • Dark forest theory — Liu Cixin, *The Dark Forest* (2008), the second book
->   of the Three-Body trilogy. It is a proposed solution to the Fermi paradox,
->   not an observation.
-> • Voyager 1 and 2 launched in 1977. Voyager 1 passed Neptune's orbit in 1989
->   and entered interstellar space in 2012. — NASA JPL, Voyager mission pages.
+> • Dark forest theory takes its name from Liu Cixin's *The Dark Forest*
+>   (2008), the second book of Remembrance of Earth's Past. It is a proposed
+>   solution to the Fermi paradox, not an observation. The idea of staying
+>   quiet for fear of what is listening is older — David Brin laid it out in
+>   "The Great Silence" (1983). Liu's addition is the harder claim that
+>   striking first is the rational move.
+> • Voyager 2 launched 20 Aug 1977, Voyager 1 on 5 Sep 1977; both carry an
+>   identical Golden Record. Voyager 1 crossed the heliopause into interstellar
+>   space on 25 Aug 2012. (The famous Neptune flyby of Aug 1989 was Voyager 2 —
+>   Voyager 1 was thrown up out of the ecliptic after Saturn in 1980.)
+>   — NASA JPL, Voyager mission pages.
 > • The Golden Record cover diagram: a pulsar map locating the Sun relative to
 >   **14** pulsars by their periods, in binary, referenced to the hydrogen
 >   hyperfine transition. A longer ray points to the galactic centre. — NASA,
@@ -57,11 +64,19 @@ Burned subtitles. Sidecar `out/subs_en.srt` for platforms that want an upload.
 >   fetus, and DNA structure. — NASA, Golden Record image list.
 > • The same pulsar map, plus the human figures, is on the 1972/73 Pioneer
 >   plaques.
-> • ~100 light-years of radio: commercial broadcasting begins in the 1920s, so
->   the leading edge of detectable leakage is roughly a century out. (Whether
->   it stays detectable at that range is a separate and much-argued question.)
+> • The 100 light-years on screen is the wavefront, and it deserves two
+>   asterisks. Early AM broadcasting sits around 1 MHz, below the ionospheric
+>   cutoff, so most of it bounced back down instead of escaping — the signals
+>   that really got out are VHF and up (FM, TV, radar), which dates the true
+>   escaping edge to the 1940s–50s, nearer 75–85 light-years. And almost none
+>   of it is loud enough to hear out there: an alien copy of our biggest radio
+>   telescopes could not pick up an ordinary TV broadcast even from the
+>   nearest star. Only high-power narrowband transmissions — planetary radar,
+>   big military radars — carry meaningfully far. Leakage is also shrinking as
+>   broadcasting moves to cable, fibre and low-power digital.
 >
-> The theory is a theory. The transmissions are documented.
+> So: the theory is a theory, the record is documented, and the radio bubble
+> is real but much quieter than the number makes it sound.
 
 ---
 
@@ -72,8 +87,15 @@ trigger is doing the work in "everyone out there is hiding": it reframes
 silence as a decision rather than an absence, which is the whole theory in
 eight words.
 
-Do not shorten the pinned comment to remove the caveat in the last line. The
-episode's credibility rests on being straight about which half is fiction.
+Do not shorten the pinned comment to remove the radio caveat or the closing
+line. The episode's credibility rests on being straight about which half is
+fiction — and the 100 LY on screen is the one number a knowledgeable viewer
+will come for. Answering it before they ask is worth more than the number is.
+
+Two traps for anyone rewriting these captions: the August 1989 Neptune flyby
+was Voyager **2**, not Voyager 1; and the dark forest is *named after* Liu
+Cixin's novel, not originated by it — David Brin got to the quiet-civilisation
+idea in 1983.
 
 ## If it performs
 

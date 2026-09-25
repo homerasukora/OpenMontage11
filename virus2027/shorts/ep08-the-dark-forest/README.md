@@ -17,9 +17,17 @@ all of which are ours.
 ## The name
 
 The brief called this "Black Forest Theory". The reference video, and the
-literature, call it the **Dark Forest** theory: Liu Cixin's proposed answer to
-the Fermi paradox, from the 2008 novel of that name. Titled and written as
-Dark Forest throughout. It is credited on screen at 0:04.
+literature, call it the **Dark Forest** theory, after Liu Cixin's 2008 novel
+of that name — the second book of *Remembrance of Earth's Past* (English
+translation 2015). Titled and written as Dark Forest throughout, and credited
+on screen at 0:04.
+
+The credit is for the name and the strong form, not for the idea. Civilisations
+staying quiet for fear of a lurking threat was already in David Brin's 1983
+paper "The Great Silence". What is Liu's is the harder claim that pre-emptive
+destruction is the *rational* move rather than merely that hiding is prudent —
+which is the version the film describes. Written up anywhere else, say
+"named after" or "popularised by", never "originated with".
 
 ## Script
 
@@ -44,11 +52,27 @@ rather than a verdict.
 The theory is fiction-born and unfalsifiable, so it is framed as a theory in
 the first four words and never asserted. Everything used as evidence is real:
 
-- Radio has been leaking off this planet since commercial broadcasting began
-  in the 1920s — "about a century", and the leading edge is therefore roughly
-  100 light-years out. That is the figure on screen at 0:16.
-- Voyager 1 and 2 launched in 1977, each carrying the Golden Record. Voyager 1
-  passed Neptune's orbit in 1989 and crossed into interstellar space in 2012.
+- Radio has been leaving this planet for about a century, and the 100 LY on
+  screen at 0:16 is the wavefront distance — the standard popular figure.
+  **It is a headline number and the notes have to carry two caveats.** First,
+  1920s AM sits around 1 MHz, below the ionospheric plasma cutoff, so most of
+  it reflects back down rather than escaping; the signals that genuinely get
+  out are VHF and up — FM, television, radar — which puts the real escaping
+  edge in the 1940s–50s and nearer 75–85 light-years. Second, almost none of
+  it is *detectable* at that range: ordinary broadcast leakage is far too
+  faint, and only high-power narrowband sources (planetary radar, large
+  military radars) are plausibly audible at interstellar distances. The
+  spoken line says only "leaking radio into space for about a century", which
+  survives both caveats; the pinned comment carries the physics.
+- Voyager 1 and 2 launched in 1977 — Voyager 2 first, on 20 August, Voyager 1
+  on 5 September — each carrying an identical Golden Record. Voyager 1 crossed
+  the heliopause into interstellar space on 25 August 2012.
+  **Do not write that Voyager 1 passed Neptune's orbit in 1989.** That date is
+  Voyager *2*'s Neptune flyby. Voyager 1 never went near Neptune: after Saturn
+  in November 1980 it was deflected about 35° out of the ecliptic, and it
+  crossed Neptune's orbital distance around 1987. NASA's own FAQ has a loose
+  collective line about "the Voyagers" passing Neptune's orbit in August 1989
+  — that sentence is anchored on V2's flyby and is not evidence about V1.
 - The record's cover is etched with a pulsar map locating the Sun against
   **fourteen** pulsars by their periods, written in binary against the hydrogen
   hyperfine transition so it decodes without knowing anything about us. A
