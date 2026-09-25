@@ -238,6 +238,13 @@ export const PlaybackBar: React.FC<{total: number}> = ({total}) => {
  * Vira, dropped in for a beat. He is not narrating and not reacting to the
  * footage — he stands at the edge of the frame the way he does in the
  * gallery, so a found-footage cut still reads as ours.
+ *
+ * From ep08 the source is a properly matted transparent PNG, so `card` is
+ * dead weight: the panel only ever existed to hide the fact that a luma key
+ * could not separate his dark legs and the shaded side of his shell from a
+ * bright plate. With real alpha he sits on the picture with a drop shadow
+ * and nothing else. The prop is kept for older beat sheets and should not
+ * be used in new ones.
  */
 export const MascotBeat: React.FC<{
   dur: number; x?: number; y?: number; width?: number; flip?: boolean;
@@ -257,6 +264,7 @@ export const MascotBeat: React.FC<{
         rest of the series uses anyway.
       */}
       {card ? (
+        // deprecated — see the note above
         <div style={{
           position: 'absolute',
           left: x - pad, top: y - pad * 0.7 + bob,
@@ -537,8 +545,11 @@ export const PulsarMap: React.FC<{
 export const Helix: React.FC<{
   dur: number; cx?: number; top?: number; bottom?: number; amp?: number;
 }> = ({dur, cx = W / 2, top = 452, bottom = 1178, amp = 148}) => {
-  const {f, p} = useLife(dur, 12, 12);
-  const grow = interpolate(f, [4, 30], [0, 1], {
+  // Fast in. This lands on the same frame as a cut to a near-black plate,
+  // so anything slower leaves the frame empty except for a subtitle — the
+  // one dead second the first cut of this episode had.
+  const {f, p} = useLife(dur, 6, 12);
+  const grow = interpolate(f, [1, 21], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
     easing: Easing.bezier(...EASE_SIGNAL),
   });

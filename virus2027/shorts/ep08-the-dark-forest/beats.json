@@ -23,7 +23,7 @@
     {"at": "L06", "lead": 0.00, "type": "void"},
 
     {"at": "L07", "lead": 0.00, "type": "clip", "src": "cities.mp4"},
-    {"at": "L07", "lead": 2.30, "type": "void"},
+    {"at": "L07", "lead": 2.52, "type": "void"},
 
     {"at": "L08", "lead": 0.00, "type": "band", "src": "earth_far.jpg", "centre": 812, "push": 0.05},
 
@@ -37,7 +37,7 @@
     {"at": "L02", "lead": 2.60, "dur": 1.95, "type": "viz", "kind": "brackets", "top": 402, "bottom": 1236},
 
     {"at": "L03", "lead": 0.25, "dur": 2.10, "type": "viz", "kind": "nodes", "count": 30},
-    {"at": "L03", "lead": 2.70, "dur": 2.05, "type": "viz", "kind": "mascot", "x": 690, "y": 986, "width": 286, "flip": true, "card": true},
+    {"at": "L03", "lead": 2.70, "dur": 2.05, "type": "viz", "kind": "mascot", "x": 678, "y": 980, "width": 292, "flip": true},
 
     {"at": "L04", "lead": 0.25, "dur": 1.90, "type": "viz", "kind": "rings", "cx": 540, "cy": 906, "period": 46, "max": 470},
     {"at": "L04", "lead": 2.35, "dur": 1.95, "type": "viz", "kind": "figure", "value": 100, "suffix": " LY", "label": "radio already out there", "y": 268},
@@ -46,10 +46,10 @@
 
     {"at": "L06", "lead": 0.02, "dur": 3.98, "type": "viz", "kind": "pulsarmap", "cx": 540, "cy": 760},
 
-    {"at": "L07", "lead": 2.45, "dur": 2.25, "type": "viz", "kind": "helix", "cx": 540, "top": 452, "bottom": 1150, "amp": 146},
+    {"at": "L07", "lead": 2.52, "dur": 2.28, "type": "viz", "kind": "helix", "cx": 540, "top": 452, "bottom": 1150, "amp": 146},
 
     {"at": "L08", "lead": 1.55, "dur": 2.22, "type": "viz", "kind": "reticle", "cx": 473, "cy": 731, "size": 178},
 
-    {"at": "L09", "lead": 0.65, "dur": 2.80, "type": "viz", "kind": "mascot", "x": 96, "y": 980, "width": 300, "card": true}
+    {"at": "L09", "lead": 0.65, "dur": 2.80, "type": "viz", "kind": "mascot", "x": 92, "y": 968, "width": 312}
   ]
 }

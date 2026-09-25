@@ -92,6 +92,20 @@ Sources: two supplied vertical space reels (one 1080×1920 nebula art, one
 576×1024 planet flyby) and five stills, including an aerial of a deep-space
 communication array and a dish transmitting to a star.
 
+**Cuts must not cross a scene change in the source.** Both reels change shot
+every 2.5–4 s, and a window that straddles one of those plays two different
+pictures inside what the beat sheet thinks is a single shot. Nothing in the
+timing model can catch it — the model knows durations, not content. The first
+cut of this episode put a third of a second of accretion disk on the end of
+the Earth-limb shot that way, and a second clip had the same defect
+unnoticed. `build/prep_media.py` now carries the detected boundaries for both
+reels in `SCENES` and fails the build on any window that crosses one, with an
+80 ms margin. Regenerate the list with:
+
+```bash
+ffmpeg -i <reel> -filter:v "select='gt(scene,0.25)',showinfo" -f null -
+```
+
 **The grade** is the one real decision. The series is mono-and-orange, and the
 literal reading of that rule here would be to strip these sources to grey.
 That would be wrong: this is the one episode whose subject is the sky, and the
@@ -120,9 +134,22 @@ the honest thing to do. Four new components in `remotion/src/Viz.tsx`:
 | `Helix` | L07 | DNA, drawing downward and turning. Also on the record, and the closest thing the disc carries to the line spoken over it. |
 | `Reticle` | L08 | four brackets closing on the planet, measured to its actual centroid in the plate. No flashing and no red — the argument is that being found is quiet. |
 
+Both diagrams land on the same frame as a cut to a near-black plate, so both
+have to be legible immediately — the helix fades in over 6 frames and draws in
+0.7 s. Anything slower leaves the frame holding nothing but a subtitle, which
+is exactly what the first cut did for about a second at 0:30.
+
 Reused from earlier episodes: `PulseRings` and `Figure` (the 100 LY count at
 0:16), `LocationTag`, `Brackets`, `NodeField`, `MascotBeat`, `PlaybackBar`,
 `CropMarks`.
+
+`MascotBeat`'s `card` prop is no longer used. From ep08 the mascot source is a
+properly matted transparent PNG (`assets/src/vira-thinking.png`, trimmed to
+its alpha bbox and exported at 2x by `build/prep_media.py`), so Vira sits on the
+picture with a drop shadow and nothing behind him. The panel only ever existed
+to hide a luma key that could not separate his dark legs from a bright plate.
+The prop stays in the component for older beat sheets; do not use it in new
+ones.
 
 The film goes to a near-black `void` shot twice, both times so a diagram can
 be read. It is the one repeated gesture in the cut.
@@ -140,12 +167,17 @@ Mastered to −14 LUFS.
 ## Build
 
 ```bash
-python build/prep_media.py     # grade and cut everything to 1080x1920
+python build/prep_media.py     # trim the mascot, grade and cut to 1080x1920
 python build/tts_build.py en   # Piper -> timing_en.json (+ word timings) + SRT
 python build/sound_design.py   # score from the same timings -> -14 LUFS
 cd remotion && npx remotion render src/index.tsx TransmissionEN \
-  ../out/VIRUS2027_T08_the-dark-forest_EN_1080x1920.mp4 --browser-executable=$CHROME --codec=h264 --crf=17
+  ../out/VIRUS2027_T08_the-dark-forest_EN_1080x1920.mp4 \
+  --browser-executable=$CHROME --codec=h264 --crf=17
 ```
+
+Do not run `prep_media.py` while a render is in flight — it rewrites the very
+mp4s the renderer is reading, and the frames that land mid-rewrite are not
+recoverable. Finish the render or kill it first.
 
 Nothing is keyed to a frame number. `beats.json` addresses lines by id with a
 lead in seconds, and shots tile — each runs until the next begins — so a script

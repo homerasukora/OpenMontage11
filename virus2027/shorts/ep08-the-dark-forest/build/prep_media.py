@@ -68,7 +68,39 @@ def sh(args):
         sys.exit(f"FAILED {' '.join(map(str, args))}\n{r.stderr[-1800:]}")
 
 
-def clip(src, name, start, dur, crop=None, grade=GRADE):
+# Scene boundaries in the two supplied reels, from
+#   ffmpeg -i <reel> -filter:v "select='gt(scene,0.25)',showinfo" -f null -
+# A cut that crosses one of these plays two different shots inside what the
+# beat sheet thinks is a single shot. That is not a subtle defect — it put a
+# third of a second of accretion disk on the end of the Earth-limb shot in
+# the first cut of this episode, and nothing in the timing model can catch
+# it because the model only knows durations, not content.
+SCENES = {
+    "A": [0.0, 2.70, 5.55, 8.42, 9.12, 10.55, 11.20, 11.88, 12.55, 13.27,
+          14.00, 16.05, 17.92],
+    "B": [0.0, 3.96, 6.60, 9.56, 14.00, 14.84, 15.64, 19.16, 23.84, 27.68,
+          32.12, 38.28, 41.45],
+}
+# How close a cut may come to a boundary before it is treated as crossing it.
+SCENE_MARGIN = 0.08
+
+
+def check_window(reel, name, start, dur):
+    """Fail the build if a cut spans a scene change in its source reel."""
+    end = start + dur
+    for b in SCENES[reel]:
+        if start + SCENE_MARGIN < b < end - SCENE_MARGIN:
+            sys.exit(
+                f"SCENE CROSS: {name} ({reel}) {start:.2f}-{end:.2f} spans a "
+                f"cut at {b:.2f}. Pick a window inside one scene."
+            )
+    if not (start >= SCENES[reel][0] and end <= SCENES[reel][-1]):
+        sys.exit(f"OUT OF RANGE: {name} ({reel}) {start:.2f}-{end:.2f}")
+
+
+def clip(src, name, start, dur, crop=None, grade=GRADE, reel=None):
+    if reel:
+        check_window(reel, name, start, dur)
     """
     A graded vertical cut. Both reels are already 9:16, so nothing is
     reframed by default — cover-scaling to 1080x1920 is a straight
@@ -126,8 +158,38 @@ def hero(src, name, grade=GRADE):
     ])
 
 
+def mascot():
+    """
+    Trim the supplied Vira to his alpha bbox and export him at 2x.
+
+    The source is a clean RGBA render, so there is no keying to do — the
+    only work is cropping the empty margin and giving the renderer a bitmap
+    slightly larger than the 300 CSS px he is drawn at. Alpha is projected
+    per axis rather than taking a plain bbox: the antialiased tips of his
+    spikes leave near-zero pixels that hold a naive bbox open several px on
+    every side.
+    """
+    from PIL import Image
+    import numpy as np
+
+    src = Image.open(ROOT / "assets" / "src" / "vira-thinking.png").convert("RGBA")
+    a = np.asarray(src)[:, :, 3]
+    x0, x1 = np.nonzero(a.max(axis=0) > 10)[0][[0, -1]]
+    y0, y1 = np.nonzero(a.max(axis=1) > 10)[0][[0, -1]]
+    pad = 2
+    cut = src.crop((max(0, x0 - pad), max(0, y0 - pad),
+                    min(src.width, x1 + 1 + pad), min(src.height, y1 + 1 + pad)))
+    target_w = 620
+    out = cut.resize((target_w, round(cut.height * target_w / cut.width)),
+                     Image.LANCZOS)
+    out.save(ROOT / "assets" / "mascot-plate.png")
+    out.save(PUB / "mascot-plate.png")
+    print(f"  mascot trimmed {src.size} -> {cut.size} -> {out.size}")
+
+
 def main():
     PUB.mkdir(parents=True, exist_ok=True)
+    mascot()
 
     # ---------------------------------------------------------- stills
     # 16:9 and big — the only source that can carry a full-bleed crop.
@@ -146,23 +208,24 @@ def main():
     # speeds up to half-second flashes after 0:12, so only the first three
     # scenes are long enough to hold a shot. The galaxy is taken as a short
     # flash on purpose — it is the one cut in the film under a second.
-    clip(VID_A, "neb_warm", 0.15, 2.40, grade=GRADE_A)  # tan cloud on black
-    clip(VID_A, "neb_blue", 3.05, 2.50, grade=GRADE_A)  # cold pillar
-    clip(VID_A, "neb_pink", 6.05, 2.10, grade=GRADE_A)  # rose cloud bank
+    clip(VID_A, "neb_warm", 0.15, 2.40, grade=GRADE_A, reel="A")  # tan cloud
+    clip(VID_A, "neb_blue", 3.05, 2.35, grade=GRADE_A, reel="A")  # cold pillar
+    clip(VID_A, "neb_pink", 6.05, 2.10, grade=GRADE_A, reel="A")  # rose bank
 
     # ------------------------------------------------------------ reel B
     # 576x1024, so every one of these is a 1.9x upscale. They are smooth
     # gradients and hold it; the grain in Ground does the rest.
-    clip(VID_B, "giant", 0.40, 2.80, grade=GRADE_B)      # banded gas giant
-    clip(VID_B, "cities", 7.30, 2.60, grade=GRADE_B)     # Earth limb, lights
-    clip(VID_B, "disk", 10.70, 3.00, grade=GRADE_HOT)    # accretion disk
-    clip(VID_B, "moons", 14.15, 1.50, grade=GRADE_B)     # two moons, small
-    clip(VID_B, "dust", 17.20, 2.80, grade=GRADE_B)      # dusty limb and ring
-    clip(VID_B, "rust", 24.60, 2.60, grade=GRADE_B)      # rust crescent
-    clip(VID_B, "ringworld", 28.60, 2.80, grade=GRADE_B)  # a small world, alone
-    clip(VID_B, "gold", 32.20, 2.50, grade=GRADE_B)      # crescent and moon
-    clip(VID_B, "lava", 35.30, 2.60, grade=GRADE_HOT)    # orange fractures
-    clip(VID_B, "blue", 38.40, 2.80, grade=grade(sat=0.52, bright=-0.06))
+    clip(VID_B, "giant", 0.40, 2.80, grade=GRADE_B, reel="B")   # gas giant
+    clip(VID_B, "cities", 6.75, 2.70, grade=GRADE_B, reel="B")  # Earth limb
+    clip(VID_B, "disk", 10.70, 3.00, grade=GRADE_HOT, reel="B")  # disk
+    clip(VID_B, "moons", 14.05, 0.70, grade=GRADE_B, reel="B")  # two moons
+    clip(VID_B, "dust", 16.10, 2.85, grade=GRADE_B, reel="B")   # dusty limb
+    clip(VID_B, "rust", 24.60, 2.60, grade=GRADE_B, reel="B")   # rust crescent
+    clip(VID_B, "ringworld", 28.60, 2.80, grade=GRADE_B, reel="B")  # alone
+    clip(VID_B, "gold", 32.30, 2.50, grade=GRADE_B, reel="B")   # crescent
+    clip(VID_B, "lava", 35.30, 2.60, grade=GRADE_HOT, reel="B")  # fractures
+    clip(VID_B, "blue", 38.42, 2.80, grade=grade(sat=0.52, bright=-0.06),
+         reel="B")
 
     # The void backdrop. The film goes to this twice, both times so a drawn
     # diagram can be read, so it has to be genuinely dark — a blurred nebula
