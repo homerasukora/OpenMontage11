@@ -1,0 +1,82 @@
+{
+  "id": "ep08-the-dark-forest",
+  "series": "VIRUS2027 // TRANSMISSION",
+  "episode": 8,
+  "title_en": "THE DARK FOREST",
+  "role": "A theory told straight, using our own record as the exhibit. The claim is not that anything is out there — it is that if the theory is right, we have already done the one thing it warns against.",
+  "format": "9:16 / 1080x1920 / 30fps",
+  "target_duration_s": 44,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "naming_note": "The brief called this 'Black Forest Theory'. The source video, and the literature, call it the DARK FOREST theory — Liu Cixin's proposed answer to the Fermi paradox, from the 2008 novel of that name. Titled and written as Dark Forest. Say the word and it is searchable; say 'Black Forest' and it is a cake.",
+  "editorial_note": "The theory is fiction-born and unfalsifiable, so it is framed as a theory in the first four words and never asserted. Everything used as evidence against it is real and checkable. Radio has been leaking off this planet since commercial broadcasting began in the 1920s, so 'about a century' is right. Voyager 1 and 2 launched in 1977, each carrying the Golden Record; Voyager 1 passed Neptune's orbit in 1989 and crossed into interstellar space in 2012. The record's cover is etched with a pulsar map locating the Sun against fourteen pulsars by their periods, written in binary off the hydrogen hyperfine transition so it can be decoded without knowing anything about us. The 115 encoded images include human anatomical diagrams, a fetus, DNA structure, and photographs of people. The 1972 and 1973 Pioneer plaques carry the same pulsar map plus the nude figures. None of this is disputed — the whole point of the episode is that the receipts are ours.",
+  "voice_note": "Cold and level, the way the rest of the series reads. The word 'bait' is the only place the read is allowed to drop, and it drops rather than sharpens. The last line is asked, not landed.",
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "en": "There is a theory that the universe is silent because everyone out there is hiding.",
+      "vo_direction": "Flat. 'Theory' does the framing, so do not lean on it.",
+      "gap_after": 0.42
+    },
+    {
+      "id": "L02",
+      "beat": "SETUP",
+      "en": "It is called the dark forest, and the moment you reveal yourself, something comes for you.",
+      "vo_direction": "Even through the whole sentence. No lift on 'comes for you'.",
+      "gap_after": 0.34
+    },
+    {
+      "id": "L03",
+      "beat": "SETUP",
+      "en": "So silence is the strategy, and anything old enough to find us already knows that.",
+      "vo_direction": "Small pause before 'and'.",
+      "gap_after": 0.4
+    },
+    {
+      "id": "L04",
+      "beat": "TURN",
+      "en": "We did the opposite. We have been leaking radio into space for about a century.",
+      "vo_direction": "'We did the opposite' is the pivot of the film. Say it plainly.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "en": "In 1977 we bolted a golden record to Voyager and sent it past the planets.",
+      "vo_direction": "Keep moving.",
+      "gap_after": 0.28
+    },
+    {
+      "id": "L06",
+      "beat": "BODY",
+      "en": "On the cover is a map of our star, drawn against fourteen pulsars.",
+      "vo_direction": "Land lightly on 'anyone'.",
+      "gap_after": 0.3
+    },
+    {
+      "id": "L07",
+      "beat": "BODY",
+      "en": "Inside are photographs of us, and diagrams of how a human body is built.",
+      "vo_direction": "Level. Let the pictures carry it.",
+      "gap_after": 0.45
+    },
+    {
+      "id": "L08",
+      "beat": "BODY",
+      "en": "To us that was reaching out. In the theory, it reads as bait.",
+      "vo_direction": "Drop on 'bait' — quieter, not sharper.",
+      "gap_after": 0.5
+    },
+    {
+      "id": "L09",
+      "beat": "CLOSE",
+      "en": "So what if the food chain does not stop at Earth?",
+      "vo_direction": "Quiet. A question. Vira thinking under it, no end card.",
+      "gap_after": 0.0
+    }
+  ]
+}
