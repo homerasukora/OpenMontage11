@@ -57,7 +57,7 @@ MODEL = SCRATCH / "kokoro-v1.0.onnx"
 VOICES = SCRATCH / "voices-v1.0.bin"
 
 VOICE = "am_adam"
-SPEED = 1.0
+SPEED = 1.07
 SR_OUT = 48000
 EDGE = 0.040          # seconds of silence kept either side of a line
 

@@ -63,14 +63,16 @@
       "beat": "BRIDGE",
       "en": "But it flips the question, because the signal we keep waiting for might have been inside us all along.",
       "vo_direction": "The turn back toward us. Slower than L06, slightly lower.",
-      "gap_after": 0.55
+      "gap_after": 0.55,
+      "vo_speed": 1.04
     },
     {
       "id": "L08",
       "beat": "CLOSE",
       "en": "So what if twenty twenty-seven is the year somebody finally comes to take us home?",
       "vo_direction": "Quiet. A question, not a prophecy. Vira thinking under it, no end card.",
-      "gap_after": 0.0
+      "gap_after": 0.0,
+      "vo_speed": 0.98
     }
   ],
   "say": {

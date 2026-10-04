@@ -113,8 +113,12 @@ def clip(reel, name, start, dur, grd, slow=1.0, crop=None, letterbox=False):
     stretch = f"setpts={slow}*PTS," if slow != 1.0 else ""
     pad = f",tpad=stop_mode=clone:stop_duration={HOLD}"
     out = PUB / f"{name}.mp4"
+    # -t BEFORE -i: it limits how much SOURCE is read. After -i it limits the
+    # output, which silently cuts the freeze pad off and, on a slowed clip,
+    # keeps only the first 1/slow of the window. Both bugs shipped in the
+    # first cut of this episode; the plan checker (build/plan.py) catches them.
     common = ["ffmpeg", "-y", "-loglevel", "error",
-              "-ss", f"{start}", "-i", str(REEL[reel]), "-t", f"{dur}", "-an"]
+              "-ss", f"{start}", "-t", f"{dur}", "-i", str(REEL[reel]), "-an"]
     enc = ["-r", "30", "-c:v", "libx264", "-crf", "17", "-preset", "slow",
            "-pix_fmt", "yuv420p", str(out)]
     if letterbox:
