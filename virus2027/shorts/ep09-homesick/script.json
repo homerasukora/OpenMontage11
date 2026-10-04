@@ -72,5 +72,10 @@
       "vo_direction": "Quiet. A question, not a prophecy. Vira thinking under it, no end card.",
       "gap_after": 0.0
     }
-  ]
+  ],
+  "say": {
+    "1973": "nineteen seventy-three",
+    "DNA": "D N A",
+    "twenty-seven": "twenty-seven"
+  }
 }

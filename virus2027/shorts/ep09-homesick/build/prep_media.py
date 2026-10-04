@@ -34,8 +34,11 @@ REEL = {
     "K": SRC / "77281513-kristall_111__TikTokDownloader.com_70e52",
     "D": SRC / "0b34819d-dotfos_TikTokDownloader.com_2146e",
     "N": SRC / "b2180280-nickjaykdesign_TikTokDownloader.com_9852c",
+    "V": SRC / "04b4ae00-vivid8338_TikTokDownloader.com_e21fc",
+    "C": SRC / "2e9c091f-celestium02_TikTokDownloader.com_ec78f",
 }
 UFO = SRC / "6a77a899-image.webp"
+FACES = SRC / "b0633484-image.jpg"      # the alien and the human, face to face
 
 # Detected with: ffmpeg -i <reel> -filter:v "select='gt(scene,0.10)',showinfo"
 #                -f null -        (0.10, not 0.25: this montage dissolves)
@@ -46,7 +49,15 @@ SCENES = {
           15.07, 15.93],
     "D": [0.0, 7.88, 8.71, 10.29, 11.62, 13.00, 14.38, 16.21, 17.67, 18.97],
     "N": [0.0, 9.26],
+    # V: human evolution -> launch -> orbit. 1080x2344 frame with the picture
+    # letterboxed inside black bars; scene boundaries are of the picture.
+    "V": [0.0, 1.11, 3.45, 5.43, 8.31, 11.03, 11.83, 14.98, 16.53, 17.97,
+          21.82, 24.80, 32.88],
+    # C: Earth at night from orbit, one 10.7 s scene
+    "C": [0.0, 10.68],
 }
+# V's picture sits at y=852, 1080x640, inside a 1080x2344 frame (cropdetect).
+V_PICTURE = "crop=1080:640:0:852"
 SCENE_MARGIN = 0.08
 
 # Same warm-shift as the rest of the series; the saturation differs per
@@ -175,7 +186,6 @@ def main():
 
     # ---- D : long clean scenes, watermark cropped out
     clip("D", "twin",      4.90, 2.10, G_D, crop=NO_MARK)    # binary star, far
-    clip("D", "merge",     0.90, 1.60, G_D, crop=NO_MARK)    # binary star, close
     clip("D", "clouds",   10.29, 1.33, G_D, crop=NO_MARK)    # pink cloud bank
     clip("D", "milky",     8.71, 1.58, G_D, slow=1.25, crop=NO_MARK)
     clip("D", "blue",     14.38, 1.83, G_D, crop=NO_MARK)    # blue nebula
@@ -190,8 +200,19 @@ def main():
     clip("N", "sil_c", 6.00, 3.10, G_N)
 
     # ---- K : half-second flashes, slowed 2x, letterboxed
-    clip("K", "earth", 10.60, 0.67, G_K, slow=2.0, letterbox=True)
     clip("K", "sun",   13.87, 0.53, G_K, slow=2.0, letterbox=True)
+
+    # ---- V : human evolution -> launch. Picture cropped out of the black
+    # frame and shown as a band at native size, so no upscale at all.
+    clip("V", "face",   8.35, 2.60, G_K, crop=V_PICTURE, letterbox=True)   # early human
+    clip("V", "group",  3.50, 1.90, G_K, crop=V_PICTURE, letterbox=True)   # the family
+    clip("V", "launch", 11.05, 0.75, G_K, slow=2.0, crop=V_PICTURE, letterbox=True)
+
+    # ---- C : Earth at night. Letterboxed 16:9 band, 1.04x.
+    clip("C", "night_a", 0.30, 3.00, G_K, letterbox=True)
+    clip("C", "night_b", 4.00, 3.00, G_K, letterbox=True)
+
+    band(FACES, "faces")
 
     # ---- exhibit backdrops
     void("D", 12.0, "void_a", G_D)
