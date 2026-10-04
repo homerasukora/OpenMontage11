@@ -1,0 +1,76 @@
+{
+  "id": "ep09-homesick",
+  "series": "VIRUS2027 // TRANSMISSION",
+  "episode": 9,
+  "title_en": "HOMESICK",
+  "role": "A theory told straight, then the one sentence that makes it ours. Turns the alien question around — what if the signal was never coming from out there — and lets it land on the year the whole channel is about.",
+  "format": "9:16 / 1080x1920 / 30fps",
+  "target_duration_s": 39,
+  "platforms": [
+    "TikTok",
+    "Instagram Reels",
+    "YouTube Shorts"
+  ],
+  "source_note": "Reference: the supplied TikTok 'mindtheory1' (61 s, kinetic-type captions over illustrated scenes). Its structure is kept: alien hook, inversion, 'we do not fit this planet', panspermia, and an ending on feeling never quite at home. Its text is not reused — it is rewritten shorter, in our voice, and the ending is changed to land on 2027.",
+  "editorial_note": "What is real: panspermia is a genuine, old hypothesis (Arrhenius, 1900s). Francis Crick, co-discoverer of the structure of DNA, and Leslie Orgel published 'Directed Panspermia' in Icarus in 1973, 19:341-346, asking whether life on Earth could have been seeded deliberately — and said themselves that the evidence was inadequate to judge. What is the theory's argument and not established: that humans do not belong here. The body claims (sunburn, back pain, risky childbirth) are true of people and are the standard 'humans are not from Earth' talking points, but biologists explain each as a trade-off of walking upright and big brains, and human DNA sits inside Earth's own tree of life. The film says both, in that order, and the concession is in the middle (L07) where the series rule puts it. Dropped from the source on purpose: 'animals do not need sunscreen' and 'animals do not overheat at 35 degrees' — both false as stated (pigs burn, livestock suffer heat stress), and the film does not need them; 'zero species evolved here over millions of years', which is the theory's conclusion presented as a fact; and 'we are the only species that chronically overthinks', which nobody can check. The one soft claim kept is 'the only animals that look at the stars and feel homesick', and it is the theory's line, framed as such by L03. The bridge to 2027 is a question, not a claim — the film has earned it by being straight about what is evidence.",
+  "optional_line": "Held back, not cut: 'In 2025, samples from the asteroid Bennu came back holding amino acids and all five bases of DNA and RNA.' Verified (Nature, 29 Jan 2025: 14 of the 20 protein amino acids and all five nucleobases). It proves organics can arrive from space, not that life was seeded, so it sits after L05 only if the cut needs a modern anchor and has about 6 s to spare.",
+  "voice_note": "Warmer than ep07 and ep08, and quieter. This is the one episode where the read is allowed to be gentle, because the last line is the first thing in the series that sounds like a wish. 'Homesick' is soft. 'Take us home' is the quietest thing in the film.",
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "en": "What if we are the aliens?",
+      "vo_direction": "Light, almost amused. A real question, not a trailer voice.",
+      "gap_after": 0.5
+    },
+    {
+      "id": "L02",
+      "beat": "SETUP",
+      "en": "We always picture them arriving in a ship, coming down through the clouds to find us.",
+      "vo_direction": "Even. This is the picture everyone already has.",
+      "gap_after": 0.34
+    },
+    {
+      "id": "L03",
+      "beat": "TURN",
+      "en": "There is a theory that we have had it backwards, because our bodies fit this planet so badly.",
+      "vo_direction": "'Theory' is the framing and does its own work. Do not lean on it.",
+      "gap_after": 0.32
+    },
+    {
+      "id": "L04",
+      "beat": "BODY",
+      "en": "We burn in the sun, our backs give out, and we are the only animals that look at the stars and feel homesick.",
+      "vo_direction": "A list that slows down. Land softly on 'homesick'.",
+      "gap_after": 0.45
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "en": "It is called panspermia, and in 1973 Francis Crick, who helped discover DNA, asked whether life here was seeded on purpose.",
+      "vo_direction": "Factual, a little faster. The name and the date are the hook for anyone who wants to look it up.",
+      "gap_after": 0.5
+    },
+    {
+      "id": "L06",
+      "beat": "CONCESSION",
+      "en": "None of that makes us aliens, since our DNA sits inside Earth's own family tree.",
+      "vo_direction": "Straight and unbothered. The film is allowed to say this out loud.",
+      "gap_after": 0.42
+    },
+    {
+      "id": "L07",
+      "beat": "BRIDGE",
+      "en": "But it flips the question, because the signal we keep waiting for might have been inside us all along.",
+      "vo_direction": "The turn back toward us. Slower than L06, slightly lower.",
+      "gap_after": 0.55
+    },
+    {
+      "id": "L08",
+      "beat": "CLOSE",
+      "en": "So what if twenty twenty-seven is the year somebody finally comes to take us home?",
+      "vo_direction": "Quiet. A question, not a prophecy. Vira thinking under it, no end card.",
+      "gap_after": 0.0
+    }
+  ]
+}
