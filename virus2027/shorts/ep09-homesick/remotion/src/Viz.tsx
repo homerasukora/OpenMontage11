@@ -1153,9 +1153,9 @@ export const SeedTrail: React.FC<{dur: number}> = ({dur}) => {
     x: (1 - u) ** 2 * A.x + 2 * (1 - u) * u * C1.x + u * u * B.x,
     y: (1 - u) ** 2 * A.y + 2 * (1 - u) * u * C1.y + u * u * B.y,
   });
-  const N = 20, travel = 34;
+  const N = 16, travel = 26;
   const seeds = Array.from({length: N}).map((_, i) => {
-    const u = (f - (4 + i * 1.7)) / travel;
+    const u = (f - (4 + i * 0.9)) / travel;
     return {i, u};
   });
   const hit = seeds.filter((s) => s.u >= 1 && s.u < 1.3).length;

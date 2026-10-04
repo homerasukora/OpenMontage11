@@ -4,29 +4,34 @@
   "_cut": "Twenty shots across thirty-eight seconds — a change every 1.9 s, faster than ep08. The short kristall flashes (sun, Earth) are slowed 2x and sit on single keywords; the long clean dotfos scenes carry the lines; the vertical silhouette reel carries the three lines about bodies and about something inside us. The three void shots are the exhibit gesture from ep08: the sky goes out so a drawing can be read.",
 
   "shots": [
-    {"at": "L01", "lead": 0.00, "type": "clip", "src": "twin.mp4"},
+    {"at": "L01", "lead": 0.00, "type": "band", "src": "faces.jpg", "centre": 860, "push": 0.05},
+    {"at": "L01", "word": "aliens", "lead": -0.05, "type": "clip", "src": "twin.mp4"},
 
     {"at": "L02", "word": "We", "lead": 0.25, "type": "band", "src": "ufo.jpg", "centre": 812, "push": 0.07},
     {"at": "L02", "word": "coming", "type": "clip", "src": "clouds.mp4"},
     {"at": "L02", "word": "find", "type": "band", "src": "ufo.jpg", "centre": 812, "push": 0.05},
 
     {"at": "L03", "word": "There", "lead": 0.12, "type": "clip", "src": "sil_a.mp4"},
-    {"at": "L03", "word": "planet", "type": "clip", "src": "earth.mp4"},
+    {"at": "L03", "word": "backwards", "lead": -0.05, "type": "clip", "src": "face.mp4"},
+    {"at": "L03", "word": "bodies", "lead": -0.05, "type": "clip", "src": "sil_b.mp4"},
+    {"at": "L03", "word": "planet", "type": "clip", "src": "night_a.mp4"},
 
     {"at": "L04", "word": "burn", "type": "clip", "src": "sun.mp4"},
     {"at": "L04", "word": "our", "type": "void", "src": "void_a.jpg"},
     {"at": "L04", "word": "only", "type": "clip", "src": "milky.mp4"},
-    {"at": "L04", "word": "homesick", "type": "clip", "src": "sil_b.mp4"},
+    {"at": "L04", "word": "homesick", "type": "clip", "src": "night_b.mp4"},
 
     {"at": "L05", "word": "It", "type": "clip", "src": "blue.mp4"},
     {"at": "L05", "word": "1973", "type": "void", "src": "void_b.jpg"},
     {"at": "L05", "word": "DNA", "type": "clip", "src": "lightning.mp4"},
-    {"at": "L05", "word": "seeded", "type": "clip", "src": "edge.mp4"},
+    {"at": "L05", "word": "whether", "type": "clip", "src": "edge.mp4"},
+    {"at": "L05", "word": "purpose", "lead": -0.05, "type": "clip", "src": "launch.mp4"},
 
     {"at": "L06", "word": "None", "type": "clip", "src": "white.mp4"},
     {"at": "L06", "word": "aliens", "type": "void", "src": "void_c.jpg"},
+    {"at": "L06", "word": "Earth's", "lead": -0.05, "type": "clip", "src": "group.mp4"},
 
-    {"at": "L07", "word": "But", "type": "clip", "src": "merge.mp4"},
+    {"at": "L07", "word": "But", "type": "band", "src": "faces.jpg", "centre": 860, "push": 0.05},
     {"at": "L07", "word": "signal", "type": "clip", "src": "sil_c.mp4"},
 
     {"at": "L08", "word": "So", "type": "clip", "src": "red.mp4"},
@@ -41,8 +46,8 @@
     {"at": "L02", "word": "find", "dur": 1.1, "type": "viz", "kind": "reticle", "cx": 524, "cy": 916, "size": 92, "label": "us"},
 
     {"at": "L03", "word": "theory", "lead": -0.1, "dur": 2.0, "type": "viz", "kind": "place", "text": "theory · not fact", "y": 168},
-    {"at": "L03", "word": "backwards", "lead": -0.1, "dur": 1.3, "type": "viz", "kind": "rewind", "y": 560, "label": "rewind"},
-    {"at": "L03", "word": "bodies", "lead": -0.05, "dur": 0.85, "type": "viz", "kind": "bodyscan", "cx": 480, "cy": 930, "width": 300, "size": 520, "label": "body scan"},
+    {"at": "L03", "word": "backwards", "lead": -0.1, "dur": 1.0, "type": "viz", "kind": "rewind", "y": 560, "label": "rewind"},
+    {"at": "L03", "word": "bodies", "lead": -0.05, "dur": 0.7, "type": "viz", "kind": "bodyscan", "cx": 480, "cy": 930, "width": 300, "size": 520, "label": "body scan"},
     {"at": "L03", "word": "planet", "dur": 1.3, "type": "viz", "kind": "brackets", "top": 402, "bottom": 1236},
 
     {"at": "L04", "word": "burn", "dur": 1.05, "type": "viz", "kind": "figure", "value": 11, "suffix": "+", "label": "uv index · extreme", "y": 300, "plain": true},
@@ -54,15 +59,16 @@
     {"at": "L05", "word": "panspermia", "lead": -0.1, "dur": 1.55, "type": "viz", "kind": "wordplate", "text": "PANSPERMIA", "sub": "pan · everywhere   sperma · seed", "y": 620},
     {"at": "L05", "word": "1973", "dur": 1.8, "type": "viz", "kind": "figure", "value": 1973, "label": "directed panspermia", "y": 300, "plain": true},
     {"at": "L05", "word": "Francis", "dur": 1.9, "type": "viz", "kind": "place", "text": "francis crick · icarus", "y": 168},
-    {"at": "L05", "word": "DNA", "lead": -0.05, "dur": 2.0, "type": "viz", "kind": "scrim", "opacity": 0.55},
-    {"at": "L05", "word": "DNA", "lead": -0.05, "dur": 2.0, "type": "viz", "kind": "helix", "cx": 540, "top": 452, "bottom": 1150, "amp": 146},
-    {"at": "L05", "word": "seeded", "lead": -0.05, "dur": 2.3, "type": "viz", "kind": "scrim", "opacity": 0.4},
-    {"at": "L05", "word": "seeded", "lead": -0.05, "dur": 2.3, "type": "viz", "kind": "seeds"},
+    {"at": "L05", "word": "DNA", "lead": -0.05, "dur": 1.3, "type": "viz", "kind": "scrim", "opacity": 0.55},
+    {"at": "L05", "word": "DNA", "lead": -0.05, "dur": 1.3, "type": "viz", "kind": "helix", "cx": 540, "top": 452, "bottom": 1150, "amp": 146},
+    {"at": "L05", "word": "life", "lead": -0.05, "dur": 1.0, "type": "viz", "kind": "scrim", "opacity": 0.4},
+    {"at": "L05", "word": "life", "lead": -0.05, "dur": 1.45, "type": "viz", "kind": "seeds"},
 
     {"at": "L06", "word": "aliens", "lead": -0.05, "dur": 1.5, "type": "viz", "kind": "alien", "cx": 540, "cy": 720, "scale": 0.95, "strike": true},
-    {"at": "L06", "word": "Earth's", "dur": 2.1, "type": "viz", "kind": "tree", "label": "us"},
+    {"at": "L06", "word": "Earth's", "lead": -0.05, "dur": 2.3, "type": "viz", "kind": "scrim", "opacity": 0.6},
+    {"at": "L06", "word": "Earth's", "lead": -0.05, "dur": 2.3, "type": "viz", "kind": "tree", "label": "us"},
 
-    {"at": "L07", "word": "flips", "lead": -0.05, "dur": 1.2, "type": "viz", "kind": "rewind", "y": 560, "label": "flipped"},
+    {"at": "L07", "word": "flips", "lead": -0.05, "dur": 1.2, "type": "viz", "kind": "rewind", "y": 505, "label": "flipped"},
     {"at": "L07", "word": "waiting", "lead": -0.1, "dur": 1.3, "type": "viz", "kind": "rings", "cx": 500, "cy": 925, "period": 40, "max": 420, "inward": true},
     {"at": "L07", "word": "inside", "lead": -0.05, "dur": 2.2, "type": "viz", "kind": "rings", "cx": 500, "cy": 925, "period": 36, "max": 480},
 

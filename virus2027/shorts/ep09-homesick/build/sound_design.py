@@ -216,8 +216,8 @@ def main():
                 place(fx, tick(rng, 0.05), t + (k * 1.3) / 30.0, 0.2)
             continue
         if kind == "seeds":
-            for k in range(0, 20, 2):
-                place(fx, tick(rng, 0.05), t + (4 + k * 1.7 + 34) / 30.0, 0.22)
+            for k in range(0, 16, 2):
+                place(fx, tick(rng, 0.05), t + (4 + k * 0.9 + 26) / 30.0, 0.22)
             place(fx, whoosh(rng, 0.8), t - 0.05, 0.14)
             continue
         if kind == "tree":
