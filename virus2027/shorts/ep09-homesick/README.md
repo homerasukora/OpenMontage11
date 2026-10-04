@@ -1,6 +1,13 @@
 # ep09 · HOMESICK
 
-**VIRUS2027 // TRANSMISSION 09** — 9:16, 1080×1920, 30 fps, English.
+**VIRUS2027 // TRANSMISSION 09** — 9:16, 1080×1920, 30 fps, 39.36 s, English.
+
+| | |
+|---|---|
+| **Master** | `out/VIRUS2027_T09_homesick_EN_1080x1920.mp4` — CRF 18 |
+| **Upload copy** | `out/VIRUS2027_T09_homesick_EN_upload.mp4` — H.264 High 4.1, CRF 21, AAC 192k, faststart |
+| **Subtitles** | burned in; sidecar at `out/subs_en.srt` |
+| **Loudness** | −14.5 LUFS integrated |
 
 A theory told straight, then the one sentence that makes it ours: the alien
 question turned around, landing on the year the whole channel is about. Format
