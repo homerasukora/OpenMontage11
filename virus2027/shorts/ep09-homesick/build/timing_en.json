@@ -1,0 +1,759 @@
+{
+  "lang": "en",
+  "total_duration": 38.032,
+  "lines": [
+    {
+      "id": "L01",
+      "beat": "HOOK",
+      "text": "What if we are the aliens?",
+      "start": 0.0,
+      "end": 1.289,
+      "dur": 1.289,
+      "gap_after": 0.5,
+      "words": [
+        {
+          "word": "What",
+          "start": 0.0,
+          "end": 0.184
+        },
+        {
+          "word": "if",
+          "start": 0.184,
+          "end": 0.368
+        },
+        {
+          "word": "we",
+          "start": 0.368,
+          "end": 0.553
+        },
+        {
+          "word": "are",
+          "start": 0.553,
+          "end": 0.737
+        },
+        {
+          "word": "the",
+          "start": 0.737,
+          "end": 0.921
+        },
+        {
+          "word": "aliens?",
+          "start": 0.921,
+          "end": 1.289
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "beat": "SETUP",
+      "text": "We always picture them arriving in a ship, coming down through the clouds to find us.",
+      "start": 1.789,
+      "end": 5.726,
+      "dur": 3.937,
+      "gap_after": 0.34,
+      "words": [
+        {
+          "word": "We",
+          "start": 1.789,
+          "end": 1.965
+        },
+        {
+          "word": "always",
+          "start": 1.965,
+          "end": 2.317
+        },
+        {
+          "word": "picture",
+          "start": 2.317,
+          "end": 2.668
+        },
+        {
+          "word": "them",
+          "start": 2.668,
+          "end": 2.844
+        },
+        {
+          "word": "arriving",
+          "start": 2.844,
+          "end": 3.371
+        },
+        {
+          "word": "in",
+          "start": 3.371,
+          "end": 3.547
+        },
+        {
+          "word": "a",
+          "start": 3.547,
+          "end": 3.723
+        },
+        {
+          "word": "ship,",
+          "start": 3.723,
+          "end": 3.986
+        },
+        {
+          "word": "coming",
+          "start": 3.986,
+          "end": 4.338
+        },
+        {
+          "word": "down",
+          "start": 4.338,
+          "end": 4.513
+        },
+        {
+          "word": "through",
+          "start": 4.513,
+          "end": 4.689
+        },
+        {
+          "word": "the",
+          "start": 4.689,
+          "end": 4.865
+        },
+        {
+          "word": "clouds",
+          "start": 4.865,
+          "end": 5.041
+        },
+        {
+          "word": "to",
+          "start": 5.041,
+          "end": 5.216
+        },
+        {
+          "word": "find",
+          "start": 5.216,
+          "end": 5.392
+        },
+        {
+          "word": "us.",
+          "start": 5.392,
+          "end": 5.726
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "beat": "TURN",
+      "text": "There is a theory that we have had it backwards, because our bodies fit this planet so badly.",
+      "start": 6.066,
+      "end": 10.363,
+      "dur": 4.296,
+      "gap_after": 0.32,
+      "words": [
+        {
+          "word": "There",
+          "start": 6.066,
+          "end": 6.235
+        },
+        {
+          "word": "is",
+          "start": 6.235,
+          "end": 6.404
+        },
+        {
+          "word": "a",
+          "start": 6.404,
+          "end": 6.573
+        },
+        {
+          "word": "theory",
+          "start": 6.573,
+          "end": 6.912
+        },
+        {
+          "word": "that",
+          "start": 6.912,
+          "end": 7.081
+        },
+        {
+          "word": "we",
+          "start": 7.081,
+          "end": 7.25
+        },
+        {
+          "word": "have",
+          "start": 7.25,
+          "end": 7.419
+        },
+        {
+          "word": "had",
+          "start": 7.419,
+          "end": 7.588
+        },
+        {
+          "word": "it",
+          "start": 7.588,
+          "end": 7.758
+        },
+        {
+          "word": "backwards,",
+          "start": 7.758,
+          "end": 8.18
+        },
+        {
+          "word": "because",
+          "start": 8.18,
+          "end": 8.519
+        },
+        {
+          "word": "our",
+          "start": 8.519,
+          "end": 8.688
+        },
+        {
+          "word": "bodies",
+          "start": 8.688,
+          "end": 9.026
+        },
+        {
+          "word": "fit",
+          "start": 9.026,
+          "end": 9.195
+        },
+        {
+          "word": "this",
+          "start": 9.195,
+          "end": 9.365
+        },
+        {
+          "word": "planet",
+          "start": 9.365,
+          "end": 9.703
+        },
+        {
+          "word": "so",
+          "start": 9.703,
+          "end": 9.872
+        },
+        {
+          "word": "badly.",
+          "start": 9.872,
+          "end": 10.363
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "beat": "BODY",
+      "text": "We burn in the sun, our backs give out, and we are the only animals that look at the stars and feel homesick.",
+      "start": 10.683,
+      "end": 16.012,
+      "dur": 5.33,
+      "gap_after": 0.45,
+      "words": [
+        {
+          "word": "We",
+          "start": 10.683,
+          "end": 10.861
+        },
+        {
+          "word": "burn",
+          "start": 10.861,
+          "end": 11.039
+        },
+        {
+          "word": "in",
+          "start": 11.039,
+          "end": 11.217
+        },
+        {
+          "word": "the",
+          "start": 11.217,
+          "end": 11.396
+        },
+        {
+          "word": "sun,",
+          "start": 11.396,
+          "end": 11.663
+        },
+        {
+          "word": "our",
+          "start": 11.663,
+          "end": 11.841
+        },
+        {
+          "word": "backs",
+          "start": 11.841,
+          "end": 12.019
+        },
+        {
+          "word": "give",
+          "start": 12.019,
+          "end": 12.198
+        },
+        {
+          "word": "out,",
+          "start": 12.198,
+          "end": 12.465
+        },
+        {
+          "word": "and",
+          "start": 12.465,
+          "end": 12.643
+        },
+        {
+          "word": "we",
+          "start": 12.643,
+          "end": 12.822
+        },
+        {
+          "word": "are",
+          "start": 12.822,
+          "end": 13.0
+        },
+        {
+          "word": "the",
+          "start": 13.0,
+          "end": 13.178
+        },
+        {
+          "word": "only",
+          "start": 13.178,
+          "end": 13.535
+        },
+        {
+          "word": "animals",
+          "start": 13.535,
+          "end": 14.069
+        },
+        {
+          "word": "that",
+          "start": 14.069,
+          "end": 14.248
+        },
+        {
+          "word": "look",
+          "start": 14.248,
+          "end": 14.426
+        },
+        {
+          "word": "at",
+          "start": 14.426,
+          "end": 14.604
+        },
+        {
+          "word": "the",
+          "start": 14.604,
+          "end": 14.782
+        },
+        {
+          "word": "stars",
+          "start": 14.782,
+          "end": 14.961
+        },
+        {
+          "word": "and",
+          "start": 14.961,
+          "end": 15.139
+        },
+        {
+          "word": "feel",
+          "start": 15.139,
+          "end": 15.317
+        },
+        {
+          "word": "homesick.",
+          "start": 15.317,
+          "end": 16.012
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "beat": "BODY",
+      "text": "It is called panspermia, and in 1973 Francis Crick, who helped discover DNA, asked whether life here was seeded on purpose.",
+      "start": 16.462,
+      "end": 24.01,
+      "dur": 7.547,
+      "gap_after": 0.5,
+      "words": [
+        {
+          "word": "It",
+          "start": 16.462,
+          "end": 16.682
+        },
+        {
+          "word": "is",
+          "start": 16.682,
+          "end": 16.901
+        },
+        {
+          "word": "called",
+          "start": 16.901,
+          "end": 17.34
+        },
+        {
+          "word": "panspermia,",
+          "start": 17.34,
+          "end": 18.108
+        },
+        {
+          "word": "and",
+          "start": 18.108,
+          "end": 18.327
+        },
+        {
+          "word": "in",
+          "start": 18.327,
+          "end": 18.547
+        },
+        {
+          "word": "1973",
+          "start": 18.547,
+          "end": 18.766
+        },
+        {
+          "word": "Francis",
+          "start": 18.766,
+          "end": 19.205
+        },
+        {
+          "word": "Crick,",
+          "start": 19.205,
+          "end": 19.534
+        },
+        {
+          "word": "who",
+          "start": 19.534,
+          "end": 19.753
+        },
+        {
+          "word": "helped",
+          "start": 19.753,
+          "end": 20.192
+        },
+        {
+          "word": "discover",
+          "start": 20.192,
+          "end": 20.85
+        },
+        {
+          "word": "DNA,",
+          "start": 20.85,
+          "end": 21.179
+        },
+        {
+          "word": "asked",
+          "start": 21.179,
+          "end": 21.618
+        },
+        {
+          "word": "whether",
+          "start": 21.618,
+          "end": 22.057
+        },
+        {
+          "word": "life",
+          "start": 22.057,
+          "end": 22.276
+        },
+        {
+          "word": "here",
+          "start": 22.276,
+          "end": 22.496
+        },
+        {
+          "word": "was",
+          "start": 22.496,
+          "end": 22.715
+        },
+        {
+          "word": "seeded",
+          "start": 22.715,
+          "end": 23.154
+        },
+        {
+          "word": "on",
+          "start": 23.154,
+          "end": 23.373
+        },
+        {
+          "word": "purpose.",
+          "start": 23.373,
+          "end": 24.01
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "beat": "CONCESSION",
+      "text": "None of that makes us aliens, since our DNA sits inside Earth's own family tree.",
+      "start": 24.51,
+      "end": 28.748,
+      "dur": 4.238,
+      "gap_after": 0.42,
+      "words": [
+        {
+          "word": "None",
+          "start": 24.51,
+          "end": 24.708
+        },
+        {
+          "word": "of",
+          "start": 24.708,
+          "end": 24.906
+        },
+        {
+          "word": "that",
+          "start": 24.906,
+          "end": 25.104
+        },
+        {
+          "word": "makes",
+          "start": 25.104,
+          "end": 25.5
+        },
+        {
+          "word": "us",
+          "start": 25.5,
+          "end": 25.698
+        },
+        {
+          "word": "aliens,",
+          "start": 25.698,
+          "end": 26.193
+        },
+        {
+          "word": "since",
+          "start": 26.193,
+          "end": 26.391
+        },
+        {
+          "word": "our",
+          "start": 26.391,
+          "end": 26.589
+        },
+        {
+          "word": "DNA",
+          "start": 26.589,
+          "end": 26.787
+        },
+        {
+          "word": "sits",
+          "start": 26.787,
+          "end": 26.985
+        },
+        {
+          "word": "inside",
+          "start": 26.985,
+          "end": 27.381
+        },
+        {
+          "word": "Earth's",
+          "start": 27.381,
+          "end": 27.579
+        },
+        {
+          "word": "own",
+          "start": 27.579,
+          "end": 27.777
+        },
+        {
+          "word": "family",
+          "start": 27.777,
+          "end": 28.372
+        },
+        {
+          "word": "tree.",
+          "start": 28.372,
+          "end": 28.748
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "beat": "BRIDGE",
+      "text": "But it flips the question, because the signal we keep waiting for might have been inside us all along.",
+      "start": 29.168,
+      "end": 33.72,
+      "dur": 4.552,
+      "gap_after": 0.55,
+      "words": [
+        {
+          "word": "But",
+          "start": 29.168,
+          "end": 29.34
+        },
+        {
+          "word": "it",
+          "start": 29.34,
+          "end": 29.513
+        },
+        {
+          "word": "flips",
+          "start": 29.513,
+          "end": 29.685
+        },
+        {
+          "word": "the",
+          "start": 29.685,
+          "end": 29.858
+        },
+        {
+          "word": "question,",
+          "start": 29.858,
+          "end": 30.289
+        },
+        {
+          "word": "because",
+          "start": 30.289,
+          "end": 30.634
+        },
+        {
+          "word": "the",
+          "start": 30.634,
+          "end": 30.806
+        },
+        {
+          "word": "signal",
+          "start": 30.806,
+          "end": 31.151
+        },
+        {
+          "word": "we",
+          "start": 31.151,
+          "end": 31.323
+        },
+        {
+          "word": "keep",
+          "start": 31.323,
+          "end": 31.496
+        },
+        {
+          "word": "waiting",
+          "start": 31.496,
+          "end": 31.84
+        },
+        {
+          "word": "for",
+          "start": 31.84,
+          "end": 32.013
+        },
+        {
+          "word": "might",
+          "start": 32.013,
+          "end": 32.185
+        },
+        {
+          "word": "have",
+          "start": 32.185,
+          "end": 32.358
+        },
+        {
+          "word": "been",
+          "start": 32.358,
+          "end": 32.53
+        },
+        {
+          "word": "inside",
+          "start": 32.53,
+          "end": 32.875
+        },
+        {
+          "word": "us",
+          "start": 32.875,
+          "end": 33.047
+        },
+        {
+          "word": "all",
+          "start": 33.047,
+          "end": 33.22
+        },
+        {
+          "word": "along.",
+          "start": 33.22,
+          "end": 33.72
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "beat": "CLOSE",
+      "text": "So what if twenty twenty-seven is the year somebody finally comes to take us home?",
+      "start": 34.27,
+      "end": 38.032,
+      "dur": 3.762,
+      "gap_after": 0.0,
+      "words": [
+        {
+          "word": "So",
+          "start": 34.27,
+          "end": 34.42
+        },
+        {
+          "word": "what",
+          "start": 34.42,
+          "end": 34.571
+        },
+        {
+          "word": "if",
+          "start": 34.571,
+          "end": 34.721
+        },
+        {
+          "word": "twenty",
+          "start": 34.721,
+          "end": 35.022
+        },
+        {
+          "word": "twenty-seven",
+          "start": 35.022,
+          "end": 35.624
+        },
+        {
+          "word": "is",
+          "start": 35.624,
+          "end": 35.775
+        },
+        {
+          "word": "the",
+          "start": 35.775,
+          "end": 35.925
+        },
+        {
+          "word": "year",
+          "start": 35.925,
+          "end": 36.076
+        },
+        {
+          "word": "somebody",
+          "start": 36.076,
+          "end": 36.678
+        },
+        {
+          "word": "finally",
+          "start": 36.678,
+          "end": 37.129
+        },
+        {
+          "word": "comes",
+          "start": 37.129,
+          "end": 37.43
+        },
+        {
+          "word": "to",
+          "start": 37.43,
+          "end": 37.581
+        },
+        {
+          "word": "take",
+          "start": 37.581,
+          "end": 37.731
+        },
+        {
+          "word": "us",
+          "start": 37.731,
+          "end": 37.882
+        },
+        {
+          "word": "home?",
+          "start": 37.882,
+          "end": 38.032
+        }
+      ]
+    }
+  ]
+}

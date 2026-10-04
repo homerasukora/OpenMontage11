@@ -1,0 +1,24 @@
+# The repo root ignores build/ (an OpenMontage artefact dir). Here it holds
+# the pipeline source, so re-include it and ignore only the scratch inside.
+!build/
+build/stills/
+
+# generated copies — recreated by the rebuild steps in README.md
+remotion/node_modules/
+remotion/out/
+remotion/public/*.png
+remotion/public/*.woff2
+remotion/public/*.jpg
+remotion/public/*.wav
+remotion/public/*.mp4
+remotion/public/broll/
+
+# intermediates: per-line stems and the pre-master mix
+audio/*/lines/
+audio/*/mix.wav
+
+# ep08: the self-hosted brand fonts ARE source — the render cannot reach
+# fonts.gstatic.com through the proxy, so these five files are what makes a
+# clean checkout renderable. Keep them.
+!remotion/public/fonts/
+remotion/node_modules
