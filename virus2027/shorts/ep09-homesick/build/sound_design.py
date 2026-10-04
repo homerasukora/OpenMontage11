@@ -316,6 +316,28 @@ def main():
         ["ffmpeg", "-y", "-v", "error", "-i", str(out),
          "-af", "alimiter=limit=0.96,loudnorm=I=-14:TP=-1.2:LRA=9",
          "-ar", str(SR), "-ac", "1", str(final)], check=True)
+
+    # One-pass loudnorm undershoots when the voice has real dynamics, as the
+    # Kokoro read does (-15.1 LUFS measured on the first render). Measure the
+    # result and close the gap with a plain gain behind the limiter.
+    import re
+    def lufs(path):
+        r = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+             "-af", "ebur128=peak=true", "-f", "null", "-"],
+            capture_output=True, text=True)
+        m = re.findall(r"I:\s+(-?[0-9.]+) LUFS", r.stderr)
+        return float(m[-1])
+    got = lufs(final)
+    gain = -14.0 - got
+    if abs(gain) > 0.15:
+        tuned = ROOT / "audio" / "en" / "mix_tuned.wav"
+        subprocess.run(
+            ["ffmpeg", "-y", "-v", "error", "-i", str(final),
+             "-af", f"volume={gain:.2f}dB,alimiter=limit=0.95",
+             "-ar", str(SR), "-ac", "1", str(tuned)], check=True)
+        tuned.replace(final)
+        print(f"loudness {got:.1f} -> {lufs(final):.1f} LUFS")
     print(f"mixed {total / SR:.2f}s -> {final}")
 
 
