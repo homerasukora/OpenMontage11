@@ -42,16 +42,16 @@
 
     {"at": "L03", "word": "theory", "lead": -0.1, "dur": 2.0, "type": "viz", "kind": "place", "text": "theory · not fact", "y": 168},
     {"at": "L03", "word": "backwards", "lead": -0.1, "dur": 1.3, "type": "viz", "kind": "rewind", "y": 560, "label": "rewind"},
-    {"at": "L03", "word": "bodies", "lead": -0.05, "dur": 1.5, "type": "viz", "kind": "bodyscan", "cx": 480, "cy": 930, "width": 300, "size": 520, "label": "body scan"},
+    {"at": "L03", "word": "bodies", "lead": -0.05, "dur": 0.85, "type": "viz", "kind": "bodyscan", "cx": 480, "cy": 930, "width": 300, "size": 520, "label": "body scan"},
     {"at": "L03", "word": "planet", "dur": 1.3, "type": "viz", "kind": "brackets", "top": 402, "bottom": 1236},
 
     {"at": "L04", "word": "burn", "dur": 1.05, "type": "viz", "kind": "figure", "value": 11, "suffix": "+", "label": "uv index · extreme", "y": 300, "plain": true},
     {"at": "L04", "word": "our", "lead": -0.05, "dur": 1.85, "type": "viz", "kind": "spine", "cx": 520},
     {"at": "L04", "word": "look", "dur": 1.0, "type": "viz", "kind": "constellation"},
-    {"at": "L04", "word": "homesick", "lead": -0.05, "dur": 1.55, "type": "viz", "kind": "home", "cx": 790, "cy": 720, "flip": true},
+    {"at": "L04", "word": "homesick", "lead": -0.05, "dur": 1.55, "type": "viz", "kind": "home", "cx": 790, "cy": 760, "flip": true, "scale": 1.4},
 
-    {"at": "L05", "word": "panspermia", "lead": -0.15, "dur": 2.1, "type": "viz", "kind": "scrim", "opacity": 0.5},
-    {"at": "L05", "word": "panspermia", "lead": -0.1, "dur": 2.0, "type": "viz", "kind": "wordplate", "text": "PANSPERMIA", "sub": "pan · everywhere   sperma · seed", "y": 620},
+    {"at": "L05", "word": "panspermia", "lead": -0.15, "dur": 1.65, "type": "viz", "kind": "scrim", "opacity": 0.5},
+    {"at": "L05", "word": "panspermia", "lead": -0.1, "dur": 1.55, "type": "viz", "kind": "wordplate", "text": "PANSPERMIA", "sub": "pan · everywhere   sperma · seed", "y": 620},
     {"at": "L05", "word": "1973", "dur": 1.8, "type": "viz", "kind": "figure", "value": 1973, "label": "directed panspermia", "y": 300, "plain": true},
     {"at": "L05", "word": "Francis", "dur": 1.9, "type": "viz", "kind": "place", "text": "francis crick · icarus", "y": 168},
     {"at": "L05", "word": "DNA", "lead": -0.05, "dur": 2.0, "type": "viz", "kind": "scrim", "opacity": 0.55},

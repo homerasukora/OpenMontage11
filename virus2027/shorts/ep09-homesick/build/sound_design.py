@@ -203,7 +203,7 @@ def main():
             continue
         if kind == "constellation":
             for k in range(7):
-                place(fx, tick(rng, 0.06), t + (4 + k * 4) / 30.0, 0.26)
+                place(fx, tick(rng, 0.06), t + (2 + k * 2.5) / 30.0, 0.26)
             continue
         if kind == "home":
             place(fx, whoosh(rng, 0.5), t - 0.08, 0.16)
@@ -222,8 +222,8 @@ def main():
             continue
         if kind == "tree":
             place(fx, whoosh(rng, 1.1), t - 0.05, 0.16)
-            place(fx, tick(rng, 0.10), t + 38 / 30.0, 0.44)
-            place(fx, impact(rng, 0.6, 50), t + 38 / 30.0, 0.20)
+            place(fx, tick(rng, 0.10), t + 26 / 30.0, 0.44)
+            place(fx, impact(rng, 0.6, 50), t + 26 / 30.0, 0.20)
             continue
         if kind == "scrim":
             continue

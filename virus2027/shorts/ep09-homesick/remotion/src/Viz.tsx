@@ -125,7 +125,7 @@ export const PulseRings: React.FC<{
         {rings.map((r) => (
           <circle
             key={r.k} cx={cx} cy={cy} r={r.r}
-            fill="none" stroke={orange(r.o)} strokeWidth={2}
+            fill="none" stroke={orange(Math.min(1, r.o * 1.5))} strokeWidth={3.5}
           />
         ))}
       </svg>
@@ -1025,7 +1025,7 @@ export const Constellation: React.FC<{dur: number}> = ({dur}) => {
     [150, 760], [292, 640], [430, 690], [566, 560], [706, 650], [836, 584], [938, 716],
   ];
   const seg = (i: number) =>
-    interpolate(f, [4 + i * 4, 14 + i * 4], [0, 1], {...clampBoth, easing: ease});
+    interpolate(f, [2 + i * 2.5, 9 + i * 2.5], [0, 1], {...clampBoth, easing: ease});
   return (
     <AbsoluteFill style={{opacity: p, pointerEvents: 'none'}}>
       <svg width={W} height={H}>
@@ -1033,23 +1033,23 @@ export const Constellation: React.FC<{dur: number}> = ({dur}) => {
           const a = pts[i], g = seg(i);
           return (
             <line key={i} x1={a[0]} y1={a[1]} x2={a[0] + (q[0] - a[0]) * g}
-                  y2={a[1] + (q[1] - a[1]) * g} stroke={paper(0.55)} strokeWidth={2}
-                  strokeDasharray="3 8" />
+                  y2={a[1] + (q[1] - a[1]) * g} stroke={paper(0.9)} strokeWidth={3} />
           );
         })}
         {pts.map((q, i) => {
           const on = i === 0 ? 1 : seg(i - 1);
-          const r = (8 + Math.sin(f / 6 + i * 1.7) * 1.5) * on;
+          const r = (13 + Math.sin(f / 6 + i * 1.7) * 2) * on;
           const last = i === pts.length - 1;
           const col = last ? orange(1) : paper(0.95);
           return (
             <g key={i} opacity={on}>
-              <circle cx={q[0]} cy={q[1]} r={r + 10} fill={last ? orange(0.18) : paper(0.1)} />
+              <circle cx={q[0]} cy={q[1]} r={r + 16} fill="rgba(5,4,3,0.55)" />
+              <circle cx={q[0]} cy={q[1]} r={r + 10} fill={last ? orange(0.28) : paper(0.14)} />
               <circle cx={q[0]} cy={q[1]} r={r * 0.55} fill={col} />
               <line x1={q[0] - r * 2.6} x2={q[0] + r * 2.6} y1={q[1]} y2={q[1]}
-                    stroke={col} strokeWidth={1.6} />
+                    stroke={col} strokeWidth={2.4} />
               <line y1={q[1] - r * 2.6} y2={q[1] + r * 2.6} x1={q[0]} x2={q[0]}
-                    stroke={col} strokeWidth={1.6} />
+                    stroke={col} strokeWidth={2.4} />
             </g>
           );
         })}
@@ -1062,8 +1062,8 @@ export const Constellation: React.FC<{dur: number}> = ({dur}) => {
 
 /** A house, drawn in one pass, with its window lit and a dotted line up to a star. */
 export const HomeGlyph: React.FC<{
-  dur: number; cx?: number; cy?: number; flip?: boolean;
-}> = ({dur, cx = 540, cy = 860, flip = false}) => {
+  dur: number; cx?: number; cy?: number; flip?: boolean; scale?: number;
+}> = ({dur, cx = 540, cy = 860, flip = false, scale = 1}) => {
   const {f, p} = useLife(dur, 8, 10);
   const at = (a: number, b: number) =>
     interpolate(f, [a, b], [0, 1], {...clampBoth, easing: ease});
@@ -1075,6 +1075,7 @@ export const HomeGlyph: React.FC<{
   return (
     <AbsoluteFill style={{opacity: p, pointerEvents: 'none'}}>
       <svg width={W} height={H}>
+        <g transform={`translate(${cx} ${cy}) scale(${scale}) translate(${-cx} ${-cy})`}>
         <g fill="none" stroke={paper(0.94)} strokeWidth={4} strokeLinejoin="round"
            strokeLinecap="round">
           <path d={`M${cx - 92} ${cy + 94} V${cy - 8} H${cx + 92} V${cy + 94} Z`} {...drawn(wall)} />
@@ -1092,6 +1093,7 @@ export const HomeGlyph: React.FC<{
           <circle cx={sx} cy={sy} r={9} fill={orange(1)} />
           <line x1={sx - 30} x2={sx + 30} y1={sy} y2={sy} stroke={orange(0.95)} strokeWidth={2} />
           <line y1={sy - 30} y2={sy + 30} x1={sx} x2={sx} stroke={orange(0.95)} strokeWidth={2} />
+        </g>
         </g>
       </svg>
     </AbsoluteFill>
@@ -1173,7 +1175,7 @@ export const SeedTrail: React.FC<{dur: number}> = ({dur}) => {
             ? [0, 1, 2, 3].map((k) => {
                 const q = bez(Math.max(0, s.u - k * 0.035));
                 return (
-                  <circle key={`${s.i}-${k}`} cx={q.x} cy={q.y} r={7 - k * 1.5}
+                  <circle key={`${s.i}-${k}`} cx={q.x} cy={q.y} r={10 - k * 2}
                           fill={orange(1 - k * 0.27)} />
                 );
               })
@@ -1205,38 +1207,38 @@ export const TreeOfLife: React.FC<{dur: number; label?: string}> = ({
     brs.push({x1: x, y1: y, x2, y2, d});
     if (d >= 5) { leaves.push([x2, y2]); return; }
     const spread = 0.42 + (rnd(seed * 3.1) - 0.5) * 0.18;
-    grow(x2, y2, ang - spread, len * 0.76, d + 1, seed * 2 + 1);
-    grow(x2, y2, ang + spread, len * 0.76, d + 1, seed * 2 + 2);
+    grow(x2, y2, ang - spread, len * 0.78, d + 1, seed * 2 + 1);
+    grow(x2, y2, ang + spread, len * 0.78, d + 1, seed * 2 + 2);
   };
-  grow(cx, base, 0, 190, 0, 1);
+  grow(cx, base, 0, 232, 0, 1);
   const ours = leaves[Math.floor(leaves.length * 0.64)];
-  const ping = interpolate(f, [40, dur], [0, 1], clampBoth);
+  const ping = interpolate(f, [26, dur], [0, 1], clampBoth);
   return (
     <AbsoluteFill style={{opacity: p, pointerEvents: 'none'}}>
       <svg width={W} height={H}>
         {brs.map((b, i) => {
-          const g = interpolate(f, [2 + b.d * 5, 12 + b.d * 5], [0, 1], {...clampBoth, easing: ease});
+          const g = interpolate(f, [2 + b.d * 3, 10 + b.d * 3], [0, 1], {...clampBoth, easing: ease});
           return (
             <line key={i} x1={b.x1} y1={b.y1} x2={b.x1 + (b.x2 - b.x1) * g}
                   y2={b.y1 + (b.y2 - b.y1) * g} stroke={paper(0.82)}
-                  strokeWidth={Math.max(2, 9 - b.d * 1.5)} strokeLinecap="round" />
+                  strokeWidth={Math.max(2.6, 12 - b.d * 2)} strokeLinecap="round" />
           );
         })}
         {leaves.map((l, i) => {
-          const a = interpolate(f, [34, 44], [0, 1], clampBoth);
+          const a = interpolate(f, [22, 30], [0, 1], clampBoth);
           const mine = l === ours;
           return (
-            <circle key={i} cx={l[0]} cy={l[1]} r={mine ? 11 : 4.5}
+            <circle key={i} cx={l[0]} cy={l[1]} r={mine ? 15 : 6}
                     fill={mine ? orange(1) : paper(0.8)} opacity={a} />
           );
         })}
         <circle cx={ours[0]} cy={ours[1]} r={22 + ping * 22} fill="none"
                 stroke={orange(0.75 * (1 - ping))} strokeWidth={2.4}
-                opacity={interpolate(f, [36, 46], [0, 1], clampBoth)} />
+                opacity={interpolate(f, [24, 32], [0, 1], clampBoth)} />
       </svg>
       <div style={{position: 'absolute', left: ours[0] + 28, top: ours[1] - 40,
-                   opacity: interpolate(f, [38, 50], [0, 1], clampBoth),
-                   ...monoLabel(24, C.signal, '0.3em')}}>
+                   opacity: interpolate(f, [26, 36], [0, 1], clampBoth),
+                   ...monoLabel(32, C.signal, '0.3em')}}>
         {label}
       </div>
     </AbsoluteFill>

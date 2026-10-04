@@ -103,7 +103,10 @@ const renderBeat = (b: Beat, dur: number, key: string) => {
     case 'constellation':
       return <Constellation key={key} dur={dur} />;
     case 'home':
-      return <HomeGlyph key={key} dur={dur} cx={b.cx} cy={b.cy} flip={b.flip} />;
+      return (
+        <HomeGlyph key={key} dur={dur} cx={b.cx} cy={b.cy} flip={b.flip}
+                   scale={b.scale} />
+      );
     case 'wordplate':
       return (
         <WordPlate key={key} dur={dur} text={b.text!} sub={b.sub} y={b.y} />
